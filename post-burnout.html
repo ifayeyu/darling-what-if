@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ── SEO Meta ── -->
+    <title>What If You're Not Lazy — You're Burned Out? | Darling, What If</title>
+    <meta name="description" content="Burnout isn't just being tired — it's your mind and body asking you to stop. Learn how to recognize the signs of burnout, understand its impact on mental health, and gently begin your recovery.">
+    <meta name="keywords" content="burnout recovery, signs of burnout, burnout symptoms, mental exhaustion, stress and self-care, how to recover from burnout">
+    <meta property="og:title" content="What If You're Not Lazy — You're Burned Out?">
+    <meta property="og:description" content="Burnout isn't just being tired. Here's how to recognize the signs and gently begin healing.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta name="article:author" content="Gia">
+    <meta name="article:published_time" content="2026-05-07">
+    <link rel="canonical" href="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --gold:        #9B8968;
+            --gold-dark:   #7A6B50;
+            --gold-mid:    #B09E80;
+            --gold-light:  #C4B49A;
+            --gold-faint:  #F2EDE5;
+            --bg:          #FAFAF7;
+            --bg-warm:     #F5F1EB;
+            --text:        #1D1B19;
+            --text-muted:  #6B6462;
+            --border:      #EAE5DF;
+            --white:       #FFFFFF;
+            --serif:       'Playfair Display', Georgia, serif;
+            --sans:        'DM Sans', system-ui, -apple-system, sans-serif;
+            --content-w:   720px;
+        }
+
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; font-weight: 300; -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* NAV */
+        .nav { position: sticky; top: 0; z-index: 200; background: rgba(250,250,247,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); height: 76px; display: flex; align-items: center; }
+        .nav__inner { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
+        .nav__logo { font-family: var(--serif); font-size: 1.2rem; font-style: italic; color: var(--text); }
+        .nav__logo strong { font-style: italic; font-weight: 500; color: var(--gold); }
+        .nav__links { display: flex; align-items: center; gap: 38px; }
+        .nav__links a { font-size: 0.7rem; letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
+        .nav__links a:hover, .nav__links a.active { color: var(--gold); }
+        .nav__search { background: none; border: none; cursor: pointer; color: var(--text-muted); padding: 4px; display: flex; align-items: center; transition: color 0.2s; }
+        .nav__search:hover { color: var(--gold); }
+
+        /* POST HERO */
+        .post-hero { position: relative; height: 78vh; min-height: 520px; max-height: 820px; overflow: hidden; }
+        .post-hero__img { position: absolute; inset: 0; width: 100%; height: 100%;
+            /* Replace with: background: url('images/burnout-hero.jpg') center/cover no-repeat; */
+            background: linear-gradient(155deg, #DDD8E8 0%, #B8B0CC 30%, #9490B0 60%, #6E6888 100%);
+        }
+        .post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(250,250,247,0.12) 100%); pointer-events: none; }
+
+        /* POST HEADER */
+        .post-header { max-width: var(--content-w); margin: 0 auto; padding: 64px 24px 0; text-align: center; }
+        .breadcrumb { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 28px; }
+        .breadcrumb a { transition: color 0.2s; }
+        .breadcrumb a:hover { color: var(--gold); }
+        .breadcrumb__sep { width: 4px; height: 4px; border-radius: 50%; background: var(--border); }
+        .post-category-badge { display: inline-block; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; transition: color 0.2s; }
+        .post-category-badge:hover { color: var(--gold-dark); }
+        .post-title { font-family: var(--serif); font-size: clamp(2.2rem, 4.5vw, 3.6rem); font-weight: 400; line-height: 1.18; color: var(--text); margin-bottom: 28px; }
+        .post-title em { font-style: italic; }
+        .post-byline { display: flex; align-items: center; justify-content: center; font-size: 0.76rem; color: var(--text-muted); letter-spacing: 0.03em; margin-bottom: 36px; }
+        .byline-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border); margin: 0 14px; }
+        .post-byline a { color: var(--gold); transition: color 0.2s; }
+        .post-byline a:hover { color: var(--gold-dark); }
+        .post-header-rule { width: 52px; height: 1px; background: var(--gold-mid); margin: 0 auto 40px; }
+        .post-intro { font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.35rem); font-weight: 400; font-style: italic; line-height: 1.65; color: var(--text); max-width: 640px; margin: 0 auto 72px; }
+
+        /* CONTENT */
+        .post-content { max-width: var(--content-w); margin: 0 auto; padding: 0 24px 80px; }
+        .post-content p { font-size: 1.05rem; line-height: 1.9; color: var(--text); margin-bottom: 28px; }
+        .post-content p:last-child { margin-bottom: 0; }
+        .post-content h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-weight: 400; line-height: 1.3; color: var(--text); margin: 64px 0 24px; }
+        .post-content h2 em { font-style: italic; color: var(--gold); }
+        .post-content h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; font-style: italic; color: var(--text-muted); margin: 40px 0 16px; }
+        .post-content strong { font-weight: 500; color: var(--text); }
+        .post-content a { color: var(--gold); border-bottom: 1px solid var(--gold-faint); transition: border-color 0.2s; }
+        .post-content a:hover { border-color: var(--gold); }
+        .content-rule { width: 48px; height: 1px; background: var(--border); margin: 56px auto; }
+
+        /* INLINE IMAGE */
+        .post-img { margin: 52px -48px; }
+        .post-img__frame { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
+        .post-img--contained { margin: 48px 0; }
+        .post-img--contained .post-img__frame { aspect-ratio: 3/2; }
+        .post-img .ph, .post-img__frame .ph { width: 100%; height: 100%; }
+        .post-img__caption { font-size: 0.78rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 14px; line-height: 1.6; }
+
+        /* PULL QUOTE */
+        .pull-quote { margin: 56px -24px; padding: 48px 48px; background: var(--bg-warm); border-left: 3px solid var(--gold); position: relative; }
+        .pull-quote::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; color: var(--gold-light); position: absolute; top: 12px; left: 44px; line-height: 1; }
+        .pull-quote p { font-family: var(--serif) !important; font-size: clamp(1.2rem, 2vw, 1.55rem) !important; font-style: italic; font-weight: 400; line-height: 1.55 !important; color: var(--text) !important; padding-left: 40px; margin-bottom: 0 !important; }
+
+        /* SYMPTOM / STRATEGY LIST */
+        .post-list { margin: 0 0 28px 0; padding: 0; counter-reset: item; list-style: none; }
+        .post-list li { font-size: 1.02rem; line-height: 1.85; color: var(--text); padding: 16px 0 16px 36px; position: relative; border-bottom: 1px solid var(--border); }
+        .post-list li:first-child { border-top: 1px solid var(--border); }
+        .post-list li::before { content: counter(item); counter-increment: item; position: absolute; left: 0; top: 19px; font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: var(--gold); }
+        .post-list li strong { font-weight: 500; display: block; margin-bottom: 4px; }
+
+        /* INTERNAL LINKS */
+        .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
+        .internal-links__title { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; display: block; }
+        .internal-links ul { display: flex; flex-direction: column; gap: 14px; }
+        .internal-links li { display: flex; align-items: flex-start; gap: 12px; }
+        .internal-links li::before { content: '→'; color: var(--gold); font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+        .internal-links a { font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
+        .internal-links a:hover { color: var(--gold); border-color: var(--gold); }
+
+        /* CONCLUSION */
+        .post-conclusion { margin: 64px 0; padding: 48px; background: var(--gold-faint); text-align: center; }
+        .post-conclusion__title { font-family: var(--serif); font-size: 1.35rem; font-style: italic; font-weight: 400; color: var(--text); margin-bottom: 16px; }
+        .post-conclusion p { font-size: 0.97rem !important; color: var(--text-muted) !important; max-width: 520px; margin: 0 auto !important; line-height: 1.85 !important; }
+
+        /* FAQ */
+        .post-faq { max-width: var(--content-w); margin: 0 auto; padding: 0 24px 96px; }
+        .faq-header { margin-bottom: 36px; }
+        .faq-header h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.85rem); font-weight: 400; color: var(--text); }
+        .faq-header h2 em { font-style: italic; color: var(--gold); }
+        .faq-item { border-top: 1px solid var(--border); }
+        .faq-item:last-child { border-bottom: 1px solid var(--border); }
+        .faq-question { width: 100%; background: none; border: none; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; text-align: left; }
+        .faq-question__text { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--text); line-height: 1.4; }
+        .faq-question__icon { flex-shrink: 0; width: 28px; height: 28px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); transition: all 0.25s ease; }
+        .faq-item.open .faq-question__icon { background: var(--gold); border-color: var(--gold); color: var(--white); transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; }
+        .faq-item.open .faq-answer { max-height: 400px; padding-bottom: 28px; }
+        .faq-answer p { font-size: 0.97rem; line-height: 1.85; color: var(--text-muted); }
+
+        /* TAGS */
+        .post-tags-section { max-width: var(--content-w); margin: 0 auto; padding: 0 24px 64px; }
+        .post-tags-section__label { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px; display: block; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { display: inline-block; padding: 6px 16px; background: var(--gold-faint); color: var(--gold-dark); font-size: 0.68rem; letter-spacing: 0.07em; border-radius: 100px; transition: background 0.2s, color 0.2s; }
+        .tag:hover { background: var(--gold); color: var(--white); }
+        .tag--category { background: var(--gold); color: var(--white); }
+        .tag--category:hover { background: var(--gold-dark); }
+
+        /* AUTHOR BIO */
+        .author-bio { max-width: var(--content-w); margin: 0 auto 64px; padding: 0 24px; }
+        .author-bio__inner { display: flex; align-items: flex-start; gap: 28px; padding: 36px 40px; background: var(--bg-warm); border-top: 2px solid var(--gold); }
+        .author-bio__avatar { width: 68px; height: 68px; border-radius: 50%; background: linear-gradient(145deg, #E0CCAF 0%, #C4A47A 100%); flex-shrink: 0; }
+        .author-bio__info h4 { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 6px; }
+        .author-bio__info p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; }
+
+        /* RELATED */
+        .related-posts { background: var(--bg-warm); padding: 96px 0; }
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+        .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 48px; }
+        .section-title { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: var(--text); }
+        .section-title em { font-style: italic; color: var(--gold); }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .post-card { background: var(--white); display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .post-card:hover { transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+        .post-card__img-wrap { aspect-ratio: 3/2; overflow: hidden; flex-shrink: 0; }
+        .post-card__img { width: 100%; height: 100%; transition: transform 0.65s ease; }
+        .post-card:hover .post-card__img { transform: scale(1.06); }
+        .post-card__body { padding: 24px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+        .category-label { font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: inline-block; }
+        .post-card__title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; line-height: 1.4; color: var(--text); margin-bottom: 10px; }
+        .post-card__title a { transition: color 0.2s; }
+        .post-card__title a:hover { color: var(--gold); }
+        .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
+
+        /* PLACEHOLDER GRADIENTS */
+        .ph-dusk    { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
+        .ph-rose    { background: linear-gradient(145deg, #EAD8D4 0%, #CCA4A0 100%); }
+        .ph-sage    { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
+        .ph-amber   { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
+        .ph-mist    { background: linear-gradient(145deg, #D8E2EC 0%, #94AECE 100%); }
+
+        /* NEWSLETTER */
+        .newsletter { background: var(--text); padding: 104px 0; }
+        .newsletter__inner { max-width: 580px; margin: 0 auto; text-align: center; }
+        .newsletter__eyebrow { display: block; font-size: 0.67rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 22px; }
+        .newsletter__title { font-family: var(--serif); font-size: clamp(1.9rem, 3.2vw, 2.8rem); font-weight: 400; color: var(--white); line-height: 1.3; margin-bottom: 18px; }
+        .newsletter__title em { font-style: italic; color: #EDD8BE; }
+        .newsletter__body { font-size: 0.94rem; color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 44px; }
+        .newsletter__form { display: flex; max-width: 440px; margin: 0 auto 16px; }
+        .newsletter__input { flex: 1; padding: 17px 22px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-right: none; color: var(--white); font-family: var(--sans); font-size: 0.9rem; font-weight: 300; outline: none; transition: background 0.2s, border-color 0.2s; }
+        .newsletter__input::placeholder { color: rgba(255,255,255,0.3); }
+        .newsletter__input:focus { background: rgba(255,255,255,0.11); border-color: var(--gold-mid); }
+        .newsletter__btn { padding: 17px 28px; background: var(--gold); color: var(--white); border: none; font-family: var(--sans); font-size: 0.68rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: nowrap; transition: background 0.25s; }
+        .newsletter__btn:hover { background: var(--gold-dark); }
+        .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); }
+
+        /* FOOTER */
+        .footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0 32px; }
+        .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 52px; margin-bottom: 64px; }
+        .footer__logo { font-family: var(--serif); font-size: 1.45rem; font-style: italic; color: var(--text); margin-bottom: 16px; }
+        .footer__logo em { color: var(--gold); }
+        .footer__about { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; }
+        .footer__social { display: flex; gap: 12px; }
+        .footer__social-link { width: 38px; height: 38px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.72rem; font-weight: 500; transition: all 0.2s; }
+        .footer__social-link:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
+        .footer__col h5 { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); font-weight: 400; margin-bottom: 22px; }
+        .footer__col ul { display: flex; flex-direction: column; gap: 11px; }
+        .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s; }
+        .footer__col a:hover { color: var(--gold); }
+        .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
+        .footer__bottom a { transition: color 0.2s; }
+        .footer__bottom a:hover { color: var(--gold); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .nav__links { display: none; }
+            .related-grid { grid-template-columns: 1fr 1fr; }
+            .post-img { margin-left: 0; margin-right: 0; }
+            .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+        }
+        @media (max-width: 680px) {
+            .container { padding-left: 24px; padding-right: 24px; }
+            .nav__inner { padding-left: 24px; padding-right: 24px; }
+            .related-grid { grid-template-columns: 1fr; }
+            .pull-quote { margin-left: 0; margin-right: 0; padding: 36px 28px; }
+            .pull-quote::before { display: none; }
+            .pull-quote p { padding-left: 0; }
+            .author-bio__inner { flex-direction: column; }
+            .newsletter__form { flex-direction: column; }
+            .newsletter__input { border-right: 1px solid rgba(255,255,255,0.14); border-bottom: none; }
+            .footer__grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
+        <ul class="nav__links">
+            <li><a href="/wellness">Wellness</a></li>
+            <li><a href="/mind" class="active">Mind</a></li>
+            <li><a href="/nourish">Nourish</a></li>
+            <li><a href="/living">Living</a></li>
+            <li><a href="/companion">Companion</a></li>
+            <li><a href="/about">About Me</a></li>
+        </ul>
+        <button class="nav__search" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+
+<!-- HERO IMAGE
+     Replace .ph-dusk with: background: url('images/burnout-hero.jpg') center/cover no-repeat;
+     Suggested photography: woman sitting quietly by a window, soft morning light, contemplative -->
+<header class="post-hero">
+    <div class="post-hero__img ph-dusk"></div>
+</header>
+
+
+<!-- POST HEADER -->
+<div class="post-header">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <div class="breadcrumb__sep"></div>
+        <a href="/mind">Mind</a>
+        <div class="breadcrumb__sep"></div>
+        <span>What If You're Not Lazy — You're Burned Out?</span>
+    </nav>
+
+    <a href="/mind" class="post-category-badge">Mind</a>
+
+    <h1 class="post-title">
+        What If You're Not <em>Lazy</em> —<br>
+        You're Burned Out?
+    </h1>
+
+    <div class="post-byline">
+        <span>May 7, 2026</span>
+        <div class="byline-dot"></div>
+        <span>By <a href="/about">Gia</a></span>
+        <div class="byline-dot"></div>
+        <span>7 min read</span>
+    </div>
+
+    <div class="post-header-rule"></div>
+
+    <p class="post-intro">
+        You've been calling it laziness. Or weakness. Or just "a phase."
+        But what if your exhaustion has a name — and what if giving it that name
+        is the first step toward finally feeling like yourself again?
+    </p>
+</div>
+
+
+<!-- MAIN CONTENT -->
+<article class="post-content" id="post-content">
+
+    <p>
+        There's a particular kind of tired that sleep doesn't fix. You wake up already
+        depleted. You move through your days feeling like you're watching yourself from
+        a distance — going through the motions, performing okayness, waiting for the
+        version of you that used to care to come back.
+    </p>
+
+    <p>
+        This isn't a character flaw. It isn't weakness. It isn't "just stress."
+        What you might be experiencing is burnout — a state of physical, emotional,
+        and mental exhaustion that happens when chronic stress goes unaddressed for
+        too long. And it can affect anyone: the high-achiever, the caregiver, the
+        woman who holds everything together so beautifully that no one thought to
+        ask if she was okay.
+    </p>
+
+
+    <!-- Inline image -->
+    <div class="post-img" aria-hidden="true">
+        <div class="post-img__frame">
+            <div class="ph ph-dusk" style="width:100%;height:100%;"></div>
+        </div>
+        <p class="post-img__caption">
+            Burnout doesn't always look like collapse. Sometimes it looks like being fine — until you're not.
+        </p>
+    </div>
+
+
+    <h2>What Burnout <em>Actually</em> Is</h2>
+
+    <p>
+        Burnout isn't simply being tired after a hard week. It's what happens when
+        the demands placed on you — by work, by relationships, by your own impossibly
+        high standards — consistently exceed your capacity to recover from them. Over
+        time, the gap between output and restoration grows wider, until you hit a wall
+        so solid it stops you completely.
+    </p>
+
+    <p>
+        It often builds quietly, mistaken for normal stress or busyness, until one
+        day you realize you can't remember the last time something felt genuinely good.
+        That numbness — the emotional flatness, the inability to feel the things you
+        used to feel — is one of burnout's most overlooked signs.
+    </p>
+
+
+    <!-- Pull quote -->
+    <blockquote class="pull-quote">
+        <p>
+            Burnout isn't a productivity problem. It's what happens when you give
+            everything you have — and forget to give anything back to yourself.
+        </p>
+    </blockquote>
+
+
+    <h2>8 Signs Your Body and Mind Are <em>Asking You to Stop</em></h2>
+
+    <p>
+        Burnout shows up differently for everyone, but these are the most common
+        ways it tends to speak — often in a whisper, long before it becomes a shout.
+    </p>
+
+    <ol class="post-list">
+        <li>
+            <strong>Physical exhaustion that doesn't lift with rest.</strong>
+            Persistent fatigue, low energy, frequent headaches, or muscle tension
+            that sleep doesn't seem to touch. Your body is running on empty — and
+            it's been running that way for a while.
+        </li>
+        <li>
+            <strong>Emotional flatness or overwhelm.</strong>
+            Feeling numb, detached, or strangely unable to access emotions that
+            used to come naturally. Or the opposite — feeling everything too much,
+            too raw, too close to the surface.
+        </li>
+        <li>
+            <strong>Difficulty concentrating or making decisions.</strong>
+            Brain fog, increased mistakes, an inability to focus that feels new
+            and alarming. A mind that used to be sharp now feels like it's wading
+            through something thick.
+        </li>
+        <li>
+            <strong>Withdrawing from people and things you love.</strong>
+            Cancelling plans, going quiet in relationships, losing interest in
+            hobbies that used to light you up. Isolation can feel protective
+            when you have nothing left to give.
+        </li>
+        <li>
+            <strong>A creeping cynicism or sense of meaninglessness.</strong>
+            When things you once cared about feel hollow, or you find yourself
+            going through the motions without any sense of why — that disconnection
+            from purpose is a significant signal.
+        </li>
+        <li>
+            <strong>Nothing feels satisfying, even when it goes well.</strong>
+            Completing things, achieving things, being told you did well — and
+            feeling nothing. The inability to receive your own effort as enough
+            is one of burnout's quietest cruelties.
+        </li>
+        <li>
+            <strong>Sleep that isn't restful.</strong>
+            Falling asleep easily from exhaustion but waking unrefreshed. Or
+            lying awake despite desperately needing rest. A nervous system under
+            sustained stress often struggles to fully downshift.
+        </li>
+        <li>
+            <strong>Increased physical illness.</strong>
+            Getting sick more often, experiencing digestive issues, or noticing
+            your body responding to stress in ways it didn't used to. Chronic
+            stress suppresses immune function — your body is not separating
+            emotional stress from physical threat.
+        </li>
+    </ol>
+
+
+    <!-- Inline image contained -->
+    <div class="post-img post-img--contained">
+        <div class="post-img__frame">
+            <div class="ph ph-mist" style="width:100%;height:100%;"></div>
+        </div>
+        <p class="post-img__caption">
+            Rest isn't a reward you earn after exhaustion. It's the practice that keeps exhaustion from becoming burnout.
+        </p>
+    </div>
+
+
+    <h2>Why Burnout Matters for Your <em>Mental Health</em></h2>
+
+    <p>
+        Burnout is not a formal clinical diagnosis, but its effects on mental health
+        are very real. Left unaddressed, chronic burnout can contribute to or
+        deepen anxiety, depression, and a generalized disconnection from your own
+        life. The relationship runs in both directions — stress fuels burnout, and
+        burnout creates the conditions in which mental health struggles take root.
+    </p>
+
+    <p>
+        This is why naming it matters. Not to pathologize your exhaustion, but to
+        treat it with the seriousness it deserves — the same seriousness you would
+        extend to any other condition that was quietly affecting your quality of life.
+    </p>
+
+
+    <!-- Internal links -->
+    <div class="internal-links">
+        <span class="internal-links__title">You might also want to read</span>
+        <ul>
+            <li><a href="post-template.html">What If Softness Is Your Greatest Strength</a></li>
+            <li><a href="post-template.html">The Art of Doing Less — A Guide to Intentional Rest</a></li>
+            <li><a href="post-template.html">The Quiet Power of Saying No Without Apologizing</a></li>
+        </ul>
+    </div>
+
+
+    <h2>8 Gentle Ways to Begin <em>Coming Back to Yourself</em></h2>
+
+    <p>
+        Recovery from burnout isn't a hustle. It isn't a new productivity system
+        or a weekend reset. It's a slow, patient return to yourself — one small act
+        of self-honoring at a time.
+    </p>
+
+    <ol class="post-list">
+        <li>
+            <strong>Start with one honest boundary.</strong>
+            Not a full overhaul of your life — just one thing you say no to this
+            week that you would have previously said yes to out of obligation.
+            Boundaries aren't walls. They're the shape of a life you can actually live in.
+        </li>
+        <li>
+            <strong>Bring a stress-reduction practice into your daily rhythm.</strong>
+            Deep breathing. A few minutes of meditation. A slow walk without your
+            phone. These aren't clichés — they are direct interruptions to your
+            nervous system's stress response, and they work when practiced consistently.
+        </li>
+        <li>
+            <strong>Prioritize what genuinely restores you.</strong>
+            Not what you think should restore you — what actually does. For some
+            people that's solitude and silence. For others it's connection and laughter.
+            You know the difference. Start doing more of the thing that actually works.
+        </li>
+        <li>
+            <strong>Move your body gently and regularly.</strong>
+            Not as punishment or performance, but as care. Even 20 minutes of
+            movement that you enjoy can meaningfully shift your nervous system,
+            your mood, and your energy levels over time.
+        </li>
+        <li>
+            <strong>Protect your sleep like it's sacred — because it is.</strong>
+            A consistent sleep schedule, a winding-down ritual, a room that feels
+            safe and quiet. Sleep is the foundation that everything else is built on.
+            Without it, recovery isn't fully possible.
+        </li>
+        <li>
+            <strong>Let someone in.</strong>
+            A friend, a family member, a therapist. You don't have to have the
+            words — you just have to be willing to stop performing okayness with
+            at least one person. Being witnessed in your exhaustion is part of healing.
+        </li>
+        <li>
+            <strong>Revisit what actually matters to you.</strong>
+            Burnout often happens when we've been living by someone else's definition
+            of success. A quiet, honest conversation with yourself about what you
+            actually want — separate from what you're supposed to want — can be
+            quietly revolutionary.
+        </li>
+        <li>
+            <strong>Take breaks before you need them desperately.</strong>
+            A five-minute pause in your workday. A day off before the collapse.
+            Rest taken proactively is far more restorative than rest taken after
+            you've already broken down. You are allowed to rest before you're empty.
+        </li>
+    </ol>
+
+    <div class="content-rule"></div>
+
+    <!-- Gentle conclusion -->
+    <div class="post-conclusion">
+        <h3 class="post-conclusion__title">A gentle closing thought</h3>
+        <p>
+            If you recognized yourself anywhere in this post, please be kind to
+            yourself about it. Burnout isn't a sign that you failed — it's a sign
+            that you gave a great deal for a very long time, often without enough
+            support. The fact that you're here, reading, wondering if things could
+            be different — that is already the beginning of something. And if your
+            symptoms persist or feel overwhelming, please reach out to a mental
+            health professional. You don't have to figure this out alone.
+        </p>
+    </div>
+
+</article>
+
+
+<!-- FAQ -->
+<section class="post-faq" aria-label="Frequently asked questions">
+    <div class="faq-header">
+        <h2>Frequently Asked <em>Questions</em></h2>
+    </div>
+
+    <div class="faq-item" id="faq1">
+        <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
+            <span class="faq-question__text">How do I know if I'm burned out or just going through a rough patch?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                A rough patch tends to have a visible cause and a visible end — a hard project,
+                a difficult season, a specific stressor. Burnout is more pervasive: it lingers
+                after the stressor is gone, it affects multiple areas of your life simultaneously,
+                and rest doesn't restore you the way it used to. If you've been feeling this way
+                for weeks or months rather than days, burnout is worth considering seriously.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq2">
+        <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
+            <span class="faq-question__text">Can burnout happen even if I love what I do?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                Absolutely — and this is one of the most painful forms of burnout, because
+                it can come with guilt and confusion. Loving what you do doesn't make you
+                immune to depletion. Burnout is about the ratio of output to recovery, not
+                about whether your work is meaningful. Passionate people often burn out
+                precisely because they care so much that they forget to stop.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq3">
+        <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
+            <span class="faq-question__text">How long does it take to recover from burnout?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                Recovery varies enormously depending on how long burnout has been building,
+                what caused it, and what changes you're able to make. Mild burnout might lift
+                with a few weeks of intentional rest and boundary-setting. Deeper burnout —
+                especially when it's contributed to depression or anxiety — may take months
+                and benefit significantly from professional support. Be patient with the
+                timeline. Healing is not linear.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq4">
+        <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
+            <span class="faq-question__text">When should I seek professional help for burnout?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                If your symptoms are significantly affecting your daily functioning,
+                relationships, or physical health — or if you're noticing signs of
+                depression or anxiety alongside your burnout — please reach out to a
+                therapist, counselor, or your doctor. You don't have to reach a crisis
+                point to deserve support. Asking for help early is one of the wisest
+                things you can do.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- TAGS — Category + 3 SEO tags -->
+<div class="post-tags-section">
+    <span class="post-tags-section__label">Tagged in</span>
+    <div class="tags">
+        <a href="/mind" class="tag tag--category">Mind</a>
+        <a href="/tag/burnout-recovery" class="tag">burnout recovery</a>
+        <a href="/tag/mental-exhaustion" class="tag">mental exhaustion</a>
+        <a href="/tag/stress-and-self-care" class="tag">stress and self-care</a>
+    </div>
+</div>
+
+
+<!-- AUTHOR BIO -->
+<div class="author-bio">
+    <div class="author-bio__inner">
+        <div class="author-bio__avatar"></div>
+        <div class="author-bio__info">
+            <h4>Written by Gia</h4>
+            <p>
+                I'm a wellness writer and lifestyle philosopher who believes deeply that
+                beauty is healing and softness is a form of power. Darling, What If is my
+                ongoing love letter to the life I'm choosing — one small and intentional
+                moment at a time.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- RELATED POSTS -->
+<section class="related-posts">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Keep <em>Reading</em></h2>
+        </div>
+        <div class="related-grid">
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-sage"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="post-template.html" class="category-label">Wellness</a>
+                    <h3 class="post-card__title"><a href="post-template.html">The Art of Doing Less — A Guide to Intentional Rest</a></h3>
+                    <div class="post-card__date">May 7, 2026 &nbsp;·&nbsp; 6 min read</div>
+                </div>
+            </article>
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-rose"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="post-template.html" class="category-label">Mind</a>
+                    <h3 class="post-card__title"><a href="post-template.html">The Quiet Power of Saying No Without Apologizing</a></h3>
+                    <div class="post-card__date">April 3, 2026 &nbsp;·&nbsp; 6 min read</div>
+                </div>
+            </article>
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-amber"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="post-template.html" class="category-label">Mind</a>
+                    <h3 class="post-card__title"><a href="post-template.html">Morning Pages & Why They Rewired My Anxious Brain</a></h3>
+                    <div class="post-card__date">May 4, 2026 &nbsp;·&nbsp; 5 min read</div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="newsletter">
+    <div class="container">
+        <div class="newsletter__inner">
+            <span class="newsletter__eyebrow">Letters from Gia</span>
+            <h2 class="newsletter__title">What if your inbox felt like<br><em>a warm cup of tea?</em></h2>
+            <p class="newsletter__body">Soft stories, honest reflections, and small ideas that might just change the way you see your day.</p>
+            <form class="newsletter__form" onsubmit="handleSignup(event)">
+                <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
+                <button type="submit" class="newsletter__btn">Yes, I'm in</button>
+            </form>
+            <p class="newsletter__note">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <div class="footer__logo">darling, <em>what if</em></div>
+                <p class="footer__about">A lifestyle space for women who are quietly questioning everything and bravely choosing to begin again.</p>
+                <div class="footer__social">
+                    <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+                    <a href="https://pinterest.com" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">PI</a>
+                    <a href="mailto:hello@darlingwhatif.com" class="footer__social-link" aria-label="Email">@</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="/wellness">Wellness</a></li>
+                    <li><a href="/mind">Mind</a></li>
+                    <li><a href="/nourish">Nourish</a></li>
+                    <li><a href="/living">Living</a></li>
+                    <li><a href="/companion">Companion</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="/about">About Me</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li><a href="/collaborate">Collaborate</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/disclosure">Disclosure</a></li>
+                    <li><a href="/terms">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 <a href="index.html">darlingwhatif.com</a> — All rights reserved</span>
+            <span>Made with intention ✦</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleFaq(id) {
+        const item = document.getElementById(id);
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+            el.classList.remove('open');
+            el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
+        }
+    }
+    function handleSignup(e) {
+        e.preventDefault();
+        const input = e.target.querySelector('.newsletter__input');
+        const btn = e.target.querySelector('.newsletter__btn');
+        btn.textContent = 'You\'re in ✦';
+        btn.style.background = '#7A6B50';
+        input.disabled = true;
+        btn.disabled = true;
+    }
+</script>
+
+</body>
+</html>

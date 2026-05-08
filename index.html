@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darling, What If — A Life Reimagined</title>
+    <meta name="description" content="A lifestyle blog for women who are quietly questioning everything — and bravely choosing to begin again. Beauty. Softness. Healing.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+
+        /* ============================================================
+           RESET & BASE
+        ============================================================ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --gold:        #9B8968;
+            --gold-dark:   #7A6B50;
+            --gold-mid:    #B09E80;
+            --gold-light:  #C4B49A;
+            --gold-faint:  #F2EDE5;
+            --bg:          #FAFAF7;
+            --bg-warm:     #F5F1EB;
+            --text:        #1D1B19;
+            --text-muted:  #6B6462;
+            --border:      #EAE5DF;
+            --white:       #FFFFFF;
+            --serif:       'Playfair Display', Georgia, serif;
+            --sans:        'DM Sans', system-ui, -apple-system, sans-serif;
+        }
+
+        html { font-size: 16px; scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        img { display: block; width: 100%; }
+        ul { list-style: none; }
+
+        /* ============================================================
+           LAYOUT
+        ============================================================ */
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 48px;
+        }
+
+        /* ============================================================
+           NAVIGATION
+        ============================================================ */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            background: rgba(250, 250, 247, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            height: 76px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__inner {
+            width: 100%;
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-family: var(--serif);
+            font-size: 1.2rem;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--text);
+            letter-spacing: 0.01em;
+            white-space: nowrap;
+        }
+
+        .nav__logo strong {
+            font-style: italic;
+            font-weight: 500;
+            color: var(--gold);
+        }
+
+        .nav__links {
+            display: flex;
+            align-items: center;
+            gap: 38px;
+        }
+
+        .nav__links a {
+            font-size: 0.7rem;
+            font-weight: 400;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            transition: color 0.2s ease;
+        }
+
+        .nav__links a:hover {
+            color: var(--gold);
+        }
+
+        .nav__right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav__search {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text-muted);
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        .nav__search:hover { color: var(--gold); }
+
+        /* ============================================================
+           HERO
+        ============================================================ */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 680px;
+            max-height: 920px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        .hero__bg {
+            position: absolute;
+            inset: 0;
+            /* Warm lifestyle photography placeholder — swap for real image */
+            background: linear-gradient(160deg,
+                #E8D8C4 0%,
+                #CEB490 20%,
+                #B8956A 45%,
+                #9A7652 65%,
+                #7D5E3E 100%
+            );
+        }
+
+        /* Subtle texture overlay */
+        .hero__bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(ellipse at 70% 40%, rgba(232, 210, 185, 0.3) 0%, transparent 60%);
+        }
+
+        /* Dark gradient scrim from bottom */
+        .hero__bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(18, 15, 12, 0.80) 0%,
+                rgba(18, 15, 12, 0.30) 45%,
+                rgba(18, 15, 12, 0.05) 100%
+            );
+        }
+
+        .hero__content {
+            position: relative;
+            z-index: 2;
+            padding: 0 80px 80px;
+            max-width: 780px;
+        }
+
+        .hero__tag {
+            display: inline-block;
+            font-size: 0.67rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            margin-bottom: 22px;
+        }
+
+        .hero__title {
+            font-family: var(--serif);
+            font-size: clamp(2.6rem, 5.5vw, 5rem);
+            font-weight: 400;
+            line-height: 1.12;
+            color: var(--white);
+            margin-bottom: 26px;
+        }
+
+        .hero__title em {
+            font-style: italic;
+            color: #EDD8BE;
+        }
+
+        .hero__excerpt {
+            font-size: 1.05rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.78);
+            line-height: 1.85;
+            max-width: 500px;
+            margin-bottom: 36px;
+        }
+
+        .hero__cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.72rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--white);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+            padding-bottom: 4px;
+            transition: all 0.25s ease;
+        }
+
+        .hero__cta:hover {
+            color: #EDD8BE;
+            border-color: #EDD8BE;
+            gap: 18px;
+        }
+
+        .hero__scroll-hint {
+            position: absolute;
+            right: 48px;
+            bottom: 52px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            font-size: 0.62rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.4);
+            writing-mode: vertical-rl;
+        }
+
+        .hero__scroll-hint::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 52px;
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* ============================================================
+           MARQUEE TAGLINE BAND
+        ============================================================ */
+        .marquee-band {
+            background: var(--gold);
+            padding: 16px 0;
+            overflow: hidden;
+        }
+
+        .marquee-band__track {
+            display: flex;
+            gap: 0;
+            animation: marquee 30s linear infinite;
+            white-space: nowrap;
+            width: max-content;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+
+        .marquee-band__item {
+            font-family: var(--serif);
+            font-style: italic;
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.92);
+            padding: 0 56px;
+            display: inline-flex;
+            align-items: center;
+            gap: 56px;
+        }
+
+        .marquee-band__item::before {
+            content: '✦';
+            font-style: normal;
+            font-size: 0.5rem;
+            opacity: 0.7;
+            flex-shrink: 0;
+        }
+
+        /* ============================================================
+           SECTION SHARED STYLES
+        ============================================================ */
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 52px;
+        }
+
+        .section-title {
+            font-family: var(--serif);
+            font-size: clamp(1.7rem, 3vw, 2.3rem);
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--text);
+        }
+
+        .section-title em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .see-all-link {
+            font-size: 0.69rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.2s ease, color 0.2s ease;
+        }
+
+        .see-all-link:hover {
+            color: var(--gold-dark);
+            gap: 12px;
+        }
+
+        /* ============================================================
+           FEATURED STORY
+        ============================================================ */
+        .featured {
+            padding: 100px 0 88px;
+        }
+
+        .featured__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 72px;
+            align-items: center;
+        }
+
+        .featured__img-wrap {
+            position: relative;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+        }
+
+        .featured__img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(145deg, #E0CCAF 0%, #C4A47A 40%, #A07A4A 100%);
+            transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .featured__img-wrap:hover .featured__img {
+            transform: scale(1.04);
+        }
+
+        /* Replace background with real photo like: background: url('images/hero-post.jpg') center/cover; */
+
+        .featured__content {
+            padding: 16px 0;
+        }
+
+        .category-label {
+            display: inline-block;
+            font-size: 0.66rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 18px;
+            transition: color 0.2s ease;
+        }
+
+        .category-label:hover { color: var(--gold-dark); }
+
+        .featured__title {
+            font-family: var(--serif);
+            font-size: clamp(1.9rem, 3.2vw, 3rem);
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--text);
+            margin-bottom: 22px;
+        }
+
+        .featured__title em { font-style: italic; }
+
+        .post-byline {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            letter-spacing: 0.03em;
+            margin-bottom: 24px;
+        }
+
+        .byline-dot {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: var(--border);
+            margin: 0 14px;
+            flex-shrink: 0;
+        }
+
+        .featured__excerpt {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.85;
+            margin-bottom: 28px;
+        }
+
+        /* ============================================================
+           TAGS
+        ============================================================ */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 14px;
+            background: var(--gold-faint);
+            color: var(--gold-dark);
+            font-size: 0.67rem;
+            letter-spacing: 0.07em;
+            border-radius: 100px;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .tag:hover {
+            background: var(--gold);
+            color: var(--white);
+        }
+
+        /* ============================================================
+           READ MORE LINK
+        ============================================================ */
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.71rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 4px;
+            transition: all 0.25s ease;
+        }
+
+        .read-more:hover {
+            color: var(--gold);
+            border-color: var(--gold);
+            gap: 16px;
+        }
+
+        /* ============================================================
+           EDITORIAL QUOTE
+        ============================================================ */
+        .editorial {
+            padding: 80px 0 72px;
+            text-align: center;
+        }
+
+        .editorial__rule {
+            width: 48px;
+            height: 1px;
+            background: var(--border);
+            margin: 0 auto 40px;
+        }
+
+        .editorial__quote {
+            font-family: var(--serif);
+            font-size: clamp(1.5rem, 2.8vw, 2.3rem);
+            font-style: italic;
+            font-weight: 400;
+            color: var(--text);
+            line-height: 1.55;
+            max-width: 780px;
+            margin: 0 auto 40px;
+        }
+
+        .editorial__quote em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        /* ============================================================
+           LATEST POSTS GRID
+        ============================================================ */
+        .latest {
+            background: var(--bg-warm);
+            padding: 96px 0;
+        }
+
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 36px;
+        }
+
+        .post-card {
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+        }
+
+        .post-card__img-wrap {
+            aspect-ratio: 3/2;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .post-card__img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .post-card:hover .post-card__img { transform: scale(1.07); }
+
+        .post-card__body {
+            padding: 28px 28px 32px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .post-card__title {
+            font-family: var(--serif);
+            font-size: 1.18rem;
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--text);
+            margin: 10px 0 14px;
+        }
+
+        .post-card__title a { transition: color 0.2s ease; }
+        .post-card__title a:hover { color: var(--gold); }
+
+        .post-card__excerpt {
+            font-size: 0.87rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            flex: 1;
+            margin-bottom: 18px;
+        }
+
+        .post-card__footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.03em;
+            margin-top: 18px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+        }
+
+        /* ============================================================
+           IMAGE PLACEHOLDER GRADIENTS
+           (Replace with: background: url('your-photo.jpg') center/cover)
+        ============================================================ */
+        .ph-honey    { background: linear-gradient(145deg, #EAD8BB 0%, #CBA87C 100%); }
+        .ph-rose     { background: linear-gradient(145deg, #EAD8D4 0%, #CCA4A0 100%); }
+        .ph-sage     { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
+        .ph-linen    { background: linear-gradient(145deg, #ECE4DA 0%, #C8B8A6 100%); }
+        .ph-amber    { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
+        .ph-mist     { background: linear-gradient(145deg, #D8E2EC 0%, #94AECE 100%); }
+        .ph-blush    { background: linear-gradient(145deg, #EDD8D8 0%, #CC9696 100%); }
+        .ph-clay     { background: linear-gradient(145deg, #DED8CC 0%, #B2A08A 100%); }
+        .ph-forest   { background: linear-gradient(145deg, #CCD8C8 0%, #7EA478 100%); }
+        .ph-dusk     { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
+
+        /* ============================================================
+           CATEGORIES GRID
+        ============================================================ */
+        .categories {
+            padding: 100px 0;
+        }
+
+        .categories__grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 14px;
+        }
+
+        .cat-card {
+            position: relative;
+            aspect-ratio: 3/4;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            cursor: pointer;
+        }
+
+        .cat-card__bg {
+            position: absolute;
+            inset: 0;
+            transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .cat-card:hover .cat-card__bg { transform: scale(1.1); }
+
+        .cat-card__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(18,15,12,0.72) 0%, rgba(18,15,12,0.1) 55%, transparent 100%);
+        }
+
+        .cat-card__label {
+            position: relative;
+            z-index: 2;
+            padding: 18px 16px;
+            font-family: var(--serif);
+            font-size: 0.92rem;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--white);
+            line-height: 1.2;
+        }
+
+        /* Category background colors */
+        .cat-wellness  { background: linear-gradient(155deg, #C8DDCA 0%, #6E9E76 100%); }
+        .cat-mind      { background: linear-gradient(155deg, #D2CEE8 0%, #7A72B2 100%); }
+        .cat-nourish   { background: linear-gradient(155deg, #E8DCCA 0%, #B09060 100%); }
+        .cat-living    { background: linear-gradient(155deg, #E8CECE 0%, #B07272 100%); }
+        .cat-companion { background: linear-gradient(155deg, #E2DFC8 0%, #A8A26A 100%); }
+        .cat-about     { background: linear-gradient(155deg, #C8D6E2 0%, #6A8EAA 100%); }
+
+        /* ============================================================
+           NEWSLETTER
+        ============================================================ */
+        .newsletter {
+            background: var(--text);
+            padding: 104px 0;
+        }
+
+        .newsletter__inner {
+            max-width: 580px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .newsletter__eyebrow {
+            display: block;
+            font-size: 0.67rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            margin-bottom: 22px;
+        }
+
+        .newsletter__title {
+            font-family: var(--serif);
+            font-size: clamp(1.9rem, 3.2vw, 2.8rem);
+            font-weight: 400;
+            color: var(--white);
+            line-height: 1.3;
+            margin-bottom: 18px;
+        }
+
+        .newsletter__title em {
+            font-style: italic;
+            color: #EDD8BE;
+        }
+
+        .newsletter__body {
+            font-size: 0.94rem;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.8;
+            margin-bottom: 44px;
+        }
+
+        .newsletter__form {
+            display: flex;
+            max-width: 440px;
+            margin: 0 auto 16px;
+        }
+
+        .newsletter__input {
+            flex: 1;
+            padding: 17px 22px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-right: none;
+            color: var(--white);
+            font-family: var(--sans);
+            font-size: 0.9rem;
+            font-weight: 300;
+            outline: none;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .newsletter__input::placeholder { color: rgba(255,255,255,0.3); }
+
+        .newsletter__input:focus {
+            background: rgba(255,255,255,0.11);
+            border-color: var(--gold-mid);
+        }
+
+        .newsletter__btn {
+            padding: 17px 28px;
+            background: var(--gold);
+            color: var(--white);
+            border: none;
+            font-family: var(--sans);
+            font-size: 0.68rem;
+            font-weight: 400;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.25s ease;
+        }
+
+        .newsletter__btn:hover { background: var(--gold-dark); }
+
+        .newsletter__note {
+            font-size: 0.71rem;
+            color: rgba(255,255,255,0.28);
+        }
+
+        /* ============================================================
+           FOOTER
+        ============================================================ */
+        .footer {
+            background: var(--bg-warm);
+            border-top: 1px solid var(--border);
+            padding: 72px 0 32px;
+        }
+
+        .footer__grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 52px;
+            margin-bottom: 64px;
+        }
+
+        .footer__logo {
+            font-family: var(--serif);
+            font-size: 1.45rem;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+
+        .footer__logo em { color: var(--gold); }
+
+        .footer__about {
+            font-size: 0.87rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 28px;
+        }
+
+        .footer__social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer__social-link {
+            width: 38px;
+            height: 38px;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .footer__social-link:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--white);
+        }
+
+        .footer__col h5 {
+            font-size: 0.66rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--text);
+            font-weight: 400;
+            margin-bottom: 22px;
+        }
+
+        .footer__col ul {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+        }
+
+        .footer__col a {
+            font-size: 0.87rem;
+            color: var(--text-muted);
+            transition: color 0.2s ease;
+        }
+
+        .footer__col a:hover { color: var(--gold); }
+
+        .footer__bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.74rem;
+            color: var(--text-muted);
+        }
+
+        .footer__bottom a { transition: color 0.2s ease; }
+        .footer__bottom a:hover { color: var(--gold); }
+
+        /* ============================================================
+           RESPONSIVE
+        ============================================================ */
+        @media (max-width: 1100px) {
+            .container, .nav__inner { padding-left: 36px; padding-right: 36px; }
+            .hero__content { padding-left: 48px; padding-right: 48px; }
+            .categories__grid { grid-template-columns: repeat(3, 1fr); }
+            .footer__grid { grid-template-columns: 1fr 1fr 1fr; gap: 36px; }
+        }
+
+        @media (max-width: 900px) {
+            .nav__links { display: none; }
+            .featured__grid { grid-template-columns: 1fr; gap: 44px; }
+            .posts-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+            .hero__content { padding-left: 32px; padding-right: 32px; padding-bottom: 64px; }
+            .hero__scroll-hint { display: none; }
+        }
+
+        @media (max-width: 680px) {
+            .container, .nav__inner { padding-left: 24px; padding-right: 24px; }
+            .posts-grid { grid-template-columns: 1fr; }
+            .categories__grid { grid-template-columns: repeat(2, 1fr); }
+            .newsletter__form { flex-direction: column; }
+            .newsletter__input { border-right: 1px solid rgba(255,255,255,0.14); border-bottom: none; }
+            .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+            .featured { padding: 64px 0; }
+            .categories { padding: 64px 0; }
+        }
+
+        @media (max-width: 480px) {
+            .footer__grid { grid-template-columns: 1fr; }
+            .categories__grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════════════ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+        <a href="/" class="nav__logo">darling, <strong>what if</strong></a>
+
+        <ul class="nav__links">
+            <li><a href="/wellness">Wellness</a></li>
+            <li><a href="/mind">Mind</a></li>
+            <li><a href="/nourish">Nourish</a></li>
+            <li><a href="/living">Living</a></li>
+            <li><a href="/companion">Companion</a></li>
+            <li><a href="/about">About Me</a></li>
+        </ul>
+
+        <div class="nav__right">
+            <button class="nav__search" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO
+     To use a real photo: add class "ph-custom" and set
+     background: url('images/your-hero.jpg') center/cover;
+══════════════════════════════════════════════════════════ -->
+<section class="hero" aria-label="Featured story">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+        <span class="hero__tag">Featured Story &nbsp;·&nbsp; Wellness</span>
+        <h1 class="hero__title">
+            What If <em>Softness</em><br>
+            Is Your Greatest<br>
+            Strength
+        </h1>
+        <p class="hero__excerpt">
+            A quiet revolution begins when you stop fighting yourself.
+            Here's what I discovered when I finally chose ease over effort —
+            and how it changed everything.
+        </p>
+        <a href="post-template.html" class="hero__cta">
+            Read the story
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14m-7-7 7 7-7 7"/>
+            </svg>
+        </a>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">Scroll</div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     MARQUEE TAGLINE BAND
+══════════════════════════════════════════════════════════ -->
+<div class="marquee-band" aria-hidden="true">
+    <div class="marquee-band__track">
+        <!-- Items repeated for seamless loop -->
+        <span class="marquee-band__item">What if softness is strength</span>
+        <span class="marquee-band__item">What if beauty is healing</span>
+        <span class="marquee-band__item">What if I changed my life</span>
+        <span class="marquee-band__item">What if rest is productive</span>
+        <span class="marquee-band__item">What if this is enough</span>
+        <span class="marquee-band__item">What if you already are</span>
+        <span class="marquee-band__item">What if softness is strength</span>
+        <span class="marquee-band__item">What if beauty is healing</span>
+        <span class="marquee-band__item">What if I changed my life</span>
+        <span class="marquee-band__item">What if rest is productive</span>
+        <span class="marquee-band__item">What if this is enough</span>
+        <span class="marquee-band__item">What if you already are</span>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     FEATURED STORY
+══════════════════════════════════════════════════════════ -->
+<section class="featured">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">This Week's <em>Story</em></h2>
+            <a href="/all-posts" class="see-all-link">
+                All stories
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14m-7-7 7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="featured__grid">
+            <!-- Image — replace .ph-honey background with real photo url -->
+            <div class="featured__img-wrap">
+                <div class="featured__img ph-honey"></div>
+            </div>
+
+            <div class="featured__content">
+                <a href="/wellness" class="category-label">Wellness</a>
+                <h2 class="featured__title">
+                    The Art of <em>Doing Less</em> —<br>
+                    A Guide to Intentional Rest
+                </h2>
+                <div class="post-byline">
+                    <span>May 7, 2026</span>
+                    <div class="byline-dot"></div>
+                    <span>By Gia</span>
+                    <div class="byline-dot"></div>
+                    <span>6 min read</span>
+                </div>
+                <p class="featured__excerpt">
+                    We've been taught that productivity is a virtue and rest is a reward
+                    we must earn. What if we've had it backward all along? This is an
+                    invitation to reconsider everything you thought you knew about doing enough.
+                </p>
+                <div class="tags">
+                    <a href="/tag/intentional-rest" class="tag">intentional rest</a>
+                    <a href="/tag/slow-living" class="tag">slow living</a>
+                    <a href="/tag/burnout-recovery" class="tag">burnout recovery</a>
+                </div>
+                <a href="post-template.html" class="read-more">
+                    Read full story
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14m-7-7 7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     EDITORIAL QUOTE
+══════════════════════════════════════════════════════════ -->
+<section class="editorial">
+    <div class="container">
+        <div class="editorial__rule"></div>
+        <blockquote class="editorial__quote">
+            "A space for women who are quietly questioning everything —
+            and <em>bravely choosing to begin again.</em>"
+        </blockquote>
+        <div class="editorial__rule"></div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     LATEST POSTS GRID
+══════════════════════════════════════════════════════════ -->
+<section class="latest" id="latest">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Latest <em>Reads</em></h2>
+            <a href="/all-posts" class="see-all-link">
+                View all
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14m-7-7 7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="posts-grid">
+
+            <!-- ── Post 1 ── -->
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-rose"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="/mind" class="category-label">Mind</a>
+                    <h3 class="post-card__title">
+                        <a href="post-template.html">Morning Pages & Why They Rewired My Anxious Brain</a>
+                    </h3>
+                    <p class="post-card__excerpt">
+                        Three pages. Every morning. Before coffee.
+                        Here's what happened after 90 days of writing to no one — and somehow, to myself.
+                    </p>
+                    <div class="tags">
+                        <a href="/tag/journaling" class="tag">journaling</a>
+                        <a href="/tag/anxiety-relief" class="tag">anxiety relief</a>
+                        <a href="/tag/morning-ritual" class="tag">morning ritual</a>
+                    </div>
+                    <div class="post-card__footer">
+                        <span>May 4, 2026</span>
+                        <span>5 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ── Post 2 ── -->
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-sage"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="/nourish" class="category-label">Nourish</a>
+                    <h3 class="post-card__title">
+                        <a href="post-template.html">The Anti-Diet Guide to Eating Like You Love Yourself</a>
+                    </h3>
+                    <p class="post-card__excerpt">
+                        What does it actually mean to nourish your body without rules,
+                        restrictions, or guilt? A gentle framework for a new relationship with food.
+                    </p>
+                    <div class="tags">
+                        <a href="/tag/intuitive-eating" class="tag">intuitive eating</a>
+                        <a href="/tag/body-kindness" class="tag">body kindness</a>
+                        <a href="/tag/mindful-nutrition" class="tag">mindful nutrition</a>
+                    </div>
+                    <div class="post-card__footer">
+                        <span>April 29, 2026</span>
+                        <span>7 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ── Post 3 ── -->
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-linen"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="/living" class="category-label">Living</a>
+                    <h3 class="post-card__title">
+                        <a href="post-template.html">How I Redesigned My Home to Support My Mental Health</a>
+                    </h3>
+                    <p class="post-card__excerpt">
+                        Your environment speaks to you, even when you're not listening.
+                        The small, intentional changes that made my home feel like healing.
+                    </p>
+                    <div class="tags">
+                        <a href="/tag/conscious-living" class="tag">conscious living</a>
+                        <a href="/tag/home-sanctuary" class="tag">home sanctuary</a>
+                        <a href="/tag/calming-spaces" class="tag">calming spaces</a>
+                    </div>
+                    <div class="post-card__footer">
+                        <span>April 22, 2026</span>
+                        <span>6 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ── Post 4 ── -->
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-amber"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="/wellness" class="category-label">Wellness</a>
+                    <h3 class="post-card__title">
+                        <a href="post-template.html">Skin Care as Self-Care: A Ritual, Not a Routine</a>
+                    </h3>
+                    <p class="post-card__excerpt">
+                        There's a difference between a routine you rush through and a ritual
+                        you come home to. Here's how I transformed my skincare practice.
+                    </p>
+                    <div class="tags">
+                        <a href="/tag/skin-ritual" class="tag">skin ritual</a>
+                        <a href="/tag/holistic-beauty" class="tag">holistic beauty</a>
+                        <a href="/tag/self-care-practice" class="tag">self-care practice</a>
+                    </div>
+                    <div class="post-card__footer">
+                        <span>April 15, 2026</span>
+                        <span>5 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ── Post 5 ── -->
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-mist"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="/companion" class="category-label">Companion</a>
+                    <h3 class="post-card__title">
+                        <a href="post-template.html">What My Dog Taught Me About Unconditional Presence</a>
+                    </h3>
+                    <p class="post-card__excerpt">
+                        She doesn't know what a bad day is. She only knows now.
+                        What animals understand about being fully here — and what we've forgotten.
+                    </p>
+                    <div class="tags">
+                        <a href="/tag/mindful-presence" class="tag">mindful presence</a>
+                        <a href="/tag/human-animal-bond" class="tag">human-animal bond</a>
+                        <a href="/tag/emotional-wellness" class="tag">emotional wellness</a>
+                    </div>
+                    <div class="post-card__footer">
+                        <span>April 10, 2026</span>
+                        <span>4 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ── Post 6 ── -->
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-dusk"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="/mind" class="category-label">Mind</a>
+                    <h3 class="post-card__title">
+                        <a href="post-template.html">The Quiet Power of Saying No Without Apologizing</a>
+                    </h3>
+                    <p class="post-card__excerpt">
+                        For women who have spent a lifetime explaining, softening, and qualifying
+                        every boundary — a gentle permission to just say no.
+                    </p>
+                    <div class="tags">
+                        <a href="/tag/boundaries" class="tag">boundaries</a>
+                        <a href="/tag/people-pleasing" class="tag">people pleasing</a>
+                        <a href="/tag/self-worth" class="tag">self-worth</a>
+                    </div>
+                    <div class="post-card__footer">
+                        <span>April 3, 2026</span>
+                        <span>6 min read</span>
+                    </div>
+                </div>
+            </article>
+
+        </div><!-- /posts-grid -->
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     CATEGORIES EXPLORER
+══════════════════════════════════════════════════════════ -->
+<section class="categories">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Explore by <em>Category</em></h2>
+        </div>
+        <div class="categories__grid">
+
+            <a href="/wellness" class="cat-card">
+                <div class="cat-card__bg cat-wellness"></div>
+                <div class="cat-card__overlay"></div>
+                <span class="cat-card__label">Wellness</span>
+            </a>
+
+            <a href="/mind" class="cat-card">
+                <div class="cat-card__bg cat-mind"></div>
+                <div class="cat-card__overlay"></div>
+                <span class="cat-card__label">Mind</span>
+            </a>
+
+            <a href="/nourish" class="cat-card">
+                <div class="cat-card__bg cat-nourish"></div>
+                <div class="cat-card__overlay"></div>
+                <span class="cat-card__label">Nourish</span>
+            </a>
+
+            <a href="/living" class="cat-card">
+                <div class="cat-card__bg cat-living"></div>
+                <div class="cat-card__overlay"></div>
+                <span class="cat-card__label">Living</span>
+            </a>
+
+            <a href="/companion" class="cat-card">
+                <div class="cat-card__bg cat-companion"></div>
+                <div class="cat-card__overlay"></div>
+                <span class="cat-card__label">Companion</span>
+            </a>
+
+            <a href="/about" class="cat-card">
+                <div class="cat-card__bg cat-about"></div>
+                <div class="cat-card__overlay"></div>
+                <span class="cat-card__label">About Me</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     NEWSLETTER SIGNUP
+══════════════════════════════════════════════════════════ -->
+<section class="newsletter" id="newsletter">
+    <div class="container">
+        <div class="newsletter__inner">
+            <span class="newsletter__eyebrow">Letters from Gia</span>
+            <h2 class="newsletter__title">
+                What if your inbox felt like<br>
+                <em>a warm cup of tea?</em>
+            </h2>
+            <p class="newsletter__body">
+                Soft stories, honest reflections, and small ideas that might just change the way
+                you see your day. Delivered when it matters, never when it doesn't.
+            </p>
+            <form class="newsletter__form" onsubmit="handleSignup(event)">
+                <input
+                    type="email"
+                    class="newsletter__input"
+                    placeholder="your@email.com"
+                    aria-label="Email address"
+                    required
+                >
+                <button type="submit" class="newsletter__btn">Yes, I'm in</button>
+            </form>
+            <p class="newsletter__note">No spam, ever. Unsubscribe anytime with one click.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+
+            <!-- Brand column -->
+            <div>
+                <div class="footer__logo">darling, <em>what if</em></div>
+                <p class="footer__about">
+                    A lifestyle space for women who are quietly questioning everything
+                    and bravely choosing to begin again. Beauty. Softness. Healing.
+                </p>
+                <div class="footer__social">
+                    <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+                    <a href="https://pinterest.com" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">PI</a>
+                    <a href="mailto:hello@darlingwhatif.com" class="footer__social-link" aria-label="Email">@</a>
+                </div>
+            </div>
+
+            <!-- Explore -->
+            <div class="footer__col">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="/wellness">Wellness</a></li>
+                    <li><a href="/mind">Mind</a></li>
+                    <li><a href="/nourish">Nourish</a></li>
+                    <li><a href="/living">Living</a></li>
+                    <li><a href="/companion">Companion</a></li>
+                </ul>
+            </div>
+
+            <!-- Connect -->
+            <div class="footer__col">
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="/about">About Me</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li><a href="/collaborate">Collaborate</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="footer__col">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/disclosure">Disclosure</a></li>
+                    <li><a href="/terms">Terms of Use</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <span>© 2026 <a href="/">darlingwhatif.com</a> — All rights reserved</span>
+            <span>Made with intention ✦</span>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    function handleSignup(e) {
+        e.preventDefault();
+        const input = e.target.querySelector('.newsletter__input');
+        const btn = e.target.querySelector('.newsletter__btn');
+        btn.textContent = 'You\'re in ✦';
+        btn.style.background = '#7A6B50';
+        input.disabled = true;
+        btn.disabled = true;
+    }
+</script>
+
+</body>
+</html>
