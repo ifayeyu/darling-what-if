@@ -83,17 +83,16 @@
 
         .nav__logo {
             font-family: var(--serif);
-            font-size: 1.2rem;
+            font-size: 1.35rem;
             font-style: italic;
-            font-weight: 400;
             color: var(--text);
-            letter-spacing: 0.01em;
+            letter-spacing: -0.01em;
             white-space: nowrap;
         }
 
         .nav__logo strong {
-            font-style: italic;
-            font-weight: 500;
+            font-weight: 600;
+            font-style: normal;
             color: var(--gold);
         }
 
@@ -114,6 +113,14 @@
 
         .nav__links a:hover {
             color: var(--gold);
+        }
+
+        .nav__links a.active {
+            color: var(--gold);
+            font-weight: 500;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-thickness: 1px;
         }
 
         .nav__right {
@@ -782,7 +789,7 @@
             margin-bottom: 16px;
         }
 
-        .footer__logo em { color: var(--gold); }
+        .footer__logo em { color: var(--gold); font-style: normal; font-weight: 600; }
 
         .footer__about {
             font-size: 0.87rem;
@@ -895,15 +902,15 @@
 ══════════════════════════════════════════════════════════ -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-        <a href="/" class="nav__logo">darling, <strong>what if</strong></a>
+        <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
 
         <ul class="nav__links">
-            <li><a href="/wellness">Wellness</a></li>
-            <li><a href="/mind">Mind</a></li>
-            <li><a href="/nourish">Nourish</a></li>
-            <li><a href="/living">Living</a></li>
-            <li><a href="/companion">Companion</a></li>
-            <li><a href="/about">About Me</a></li>
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="mind.html">Mind</a></li>
+            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="living.html">Living</a></li>
+            <li><a href="companion.html">Companion</a></li>
+            <li><a href="about.html">About Me</a></li>
         </ul>
 
         <div class="nav__right">
@@ -937,8 +944,8 @@
             Here's what I discovered when I finally chose ease over effort —
             and how it changed everything.
         </p>
-        <a href="post-template.html" class="hero__cta">
-            Read the story
+        <a href="post-burnout.html" class="hero__cta">
+            Read the essay
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14m-7-7 7 7-7 7"/>
             </svg>
@@ -977,7 +984,7 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">This Week's <em>Story</em></h2>
-            <a href="/all-posts" class="see-all-link">
+            <a href="#" class="see-all-link">
                 All stories
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14m-7-7 7 7-7 7"/>
@@ -992,29 +999,28 @@
             </div>
 
             <div class="featured__content">
-                <a href="/wellness" class="category-label">Wellness</a>
+                <a href="mind.html" class="category-label">Mind</a>
                 <h2 class="featured__title">
-                    The Art of <em>Doing Less</em> —<br>
-                    A Guide to Intentional Rest
+                    What If Your Anxiety Has Been<br><em>Trying to Protect You</em> All Along?
                 </h2>
                 <div class="post-byline">
-                    <span>May 7, 2026</span>
+                    <span>May 10, 2026</span>
                     <div class="byline-dot"></div>
                     <span>By Gia</span>
                     <div class="byline-dot"></div>
-                    <span>6 min read</span>
+                    <span>8 min read</span>
                 </div>
                 <p class="featured__excerpt">
-                    We've been taught that productivity is a virtue and rest is a reward
-                    we must earn. What if we've had it backward all along? This is an
-                    invitation to reconsider everything you thought you knew about doing enough.
+                    Anxiety is a signal, not just a symptom. Understanding what it is —
+                    and why it shows up — changes how you relate to it. A warm, honest
+                    look at the types of anxiety, what triggers them, and what actually helps.
                 </p>
                 <div class="tags">
-                    <a href="/tag/intentional-rest" class="tag">intentional rest</a>
-                    <a href="/tag/slow-living" class="tag">slow living</a>
-                    <a href="/tag/burnout-recovery" class="tag">burnout recovery</a>
+                    <a href="#" class="tag">anxiety</a>
+                    <a href="#" class="tag">mental health</a>
+                    <a href="#" class="tag">emotional wellness</a>
                 </div>
-                <a href="post-template.html" class="read-more">
+                <a href="post-anxiety.html" class="read-more">
                     Read full story
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14m-7-7 7 7-7 7"/>
@@ -1048,7 +1054,7 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Latest <em>Reads</em></h2>
-            <a href="/all-posts" class="see-all-link">
+            <a href="#" class="see-all-link">
                 View all
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14m-7-7 7 7-7 7"/>
@@ -1064,21 +1070,21 @@
                     <div class="post-card__img ph-rose"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="/mind" class="category-label">Mind</a>
+                    <a href="mind.html" class="category-label">Mind</a>
                     <h3 class="post-card__title">
-                        <a href="post-template.html">Morning Pages & Why They Rewired My Anxious Brain</a>
+                        <a href="post-morning-pages.html">Morning Pages & Why They Rewired My Anxious Brain</a>
                     </h3>
                     <p class="post-card__excerpt">
-                        Three pages. Every morning. Before coffee.
-                        Here's what happened after 90 days of writing to no one — and somehow, to myself.
+                        Three pages. Every morning. No rules, no readers, no pressure to be good.
+                        Here's why it's become one of the quietest things I do for my mental health.
                     </p>
                     <div class="tags">
-                        <a href="/tag/journaling" class="tag">journaling</a>
-                        <a href="/tag/anxiety-relief" class="tag">anxiety relief</a>
-                        <a href="/tag/morning-ritual" class="tag">morning ritual</a>
+                        <a href="#" class="tag">journaling</a>
+                        <a href="#" class="tag">anxiety relief</a>
+                        <a href="#" class="tag">morning ritual</a>
                     </div>
                     <div class="post-card__footer">
-                        <span>May 4, 2026</span>
+                        <span>May 9, 2026</span>
                         <span>5 min read</span>
                     </div>
                 </div>
@@ -1090,22 +1096,22 @@
                     <div class="post-card__img ph-sage"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="/nourish" class="category-label">Nourish</a>
+                    <a href="nourish.html" class="category-label">Nourish</a>
                     <h3 class="post-card__title">
-                        <a href="post-template.html">The Anti-Diet Guide to Eating Like You Love Yourself</a>
+                        <a href="post-acv-honey.html">What If the Oldest Gut Remedy Was Already in Your Pantry?</a>
                     </h3>
                     <p class="post-card__excerpt">
-                        What does it actually mean to nourish your body without rules,
-                        restrictions, or guilt? A gentle framework for a new relationship with food.
+                        Two pantry staples. A glass of warm water. And a morning ritual
+                        that your gut has probably been asking for.
                     </p>
                     <div class="tags">
-                        <a href="/tag/intuitive-eating" class="tag">intuitive eating</a>
-                        <a href="/tag/body-kindness" class="tag">body kindness</a>
-                        <a href="/tag/mindful-nutrition" class="tag">mindful nutrition</a>
+                        <a href="#" class="tag">gut health</a>
+                        <a href="#" class="tag">morning ritual</a>
+                        <a href="#" class="tag">natural remedies</a>
                     </div>
                     <div class="post-card__footer">
-                        <span>April 29, 2026</span>
-                        <span>7 min read</span>
+                        <span>May 8, 2026</span>
+                        <span>5 min read</span>
                     </div>
                 </div>
             </article>
@@ -1116,21 +1122,21 @@
                     <div class="post-card__img ph-linen"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="/living" class="category-label">Living</a>
+                    <a href="living.html" class="category-label">Living</a>
                     <h3 class="post-card__title">
-                        <a href="post-template.html">How I Redesigned My Home to Support My Mental Health</a>
+                        <a href="post-home-mental-health.html">How I Redesigned My Home to Support My Mental Health</a>
                     </h3>
                     <p class="post-card__excerpt">
-                        Your environment speaks to you, even when you're not listening.
-                        The small, intentional changes that made my home feel like healing.
+                        Your space is talking to your nervous system all day long.
+                        I didn't know that until I started paying attention to what mine was saying.
                     </p>
                     <div class="tags">
-                        <a href="/tag/conscious-living" class="tag">conscious living</a>
-                        <a href="/tag/home-sanctuary" class="tag">home sanctuary</a>
-                        <a href="/tag/calming-spaces" class="tag">calming spaces</a>
+                        <a href="#" class="tag">conscious living</a>
+                        <a href="#" class="tag">home sanctuary</a>
+                        <a href="#" class="tag">calming spaces</a>
                     </div>
                     <div class="post-card__footer">
-                        <span>April 22, 2026</span>
+                        <span>May 8, 2026</span>
                         <span>6 min read</span>
                     </div>
                 </div>
@@ -1142,22 +1148,22 @@
                     <div class="post-card__img ph-amber"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="/wellness" class="category-label">Wellness</a>
+                    <a href="wellness.html" class="category-label">Wellness</a>
                     <h3 class="post-card__title">
-                        <a href="post-template.html">Skin Care as Self-Care: A Ritual, Not a Routine</a>
+                        <a href="post-hair-foods.html">Everything Your Hair Has Been Asking You to Eat</a>
                     </h3>
                     <p class="post-card__excerpt">
-                        There's a difference between a routine you rush through and a ritual
-                        you come home to. Here's how I transformed my skincare practice.
+                        Grey hair isn't only about age. Your plate has more to do with it
+                        than you think — here are the foods that can actually make a difference.
                     </p>
                     <div class="tags">
-                        <a href="/tag/skin-ritual" class="tag">skin ritual</a>
-                        <a href="/tag/holistic-beauty" class="tag">holistic beauty</a>
-                        <a href="/tag/self-care-practice" class="tag">self-care practice</a>
+                        <a href="#" class="tag">hair health</a>
+                        <a href="#" class="tag">nutrition</a>
+                        <a href="#" class="tag">natural beauty</a>
                     </div>
                     <div class="post-card__footer">
-                        <span>April 15, 2026</span>
-                        <span>5 min read</span>
+                        <span>May 8, 2026</span>
+                        <span>6 min read</span>
                     </div>
                 </div>
             </article>
@@ -1168,22 +1174,22 @@
                     <div class="post-card__img ph-mist"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="/companion" class="category-label">Companion</a>
+                    <a href="companion.html" class="category-label">Companion</a>
                     <h3 class="post-card__title">
-                        <a href="post-template.html">What My Dog Taught Me About Unconditional Presence</a>
+                        <a href="post-companion-dogs.html">What If Your Dog Is Your Most Meaningful Relationship?</a>
                     </h3>
                     <p class="post-card__excerpt">
-                        She doesn't know what a bad day is. She only knows now.
-                        What animals understand about being fully here — and what we've forgotten.
+                        Unconditional love, presence, and emotional stability that research says
+                        often exceeds what human relationships provide. What our dogs are really giving us.
                     </p>
                     <div class="tags">
-                        <a href="/tag/mindful-presence" class="tag">mindful presence</a>
-                        <a href="/tag/human-animal-bond" class="tag">human-animal bond</a>
-                        <a href="/tag/emotional-wellness" class="tag">emotional wellness</a>
+                        <a href="#" class="tag">dogs</a>
+                        <a href="#" class="tag">human-animal bond</a>
+                        <a href="#" class="tag">emotional wellness</a>
                     </div>
                     <div class="post-card__footer">
-                        <span>April 10, 2026</span>
-                        <span>4 min read</span>
+                        <span>May 8, 2026</span>
+                        <span>5 min read</span>
                     </div>
                 </div>
             </article>
@@ -1194,21 +1200,21 @@
                     <div class="post-card__img ph-dusk"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="/mind" class="category-label">Mind</a>
+                    <a href="mind.html" class="category-label">Mind</a>
                     <h3 class="post-card__title">
-                        <a href="post-template.html">The Quiet Power of Saying No Without Apologizing</a>
+                        <a href="post-burnout.html">What If You're Not Lazy — You're Burned Out?</a>
                     </h3>
                     <p class="post-card__excerpt">
-                        For women who have spent a lifetime explaining, softening, and qualifying
-                        every boundary — a gentle permission to just say no.
+                        Burnout isn't just being tired. It's your body pulling the emergency
+                        brake. Here's how to recognise the signs and gently begin to heal.
                     </p>
                     <div class="tags">
-                        <a href="/tag/boundaries" class="tag">boundaries</a>
-                        <a href="/tag/people-pleasing" class="tag">people pleasing</a>
-                        <a href="/tag/self-worth" class="tag">self-worth</a>
+                        <a href="#" class="tag">burnout</a>
+                        <a href="#" class="tag">rest</a>
+                        <a href="#" class="tag">mental health</a>
                     </div>
                     <div class="post-card__footer">
-                        <span>April 3, 2026</span>
+                        <span>May 7, 2026</span>
                         <span>6 min read</span>
                     </div>
                 </div>
@@ -1229,37 +1235,37 @@
         </div>
         <div class="categories__grid">
 
-            <a href="/wellness" class="cat-card">
+            <a href="wellness.html" class="cat-card">
                 <div class="cat-card__bg cat-wellness"></div>
                 <div class="cat-card__overlay"></div>
                 <span class="cat-card__label">Wellness</span>
             </a>
 
-            <a href="/mind" class="cat-card">
+            <a href="mind.html" class="cat-card">
                 <div class="cat-card__bg cat-mind"></div>
                 <div class="cat-card__overlay"></div>
                 <span class="cat-card__label">Mind</span>
             </a>
 
-            <a href="/nourish" class="cat-card">
+            <a href="nourish.html" class="cat-card">
                 <div class="cat-card__bg cat-nourish"></div>
                 <div class="cat-card__overlay"></div>
                 <span class="cat-card__label">Nourish</span>
             </a>
 
-            <a href="/living" class="cat-card">
+            <a href="living.html" class="cat-card">
                 <div class="cat-card__bg cat-living"></div>
                 <div class="cat-card__overlay"></div>
                 <span class="cat-card__label">Living</span>
             </a>
 
-            <a href="/companion" class="cat-card">
+            <a href="companion.html" class="cat-card">
                 <div class="cat-card__bg cat-companion"></div>
                 <div class="cat-card__overlay"></div>
                 <span class="cat-card__label">Companion</span>
             </a>
 
-            <a href="/about" class="cat-card">
+            <a href="about.html" class="cat-card">
                 <div class="cat-card__bg cat-about"></div>
                 <div class="cat-card__overlay"></div>
                 <span class="cat-card__label">About Me</span>
@@ -1326,11 +1332,11 @@
             <div class="footer__col">
                 <h5>Explore</h5>
                 <ul>
-                    <li><a href="/wellness">Wellness</a></li>
-                    <li><a href="/mind">Mind</a></li>
-                    <li><a href="/nourish">Nourish</a></li>
-                    <li><a href="/living">Living</a></li>
-                    <li><a href="/companion">Companion</a></li>
+                    <li><a href="wellness.html">Wellness</a></li>
+                    <li><a href="mind.html">Mind</a></li>
+                    <li><a href="nourish.html">Nourish</a></li>
+                    <li><a href="living.html">Living</a></li>
+                    <li><a href="companion.html">Companion</a></li>
                 </ul>
             </div>
 
@@ -1338,7 +1344,7 @@
             <div class="footer__col">
                 <h5>Connect</h5>
                 <ul>
-                    <li><a href="/about">About Me</a></li>
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="#newsletter">Newsletter</a></li>
                     <li><a href="/collaborate">Collaborate</a></li>
@@ -1358,7 +1364,7 @@
         </div>
 
         <div class="footer__bottom">
-            <span>© 2026 <a href="/">darlingwhatif.com</a> — All rights reserved</span>
+            <span>© 2026 <a href="index.html">darlingwhatif.com</a> — All rights reserved</span>
             <span>Made with intention ✦</span>
         </div>
     </div>

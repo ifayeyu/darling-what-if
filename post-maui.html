@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ── SEO Meta ── -->
-    <title>What If You're Not Lazy — You're Burned Out? | Darling, What If</title>
-    <meta name="description" content="Burnout isn't just being tired — it's your mind and body asking you to stop. Learn how to recognize the signs of burnout, understand its impact on mental health, and gently begin your recovery.">
-    <meta name="keywords" content="burnout recovery, signs of burnout, burnout symptoms, mental exhaustion, stress and self-care, how to recover from burnout">
-    <meta property="og:title" content="What If You're Not Lazy — You're Burned Out?">
-    <meta property="og:description" content="Burnout isn't just being tired. Here's how to recognize the signs and gently begin healing.">
+    <title>Mahalo, Maui — A Love Letter to the Island That Changed Me | Darling, What If</title>
+    <meta name="description" content="Maui is more than a vacation. It's a place that hands you back to yourself — rawer, softer, more grateful. A personal love letter to the island that changed the way I see my days.">
+    <meta name="keywords" content="Maui travel journal, Hawaii wellness retreat, island life mindset, Maui Hawaii, aloha spirit travel">
+    <meta property="og:title" content="Mahalo, Maui — A Love Letter to the Island That Changed Me">
+    <meta property="og:description" content="A personal love letter to Maui — and everything the island quietly taught me about living, gratitude, and coming home.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta property="og:url" content="https://darlingwhatif.com/living/mahalo-maui-a-love-letter">
     <meta name="article:author" content="Gia">
-    <meta name="article:published_time" content="2026-05-07">
-    <link rel="canonical" href="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta name="article:published_time" content="2026-05-08">
+    <link rel="canonical" href="https://darlingwhatif.com/living/mahalo-maui-a-love-letter">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,10 +59,12 @@
 
         /* POST HERO */
         .post-hero { position: relative; height: 78vh; min-height: 520px; max-height: 820px; overflow: hidden; }
-        .post-hero__img { position: absolute; inset: 0; width: 100%; height: 100%;
-            background: url('images/pexels-cordero-17343820.jpg') center/cover no-repeat;
+        .post-hero__img {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            /* Replace with: background: url('images/maui-hero.jpg') center/cover no-repeat; */
+            background: linear-gradient(155deg, #EDD89C 0%, #D4A040 20%, #6AACA8 55%, #2E6E70 85%, #1D4A50 100%);
         }
-        .post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(250,250,247,0.12) 100%); pointer-events: none; }
+        .post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(250,250,247,0.10) 100%); pointer-events: none; }
 
         /* POST HEADER */
         .post-header { max-width: var(--content-w); margin: 0 auto; padding: 64px 24px 0; text-align: center; }
@@ -94,14 +96,10 @@
         .content-rule { width: 48px; height: 1px; background: var(--border); margin: 56px auto; }
 
         /* INLINE IMAGE */
-        .post-img { margin: 52px -48px; }
+        .post-img { margin: 52px -48px; position: relative; }
         .post-img__frame { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
         .post-img--contained { margin: 48px 0; }
         .post-img--contained .post-img__frame { aspect-ratio: 3/2; }
-        .post-img--portrait { margin: 52px auto; max-width: 500px; }
-        .post-img--portrait .post-img__frame { aspect-ratio: 2/3; overflow: hidden; }
-        .post-img--portrait-34 { margin: 48px auto; max-width: 520px; }
-        .post-img--portrait-34 .post-img__frame { aspect-ratio: 3/4; overflow: hidden; }
         .post-img img, .post-img__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .post-img .ph, .post-img__frame .ph { width: 100%; height: 100%; }
         .post-img__caption { font-size: 0.78rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 14px; line-height: 1.6; }
@@ -110,13 +108,6 @@
         .pull-quote { margin: 56px -24px; padding: 48px 48px; background: var(--bg-warm); border-left: 3px solid var(--gold); position: relative; }
         .pull-quote::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; color: var(--gold-light); position: absolute; top: 12px; left: 44px; line-height: 1; }
         .pull-quote p { font-family: var(--serif) !important; font-size: clamp(1.2rem, 2vw, 1.55rem) !important; font-style: italic; font-weight: 400; line-height: 1.55 !important; color: var(--text) !important; padding-left: 40px; margin-bottom: 0 !important; }
-
-        /* SYMPTOM / STRATEGY LIST */
-        .post-list { margin: 0 0 28px 0; padding: 0; counter-reset: item; list-style: none; }
-        .post-list li { font-size: 1.02rem; line-height: 1.85; color: var(--text); padding: 16px 0 16px 36px; position: relative; border-bottom: 1px solid var(--border); }
-        .post-list li:first-child { border-top: 1px solid var(--border); }
-        .post-list li::before { content: counter(item); counter-increment: item; position: absolute; left: 0; top: 19px; font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: var(--gold); }
-        .post-list li strong { font-weight: 500; display: block; margin-bottom: 4px; }
 
         /* INTERNAL LINKS */
         .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
@@ -127,10 +118,12 @@
         .internal-links a { font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
         .internal-links a:hover { color: var(--gold); border-color: var(--gold); }
 
-        /* CONCLUSION */
+        /* MAHALO CLOSING */
         .post-conclusion { margin: 64px 0; padding: 48px; background: var(--gold-faint); text-align: center; }
         .post-conclusion__title { font-family: var(--serif); font-size: 1.35rem; font-style: italic; font-weight: 400; color: var(--text); margin-bottom: 16px; }
         .post-conclusion p { font-size: 0.97rem !important; color: var(--text-muted) !important; max-width: 520px; margin: 0 auto !important; line-height: 1.85 !important; }
+        .post-conclusion__mahalo { font-family: var(--serif); font-size: 1.6rem; font-style: italic; color: var(--gold); margin-top: 24px; display: block; letter-spacing: 0.02em; }
+        .post-conclusion__ps { font-size: 0.9rem; color: var(--text-muted); margin-top: 20px; font-style: italic; line-height: 1.8; }
 
         /* FAQ */
         .post-faq { max-width: var(--content-w); margin: 0 auto; padding: 0 24px 96px; }
@@ -182,12 +175,14 @@
         .post-card__title a:hover { color: var(--gold); }
         .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
 
-        /* PLACEHOLDER GRADIENTS */
+        /* PLACEHOLDER GRADIENTS — Hawaiian palette */
         .ph-dusk    { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
         .ph-rose    { background: linear-gradient(145deg, #EAD8D4 0%, #CCA4A0 100%); }
         .ph-sage    { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
-        .ph-amber   { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
-        .ph-mist    { background: linear-gradient(145deg, #D8E2EC 0%, #94AECE 100%); }
+        .ph-maui    { background: linear-gradient(145deg, #EDD89C 0%, #D4A040 30%, #6AACA8 70%, #2E6E70 100%); }
+        .ph-ocean   { background: linear-gradient(145deg, #B8DCE8 0%, #5AACCC 50%, #2A7898 100%); }
+        .ph-sunrise { background: linear-gradient(145deg, #F0D4A0 0%, #E8A858 40%, #D47040 70%, #C4586C 100%); }
+        .ph-tropical{ background: linear-gradient(145deg, #A8D4A0 0%, #5CAA78 50%, #2A7850 100%); }
 
         /* NEWSLETTER */
         .newsletter { background: var(--text); padding: 104px 0; }
@@ -244,15 +239,16 @@
 </head>
 <body>
 
+
 <!-- NAV -->
 <nav class="nav">
     <div class="nav__inner">
         <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
         <ul class="nav__links">
             <li><a href="wellness.html">Wellness</a></li>
-            <li><a href="mind.html" class="active">Mind</a></li>
+            <li><a href="mind.html">Mind</a></li>
             <li><a href="nourish.html">Nourish</a></li>
-            <li><a href="living.html">Living</a></li>
+            <li><a href="living.html" class="active">Living</a></li>
             <li><a href="companion.html">Companion</a></li>
             <li><a href="about.html">About Me</a></li>
         </ul>
@@ -266,8 +262,8 @@
 
 
 <!-- HERO IMAGE
-     Replace .ph-dusk with: background: url('images/burnout-hero.jpg') center/cover no-repeat;
-     Suggested photography: woman sitting quietly by a window, soft morning light, contemplative -->
+     Replace .ph-maui with: background: url('images/maui-hero.jpg') center/cover no-repeat;
+     Suggested: wide landscape of Maui — coast, valley, or road through lush green mountains -->
 <header class="post-hero">
     <div class="post-hero__img"></div>
 </header>
@@ -278,32 +274,33 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <div class="breadcrumb__sep"></div>
-        <a href="mind.html">Mind</a>
+        <a href="living.html">Living</a>
         <div class="breadcrumb__sep"></div>
-        <span>What If You're Not Lazy — You're Burned Out?</span>
+        <span>Mahalo, Maui — A Love Letter to the Island That Changed Me</span>
     </nav>
 
-    <a href="mind.html" class="post-category-badge">Mind</a>
+    <a href="living.html" class="post-category-badge">Living</a>
 
     <h1 class="post-title">
-        What If You're Not <em>Lazy</em> —<br>
-        You're Burned Out?
+        Mahalo, <em>Maui</em> — A Love Letter<br>
+        to the Island That<br>
+        Changed Me
     </h1>
 
     <div class="post-byline">
-        <span>May 7, 2026</span>
+        <span>May 8, 2026</span>
         <div class="byline-dot"></div>
         <span>By <a href="about.html">Gia</a></span>
         <div class="byline-dot"></div>
-        <span>7 min read</span>
+        <span>6 min read</span>
     </div>
 
     <div class="post-header-rule"></div>
 
     <p class="post-intro">
-        You've been calling it laziness. Or weakness. Or just "a phase."
-        But what if your exhaustion has a name — and what if giving it that name
-        is the first step toward finally feeling like yourself again?
+        I have never been able to think of Hawaii as simply a place to get away from it all.
+        Maui is something else entirely — raw, ancient, alive. And it sent me home
+        more grateful for my ordinary days than I've ever been.
     </p>
 </div>
 
@@ -312,145 +309,105 @@
 <article class="post-content" id="post-content">
 
     <p>
-        There's a particular kind of tired that sleep doesn't fix. You wake up already
-        depleted. You move through your days feeling like you're watching yourself from
-        a distance — going through the motions, performing okayness, waiting for the
-        version of you that used to care to come back.
+        Maui is natural and rugged. Its beauty is raw and dynamic — the kind that stops you
+        mid-step, mid-thought, mid-breath. Saying goodbye to this place is genuinely hard. And
+        I mean that in the way you can't fully prepare for: the kind of hard that catches you
+        at the airport, looking back at the mountains, wondering how you got so lucky.
     </p>
 
     <p>
-        This isn't a character flaw. It isn't weakness. It isn't "just stress."
-        What you might be experiencing is burnout — a state of physical, emotional,
-        and mental exhaustion that happens when chronic stress goes unaddressed for
-        too long. And it can affect anyone: the high-achiever, the caregiver, the
-        woman who holds everything together so beautifully that no one thought to
-        ask if she was okay.
+        There are so many ancient stories you want to learn here. So many islands you want
+        to discover. So much positive energy you want to hold onto — not just for the length
+        of a trip, but to carry back into your real life like something precious and fragile
+        that you're determined not to drop.
     </p>
 
 
-    <!-- Inline image — portrait 2:3, no crop -->
-    <div class="post-img post-img--portrait">
+    <!-- Full-bleed inline image: Replace with maui-ocean.jpg -->
+    <div class="post-img" aria-hidden="true">
         <div class="post-img__frame">
-            <img src="images/pexels-ivan-s-6788688.jpg" alt="A woman lying face-down on a bed in a knit sweater, quietly exhausted" loading="lazy">
+            <!-- Replace with: <img src="images/maui-ocean.jpg" alt="Maui coastline" loading="lazy"> -->
+            <div class="ph ph-ocean" style="width:100%;height:100%;"></div>
         </div>
         <p class="post-img__caption">
-            Burnout doesn't always look like collapse. Sometimes it looks like being fine — until you're not.
+            The ocean around Maui doesn't ask to be admired. It simply is — ancient, unhurried, overwhelming.
         </p>
     </div>
 
 
-    <h2>What Burnout <em>Actually</em> Is</h2>
+    <h2>An Island of the <em>Happiest People</em></h2>
 
     <p>
-        Burnout isn't simply being tired after a hard week. It's what happens when
-        the demands placed on you — by work, by relationships, by your own impossibly
-        high standards — consistently exceed your capacity to recover from them. Over
-        time, the gap between output and restoration grows wider, until you hit a wall
-        so solid it stops you completely.
+        Hawaii is consistently ranked as the state with the highest well-being in the nation.
+        Spending time here, you understand why. There is a spirit to this place — the
+        <em>aloha spirit</em> — that isn't a tourism slogan. It's something you feel the
+        moment you arrive: in how people greet you, in how slowly and intentionally life moves,
+        in the way strangers smile at you on the road as if they already know something good
+        about you.
     </p>
 
     <p>
-        It often builds quietly, mistaken for normal stress or busyness, until one
-        day you realize you can't remember the last time something felt genuinely good.
-        That numbness — the emotional flatness, the inability to feel the things you
-        used to feel — is one of burnout's most overlooked signs.
+        Island life is a beautiful thing. I learned, almost immediately, to slow down — to
+        stay calm and observe. To let the world come to me a little, instead of always
+        rushing toward it. It sounds simple. It felt revolutionary.
     </p>
 
 
     <!-- Pull quote -->
     <blockquote class="pull-quote">
         <p>
-            Burnout isn't a productivity problem. It's what happens when you give
-            everything you have — and forget to give anything back to yourself.
+            What if the most radical thing you could do was simply stop rushing —
+            and let the beauty of where you are actually reach you?
         </p>
     </blockquote>
 
 
-    <h2>8 Signs Your Body and Mind Are <em>Asking You to Stop</em></h2>
+    <h2>Days Lived <em>to Their Full Potential</em></h2>
 
     <p>
-        Burnout shows up differently for everyone, but these are the most common
-        ways it tends to speak — often in a whisper, long before it becomes a shout.
+        I saw rainbows above the horizon — not once, but most mornings, as if the island
+        offered them casually, generously, the way it offers everything here. I bit into
+        fruits freshly picked from trees, juice running down my hands, tasting nothing like
+        what you find at a grocery store at home. I dove into the clearest water I have ever
+        been in, marine life moving all around me in colors I couldn't name, unconcerned by
+        my presence, going about their ancient lives.
     </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Physical exhaustion that doesn't lift with rest.</strong>
-            Persistent fatigue, low energy, frequent headaches, or muscle tension
-            that sleep doesn't seem to touch. Your body is running on empty — and
-            it's been running that way for a while.
-        </li>
-        <li>
-            <strong>Emotional flatness or overwhelm.</strong>
-            Feeling numb, detached, or strangely unable to access emotions that
-            used to come naturally. Or the opposite — feeling everything too much,
-            too raw, too close to the surface.
-        </li>
-        <li>
-            <strong>Difficulty concentrating or making decisions.</strong>
-            Brain fog, increased mistakes, an inability to focus that feels new
-            and alarming. A mind that used to be sharp now feels like it's wading
-            through something thick.
-        </li>
-        <li>
-            <strong>Withdrawing from people and things you love.</strong>
-            Cancelling plans, going quiet in relationships, losing interest in
-            hobbies that used to light you up. Isolation can feel protective
-            when you have nothing left to give.
-        </li>
-        <li>
-            <strong>A creeping cynicism or sense of meaninglessness.</strong>
-            When things you once cared about feel hollow, or you find yourself
-            going through the motions without any sense of why — that disconnection
-            from purpose is a significant signal.
-        </li>
-        <li>
-            <strong>Nothing feels satisfying, even when it goes well.</strong>
-            Completing things, achieving things, being told you did well — and
-            feeling nothing. The inability to receive your own effort as enough
-            is one of burnout's quietest cruelties.
-        </li>
-        <li>
-            <strong>Sleep that isn't restful.</strong>
-            Falling asleep easily from exhaustion but waking unrefreshed. Or
-            lying awake despite desperately needing rest. A nervous system under
-            sustained stress often struggles to fully downshift.
-        </li>
-        <li>
-            <strong>Increased physical illness.</strong>
-            Getting sick more often, experiencing digestive issues, or noticing
-            your body responding to stress in ways it didn't used to. Chronic
-            stress suppresses immune function — your body is not separating
-            emotional stress from physical threat.
-        </li>
-    </ol>
+    <p>
+        I hung out on colorful beaches and watched the sunrise while tropical birds filled the
+        air with their morning songs. Each night, I stargazed with a glass of wine, the sky
+        above Maui darker and more infinite than any sky I've seen. <strong>Serenity</strong>
+        was the consistent theme throughout — a true, felt balance between dusk and dawn,
+        between doing and simply being.
+    </p>
 
 
-    <!-- Inline image — portrait 3:4, no crop -->
-    <div class="post-img post-img--portrait-34">
+    <!-- Contained image: Replace with maui-sunrise.jpg -->
+    <div class="post-img post-img--contained">
         <div class="post-img__frame">
-            <img src="images/pexels-79380313-9007274.jpg" alt="A woman resting in white bed linens, arms above her head — still, soft, restored" loading="lazy">
+            <!-- Replace with: <img src="images/maui-sunrise.jpg" alt="Maui sunrise" loading="lazy"> -->
+            <div class="ph ph-sunrise" style="width:100%;height:100%;"></div>
         </div>
         <p class="post-img__caption">
-            Rest isn't a reward you earn after exhaustion. It's the practice that keeps exhaustion from becoming burnout.
+            Sunrises here feel personal — like the island is offering you something new, just for today.
         </p>
     </div>
 
 
-    <h2>Why Burnout Matters for Your <em>Mental Health</em></h2>
+    <h2>The Things You <em>Know You'll Miss</em></h2>
 
     <p>
-        Burnout is not a formal clinical diagnosis, but its effects on mental health
-        are very real. Left unaddressed, chronic burnout can contribute to or
-        deepen anxiety, depression, and a generalized disconnection from your own
-        life. The relationship runs in both directions — stress fuels burnout, and
-        burnout creates the conditions in which mental health struggles take root.
+        I've already started composing the list of what I'll leave behind. Back home, there
+        won't be papayas growing from my balcony. There won't be the unique, singular fragrance
+        of passion fruit on the air, or the ever-popular rainbow shave ice on a warm afternoon,
+        or sweet pineapples that taste like the sun itself. There won't be this ease — this
+        gentle, unscheduled ease of island living that makes you realize how tightly wound
+        your regular life is.
     </p>
 
     <p>
-        This is why naming it matters. Not to pathologize your exhaustion, but to
-        treat it with the seriousness it deserves — the same seriousness you would
-        extend to any other condition that was quietly affecting your quality of life.
+        There won't be sunrises and sunsets like these ones. And I'm letting myself feel
+        that loss, because it means the place was real. It means it mattered.
     </p>
 
 
@@ -458,86 +415,58 @@
     <div class="internal-links">
         <span class="internal-links__title">You might also want to read</span>
         <ul>
-            <li><a href="#">What If Softness Is Your Greatest Strength</a></li>
-            <li><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></li>
-            <li><a href="#">The Quiet Power of Saying No Without Apologizing</a></li>
+            <li><a href="post-burnout.html">What If You're Not Lazy — You're Burned Out?</a></li>
+            <li><a href="#">What If Softness Is Your Greatest Strength?</a></li>
+            <li><a href="post-water.html">What If a Glass of Water, at the Right Time, Changed Everything?</a></li>
         </ul>
     </div>
 
 
-    <h2>8 Gentle Ways to Begin <em>Coming Back to Yourself</em></h2>
+    <h2>What Maui <em>Really Gave Me</em></h2>
 
     <p>
-        Recovery from burnout isn't a hustle. It isn't a new productivity system
-        or a weekend reset. It's a slow, patient return to yourself — one small act
-        of self-honoring at a time.
+        My energy and happiness were at an all-time high while I was here. And I'm making a
+        decision not to let that fade when I return home. Not by pretending I'm still on
+        vacation. But by carrying the mindset that Maui handed back to me: the understanding
+        that each second of the day is a gift.
     </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Start with one honest boundary.</strong>
-            Not a full overhaul of your life — just one thing you say no to this
-            week that you would have previously said yes to out of obligation.
-            Boundaries aren't walls. They're the shape of a life you can actually live in.
-        </li>
-        <li>
-            <strong>Bring a stress-reduction practice into your daily rhythm.</strong>
-            Deep breathing. A few minutes of meditation. A slow walk without your
-            phone. These aren't clichés — they are direct interruptions to your
-            nervous system's stress response, and they work when practiced consistently.
-        </li>
-        <li>
-            <strong>Prioritize what genuinely restores you.</strong>
-            Not what you think should restore you — what actually does. For some
-            people that's solitude and silence. For others it's connection and laughter.
-            You know the difference. Start doing more of the thing that actually works.
-        </li>
-        <li>
-            <strong>Move your body gently and regularly.</strong>
-            Not as punishment or performance, but as care. Even 20 minutes of
-            movement that you enjoy can meaningfully shift your nervous system,
-            your mood, and your energy levels over time.
-        </li>
-        <li>
-            <strong>Protect your sleep like it's sacred — because it is.</strong>
-            A consistent sleep schedule, a winding-down ritual, a room that feels
-            safe and quiet. Sleep is the foundation that everything else is built on.
-            Without it, recovery isn't fully possible.
-        </li>
-        <li>
-            <strong>Let someone in.</strong>
-            A friend, a family member, a therapist. You don't have to have the
-            words — you just have to be willing to stop performing okayness with
-            at least one person. Being witnessed in your exhaustion is part of healing.
-        </li>
-        <li>
-            <strong>Revisit what actually matters to you.</strong>
-            Burnout often happens when we've been living by someone else's definition
-            of success. A quiet, honest conversation with yourself about what you
-            actually want — separate from what you're supposed to want — can be
-            quietly revolutionary.
-        </li>
-        <li>
-            <strong>Take breaks before you need them desperately.</strong>
-            A five-minute pause in your workday. A day off before the collapse.
-            Rest taken proactively is far more restorative than rest taken after
-            you've already broken down. You are allowed to rest before you're empty.
-        </li>
-    </ol>
+    <p>
+        Maui put me back on track with that. My days at home are special too. The people in
+        my life are worth the same quality of presence. The mornings I wake up in my own bed
+        deserve the same gratitude as the mornings I woke up to those rainbows. I know this
+        intellectually, of course. But Maui made me <em>feel</em> it — which is a different
+        thing entirely, and the only kind of knowing that actually changes how you live.
+    </p>
+
+
+    <!-- Contained image: Replace with maui-nature.jpg -->
+    <div class="post-img post-img--contained">
+        <div class="post-img__frame">
+            <!-- Replace with: <img src="images/maui-nature.jpg" alt="Maui lush tropical landscape" loading="lazy"> -->
+            <div class="ph ph-tropical" style="width:100%;height:100%;"></div>
+        </div>
+        <p class="post-img__caption">
+            Everything grows here with an ease that feels like a reminder — life doesn't have to be so hard.
+        </p>
+    </div>
+
 
     <div class="content-rule"></div>
 
-    <!-- Gentle conclusion -->
+    <!-- Closing -->
     <div class="post-conclusion">
-        <h3 class="post-conclusion__title">A gentle closing thought</h3>
+        <h3 class="post-conclusion__title">A heart full of new life and gratitude.</h3>
         <p>
-            If you recognized yourself anywhere in this post, please be kind to
-            yourself about it. Burnout isn't a sign that you failed — it's a sign
-            that you gave a great deal for a very long time, often without enough
-            support. The fact that you're here, reading, wondering if things could
-            be different — that is already the beginning of something. And if your
-            symptoms persist or feel overwhelming, please reach out to a mental
-            health professional. You don't have to figure this out alone.
+            I owe this island a big Mahalo. I leave carrying something I didn't arrive with —
+            a renewed sense that my everyday life is worth showing up for, fully, the way I
+            showed up for every hour I had here. That feels like the most generous gift a
+            place can give you.
+        </p>
+        <span class="post-conclusion__mahalo">Mahalo, Maui. Maui Nō Ka ʻOi.</span>
+        <p class="post-conclusion__ps">
+            <em>P.S. Is there a place in your heart that you are thankful for?
+            I'd love to hear it — please share with me in the comments. ✦</em>
         </p>
     </div>
 
@@ -552,74 +481,92 @@
 
     <div class="faq-item" id="faq1">
         <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
-            <span class="faq-question__text">How do I know if I'm burned out or just going through a rough patch?</span>
+            <span class="faq-question__text">What is the best time of year to visit Maui?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                A rough patch tends to have a visible cause and a visible end — a hard project,
-                a difficult season, a specific stressor. Burnout is more pervasive: it lingers
-                after the stressor is gone, it affects multiple areas of your life simultaneously,
-                and rest doesn't restore you the way it used to. If you've been feeling this way
-                for weeks or months rather than days, burnout is worth considering seriously.
+                Maui is beautiful year-round, but many visitors love April through June and September
+                through November for their blend of warm weather, fewer crowds, and lower prices.
+                Winter months (December to March) bring humpback whales to the channels, which is
+                extraordinary. Summer is peak season — warm, sunny, and busy. Whenever you go,
+                there is no bad time. The island has a way of being exactly what you need.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq2">
         <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
-            <span class="faq-question__text">Can burnout happen even if I love what I do?</span>
+            <span class="faq-question__text">What does "Maui Nō Ka ʻOi" mean?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Absolutely — and this is one of the most painful forms of burnout, because
-                it can come with guilt and confusion. Loving what you do doesn't make you
-                immune to depletion. Burnout is about the ratio of output to recovery, not
-                about whether your work is meaningful. Passionate people often burn out
-                precisely because they care so much that they forget to stop.
+                It's a Hawaiian phrase that translates to "Maui is the best" — though the spirit
+                of it goes deeper than a simple superlative. It's an expression of deep pride and
+                love for the island, spoken by locals and visitors alike who have felt what Maui
+                can do to a person. Once you've been, you understand why the phrase exists.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq3">
         <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
-            <span class="faq-question__text">How long does it take to recover from burnout?</span>
+            <span class="faq-question__text">What is the aloha spirit?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Recovery varies enormously depending on how long burnout has been building,
-                what caused it, and what changes you're able to make. Mild burnout might lift
-                with a few weeks of intentional rest and boundary-setting. Deeper burnout —
-                especially when it's contributed to depression or anxiety — may take months
-                and benefit significantly from professional support. Be patient with the
-                timeline. Healing is not linear.
+                The aloha spirit is a Hawaiian cultural value of mutual respect, warmth, and
+                harmony. "Aloha" means love, peace, and compassion — and in Hawaii it's more than
+                a greeting. It's a way of being with others and with the world. Hawaii actually has
+                an Aloha Spirit Law that encourages residents to embody these values in their daily
+                lives. Visitors often leave feeling that the island gave them something — that
+                generosity is part of what the aloha spirit looks like in practice.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq4">
         <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
-            <span class="faq-question__text">When should I seek professional help for burnout?</span>
+            <span class="faq-question__text">How do you bring the island mindset home with you?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                If your symptoms are significantly affecting your daily functioning,
-                relationships, or physical health — or if you're noticing signs of
-                depression or anxiety alongside your burnout — please reach out to a
-                therapist, counselor, or your doctor. You don't have to reach a crisis
-                point to deserve support. Asking for help early is one of the wisest
-                things you can do.
+                Start by noticing things. The light in the morning. The taste of your food. The
+                face of someone you love. Maui's greatest gift isn't its beauty — it's the
+                slowness that lets you actually perceive beauty. You can practice that slowness
+                anywhere. Wake up five minutes earlier. Eat your breakfast without your phone.
+                Step outside and look at the sky before you start the day. The mindset doesn't
+                have to stay in Hawaii. It was always yours to keep.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq5">
+        <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">
+            <span class="faq-question__text">What are the must-try foods in Maui?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                Rainbow shave ice is a must — especially from a roadside stand with actual fruit
+                syrup. Fresh pineapple and papaya, ideally picked that day. Poke bowls with
+                fish so fresh it changes your idea of what poke can be. Passion fruit in any
+                form — the fragrance alone is unforgettable. And if you get the chance, any
+                fruit picked directly from a tree. There is no supermarket equivalent. It tastes
+                entirely different when it's had no reason to travel.
             </p>
         </div>
     </div>
@@ -627,14 +574,14 @@
 </section>
 
 
-<!-- TAGS — Category + 3 SEO tags -->
+<!-- TAGS -->
 <div class="post-tags-section">
-    <span class="post-tags-section__label">Tagged in</span>
+    <span class="post-tags-section__label">Filed under</span>
     <div class="tags">
-        <a href="mind.html" class="tag tag--category">Mind</a>
-        <a href="/tag/burnout-recovery" class="tag">burnout recovery</a>
-        <a href="/tag/mental-exhaustion" class="tag">mental exhaustion</a>
-        <a href="/tag/stress-and-self-care" class="tag">stress and self-care</a>
+        <a href="living.html" class="tag tag--category">Living</a>
+        <a href="#" class="tag">Maui travel journal</a>
+        <a href="#" class="tag">Hawaii wellness retreat</a>
+        <a href="#" class="tag">island life mindset</a>
     </div>
 </div>
 
@@ -646,10 +593,10 @@
         <div class="author-bio__info">
             <h4>Written by Gia</h4>
             <p>
-                Wellness blogger, designer, and wanderer at heart. I believe deeply that
-                beauty is healing and softness is a form of power. "Darling… what if" is
-                my ongoing love letter to the life I'm choosing — one small and intentional
-                moment at a time.
+                Gia is the founder of <em>darling, what if</em> — a lifestyle space for women
+                who are quietly rewriting the rules of how they live, feel, and take care of
+                themselves. She writes about wellness, beauty, emotional health, and the places
+                and moments that hand you back to yourself.
             </p>
         </div>
     </div>
@@ -660,57 +607,70 @@
 <section class="related-posts">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Keep <em>Reading</em></h2>
+            <h2 class="section-title">You might also <em>love</em></h2>
         </div>
         <div class="related-grid">
+
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-sage"></div>
+                    <div class="post-card__img ph-dusk"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Wellness</a>
-                    <h3 class="post-card__title"><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></h3>
-                    <div class="post-card__date">May 7, 2026 &nbsp;·&nbsp; 6 min read</div>
+                    <span class="category-label">Mind</span>
+                    <h3 class="post-card__title">
+                        <a href="post-burnout.html">What If You're Not Lazy — You're Burned Out?</a>
+                    </h3>
+                    <span class="post-card__date">May 7, 2026</span>
                 </div>
             </article>
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-ocean"></div>
+                </div>
+                <div class="post-card__body">
+                    <span class="category-label">Nourish</span>
+                    <h3 class="post-card__title">
+                        <a href="post-water.html">What If a Glass of Water, at the Right Time, Changed Everything?</a>
+                    </h3>
+                    <span class="post-card__date">May 8, 2026</span>
+                </div>
+            </article>
+
             <article class="post-card">
                 <div class="post-card__img-wrap">
                     <div class="post-card__img ph-rose"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="#">The Quiet Power of Saying No Without Apologizing</a></h3>
-                    <div class="post-card__date">April 3, 2026 &nbsp;·&nbsp; 6 min read</div>
+                    <span class="category-label">Wellness</span>
+                    <h3 class="post-card__title">
+                        <a href="#">What If Softness Is Your Greatest Strength?</a>
+                    </h3>
+                    <span class="post-card__date">May 7, 2026</span>
                 </div>
             </article>
-            <article class="post-card">
-                <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-amber"></div>
-                </div>
-                <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="post-morning-pages.html">Morning Pages & Why They Rewired My Anxious Brain</a></h3>
-                    <div class="post-card__date">May 4, 2026 &nbsp;·&nbsp; 5 min read</div>
-                </div>
-            </article>
+
         </div>
     </div>
 </section>
 
 
 <!-- NEWSLETTER -->
-<section class="newsletter" id="newsletter">
-    <div class="container">
-        <div class="newsletter__inner">
-            <span class="newsletter__eyebrow">Letters from Gia</span>
-            <h2 class="newsletter__title">What if your inbox felt like<br><em>a warm cup of tea?</em></h2>
-            <p class="newsletter__body">Soft stories, honest reflections, and small ideas that might just change the way you see your day.</p>
-            <form class="newsletter__form" onsubmit="handleSignup(event)">
-                <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
-                <button type="submit" class="newsletter__btn">Yes, I'm in</button>
-            </form>
-            <p class="newsletter__note">No spam, ever. Unsubscribe anytime.</p>
-        </div>
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <span class="newsletter__eyebrow">Letters from Gia</span>
+        <h2 class="newsletter__title">
+            What if your inbox felt<br><em>like a deep breath?</em>
+        </h2>
+        <p class="newsletter__body">
+            Quiet reflections, gentle wellness ideas, and the kind of writing that makes you
+            want to slow down. Delivered when it feels right — never rushed.
+        </p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input class="newsletter__input" type="email" placeholder="your@email.com" aria-label="Email address">
+            <button class="newsletter__btn" type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No spam, ever. Just softness in your inbox.</p>
     </div>
 </section>
 
@@ -721,11 +681,14 @@
         <div class="footer__grid">
             <div>
                 <div class="footer__logo">darling, <em>what if</em></div>
-                <p class="footer__about">A lifestyle space for women who are quietly questioning everything and bravely choosing to begin again.</p>
+                <p class="footer__about">
+                    A lifestyle space for women who are quietly rewriting the rules —
+                    one gentle, intentional choice at a time.
+                </p>
                 <div class="footer__social">
-                    <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
-                    <a href="https://pinterest.com" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">PI</a>
-                    <a href="mailto:hello@darlingwhatif.com" class="footer__social-link" aria-label="Email">@</a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">pt</a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok">tk</a>
                 </div>
             </div>
             <div class="footer__col">
@@ -739,29 +702,29 @@
                 </ul>
             </div>
             <div class="footer__col">
-                <h5>Connect</h5>
+                <h5>About</h5>
                 <ul>
-                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html">About Gia</a></li>
+                    <li><a href="/newsletter">Newsletter</a></li>
                     <li><a href="/contact">Contact</a></li>
-                    <li><a href="#newsletter">Newsletter</a></li>
-                    <li><a href="/collaborate">Collaborate</a></li>
                 </ul>
             </div>
             <div class="footer__col">
                 <h5>Legal</h5>
                 <ul>
                     <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/disclosure">Disclosure</a></li>
                     <li><a href="/terms">Terms of Use</a></li>
+                    <li><a href="/disclaimer">Disclaimer</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__bottom">
-            <span>© 2026 <a href="index.html">darlingwhatif.com</a> — All rights reserved</span>
-            <span>Made with intention ✦</span>
+            <span>© 2026 darling, what if. All rights reserved.</span>
+            <span>Made with intention.</span>
         </div>
     </div>
 </footer>
+
 
 <script>
     function toggleFaq(id) {
@@ -776,15 +739,14 @@
             item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
         }
     }
-    function handleSignup(e) {
-        e.preventDefault();
-        const input = e.target.querySelector('.newsletter__input');
-        const btn = e.target.querySelector('.newsletter__btn');
-        btn.textContent = 'You\'re in ✦';
-        btn.style.background = '#7A6B50';
-        input.disabled = true;
-        btn.disabled = true;
-    }
+
+    // Subtle parallax on hero
+    window.addEventListener('scroll', () => {
+        const hero = document.querySelector('.post-hero__img');
+        if (hero) {
+            hero.style.transform = `translateY(${window.scrollY * 0.25}px)`;
+        }
+    }, { passive: true });
 </script>
 
 </body>

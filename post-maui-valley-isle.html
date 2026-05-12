@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ── SEO Meta ── -->
+    <title>Maui: The Valley Isle | Darling, What If</title>
+    <meta name="description" content="Maui is the celebrity sibling amongst all Hawaiian islands — radiant, a little rebellious, and full of glamour. From Wailea's five-star spas to the spiritual trails of Hana, a portrait of the island in all its faces.">
+    <meta name="keywords" content="Maui travel guide, things to do in Maui, Maui Hawaii islands, Wailea Maui, Road to Hana, Maui North Shore">
+    <meta property="og:title" content="Maui: The Valley Isle">
+    <meta property="og:description" content="Radiant, rebellious, and full of glamour. A portrait of Maui in all its faces.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://darlingwhatif.com/living/maui-the-valley-isle">
+    <meta name="article:author" content="Gia">
+    <meta name="article:published_time" content="2026-05-08">
+    <link rel="canonical" href="https://darlingwhatif.com/living/maui-the-valley-isle">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --gold:        #9B8968;
+            --gold-dark:   #7A6B50;
+            --gold-mid:    #B09E80;
+            --gold-light:  #C4B49A;
+            --gold-faint:  #F2EDE5;
+            --bg:          #FAFAF7;
+            --bg-warm:     #F5F1EB;
+            --text:        #1D1B19;
+            --text-muted:  #6B6462;
+            --border:      #EAE5DF;
+            --white:       #FFFFFF;
+            --serif:       'Playfair Display', Georgia, serif;
+            --sans:        'DM Sans', system-ui, -apple-system, sans-serif;
+            --content-w:   720px;
+        }
+
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; font-weight: 300; -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* NAV */
+        .nav { position: sticky; top: 0; z-index: 200; background: rgba(250,250,247,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); height: 76px; display: flex; align-items: center; }
+        .nav__inner { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
+        .nav__logo { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: var(--text); letter-spacing: -0.01em; white-space: nowrap; }
+        .nav__logo strong { font-weight: 600; font-style: normal; color: var(--gold); }
+        .nav__links { display: flex; align-items: center; gap: 38px; }
+        .nav__links a { font-size: 0.7rem; letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
+        .nav__links a:hover { color: var(--gold); }
+        .nav__links a.active { color: var(--gold); font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+        .nav__search { background: none; border: none; cursor: pointer; color: var(--text-muted); padding: 4px; display: flex; align-items: center; transition: color 0.2s; }
+        .nav__search:hover { color: var(--gold); }
+
+        /* POST HERO */
+        .post-hero { position: relative; height: 78vh; min-height: 520px; max-height: 820px; overflow: hidden; }
+        .post-hero__img {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            /* Replace with: background: url('images/maui-valley-hero.jpg') center/cover no-repeat; */
+            background: linear-gradient(170deg, #7ABCB8 0%, #3E8A88 25%, #2A6068 55%, #1A3A42 100%);
+        }
+        .post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.04) 0%, transparent 60%); pointer-events: none; }
+
+        /* POST HEADER */
+        .post-header { max-width: var(--content-w); margin: 0 auto; padding: 64px 24px 0; text-align: center; }
+        .breadcrumb { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 28px; }
+        .breadcrumb a { transition: color 0.2s; }
+        .breadcrumb a:hover { color: var(--gold); }
+        .breadcrumb__sep { width: 4px; height: 4px; border-radius: 50%; background: var(--border); }
+        .post-category-badge { display: inline-block; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; transition: color 0.2s; }
+        .post-category-badge:hover { color: var(--gold-dark); }
+        .post-title { font-family: var(--serif); font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 400; line-height: 1.18; color: var(--text); margin-bottom: 28px; }
+        .post-byline { display: flex; align-items: center; justify-content: center; font-size: 0.76rem; color: var(--text-muted); letter-spacing: 0.03em; margin-bottom: 36px; }
+        .byline-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border); margin: 0 14px; flex-shrink: 0; }
+        .post-byline a { color: var(--gold); transition: color 0.2s; }
+        .post-byline a:hover { color: var(--gold-dark); }
+        .post-header-rule { width: 52px; height: 1px; background: var(--gold-mid); margin: 0 auto 40px; }
+        .post-intro { font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.35rem); font-weight: 400; font-style: italic; line-height: 1.65; color: var(--text); max-width: 640px; margin: 0 auto 72px; }
+
+        /* CONTENT */
+        .post-content { max-width: var(--content-w); margin: 0 auto; padding: 0 24px 80px; }
+        .post-content p { font-size: 1.05rem; line-height: 1.9; color: var(--text); margin-bottom: 28px; }
+        .post-content p:last-child { margin-bottom: 0; }
+        .post-content h2 { font-family: var(--serif); font-size: clamp(1.5rem, 2.8vw, 2.1rem); font-weight: 400; line-height: 1.25; color: var(--text); margin: 72px 0 8px; }
+        .post-content h2 em { font-style: italic; color: var(--gold); }
+        .post-content .section-location { font-size: 0.67rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 24px; display: block; }
+        .post-content strong { font-weight: 500; color: var(--text); }
+        .post-content a { color: var(--gold); border-bottom: 1px solid var(--gold-faint); transition: border-color 0.2s; }
+        .post-content a:hover { border-color: var(--gold); }
+        .content-rule { width: 48px; height: 1px; background: var(--border); margin: 56px auto; }
+
+        /* FULL-BLEED INLINE IMAGE */
+        .post-img { margin: 52px -48px; position: relative; }
+        .post-img__frame { width: 100%; overflow: hidden; }
+        .post-img__frame--landscape { aspect-ratio: 16/9; }
+        .post-img__frame--portrait  { aspect-ratio: 4/5; max-width: 520px; margin: 0 auto; }
+        .post-img__frame--square    { aspect-ratio: 1/1; }
+        .post-img--contained { margin: 48px 0; }
+        .post-img img, .post-img__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .post-img .ph, .post-img__frame .ph { width: 100%; height: 100%; }
+        .post-img__caption { font-size: 0.78rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 14px; line-height: 1.6; }
+
+        /* DUAL PHOTO GRID — two images side by side */
+        .photo-duo { margin: 52px -48px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+        .photo-duo__frame { aspect-ratio: 3/4; overflow: hidden; }
+        .photo-duo__frame img, .photo-duo__frame .ph { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .photo-duo__caption { grid-column: 1 / -1; font-size: 0.78rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 14px; line-height: 1.6; }
+
+        /* PULL QUOTE */
+        .pull-quote { margin: 56px -24px; padding: 48px 48px; background: var(--bg-warm); border-left: 3px solid var(--gold); position: relative; }
+        .pull-quote::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; color: var(--gold-light); position: absolute; top: 12px; left: 44px; line-height: 1; }
+        .pull-quote p { font-family: var(--serif) !important; font-size: clamp(1.2rem, 2vw, 1.55rem) !important; font-style: italic; font-weight: 400; line-height: 1.55 !important; color: var(--text) !important; padding-left: 40px; margin-bottom: 0 !important; }
+
+        /* INTERNAL LINKS */
+        .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
+        .internal-links__title { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; display: block; }
+        .internal-links ul { display: flex; flex-direction: column; gap: 14px; }
+        .internal-links li { display: flex; align-items: flex-start; gap: 12px; }
+        .internal-links li::before { content: '→'; color: var(--gold); font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+        .internal-links a { font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
+        .internal-links a:hover { color: var(--gold); border-color: var(--gold); }
+
+        /* TEASER CLOSING */
+        .post-teaser { margin: 64px 0; padding: 52px 48px; background: var(--bg-warm); text-align: center; border-top: 2px solid var(--gold); }
+        .post-teaser__title { font-family: var(--serif); font-size: 1.35rem; font-style: italic; font-weight: 400; color: var(--text); margin-bottom: 16px; }
+        .post-teaser p { font-size: 0.97rem; color: var(--text-muted); max-width: 480px; margin: 0 auto; line-height: 1.85; }
+
+        /* TAGS */
+        .post-tags-section { max-width: var(--content-w); margin: 0 auto; padding: 0 24px 64px; }
+        .post-tags-section__label { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px; display: block; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { display: inline-block; padding: 6px 16px; background: var(--gold-faint); color: var(--gold-dark); font-size: 0.68rem; letter-spacing: 0.07em; border-radius: 100px; transition: background 0.2s, color 0.2s; }
+        .tag:hover { background: var(--gold); color: var(--white); }
+        .tag--category { background: var(--gold); color: var(--white); }
+        .tag--category:hover { background: var(--gold-dark); }
+
+        /* AUTHOR BIO */
+        .author-bio { max-width: var(--content-w); margin: 0 auto 64px; padding: 0 24px; }
+        .author-bio__inner { display: flex; align-items: flex-start; gap: 28px; padding: 36px 40px; background: var(--bg-warm); border-top: 2px solid var(--gold); }
+        .author-bio__avatar { width: 68px; height: 68px; border-radius: 50%; background: linear-gradient(145deg, #E0CCAF 0%, #C4A47A 100%); flex-shrink: 0; }
+        .author-bio__info h4 { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 6px; }
+        .author-bio__info p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; }
+
+        /* RELATED */
+        .related-posts { background: var(--bg-warm); padding: 96px 0; }
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+        .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 48px; }
+        .section-title { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: var(--text); }
+        .section-title em { font-style: italic; color: var(--gold); }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .post-card { background: var(--white); display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .post-card:hover { transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+        .post-card__img-wrap { aspect-ratio: 3/2; overflow: hidden; flex-shrink: 0; }
+        .post-card__img { width: 100%; height: 100%; transition: transform 0.65s ease; }
+        .post-card:hover .post-card__img { transform: scale(1.06); }
+        .post-card__body { padding: 24px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+        .category-label { font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: inline-block; }
+        .post-card__title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; line-height: 1.4; color: var(--text); margin-bottom: 10px; }
+        .post-card__title a { transition: color 0.2s; }
+        .post-card__title a:hover { color: var(--gold); }
+        .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
+
+        /* PLACEHOLDER GRADIENTS — Hawaiian palette */
+        .ph-ocean    { background: linear-gradient(145deg, #B8DCE8 0%, #5AACCC 50%, #2A7898 100%); }
+        .ph-sunrise  { background: linear-gradient(145deg, #F0D4A0 0%, #E8A858 40%, #D47040 70%, #C4586C 100%); }
+        .ph-tropical { background: linear-gradient(145deg, #A8D4A0 0%, #5CAA78 50%, #2A7850 100%); }
+        .ph-hana     { background: linear-gradient(145deg, #7AAE90 0%, #3A8060 40%, #1A5040 100%); }
+        .ph-wailea   { background: linear-gradient(145deg, #EDD89C 0%, #D4A040 40%, #C07838 100%); }
+        .ph-north    { background: linear-gradient(145deg, #D0D8E8 0%, #8898BC 50%, #506080 100%); }
+        .ph-dusk     { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
+        .ph-rose     { background: linear-gradient(145deg, #EAD8D4 0%, #CCA4A0 100%); }
+        .ph-maui     { background: linear-gradient(145deg, #EDD89C 0%, #D4A040 30%, #6AACA8 70%, #2E6E70 100%); }
+
+        /* NEWSLETTER */
+        .newsletter { background: #2A2520; padding: 80px 0; }
+        .newsletter__inner { max-width: 640px; margin: 0 auto; text-align: center; }
+        .newsletter__eyebrow { display: block; font-size: 0.67rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 22px; }
+        .newsletter__title { font-family: var(--serif); font-size: clamp(1.9rem, 3.2vw, 2.8rem); font-weight: 400; color: var(--white); line-height: 1.3; margin-bottom: 18px; }
+        .newsletter__title em { font-style: italic; color: #EDD8BE; }
+        .newsletter__body { font-size: 0.94rem; color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 44px; }
+        .newsletter__form { display: flex; max-width: 440px; margin: 0 auto 16px; }
+        .newsletter__input { flex: 1; padding: 17px 22px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-right: none; color: var(--white); font-family: var(--sans); font-size: 0.9rem; font-weight: 300; outline: none; transition: background 0.2s, border-color 0.2s; }
+        .newsletter__input::placeholder { color: rgba(255,255,255,0.3); }
+        .newsletter__input:focus { background: rgba(255,255,255,0.11); border-color: var(--gold-mid); }
+        .newsletter__btn { padding: 17px 28px; background: var(--gold); color: var(--white); border: none; font-family: var(--sans); font-size: 0.68rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: nowrap; transition: background 0.25s; }
+        .newsletter__btn:hover { background: var(--gold-dark); }
+        .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); }
+
+        /* FOOTER */
+        .footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0 32px; }
+        .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 52px; margin-bottom: 64px; }
+        .footer__logo { font-family: var(--serif); font-size: 1.45rem; font-style: italic; color: var(--text); margin-bottom: 16px; }
+        .footer__logo em { color: var(--gold); font-style: normal; font-weight: 600; }
+        .footer__about { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; }
+        .footer__social { display: flex; gap: 12px; }
+        .footer__social-link { width: 38px; height: 38px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.72rem; font-weight: 500; transition: all 0.2s; }
+        .footer__social-link:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
+        .footer__col h5 { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); font-weight: 400; margin-bottom: 22px; }
+        .footer__col ul { display: flex; flex-direction: column; gap: 11px; }
+        .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s; }
+        .footer__col a:hover { color: var(--gold); }
+        .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
+        .footer__bottom a { transition: color 0.2s; }
+        .footer__bottom a:hover { color: var(--gold); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .nav__links { display: none; }
+            .related-grid { grid-template-columns: 1fr 1fr; }
+            .post-img { margin-left: 0; margin-right: 0; }
+            .photo-duo { margin-left: 0; margin-right: 0; }
+            .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+        }
+        @media (max-width: 680px) {
+            .container { padding-left: 24px; padding-right: 24px; }
+            .nav__inner { padding-left: 24px; padding-right: 24px; }
+            .related-grid { grid-template-columns: 1fr; }
+            .photo-duo { grid-template-columns: 1fr; }
+            .pull-quote { margin-left: 0; margin-right: 0; padding: 36px 28px; }
+            .pull-quote::before { display: none; }
+            .pull-quote p { padding-left: 0; }
+            .author-bio__inner { flex-direction: column; }
+            .newsletter__form { flex-direction: column; }
+            .newsletter__input { border-right: 1px solid rgba(255,255,255,0.14); border-bottom: none; }
+            .footer__grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
+        <ul class="nav__links">
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="mind.html">Mind</a></li>
+            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="living.html" class="active">Living</a></li>
+            <li><a href="companion.html">Companion</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+        <button class="nav__search" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+
+<!-- HERO — full-bleed image, no text overlay -->
+<!-- Replace .ph-maui gradient with: background: url('images/maui-valley-hero.jpg') center/cover no-repeat -->
+<!-- Suggested: aerial or wide landscape shot — coastline, valley, or lush mountains -->
+<header class="post-hero">
+    <div class="post-hero__img"></div>
+</header>
+
+
+<!-- POST HEADER -->
+<div class="post-header">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <div class="breadcrumb__sep"></div>
+        <a href="living.html">Living</a>
+        <div class="breadcrumb__sep"></div>
+        <span>Maui: The Valley Isle</span>
+    </nav>
+    <a href="living.html" class="post-category-badge">Living</a>
+    <h1 class="post-title">Maui: The Valley Isle</h1>
+    <div class="post-byline">
+        <span>May 8, 2026</span>
+        <div class="byline-dot"></div>
+        <span>By <a href="about.html">Gia</a></span>
+        <div class="byline-dot"></div>
+        <span>4 min read</span>
+    </div>
+    <div class="post-header-rule"></div>
+    <p class="post-intro">
+        Maui is the celebrity sibling amongst all the Hawaiian islands —
+        radiantly beautiful, a bit rebellious, and with a glamour that pulls you in
+        before you even know what's happening to you.
+    </p>
+</div>
+
+
+<!-- MAIN CONTENT -->
+<article class="post-content" id="post-content">
+
+    <p>
+        There is no single version of Maui. Depending on which road you take, which shore
+        you find yourself on, or which hour of the day you step outside, the island shows
+        you a completely different face. That's what makes it so hard to leave — and so
+        easy to keep thinking about long after you do.
+    </p>
+
+
+    <!-- Full-bleed image #1 — wide establishing shot -->
+    <!-- Replace with: <img src="images/maui-wide.jpg" alt="Maui landscape" loading="lazy"> -->
+    <div class="post-img" aria-hidden="true">
+        <div class="post-img__frame post-img__frame--landscape">
+            <div class="ph ph-ocean" style="width:100%;height:100%;"></div>
+        </div>
+        <p class="post-img__caption">Maui doesn't reveal itself all at once. It lets you discover it slowly.</p>
+    </div>
+
+
+    <h2>The South — <em>Wailea</em></h2>
+    <span class="section-location">South Maui · Sun, Spas & Sophistication</span>
+
+    <p>
+        Wailea is where the island puts on its most polished face. The beaches here are
+        immaculate — long, golden, sheltered from the wind — and the resorts that line them
+        are the kind that draw Hollywood A-listers seeking somewhere quiet enough to
+        actually exhale. Five-star spas offering treatments rooted in Hawaiian healing
+        traditions. Infinity pools overlooking the Pacific. Sunsets so reliable and so
+        spectacular that people gather for them the way people gather for concerts.
+    </p>
+
+    <p>
+        Every June, Wailea hosts the <strong>Maui Film Festival</strong> — outdoor screenings
+        under the stars on Wailea Beach, with the kind of atmosphere that makes you feel like
+        you're attending the most beautiful film event in the world. Because you are.
+    </p>
+
+
+    <!-- Contained image — Wailea -->
+    <!-- Replace with: <img src="images/maui-wailea.jpg" alt="Wailea beach Maui" loading="lazy"> -->
+    <div class="post-img post-img--contained">
+        <div class="post-img__frame post-img__frame--landscape">
+            <div class="ph ph-wailea" style="width:100%;height:100%;"></div>
+        </div>
+        <p class="post-img__caption">Wailea — where the light is golden and the pace is deliberately slow.</p>
+    </div>
+
+
+    <!-- Pull quote -->
+    <blockquote class="pull-quote">
+        <p>
+            Maui has healing energy that you feel the moment you arrive —
+            and miss the moment you leave.
+        </p>
+    </blockquote>
+
+
+    <h2>The North Shore — <em>Pā'ia & Beyond</em></h2>
+    <span class="section-location">North Shore · Art, Culture & the World in One Place</span>
+
+    <p>
+        Head north and the island shifts entirely. The North Shore has a creative,
+        sun-bleached energy — part surf town, part art village — with a community of
+        transplants from Paris, New York, and São Paulo who arrived on holiday and never
+        quite found a reason to leave. You'll understand why the moment you walk through
+        Pā'ia: galleries and boutiques tucked into old wooden buildings, farm-to-table
+        restaurants with menus that change with the catch and the season, and a general
+        sense that life here has been quietly, deliberately curated.
+    </p>
+
+
+    <!-- Duo photo grid — North Shore -->
+    <!-- Replace each .ph div with <img src="images/maui-north-1.jpg" ...> and <img src="images/maui-north-2.jpg" ...> -->
+    <div class="photo-duo">
+        <div class="photo-duo__frame">
+            <div class="ph ph-north" style="width:100%;height:100%;"></div>
+        </div>
+        <div class="photo-duo__frame">
+            <div class="ph ph-ocean" style="width:100%;height:100%;"></div>
+        </div>
+        <p class="photo-duo__caption">The North Shore — where the world washes up and decides to stay.</p>
+    </div>
+
+
+    <h2>The East — <em>Hana</em></h2>
+    <span class="section-location">East Maui · Rainforest, Waterfalls & Deep Quiet</span>
+
+    <p>
+        Hana is at the end of a two-hour drive along one of the most winding, spectacular
+        roads you will ever sit inside. The Road to Hana is famous — 620 curves, 59 bridges,
+        waterfalls appearing around every other bend — and what waits on the other side is
+        the most untouched part of Maui. A lush tropical forest. Hiking trails that lead
+        to secret waterfalls and empty beaches that feel like they belong to another century.
+        A pervasive, almost physical sense of spirituality, as if the land itself is alive
+        and aware of you.
+    </p>
+
+    <p>
+        People speak about Hana differently from how they speak about the rest of the island.
+        More quietly. More carefully. As if they're trying not to break the spell of it.
+    </p>
+
+
+    <!-- Full-bleed image — Hana -->
+    <!-- Replace with: <img src="images/maui-hana.jpg" alt="Hana Maui tropical forest" loading="lazy"> -->
+    <div class="post-img" aria-hidden="true">
+        <div class="post-img__frame post-img__frame--landscape">
+            <div class="ph ph-hana" style="width:100%;height:100%;"></div>
+        </div>
+        <p class="post-img__caption">
+            Hana — where the road ends and something quieter begins.
+        </p>
+    </div>
+
+
+    <!-- Internal links -->
+    <div class="internal-links">
+        <span class="internal-links__title">More from Maui</span>
+        <ul>
+            <li><a href="post-maui.html">Mahalo, Maui — A Love Letter to the Island That Changed Me</a></li>
+            <li><a href="post-water.html">What If a Glass of Water, at the Right Time, Changed Everything?</a></li>
+            <li><a href="post-burnout.html">What If You're Not Lazy — You're Burned Out?</a></li>
+        </ul>
+    </div>
+
+
+    <div class="content-rule"></div>
+
+    <!-- Teaser closing -->
+    <div class="post-teaser">
+        <h3 class="post-teaser__title">More from the island, coming soon.</h3>
+        <p>
+            I can't wait to share more of my photos and tips from this trip — the hidden
+            spots, the food, the moments I want to hold onto forever. Stay close. ✦
+        </p>
+    </div>
+
+</article>
+
+
+<!-- TAGS -->
+<div class="post-tags-section">
+    <span class="post-tags-section__label">Filed under</span>
+    <div class="tags">
+        <a href="living.html" class="tag tag--category">Living</a>
+        <a href="#" class="tag">Maui travel guide</a>
+        <a href="#" class="tag">things to do in Maui</a>
+        <a href="#" class="tag">Maui Hawaii islands</a>
+    </div>
+</div>
+
+
+<!-- AUTHOR BIO -->
+<div class="author-bio">
+    <div class="author-bio__inner">
+        <div class="author-bio__avatar"></div>
+        <div class="author-bio__info">
+            <h4>Written by Gia</h4>
+            <p>
+                Gia is the founder of <em>darling, what if</em> — a lifestyle space for women
+                who are quietly rewriting the rules of how they live, feel, and take care of
+                themselves. She writes about wellness, beauty, emotional health, and the places
+                that remind you what living actually feels like.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- RELATED POSTS -->
+<section class="related-posts">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">You might also <em>love</em></h2>
+        </div>
+        <div class="related-grid">
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-maui"></div>
+                </div>
+                <div class="post-card__body">
+                    <span class="category-label">Living</span>
+                    <h3 class="post-card__title">
+                        <a href="post-maui.html">Mahalo, Maui — A Love Letter to the Island That Changed Me</a>
+                    </h3>
+                    <span class="post-card__date">May 8, 2026</span>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-dusk"></div>
+                </div>
+                <div class="post-card__body">
+                    <span class="category-label">Mind</span>
+                    <h3 class="post-card__title">
+                        <a href="post-burnout.html">What If You're Not Lazy — You're Burned Out?</a>
+                    </h3>
+                    <span class="post-card__date">May 7, 2026</span>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-rose"></div>
+                </div>
+                <div class="post-card__body">
+                    <span class="category-label">Wellness</span>
+                    <h3 class="post-card__title">
+                        <a href="#">What If Softness Is Your Greatest Strength?</a>
+                    </h3>
+                    <span class="post-card__date">May 7, 2026</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <span class="newsletter__eyebrow">Letters from Gia</span>
+        <h2 class="newsletter__title">
+            What if your inbox felt<br><em>like a deep breath?</em>
+        </h2>
+        <p class="newsletter__body">
+            Quiet reflections, gentle wellness ideas, and the kind of writing that makes you
+            want to slow down. Delivered when it feels right — never rushed.
+        </p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input class="newsletter__input" type="email" placeholder="your@email.com" aria-label="Email address">
+            <button class="newsletter__btn" type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No spam, ever. Just softness in your inbox.</p>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <div class="footer__logo">darling, <em>what if</em></div>
+                <p class="footer__about">
+                    A lifestyle space for women who are quietly rewriting the rules —
+                    one gentle, intentional choice at a time.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">pt</a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok">tk</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="wellness.html">Wellness</a></li>
+                    <li><a href="mind.html">Mind</a></li>
+                    <li><a href="nourish.html">Nourish</a></li>
+                    <li><a href="living.html">Living</a></li>
+                    <li><a href="companion.html">Companion</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5>About</h5>
+                <ul>
+                    <li><a href="about.html">About Gia</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="about.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 darling, what if. All rights reserved.</span>
+            <span>Made with intention.</span>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    // Subtle parallax on hero
+    window.addEventListener('scroll', () => {
+        const hero = document.querySelector('.post-hero__img');
+        if (hero) {
+            hero.style.transform = `translateY(${window.scrollY * 0.2}px)`;
+        }
+    }, { passive: true });
+</script>
+
+</body>
+</html>

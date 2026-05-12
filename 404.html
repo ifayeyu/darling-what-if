@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Darling, What If</title>
+    <meta name="description" content="This page doesn't exist — but there's so much more waiting for you.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --gold: #9B8968; --gold-dark: #7A6B50;
+            --bg: #FAFAF7; --bg-warm: #F5F1EB; --text: #1D1B19; --text-muted: #6B6462; --border: #EAE5DF; --white: #FFFFFF;
+            --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+        }
+        html { font-size: 16px; }
+        body { font-family: var(--sans); background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+        .nav { background: rgba(250,250,247,0.96); border-bottom: 1px solid var(--border); height: 76px; display: flex; align-items: center; }
+        .nav__inner { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; }
+        .nav__logo { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: var(--text); }
+        .nav__logo strong { font-weight: 600; font-style: normal; color: var(--gold); }
+        .main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 80px 24px; text-align: center; }
+        .four04 { max-width: 520px; }
+        .four04__num { font-family: var(--serif); font-size: 7rem; font-weight: 400; color: var(--border); line-height: 1; margin-bottom: 8px; letter-spacing: -4px; }
+        .four04__title { font-family: var(--serif); font-size: 1.8rem; font-weight: 500; color: var(--text); margin-bottom: 16px; }
+        .four04__sub { font-size: 0.97rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 40px; }
+        .four04__divider { width: 40px; height: 1px; background: var(--gold); margin: 0 auto 40px; }
+        .four04__links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+        .four04__link { display: inline-block; padding: 12px 24px; border: 1px solid var(--border); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); transition: all 0.2s; }
+        .four04__link:hover { border-color: var(--gold); color: var(--gold); }
+        .four04__link--primary { background: var(--gold); border-color: var(--gold); color: var(--white); }
+        .four04__link--primary:hover { background: var(--gold-dark); border-color: var(--gold-dark); color: var(--white); }
+        @media (max-width: 480px) { .four04__num { font-size: 5rem; } .four04__title { font-size: 1.4rem; } }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
+    </div>
+</nav>
+<main class="main">
+    <div class="four04">
+        <div class="four04__num">404</div>
+        <h1 class="four04__title">This page wandered off</h1>
+        <p class="four04__sub">The page you're looking for doesn't seem to exist — but there are so many beautiful places to explore from here.</p>
+        <div class="four04__divider"></div>
+        <div class="four04__links">
+            <a href="index.html" class="four04__link four04__link--primary">Take me home</a>
+            <a href="wellness.html" class="four04__link">Wellness</a>
+            <a href="mind.html" class="four04__link">Mind</a>
+            <a href="nourish.html" class="four04__link">Nourish</a>
+            <a href="living.html" class="four04__link">Living</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>

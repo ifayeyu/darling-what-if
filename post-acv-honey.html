@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ── SEO Meta ── -->
-    <title>What If You're Not Lazy — You're Burned Out? | Darling, What If</title>
-    <meta name="description" content="Burnout isn't just being tired — it's your mind and body asking you to stop. Learn how to recognize the signs of burnout, understand its impact on mental health, and gently begin your recovery.">
-    <meta name="keywords" content="burnout recovery, signs of burnout, burnout symptoms, mental exhaustion, stress and self-care, how to recover from burnout">
-    <meta property="og:title" content="What If You're Not Lazy — You're Burned Out?">
-    <meta property="og:description" content="Burnout isn't just being tired. Here's how to recognize the signs and gently begin healing.">
+    <title>What If the Oldest Gut Remedy Was Already in Your Pantry? | Darling, What If</title>
+    <meta name="description" content="Apple cider vinegar and honey have quietly supported digestion for centuries. Here's what they actually do for your gut — and the simple morning drink that ties it all together.">
+    <meta name="keywords" content="apple cider vinegar and honey for digestion, ACV morning drink benefits, natural remedy for constipation, gut health morning ritual, ACV honey warm water">
+    <meta property="og:title" content="What If the Oldest Gut Remedy Was Already in Your Pantry?">
+    <meta property="og:description" content="Two pantry staples. A glass of warm water. And a morning ritual that your gut has probably been asking for.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta property="og:url" content="https://darlingwhatif.com/nourish/acv-honey-morning-ritual-gut-health">
     <meta name="article:author" content="Gia">
-    <meta name="article:published_time" content="2026-05-07">
-    <link rel="canonical" href="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta name="article:published_time" content="2026-05-08">
+    <link rel="canonical" href="https://darlingwhatif.com/nourish/acv-honey-morning-ritual-gut-health">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,8 +59,9 @@
 
         /* POST HERO */
         .post-hero { position: relative; height: 78vh; min-height: 520px; max-height: 820px; overflow: hidden; }
-        .post-hero__img { position: absolute; inset: 0; width: 100%; height: 100%;
-            background: url('images/pexels-cordero-17343820.jpg') center/cover no-repeat;
+        .post-hero__img {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            background: url('images/pexels-jahratreza-37112385.jpg') center/cover no-repeat;
         }
         .post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(250,250,247,0.12) 100%); pointer-events: none; }
 
@@ -94,14 +95,10 @@
         .content-rule { width: 48px; height: 1px; background: var(--border); margin: 56px auto; }
 
         /* INLINE IMAGE */
-        .post-img { margin: 52px -48px; }
+        .post-img { margin: 52px -48px; position: relative; }
         .post-img__frame { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
         .post-img--contained { margin: 48px 0; }
         .post-img--contained .post-img__frame { aspect-ratio: 3/2; }
-        .post-img--portrait { margin: 52px auto; max-width: 500px; }
-        .post-img--portrait .post-img__frame { aspect-ratio: 2/3; overflow: hidden; }
-        .post-img--portrait-34 { margin: 48px auto; max-width: 520px; }
-        .post-img--portrait-34 .post-img__frame { aspect-ratio: 3/4; overflow: hidden; }
         .post-img img, .post-img__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .post-img .ph, .post-img__frame .ph { width: 100%; height: 100%; }
         .post-img__caption { font-size: 0.78rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 14px; line-height: 1.6; }
@@ -111,12 +108,36 @@
         .pull-quote::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; color: var(--gold-light); position: absolute; top: 12px; left: 44px; line-height: 1; }
         .pull-quote p { font-family: var(--serif) !important; font-size: clamp(1.2rem, 2vw, 1.55rem) !important; font-style: italic; font-weight: 400; line-height: 1.55 !important; color: var(--text) !important; padding-left: 40px; margin-bottom: 0 !important; }
 
-        /* SYMPTOM / STRATEGY LIST */
+        /* RESEARCH NOTE */
+        .research-note { margin: 44px 0; padding: 28px 32px; background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold-mid); }
+        .research-note__label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
+        .research-note p { font-size: 0.92rem !important; line-height: 1.8 !important; color: var(--text-muted) !important; margin-bottom: 0 !important; }
+
+        /* BENEFIT LIST */
         .post-list { margin: 0 0 28px 0; padding: 0; counter-reset: item; list-style: none; }
         .post-list li { font-size: 1.02rem; line-height: 1.85; color: var(--text); padding: 16px 0 16px 36px; position: relative; border-bottom: 1px solid var(--border); }
         .post-list li:first-child { border-top: 1px solid var(--border); }
         .post-list li::before { content: counter(item); counter-increment: item; position: absolute; left: 0; top: 19px; font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: var(--gold); }
         .post-list li strong { font-weight: 500; display: block; margin-bottom: 4px; }
+
+        /* MORNING RITUAL SECTION */
+        .morning-ritual { margin: 72px 0; }
+        .morning-ritual__title { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-weight: 400; line-height: 1.3; color: var(--text); margin-bottom: 8px; }
+        .morning-ritual__title em { font-style: italic; color: var(--gold); }
+        .morning-ritual__intro { font-size: 0.97rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 44px; }
+        .ritual-steps { display: flex; flex-direction: column; gap: 0; }
+        .ritual-step { display: grid; grid-template-columns: 80px 1fr; gap: 0; border-top: 1px solid var(--border); padding: 32px 0; }
+        .ritual-step:last-child { border-bottom: 1px solid var(--border); }
+        .ritual-step__num-col { padding-right: 32px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+        .ritual-step__num { font-family: var(--serif); font-size: 1.8rem; font-style: italic; font-weight: 400; color: var(--gold); line-height: 1; }
+        .ritual-step__label { font-size: 0.6rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); }
+        .ritual-step__heading { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--text); margin-bottom: 10px; }
+        .ritual-step__text { font-size: 0.94rem; line-height: 1.85; color: var(--text-muted); }
+        .ritual-step__text strong { font-weight: 500; color: var(--text); }
+        @media (max-width: 560px) {
+            .ritual-step { grid-template-columns: 1fr; gap: 12px; }
+            .ritual-step__num-col { flex-direction: row; align-items: center; gap: 12px; padding-right: 0; }
+        }
 
         /* INTERNAL LINKS */
         .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
@@ -183,11 +204,12 @@
         .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
 
         /* PLACEHOLDER GRADIENTS */
-        .ph-dusk    { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
-        .ph-rose    { background: linear-gradient(145deg, #EAD8D4 0%, #CCA4A0 100%); }
-        .ph-sage    { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
-        .ph-amber   { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
-        .ph-mist    { background: linear-gradient(145deg, #D8E2EC 0%, #94AECE 100%); }
+        .ph-amber  { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
+        .ph-honey  { background: linear-gradient(145deg, #F0DFA8 0%, #D4A040 50%, #A06818 100%); }
+        .ph-warm   { background: linear-gradient(145deg, #E8D4B8 0%, #C8A878 50%, #A07848 100%); }
+        .ph-sage   { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
+        .ph-dusk   { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
+        .ph-water  { background: linear-gradient(145deg, #C8DCE8 0%, #7AAEC8 50%, #4E8FAE 100%); }
 
         /* NEWSLETTER */
         .newsletter { background: var(--text); padding: 104px 0; }
@@ -244,14 +266,15 @@
 </head>
 <body>
 
+
 <!-- NAV -->
 <nav class="nav">
     <div class="nav__inner">
         <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
         <ul class="nav__links">
             <li><a href="wellness.html">Wellness</a></li>
-            <li><a href="mind.html" class="active">Mind</a></li>
-            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="mind.html">Mind</a></li>
+            <li><a href="nourish.html" class="active">Nourish</a></li>
             <li><a href="living.html">Living</a></li>
             <li><a href="companion.html">Companion</a></li>
             <li><a href="about.html">About Me</a></li>
@@ -265,9 +288,7 @@
 </nav>
 
 
-<!-- HERO IMAGE
-     Replace .ph-dusk with: background: url('images/burnout-hero.jpg') center/cover no-repeat;
-     Suggested photography: woman sitting quietly by a window, soft morning light, contemplative -->
+<!-- HERO -->
 <header class="post-hero">
     <div class="post-hero__img"></div>
 </header>
@@ -278,32 +299,32 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <div class="breadcrumb__sep"></div>
-        <a href="mind.html">Mind</a>
+        <a href="nourish.html">Nourish</a>
         <div class="breadcrumb__sep"></div>
-        <span>What If You're Not Lazy — You're Burned Out?</span>
+        <span>What If the Oldest Gut Remedy Was Already in Your Pantry?</span>
     </nav>
 
-    <a href="mind.html" class="post-category-badge">Mind</a>
+    <a href="nourish.html" class="post-category-badge">Nourish</a>
 
     <h1 class="post-title">
-        What If You're Not <em>Lazy</em> —<br>
-        You're Burned Out?
+        What If the Oldest Gut Remedy<br>
+        Was Already in <em>Your Pantry?</em>
     </h1>
 
     <div class="post-byline">
-        <span>May 7, 2026</span>
+        <span>May 8, 2026</span>
         <div class="byline-dot"></div>
         <span>By <a href="about.html">Gia</a></span>
         <div class="byline-dot"></div>
-        <span>7 min read</span>
+        <span>5 min read</span>
     </div>
 
     <div class="post-header-rule"></div>
 
     <p class="post-intro">
-        You've been calling it laziness. Or weakness. Or just "a phase."
-        But what if your exhaustion has a name — and what if giving it that name
-        is the first step toward finally feeling like yourself again?
+        Two pantry staples. A glass of warm water. And a morning ritual
+        that your gut has probably been quietly asking for — long before
+        you ever thought to offer it.
     </p>
 </div>
 
@@ -312,232 +333,282 @@
 <article class="post-content" id="post-content">
 
     <p>
-        There's a particular kind of tired that sleep doesn't fix. You wake up already
-        depleted. You move through your days feeling like you're watching yourself from
-        a distance — going through the motions, performing okayness, waiting for the
-        version of you that used to care to come back.
+        There's something almost poetic about the oldest remedies. They don't come in sleek packaging.
+        They don't have a PR team or a wellness influencer behind them. They just sit quietly in your
+        kitchen — a bottle of raw apple cider vinegar with its cloudy sediment, a jar of honey catching
+        the morning light — waiting to be noticed.
     </p>
 
     <p>
-        This isn't a character flaw. It isn't weakness. It isn't "just stress."
-        What you might be experiencing is burnout — a state of physical, emotional,
-        and mental exhaustion that happens when chronic stress goes unaddressed for
-        too long. And it can affect anyone: the high-achiever, the caregiver, the
-        woman who holds everything together so beautifully that no one thought to
-        ask if she was okay.
+        People have been using ACV and honey to support digestion for centuries. Long before the
+        supplement aisle, before probiotic powders and gut-health gummies, there was this: a spoonful
+        of something sharp, a spoonful of something sweet, dissolved in warm water and drunk on an
+        empty stomach. Simple. Unhurried. Quietly effective.
+    </p>
+
+    <p>
+        What if the answer to better digestion didn't require a new product — just a new morning ritual?
     </p>
 
 
-    <!-- Inline image — portrait 2:3, no crop -->
-    <div class="post-img post-img--portrait">
+    <!-- Full-bleed image -->
+    <div class="post-img">
         <div class="post-img__frame">
-            <img src="images/pexels-ivan-s-6788688.jpg" alt="A woman lying face-down on a bed in a knit sweater, quietly exhausted" loading="lazy">
+            <img src="images/pexels-annija-u-492300719-16349984.jpg" alt="Hands holding a wicker basket of fresh green apples, earthy and unhurried" loading="lazy">
         </div>
         <p class="post-img__caption">
-            Burnout doesn't always look like collapse. Sometimes it looks like being fine — until you're not.
+            Some remedies are ancient for a reason. They work — gently, quietly, every morning.
         </p>
     </div>
 
 
-    <h2>What Burnout <em>Actually</em> Is</h2>
+    <h2>Why These Two Work <em>Better Together</em></h2>
 
     <p>
-        Burnout isn't simply being tired after a hard week. It's what happens when
-        the demands placed on you — by work, by relationships, by your own impossibly
-        high standards — consistently exceed your capacity to recover from them. Over
-        time, the gap between output and restoration grows wider, until you hit a wall
-        so solid it stops you completely.
+        Apple cider vinegar on its own is sharp, acidic, and honestly not the most pleasant thing
+        to drink straight. Honey on its own is sweet and soothing, but its effects are mild. Together,
+        though, they balance each other — the acidity softened by the honey's warmth, the sweetness
+        grounded by the vinegar's edge. More than the taste, their actions in the gut are genuinely
+        complementary.
     </p>
 
     <p>
-        It often builds quietly, mistaken for normal stress or busyness, until one
-        day you realize you can't remember the last time something felt genuinely good.
-        That numbness — the emotional flatness, the inability to feel the things you
-        used to feel — is one of burnout's most overlooked signs.
+        ACV works on the acid side of digestion, supporting stomach function and helping break down
+        what you eat. Honey works on the microbial side, feeding beneficial gut bacteria and drawing
+        water into the colon to keep things moving. One sharpens, one softens. One activates,
+        one nourishes. The combination covers ground that neither covers alone.
     </p>
 
 
     <!-- Pull quote -->
     <blockquote class="pull-quote">
         <p>
-            Burnout isn't a productivity problem. It's what happens when you give
-            everything you have — and forget to give anything back to yourself.
+            What if your gut doesn't need more intervention — just two
+            ingredients and a glass of warm water, before the day begins?
         </p>
     </blockquote>
 
 
-    <h2>8 Signs Your Body and Mind Are <em>Asking You to Stop</em></h2>
+    <h2>What Apple Cider Vinegar <em>Actually Does</em></h2>
 
     <p>
-        Burnout shows up differently for everyone, but these are the most common
-        ways it tends to speak — often in a whisper, long before it becomes a shout.
+        Raw, unfiltered ACV contains acetic acid — and it's this compound that does most of the
+        digestive work. Acetic acid has a mild stimulating effect on the digestive system: it can
+        encourage the production of stomach acid, support the breakdown of food, and help move
+        things through the digestive tract more consistently.
     </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Physical exhaustion that doesn't lift with rest.</strong>
-            Persistent fatigue, low energy, frequent headaches, or muscle tension
-            that sleep doesn't seem to touch. Your body is running on empty — and
-            it's been running that way for a while.
-        </li>
-        <li>
-            <strong>Emotional flatness or overwhelm.</strong>
-            Feeling numb, detached, or strangely unable to access emotions that
-            used to come naturally. Or the opposite — feeling everything too much,
-            too raw, too close to the surface.
-        </li>
-        <li>
-            <strong>Difficulty concentrating or making decisions.</strong>
-            Brain fog, increased mistakes, an inability to focus that feels new
-            and alarming. A mind that used to be sharp now feels like it's wading
-            through something thick.
-        </li>
-        <li>
-            <strong>Withdrawing from people and things you love.</strong>
-            Cancelling plans, going quiet in relationships, losing interest in
-            hobbies that used to light you up. Isolation can feel protective
-            when you have nothing left to give.
-        </li>
-        <li>
-            <strong>A creeping cynicism or sense of meaninglessness.</strong>
-            When things you once cared about feel hollow, or you find yourself
-            going through the motions without any sense of why — that disconnection
-            from purpose is a significant signal.
-        </li>
-        <li>
-            <strong>Nothing feels satisfying, even when it goes well.</strong>
-            Completing things, achieving things, being told you did well — and
-            feeling nothing. The inability to receive your own effort as enough
-            is one of burnout's quietest cruelties.
-        </li>
-        <li>
-            <strong>Sleep that isn't restful.</strong>
-            Falling asleep easily from exhaustion but waking unrefreshed. Or
-            lying awake despite desperately needing rest. A nervous system under
-            sustained stress often struggles to fully downshift.
-        </li>
-        <li>
-            <strong>Increased physical illness.</strong>
-            Getting sick more often, experiencing digestive issues, or noticing
-            your body responding to stress in ways it didn't used to. Chronic
-            stress suppresses immune function — your body is not separating
-            emotional stress from physical threat.
-        </li>
-    </ol>
+    <p>
+        ACV is also mildly acidic in a way that can help balance the pH environment of your
+        digestive tract. When that environment is off — too alkaline, too fermented, too sluggish —
+        digestion slows, and the downstream effects are felt. A gentle, daily dose of ACV may help
+        recalibrate that environment over time.
+    </p>
 
-
-    <!-- Inline image — portrait 3:4, no crop -->
-    <div class="post-img post-img--portrait-34">
-        <div class="post-img__frame">
-            <img src="images/pexels-79380313-9007274.jpg" alt="A woman resting in white bed linens, arms above her head — still, soft, restored" loading="lazy">
-        </div>
-        <p class="post-img__caption">
-            Rest isn't a reward you earn after exhaustion. It's the practice that keeps exhaustion from becoming burnout.
+    <div class="research-note">
+        <span class="research-note__label">A note on the research</span>
+        <p>
+            The science on ACV and digestion is promising but still developing. Most studies are small,
+            and the mechanisms aren't fully mapped. What we do know is that acetic acid has documented
+            effects on gastric emptying and blood sugar, and that many people report meaningful
+            improvements in regularity with consistent use. As with most gentle, natural interventions,
+            individual responses vary — and that's not a reason to dismiss it, just a reason to listen
+            to your own body closely.
         </p>
     </div>
 
 
-    <h2>Why Burnout Matters for Your <em>Mental Health</em></h2>
+    <h2>What Honey Brings <em>to Your Gut</em></h2>
 
     <p>
-        Burnout is not a formal clinical diagnosis, but its effects on mental health
-        are very real. Left unaddressed, chronic burnout can contribute to or
-        deepen anxiety, depression, and a generalized disconnection from your own
-        life. The relationship runs in both directions — stress fuels burnout, and
-        burnout creates the conditions in which mental health struggles take root.
+        Honey isn't just sweetness. Raw honey contains natural prebiotics — compounds that feed and
+        support the beneficial bacteria living in your gut. A healthy microbiome is one of the
+        most important foundations of good digestion, and most of us could do more to protect it.
     </p>
 
     <p>
-        This is why naming it matters. Not to pathologize your exhaustion, but to
-        treat it with the seriousness it deserves — the same seriousness you would
-        extend to any other condition that was quietly affecting your quality of life.
+        Honey also has a mild laxative effect, largely because its natural sugars draw water into the
+        colon. Softer stools, more consistent movement, less straining — these are gentle changes,
+        not dramatic ones. But gentle is exactly the point. Your gut doesn't need to be shocked into
+        functioning. It needs to be <em>supported.</em>
     </p>
+
+    <p>
+        One small thing worth knowing: very hot water can degrade some of honey's beneficial enzymes.
+        Warm water — around 37–43°C, the temperature of a comfortable bath — preserves everything
+        honey brings to the glass. That's the sweet spot.
+    </p>
+
+
+    <!-- Contained image -->
+    <div class="post-img post-img--contained">
+        <div class="post-img__frame">
+            <img src="images/pexels-rahimegul-30216482.jpg" alt="A warm golden drink in a glass mug with a cinnamon stick, surrounded by dried flowers in soft morning light" loading="lazy">
+        </div>
+        <p class="post-img__caption">
+            Raw honey — not just sweetness, but a quiet act of care for the bacteria that keep you well.
+        </p>
+    </div>
+
+
+    <!-- MORNING RITUAL SECTION -->
+    <div class="morning-ritual">
+        <h2 class="morning-ritual__title">Your ACV &amp; Honey <em>Morning Ritual</em></h2>
+        <p class="morning-ritual__intro">
+            This works best on an empty stomach, before breakfast or coffee. It takes less than
+            two minutes to make — and the ritual itself, the small act of preparing something
+            intentional for your body, is part of what makes it meaningful.
+        </p>
+
+        <div class="ritual-steps">
+
+            <div class="ritual-step">
+                <div class="ritual-step__num-col">
+                    <span class="ritual-step__num">01</span>
+                    <span class="ritual-step__label">Water</span>
+                </div>
+                <div class="ritual-step__body">
+                    <h3 class="ritual-step__heading">Start with warm water — not hot</h3>
+                    <p class="ritual-step__text">
+                        Fill a glass with about 250ml of warm water. It should feel comfortable to hold —
+                        roughly the temperature of a bath, around <strong>37–43°C</strong>. This temperature
+                        is important: it keeps honey's beneficial enzymes intact, and warm liquid is gentler
+                        on an empty stomach than cold. Think of it as the base that carries everything else.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ritual-step">
+                <div class="ritual-step__num-col">
+                    <span class="ritual-step__num">02</span>
+                    <span class="ritual-step__label">ACV</span>
+                </div>
+                <div class="ritual-step__body">
+                    <h3 class="ritual-step__heading">Add 1–2 tablespoons of apple cider vinegar</h3>
+                    <p class="ritual-step__text">
+                        Start with <strong>1 tablespoon</strong> if you're new to this. Your stomach is
+                        meeting something acidic first thing in the morning — give it time to adjust. Use raw,
+                        unfiltered ACV with the mother (the cloudy sediment at the bottom). That's where most
+                        of the beneficial compounds live. Shake the bottle gently before pouring.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ritual-step">
+                <div class="ritual-step__num-col">
+                    <span class="ritual-step__num">03</span>
+                    <span class="ritual-step__label">Honey</span>
+                </div>
+                <div class="ritual-step__body">
+                    <h3 class="ritual-step__heading">Stir in 1–2 teaspoons of honey</h3>
+                    <p class="ritual-step__text">
+                        Add <strong>1–2 teaspoons of raw honey</strong> and stir until dissolved. Raw honey
+                        retains its natural enzymes and prebiotics — processed honey has most of those cooked
+                        out. The honey also softens the sharpness of the ACV, making the whole drink
+                        genuinely pleasant rather than something you endure. If it still feels too tart,
+                        add a little more honey. Adjust until it suits you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ritual-step">
+                <div class="ritual-step__num-col">
+                    <span class="ritual-step__num">04</span>
+                    <span class="ritual-step__label">Drink</span>
+                </div>
+                <div class="ritual-step__body">
+                    <h3 class="ritual-step__heading">Drink slowly, on an empty stomach</h3>
+                    <p class="ritual-step__text">
+                        Sip it — don't rush. Drinking it slowly gives your digestive system time to respond,
+                        and it makes the ritual feel like something you chose, not something you're just
+                        getting through. Wait at least <strong>20–30 minutes before eating</strong>.
+                        Then have your breakfast. And remember: drink plenty of water throughout the rest
+                        of your day. ACV is a gentle stimulant for your digestive system — hydration is
+                        what keeps that system running smoothly.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <h2>The Brand I Reach For — <em>and Why</em></h2>
+
+    <p>
+        Not all apple cider vinegars are created equal. The one thing that matters most: it should
+        be raw, organic, unfiltered, and contain <em>the mother</em> — the cloudy, living culture of
+        beneficial bacteria and enzymes that forms naturally during fermentation. Clear, filtered ACV
+        has most of that stripped out.
+    </p>
+
+    <p>
+        My personal go-to is Bragg. For everyday convenience, their
+        <a href="https://www.amazon.com/Bragg-Apple-Cider-Vinegar-Capsules/dp/B08ZY8MSMV/" target="_blank" rel="noopener">Apple Cider Vinegar Capsules</a>
+        are a genuinely useful option — especially on mornings when you're traveling or just can't
+        face the taste. On slower weekends, I prefer the real thing:
+        <a href="https://www.amazon.com/Bragg-Organic-Vinegar-Miracle-Concentrate/dp/B0711K3FD7/" target="_blank" rel="noopener">Bragg's Organic Apple Cider Vinegar</a>
+        in a glass of warm water with honey, the way this ritual was meant to be done. There are
+        also many other quality options available — whatever you choose, just check that label
+        for "raw," "unfiltered," and "with the mother."
+    </p>
+
+
+    <!-- Contained image -->
+    <div class="post-img post-img--contained">
+        <div class="post-img__frame">
+            <img src="images/pexels-tijana-drndarski-449691-3338676.jpg" alt="Two glasses of apple cider vinegar drink with green apple slices and cinnamon sticks on a dark wood surface" loading="lazy">
+        </div>
+        <p class="post-img__caption">
+            The ritual takes two minutes. What it gives back accumulates quietly, over weeks and months.
+        </p>
+    </div>
 
 
     <!-- Internal links -->
     <div class="internal-links">
         <span class="internal-links__title">You might also want to read</span>
         <ul>
-            <li><a href="#">What If Softness Is Your Greatest Strength</a></li>
-            <li><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></li>
-            <li><a href="#">The Quiet Power of Saying No Without Apologizing</a></li>
+            <li><a href="post-water.html">What If a Glass of Water, at the Right Time, Changed Everything?</a></li>
+            <li><a href="post-burnout.html">What If You're Not Lazy — You're Burned Out?</a></li>
+            <li><a href="post-companion-dogs.html">What If Your Dog Is Your Most Meaningful Relationship?</a></li>
         </ul>
     </div>
 
 
-    <h2>8 Gentle Ways to Begin <em>Coming Back to Yourself</em></h2>
+    <h2>A Gentle Word <em>of Caution</em></h2>
 
     <p>
-        Recovery from burnout isn't a hustle. It isn't a new productivity system
-        or a weekend reset. It's a slow, patient return to yourself — one small act
-        of self-honoring at a time.
+        ACV is acidic, and that acidity can irritate tooth enamel over time if you drink it
+        undiluted. Always dilute it well — never drink it straight — and rinse your mouth with
+        plain water afterwards. If you wear braces or have sensitive teeth, it's worth being
+        especially mindful.
     </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Start with one honest boundary.</strong>
-            Not a full overhaul of your life — just one thing you say no to this
-            week that you would have previously said yes to out of obligation.
-            Boundaries aren't walls. They're the shape of a life you can actually live in.
-        </li>
-        <li>
-            <strong>Bring a stress-reduction practice into your daily rhythm.</strong>
-            Deep breathing. A few minutes of meditation. A slow walk without your
-            phone. These aren't clichés — they are direct interruptions to your
-            nervous system's stress response, and they work when practiced consistently.
-        </li>
-        <li>
-            <strong>Prioritize what genuinely restores you.</strong>
-            Not what you think should restore you — what actually does. For some
-            people that's solitude and silence. For others it's connection and laughter.
-            You know the difference. Start doing more of the thing that actually works.
-        </li>
-        <li>
-            <strong>Move your body gently and regularly.</strong>
-            Not as punishment or performance, but as care. Even 20 minutes of
-            movement that you enjoy can meaningfully shift your nervous system,
-            your mood, and your energy levels over time.
-        </li>
-        <li>
-            <strong>Protect your sleep like it's sacred — because it is.</strong>
-            A consistent sleep schedule, a winding-down ritual, a room that feels
-            safe and quiet. Sleep is the foundation that everything else is built on.
-            Without it, recovery isn't fully possible.
-        </li>
-        <li>
-            <strong>Let someone in.</strong>
-            A friend, a family member, a therapist. You don't have to have the
-            words — you just have to be willing to stop performing okayness with
-            at least one person. Being witnessed in your exhaustion is part of healing.
-        </li>
-        <li>
-            <strong>Revisit what actually matters to you.</strong>
-            Burnout often happens when we've been living by someone else's definition
-            of success. A quiet, honest conversation with yourself about what you
-            actually want — separate from what you're supposed to want — can be
-            quietly revolutionary.
-        </li>
-        <li>
-            <strong>Take breaks before you need them desperately.</strong>
-            A five-minute pause in your workday. A day off before the collapse.
-            Rest taken proactively is far more restorative than rest taken after
-            you've already broken down. You are allowed to rest before you're empty.
-        </li>
-    </ol>
+    <p>
+        Start small. One tablespoon is enough to begin with. Some people notice results quickly;
+        for others, it takes a few weeks of consistent daily practice. This is not a quick fix.
+        It's a ritual — and rituals ask for patience and consistency, not urgency.
+    </p>
+
+    <p>
+        If you have chronic or severe constipation, please see a doctor. ACV and honey support
+        a healthy digestive system beautifully, but they're part of a broader picture that
+        includes what you eat, how much you move, how you manage stress, and how well you sleep.
+        No single remedy works in isolation — and your gut knows the difference between being
+        supported and being expected to compensate for everything else.
+    </p>
 
     <div class="content-rule"></div>
 
-    <!-- Gentle conclusion -->
+    <!-- Conclusion -->
     <div class="post-conclusion">
-        <h3 class="post-conclusion__title">A gentle closing thought</h3>
+        <h3 class="post-conclusion__title">Two minutes. Every morning. Just for you.</h3>
         <p>
-            If you recognized yourself anywhere in this post, please be kind to
-            yourself about it. Burnout isn't a sign that you failed — it's a sign
-            that you gave a great deal for a very long time, often without enough
-            support. The fact that you're here, reading, wondering if things could
-            be different — that is already the beginning of something. And if your
-            symptoms persist or feel overwhelming, please reach out to a mental
-            health professional. You don't have to figure this out alone.
+            The oldest remedies endure because they work — not dramatically, not overnight,
+            but quietly and honestly over time. A tablespoon of ACV, a spoonful of honey,
+            a glass of warm water. That's all. Your gut has been waiting for you to offer
+            it something this simple. What if you started tomorrow morning?
         </p>
     </div>
 
@@ -552,74 +623,93 @@
 
     <div class="faq-item" id="faq1">
         <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
-            <span class="faq-question__text">How do I know if I'm burned out or just going through a rough patch?</span>
+            <span class="faq-question__text">How long before I notice a difference?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                A rough patch tends to have a visible cause and a visible end — a hard project,
-                a difficult season, a specific stressor. Burnout is more pervasive: it lingers
-                after the stressor is gone, it affects multiple areas of your life simultaneously,
-                and rest doesn't restore you the way it used to. If you've been feeling this way
-                for weeks or months rather than days, burnout is worth considering seriously.
+                Some people notice improved regularity within a few days; for others it takes two to
+                four weeks of consistent daily use. The key word is consistent — one glass every
+                morning, on an empty stomach, over time. Occasional use tends to produce occasional
+                results. Think of it as a ritual rather than a remedy, and give it at least a month
+                before you decide whether it's working for you.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq2">
         <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
-            <span class="faq-question__text">Can burnout happen even if I love what I do?</span>
+            <span class="faq-question__text">Can I drink this if I have acid reflux?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Absolutely — and this is one of the most painful forms of burnout, because
-                it can come with guilt and confusion. Loving what you do doesn't make you
-                immune to depletion. Burnout is about the ratio of output to recovery, not
-                about whether your work is meaningful. Passionate people often burn out
-                precisely because they care so much that they forget to stop.
+                Acid reflux can have different root causes, and ACV affects people with reflux differently.
+                Some find it worsens symptoms; others find that low stomach acid (which ACV can help address)
+                was actually contributing to their reflux in the first place. If you have acid reflux or GERD,
+                speak with your doctor before incorporating ACV regularly. This is one area where individual
+                response really does vary, and personalised guidance matters.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq3">
         <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
-            <span class="faq-question__text">How long does it take to recover from burnout?</span>
+            <span class="faq-question__text">Does it matter what kind of honey I use?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Recovery varies enormously depending on how long burnout has been building,
-                what caused it, and what changes you're able to make. Mild burnout might lift
-                with a few weeks of intentional rest and boundary-setting. Deeper burnout —
-                especially when it's contributed to depression or anxiety — may take months
-                and benefit significantly from professional support. Be patient with the
-                timeline. Healing is not linear.
+                Yes — raw, unprocessed honey retains its natural enzymes, prebiotics, and antimicrobial
+                compounds. Commercial honey that has been heavily filtered and heat-processed loses most
+                of those. Raw honey is slightly cloudier, often more viscous, and usually found at health
+                food stores or farmers markets. Manuka honey is a particularly well-researched option
+                for gut support, though it's considerably more expensive. Any raw, unfiltered honey
+                will serve this ritual well.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq4">
         <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
-            <span class="faq-question__text">When should I seek professional help for burnout?</span>
+            <span class="faq-question__text">Can I use ACV capsules instead of liquid?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                If your symptoms are significantly affecting your daily functioning,
-                relationships, or physical health — or if you're noticing signs of
-                depression or anxiety alongside your burnout — please reach out to a
-                therapist, counselor, or your doctor. You don't have to reach a crisis
-                point to deserve support. Asking for help early is one of the wisest
-                things you can do.
+                Yes, capsules are a perfectly valid option — especially for travel, or for people who
+                find the taste of liquid ACV difficult to get used to. Bragg makes a reliable capsule
+                version that many people find convenient. The main difference is that with capsules,
+                you lose the warm water ritual itself, which is its own form of gut support. If you can
+                manage the liquid form, it's worth it for that reason alone — but capsules are a
+                good practical alternative.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq5">
+        <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">
+            <span class="faq-question__text">Is it safe to drink ACV and honey every day?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                For most healthy adults, yes — daily use at the recommended amounts (1–2 tablespoons of ACV,
+                1–2 teaspoons of honey, well-diluted in water) is considered safe. The most important
+                precaution is protecting your tooth enamel: always dilute properly and rinse your mouth
+                with water after drinking. People on certain medications — particularly insulin or
+                diuretics — should consult a doctor, as ACV can affect potassium levels and blood sugar.
+                If in doubt, ask your healthcare provider.
             </p>
         </div>
     </div>
@@ -627,14 +717,14 @@
 </section>
 
 
-<!-- TAGS — Category + 3 SEO tags -->
+<!-- TAGS -->
 <div class="post-tags-section">
-    <span class="post-tags-section__label">Tagged in</span>
+    <span class="post-tags-section__label">Filed under</span>
     <div class="tags">
-        <a href="mind.html" class="tag tag--category">Mind</a>
-        <a href="/tag/burnout-recovery" class="tag">burnout recovery</a>
-        <a href="/tag/mental-exhaustion" class="tag">mental exhaustion</a>
-        <a href="/tag/stress-and-self-care" class="tag">stress and self-care</a>
+        <a href="nourish.html" class="tag tag--category">Nourish</a>
+        <a href="#" class="tag">apple cider vinegar and honey for digestion</a>
+        <a href="#" class="tag">natural remedy for constipation</a>
+        <a href="#" class="tag">ACV morning drink benefits</a>
     </div>
 </div>
 
@@ -646,10 +736,10 @@
         <div class="author-bio__info">
             <h4>Written by Gia</h4>
             <p>
-                Wellness blogger, designer, and wanderer at heart. I believe deeply that
-                beauty is healing and softness is a form of power. "Darling… what if" is
-                my ongoing love letter to the life I'm choosing — one small and intentional
-                moment at a time.
+                Gia is the founder of <em>darling, what if</em> — a lifestyle space for women
+                who are quietly rewriting the rules of how they live, feel, and take care of
+                themselves. She writes about wellness, beauty, emotional health, and the small
+                rituals that add up to a life that feels like yours.
             </p>
         </div>
     </div>
@@ -660,57 +750,68 @@
 <section class="related-posts">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Keep <em>Reading</em></h2>
+            <h2 class="section-title">You might also <em>love</em></h2>
         </div>
         <div class="related-grid">
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-water"></div>
+                </div>
+                <div class="post-card__body">
+                    <span class="category-label">Nourish</span>
+                    <h3 class="post-card__title">
+                        <a href="post-water.html">What If a Glass of Water, at the Right Time, Changed Everything?</a>
+                    </h3>
+                    <span class="post-card__date">May 8, 2026</span>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-dusk"></div>
+                </div>
+                <div class="post-card__body">
+                    <span class="category-label">Mind</span>
+                    <h3 class="post-card__title">
+                        <a href="post-burnout.html">What If You're Not Lazy — You're Burned Out?</a>
+                    </h3>
+                    <span class="post-card__date">May 7, 2026</span>
+                </div>
+            </article>
+
             <article class="post-card">
                 <div class="post-card__img-wrap">
                     <div class="post-card__img ph-sage"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Wellness</a>
-                    <h3 class="post-card__title"><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></h3>
-                    <div class="post-card__date">May 7, 2026 &nbsp;·&nbsp; 6 min read</div>
+                    <span class="category-label">Companion</span>
+                    <h3 class="post-card__title">
+                        <a href="post-companion-dogs.html">What If Your Dog Is Your Most Meaningful Relationship?</a>
+                    </h3>
+                    <span class="post-card__date">May 8, 2026</span>
                 </div>
             </article>
-            <article class="post-card">
-                <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-rose"></div>
-                </div>
-                <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="#">The Quiet Power of Saying No Without Apologizing</a></h3>
-                    <div class="post-card__date">April 3, 2026 &nbsp;·&nbsp; 6 min read</div>
-                </div>
-            </article>
-            <article class="post-card">
-                <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-amber"></div>
-                </div>
-                <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="post-morning-pages.html">Morning Pages & Why They Rewired My Anxious Brain</a></h3>
-                    <div class="post-card__date">May 4, 2026 &nbsp;·&nbsp; 5 min read</div>
-                </div>
-            </article>
+
         </div>
     </div>
 </section>
 
 
 <!-- NEWSLETTER -->
-<section class="newsletter" id="newsletter">
-    <div class="container">
-        <div class="newsletter__inner">
-            <span class="newsletter__eyebrow">Letters from Gia</span>
-            <h2 class="newsletter__title">What if your inbox felt like<br><em>a warm cup of tea?</em></h2>
-            <p class="newsletter__body">Soft stories, honest reflections, and small ideas that might just change the way you see your day.</p>
-            <form class="newsletter__form" onsubmit="handleSignup(event)">
-                <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
-                <button type="submit" class="newsletter__btn">Yes, I'm in</button>
-            </form>
-            <p class="newsletter__note">No spam, ever. Unsubscribe anytime.</p>
-        </div>
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <span class="newsletter__eyebrow">Letters from Gia</span>
+        <h2 class="newsletter__title">What if your inbox felt like <em>a soft place to land?</em></h2>
+        <p class="newsletter__body">
+            Gentle rituals, honest reflections, and the occasional reminder that
+            taking care of yourself doesn't have to be complicated. No noise — just warmth.
+        </p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input class="newsletter__input" type="email" placeholder="your@email.com" aria-label="Email address">
+            <button class="newsletter__btn" type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No spam, ever. Unsubscribe any time.</p>
     </div>
 </section>
 
@@ -721,11 +822,14 @@
         <div class="footer__grid">
             <div>
                 <div class="footer__logo">darling, <em>what if</em></div>
-                <p class="footer__about">A lifestyle space for women who are quietly questioning everything and bravely choosing to begin again.</p>
+                <p class="footer__about">
+                    A lifestyle philosophy for women who believe softness is strength,
+                    beauty is healing, and every small ritual is an act of self-love.
+                </p>
                 <div class="footer__social">
-                    <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
-                    <a href="https://pinterest.com" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">PI</a>
-                    <a href="mailto:hello@darlingwhatif.com" class="footer__social-link" aria-label="Email">@</a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">PT</a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok">TK</a>
                 </div>
             </div>
             <div class="footer__col">
@@ -739,29 +843,30 @@
                 </ul>
             </div>
             <div class="footer__col">
-                <h5>Connect</h5>
+                <h5>Recent</h5>
                 <ul>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="#newsletter">Newsletter</a></li>
-                    <li><a href="/collaborate">Collaborate</a></li>
+                    <li><a href="post-acv-honey.html">ACV &amp; Honey Morning Ritual</a></li>
+                    <li><a href="post-water.html">Drinking Water at the Right Time</a></li>
+                    <li><a href="post-companion-dogs.html">Your Dog &amp; Your Wellbeing</a></li>
+                    <li><a href="post-burnout.html">When You're Burned Out</a></li>
                 </ul>
             </div>
             <div class="footer__col">
-                <h5>Legal</h5>
+                <h5>About</h5>
                 <ul>
+                    <li><a href="about.html">About Gia</a></li>
+                    <li><a href="/contact">Contact</a></li>
                     <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/disclosure">Disclosure</a></li>
-                    <li><a href="/terms">Terms of Use</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__bottom">
-            <span>© 2026 <a href="index.html">darlingwhatif.com</a> — All rights reserved</span>
-            <span>Made with intention ✦</span>
+            <span>© 2026 darling, what if. All rights reserved.</span>
+            <a href="/privacy">Privacy Policy</a>
         </div>
     </div>
 </footer>
+
 
 <script>
     function toggleFaq(id) {
@@ -775,15 +880,6 @@
             item.classList.add('open');
             item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
         }
-    }
-    function handleSignup(e) {
-        e.preventDefault();
-        const input = e.target.querySelector('.newsletter__input');
-        const btn = e.target.querySelector('.newsletter__btn');
-        btn.textContent = 'You\'re in ✦';
-        btn.style.background = '#7A6B50';
-        input.disabled = true;
-        btn.disabled = true;
     }
 </script>
 

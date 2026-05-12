@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living — Home, Travel & Intentional Space | Darling, What If</title>
+    <meta name="description" content="Home, space, travel, the aesthetics of everyday life — and how the environment you live in shapes the person you're becoming.">
+    <meta property="og:title" content="Living | Darling, What If">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://darlingwhatif.com/living">
+    <link rel="canonical" href="https://darlingwhatif.com/living">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --gold: #9B8968; --gold-dark: #7A6B50; --gold-mid: #B09E80; --gold-light: #C4B49A; --gold-faint: #F2EDE5; --bg: #FAFAF7; --bg-warm: #F5F1EB; --text: #1D1B19; --text-muted: #6B6462; --border: #EAE5DF; --white: #FFFFFF; --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif; --content-w: 1240px; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; font-weight: 300; -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; } ul { list-style: none; }
+        .nav { position: sticky; top: 0; z-index: 200; background: rgba(250,250,247,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); height: 76px; display: flex; align-items: center; }
+        .nav__inner { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
+        .nav__logo { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: var(--text); letter-spacing: -0.01em; white-space: nowrap; }
+        .nav__logo strong { font-weight: 600; font-style: normal; color: var(--gold); }
+        .nav__links { display: flex; align-items: center; gap: 36px; }
+        .nav__links a { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
+        .nav__links a:hover { color: var(--gold); }
+        .nav__links a.active { color: var(--gold); font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+        .nav__search { background: none; border: none; cursor: pointer; color: var(--text-muted); padding: 4px; }
+        .cat-hero { background: linear-gradient(150deg, #EBE6DC 0%, #DDD5C5 40%, #CFCAB8 100%); padding: 80px 48px 72px; }
+        .cat-hero__inner { max-width: var(--content-w); margin: 0 auto; }
+        .cat-hero__eyebrow { font-size: 0.63rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+        .cat-hero__title { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); font-weight: 400; font-style: italic; color: var(--text); line-height: 1.05; margin-bottom: 20px; }
+        .cat-hero__desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; max-width: 560px; margin-bottom: 28px; }
+        .cat-hero__count { display: inline-block; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--white); color: var(--text-muted); padding: 8px 18px; border: 1px solid var(--border); }
+        .container { max-width: var(--content-w); margin: 0 auto; padding: 0 48px; }
+        .featured-wrap { padding: 72px 0 0; }
+        .featured-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+        .featured-post { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.3s; }
+        .featured-post:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+        .featured-post__img { aspect-ratio: 4/3; overflow: hidden; background: var(--bg-warm); }
+        .featured-post__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+        .featured-post__img .placeholder { width: 100%; height: 100%; background: linear-gradient(150deg, #E8E4DC 0%, #D4CCBC 30%, #B8C4B0 65%, #8FA890 100%); }
+        .featured-post:hover .featured-post__img img { transform: scale(1.03); }
+        .featured-post__body { padding: 52px 48px; display: flex; flex-direction: column; justify-content: center; background: var(--white); }
+        .featured-post__cat { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+        .featured-post__title { font-family: var(--serif); font-size: 1.85rem; font-weight: 500; line-height: 1.25; color: var(--text); margin-bottom: 18px; }
+        .featured-post__title em { font-style: italic; color: var(--gold-dark); }
+        .featured-post__excerpt { font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; }
+        .featured-post__meta { font-size: 0.74rem; color: var(--text-muted); margin-bottom: 28px; display: flex; gap: 12px; align-items: center; }
+        .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border); }
+        .read-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--gold-faint); padding-bottom: 2px; transition: border-color 0.2s; align-self: flex-start; }
+        .read-btn:hover { border-color: var(--gold); }
+        .posts-wrap { padding: 52px 0 88px; }
+        .posts-wrap__label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+        .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .post-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; }
+        .post-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.07); }
+        .post-card__img { aspect-ratio: 16/9; overflow: hidden; background: var(--bg-warm); }
+        .post-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.45s; }
+        .post-card:hover .post-card__img img { transform: scale(1.04); }
+        .post-card__body { padding: 24px; }
+        .post-card__category { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+        .post-card__title { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; line-height: 1.4; color: var(--text); margin-bottom: 12px; }
+        .post-card__excerpt { font-size: 0.83rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 18px; }
+        .post-card__meta { font-size: 0.72rem; color: var(--text-muted); }
+        .newsletter { background: #2A2520; padding: 80px 0; }
+        .newsletter__inner { max-width: 640px; margin: 0 auto; padding: 0 48px; text-align: center; }
+        .newsletter__eyebrow { font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 18px; }
+        .newsletter__title { font-family: var(--serif); font-size: 2rem; font-weight: 400; font-style: italic; color: #F5F1EB; line-height: 1.3; margin-bottom: 14px; }
+        .newsletter__sub { font-size: 0.9rem; color: rgba(245,241,235,0.55); line-height: 1.75; margin-bottom: 36px; }
+        .newsletter__form { display: flex; border: 1px solid rgba(255,255,255,0.14); }
+        .newsletter__input { flex: 1; background: transparent; border: none; padding: 16px 20px; font-family: var(--sans); font-size: 0.87rem; color: #F5F1EB; outline: none; }
+        .newsletter__input::placeholder { color: rgba(245,241,235,0.3); }
+        .newsletter__btn { padding: 17px 28px; background: var(--gold); color: var(--white); border: none; font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: nowrap; transition: background 0.25s; }
+        .newsletter__btn:hover { background: var(--gold-dark); }
+        .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); margin-top: 14px; }
+        .footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0 32px; }
+        .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 52px; margin-bottom: 64px; }
+        .footer__logo { font-family: var(--serif); font-size: 1.45rem; font-style: italic; color: var(--text); margin-bottom: 16px; }
+        .footer__logo em { color: var(--gold); font-style: normal; font-weight: 600; }
+        .footer__about { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; }
+        .footer__social { display: flex; gap: 12px; }
+        .footer__social-link { width: 38px; height: 38px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.72rem; transition: all 0.2s; }
+        .footer__social-link:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
+        .footer__col h5 { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); font-weight: 400; margin-bottom: 22px; }
+        .footer__col ul { display: flex; flex-direction: column; gap: 11px; }
+        .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s; }
+        .footer__col a:hover { color: var(--gold); }
+        .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
+        @media (max-width: 900px) { .nav__links { display: none; } .featured-post { grid-template-columns: 1fr; } .featured-post__img { aspect-ratio: 16/9; } .posts-grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
+        @media (max-width: 680px) { .nav__inner, .container, .cat-hero { padding-left: 24px; padding-right: 24px; } .posts-grid { grid-template-columns: 1fr; } .featured-post__body { padding: 32px 24px; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
+        <ul class="nav__links">
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="mind.html">Mind</a></li>
+            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="living.html" class="active">Living</a></li>
+            <li><a href="companion.html">Companion</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+        <button class="nav__search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+    </div>
+</nav>
+
+<section class="cat-hero">
+    <div class="cat-hero__inner">
+        <p class="cat-hero__eyebrow">Category</p>
+        <h1 class="cat-hero__title">Living</h1>
+        <p class="cat-hero__desc">Home, space, travel, the aesthetics of everyday life — and how the environment you live in quietly shapes the person you're becoming.</p>
+        <span class="cat-hero__count">3 posts</span>
+    </div>
+</section>
+
+<div class="container">
+    <div class="featured-wrap">
+        <p class="featured-label">Latest</p>
+        <a href="post-home-mental-health.html">
+            <div class="featured-post">
+                <div class="featured-post__img">
+                    <div class="placeholder"></div>
+                </div>
+                <div class="featured-post__body">
+                    <div class="featured-post__cat">Living</div>
+                    <h2 class="featured-post__title">How I Redesigned My Home to<br><em>Support My Mental Health</em></h2>
+                    <p class="featured-post__excerpt">Your space is in constant conversation with your nervous system. Here's what I changed — and what quietly shifted in me as a result.</p>
+                    <div class="featured-post__meta"><span>May 8, 2026</span><div class="meta-dot"></div><span>7 min read</span></div>
+                    <span class="read-btn">Read post →</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="posts-wrap">
+        <p class="posts-wrap__label">All posts in Living</p>
+        <div class="posts-grid">
+
+            <article class="post-card">
+                <a href="post-maui.html">
+                    <div class="post-card__img">
+                        <div style="width:100%;height:100%;background:linear-gradient(135deg,#D4E8D8 0%,#A8CCA8 50%,#7AAA82 100%);"></div>
+                    </div>
+                </a>
+                <div class="post-card__body">
+                    <div class="post-card__category">Living</div>
+                    <h3 class="post-card__title"><a href="post-maui.html">Mahalo, Maui — A Love Letter to the Island That Changed Me</a></h3>
+                    <p class="post-card__excerpt">Raw, ancient, alive — and it sent me home a little different. Some places change you whether you're ready or not.</p>
+                    <div class="post-card__meta">May 8, 2026 · 9 min read</div>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <a href="post-maui-valley-isle.html">
+                    <div class="post-card__img">
+                        <div style="width:100%;height:100%;background:linear-gradient(135deg,#D8E4EC 0%,#A8C0CC 50%,#7AA0B2 100%);"></div>
+                    </div>
+                </a>
+                <div class="post-card__body">
+                    <div class="post-card__category">Living</div>
+                    <h3 class="post-card__title"><a href="post-maui-valley-isle.html">Maui: The Valley Isle</a></h3>
+                    <p class="post-card__excerpt">Sun-drenched, glamorous, and entirely its own world. The other side of Maui that pulls you in and doesn't let go.</p>
+                    <div class="post-card__meta">May 8, 2026 · 8 min read</div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</div>
+
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <p class="newsletter__eyebrow">Letters from the blog</p>
+        <h2 class="newsletter__title">Stay close, darling.</h2>
+        <p class="newsletter__sub">Slow reads, honest thoughts, and the kind of wellness that doesn't ask you to optimize anything.</p>
+        <form class="newsletter__form" onsubmit="return false;"><input type="email" class="newsletter__input" placeholder="your@email.com"><button type="submit" class="newsletter__btn">Subscribe</button></form>
+        <p class="newsletter__note">No noise. Unsubscribe anytime.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div><div class="footer__logo">darling, <em>what if</em></div><p class="footer__about">A lifestyle blog for women who are quietly reimagining what their lives could look like — one soft, intentional choice at a time.</p><div class="footer__social"><a href="#" class="footer__social-link">ig</a><a href="#" class="footer__social-link">pt</a><a href="#" class="footer__social-link">tk</a></div></div>
+            <div class="footer__col"><h5>Explore</h5><ul><li><a href="wellness.html">Wellness</a></li><li><a href="mind.html">Mind</a></li><li><a href="nourish.html">Nourish</a></li><li><a href="living.html">Living</a></li><li><a href="companion.html">Companion</a></li></ul></div>
+            <div class="footer__col"><h5>Recent</h5><ul><li><a href="post-home-mental-health.html">Home & Mind</a></li><li><a href="post-maui.html">Mahalo, Maui</a></li><li><a href="post-maui-valley-isle.html">Valley Isle</a></li><li><a href="post-morning-pages.html">Morning Pages</a></li></ul></div>
+            <div class="footer__col"><h5>About</h5><ul><li><a href="about.html">About Me</a></li><li><a href="about.html#contact">Contact</a></li><li><a href="#">Privacy</a></li></ul></div>
+        </div>
+        <div class="footer__bottom"><span>© 2026 Darling, What If. All rights reserved.</span><span>Made with intention.</span></div>
+    </div>
+</footer>
+</body>
+</html>

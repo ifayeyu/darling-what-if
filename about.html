@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me — Gia | Darling, What If</title>
+    <meta name="description" content="I'm Gia — the writer behind Darling, What If. A lifestyle blog about the quiet, deliberate choices that change everything. Welcome.">
+    <meta property="og:title" content="About Me | Darling, What If">
+    <meta property="og:description" content="The story behind darling, what if — and the question that started it all.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://darlingwhatif.com/about">
+    <link rel="canonical" href="https://darlingwhatif.com/about">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --gold:        #9B8968;
+            --gold-dark:   #7A6B50;
+            --gold-mid:    #B09E80;
+            --gold-light:  #C4B49A;
+            --gold-faint:  #F2EDE5;
+            --bg:          #FAFAF7;
+            --bg-warm:     #F5F1EB;
+            --text:        #1D1B19;
+            --text-muted:  #6B6462;
+            --border:      #EAE5DF;
+            --white:       #FFFFFF;
+            --serif:       'Playfair Display', Georgia, serif;
+            --sans:        'DM Sans', system-ui, -apple-system, sans-serif;
+            --content-w:   720px;
+        }
+
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; font-weight: 300; -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* NAV */
+        .nav { position: sticky; top: 0; z-index: 200; background: rgba(250,250,247,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); height: 76px; display: flex; align-items: center; }
+        .nav__inner { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
+        .nav__logo { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: var(--text); letter-spacing: -0.01em; white-space: nowrap; }
+        .nav__logo strong { font-weight: 600; font-style: normal; color: var(--gold); }
+        .nav__links { display: flex; align-items: center; gap: 36px; }
+        .nav__links a { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
+        .nav__links a:hover { color: var(--gold); }
+        .nav__links a.active { color: var(--gold); font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+        .nav__search { background: none; border: none; cursor: pointer; color: var(--text-muted); padding: 4px; transition: color 0.2s; }
+        .nav__search:hover { color: var(--text); }
+
+        /* ABOUT HERO */
+        .about-hero {
+            background: linear-gradient(160deg, #EDE8DF 0%, #E0D8CB 35%, #CFC8B8 65%, #BDB5A5 100%);
+            padding: 100px 48px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 60% 40%, rgba(155,137,104,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        /* Photo placeholder — replace with <img> when ready */
+        .about-hero__photo {
+            width: 148px;
+            height: 148px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #D4CBBA 0%, #C4B89E 50%, #B09E80 100%);
+            margin: 0 auto 32px;
+            border: 4px solid rgba(255,255,255,0.6);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+            overflow: hidden;
+            position: relative;
+        }
+        /* Uncomment and swap when photo is ready:
+        .about-hero__photo img { width:100%; height:100%; object-fit:cover; display:block; } */
+        .about-hero__eyebrow { font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+        .about-hero__name { font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 4rem); font-weight: 400; font-style: italic; color: var(--text); line-height: 1.1; margin-bottom: 18px; }
+        .about-hero__tagline { font-size: 1.05rem; color: var(--text-muted); line-height: 1.75; max-width: 480px; margin: 0 auto 32px; font-weight: 300; }
+        .about-hero__divider { width: 40px; height: 1px; background: var(--gold-light); margin: 0 auto; }
+
+        /* INTRO SECTION */
+        .about-intro { max-width: var(--content-w); margin: 0 auto; padding: 80px 48px; }
+        .about-intro p { font-size: 1.05rem; line-height: 1.9; color: var(--text); margin-bottom: 28px; }
+        .about-intro p:last-child { margin-bottom: 0; }
+        .about-intro strong { font-weight: 500; }
+        .about-intro em { font-style: italic; color: var(--gold-dark); }
+
+        /* PHILOSOPHY SECTION */
+        .philosophy { background: var(--bg-warm); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 48px; }
+        .philosophy__inner { max-width: 960px; margin: 0 auto; }
+        .philosophy__eyebrow { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; text-align: center; }
+        .philosophy__title { font-family: var(--serif); font-size: 2rem; font-weight: 400; font-style: italic; color: var(--text); text-align: center; margin-bottom: 56px; line-height: 1.3; }
+        .philosophy__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+        .philosophy__card { background: var(--white); padding: 44px 36px; text-align: center; }
+        .philosophy__card:nth-child(2) { background: #2A2520; }
+        .philosophy__card:nth-child(2) .philosophy__question { color: #F5F1EB; }
+        .philosophy__card:nth-child(2) .philosophy__answer { color: rgba(245,241,235,0.55); }
+        .philosophy__num { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
+        .philosophy__card:nth-child(2) .philosophy__num { color: var(--gold-light); }
+        .philosophy__question { font-family: var(--serif); font-size: 1.25rem; font-style: italic; font-weight: 400; color: var(--text); line-height: 1.4; margin-bottom: 16px; }
+        .philosophy__answer { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; }
+
+        /* STORY IMAGE */
+        .about-img { max-width: var(--content-w); margin: 0 auto; padding: 0 48px; }
+        .about-img__frame {
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, #E5DFD4 0%, #D0C9B8 50%, #BDB59E 100%);
+            overflow: hidden;
+        }
+        .about-img__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .about-img__caption { font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.04em; line-height: 1.6; padding-top: 12px; text-align: center; font-style: italic; }
+
+        /* WHAT YOU'LL FIND */
+        .categories-section { max-width: 1060px; margin: 0 auto; padding: 88px 48px; }
+        .section-eyebrow { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+        .section-title { font-family: var(--serif); font-size: 2rem; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 48px; line-height: 1.3; }
+        .section-title em { color: var(--gold-dark); font-style: italic; }
+        .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .cat-card { border: 1px solid var(--border); padding: 36px 30px; transition: all 0.25s; cursor: pointer; }
+        .cat-card:hover { background: var(--bg-warm); border-color: var(--gold-light); transform: translateY(-2px); }
+        .cat-card__icon { width: 36px; height: 36px; border-radius: 50%; background: var(--gold-faint); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+        .cat-card__icon svg { color: var(--gold); }
+        .cat-card__name { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; color: var(--text); margin-bottom: 10px; }
+        .cat-card__desc { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; }
+        .cat-card__link { display: inline-block; margin-top: 18px; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+
+        /* BELIEFS */
+        .beliefs { background: var(--bg-warm); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 48px; }
+        .beliefs__inner { max-width: var(--content-w); margin: 0 auto; }
+        .beliefs__eyebrow { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+        .beliefs__title { font-family: var(--serif); font-size: 2rem; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 48px; line-height: 1.3; }
+        .belief-item { display: flex; gap: 28px; padding: 28px 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
+        .belief-item:first-of-type { border-top: 1px solid var(--border); }
+        .belief-item__mark { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: var(--gold-light); flex-shrink: 0; width: 20px; padding-top: 3px; }
+        .belief-item__text { font-size: 1rem; color: var(--text); line-height: 1.8; }
+        .belief-item__text strong { font-weight: 500; color: var(--text); }
+
+        /* CONTACT */
+        .contact-section { max-width: var(--content-w); margin: 0 auto; padding: 88px 48px; }
+        .contact-section p { font-size: 1rem; line-height: 1.85; color: var(--text-muted); margin-bottom: 24px; }
+        .contact-email { display: inline-flex; align-items: center; gap: 10px; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--gold-faint); padding-bottom: 2px; transition: border-color 0.2s; }
+        .contact-email:hover { border-color: var(--gold); }
+        .social-row { display: flex; gap: 14px; margin-top: 36px; }
+        .social-pill { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border: 1px solid var(--border); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); transition: all 0.2s; }
+        .social-pill:hover { background: var(--gold-faint); border-color: var(--gold-light); color: var(--gold-dark); }
+
+        /* NEWSLETTER */
+        .newsletter { background: #2A2520; padding: 80px 0; }
+        .newsletter__inner { max-width: 640px; margin: 0 auto; padding: 0 48px; text-align: center; }
+        .newsletter__eyebrow { font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 18px; }
+        .newsletter__title { font-family: var(--serif); font-size: 2rem; font-weight: 400; font-style: italic; color: #F5F1EB; line-height: 1.3; margin-bottom: 14px; }
+        .newsletter__sub { font-size: 0.9rem; color: rgba(245,241,235,0.55); line-height: 1.75; margin-bottom: 36px; }
+        .newsletter__form { display: flex; border: 1px solid rgba(255,255,255,0.14); }
+        .newsletter__input { flex: 1; background: transparent; border: none; padding: 16px 20px; font-family: var(--sans); font-size: 0.87rem; color: #F5F1EB; outline: none; }
+        .newsletter__input::placeholder { color: rgba(245,241,235,0.3); }
+        .newsletter__btn { padding: 17px 28px; background: var(--gold); color: var(--white); border: none; font-family: var(--sans); font-size: 0.68rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: nowrap; transition: background 0.25s; }
+        .newsletter__btn:hover { background: var(--gold-dark); }
+        .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); margin-top: 14px; }
+
+        /* FOOTER */
+        .footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0 32px; }
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+        .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 52px; margin-bottom: 64px; }
+        .footer__logo { font-family: var(--serif); font-size: 1.45rem; font-style: italic; color: var(--text); margin-bottom: 16px; }
+        .footer__logo em { color: var(--gold); font-style: normal; font-weight: 600; }
+        .footer__about { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; }
+        .footer__social { display: flex; gap: 12px; }
+        .footer__social-link { width: 38px; height: 38px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.72rem; font-weight: 500; transition: all 0.2s; }
+        .footer__social-link:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
+        .footer__col h5 { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); font-weight: 400; margin-bottom: 22px; }
+        .footer__col ul { display: flex; flex-direction: column; gap: 11px; }
+        .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s; }
+        .footer__col a:hover { color: var(--gold); }
+        .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .nav__links { display: none; }
+            .philosophy__grid { grid-template-columns: 1fr; gap: 2px; }
+            .cat-grid { grid-template-columns: 1fr 1fr; }
+            .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+        }
+        @media (max-width: 680px) {
+            .nav__inner, .container { padding-left: 24px; padding-right: 24px; }
+            .about-hero, .about-intro, .about-img, .categories-section, .beliefs, .beliefs__inner, .contact-section { padding-left: 24px; padding-right: 24px; }
+            .philosophy { padding-left: 24px; padding-right: 24px; }
+            .cat-grid { grid-template-columns: 1fr; }
+            .newsletter__form { flex-direction: column; }
+            .footer__grid { grid-template-columns: 1fr; }
+            .about-hero__name { font-size: 2.4rem; }
+            .social-row { flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
+        <ul class="nav__links">
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="mind.html">Mind</a></li>
+            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="living.html">Living</a></li>
+            <li><a href="companion.html">Companion</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+        </ul>
+        <button class="nav__search" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+
+<!-- ABOUT HERO -->
+<section class="about-hero">
+    <!-- Photo: replace the div below with <img> once ready
+         <div class="about-hero__photo"><img src="images/gia-photo.jpg" alt="Gia"></div> -->
+    <div class="about-hero__photo"></div>
+    <p class="about-hero__eyebrow">The creative mind behind the blog</p>
+    <h1 class="about-hero__name">Hello, I'm Gia.</h1>
+    <p class="about-hero__tagline">I design, paint, and write — firm believer that small things matter. Welcome to my visual diary, my happy place where I share parts of my life with you and bring you along for the ride!</p>
+    <div class="about-hero__divider"></div>
+</section>
+
+
+<!-- INTRO -->
+<section class="about-intro">
+    <p>
+        I started <em>darling, what if</em> because I kept asking myself a question I couldn't stop asking.
+        Not a dramatic question — not "what is the meaning of life" or "should I upend everything."
+        Just a quieter one: <strong>what if things could be a little different?</strong> What if the way I
+        was living wasn't the only way? What if softness wasn't a weakness but a practice? What if beauty
+        — real beauty, the kind that lives in how you feel when you wake up — was actually a form of healing?
+    </p>
+    <p>
+        Those questions are still the ones I write from. This blog is where I think out loud about them —
+        through what I eat, how I move through my days, what I do with my anxiety, how I've redesigned my
+        home and my habits and my relationship to myself. Not because I have the answers, but because I believe
+        that asking better questions is often more valuable than arriving at conclusions too quickly.
+    </p>
+    <p>
+        I've been writing online for a while — I ran a previous blog called <em>PS. J'ADORE</em>, where I
+        first started exploring beauty and wellness in their softest, most honest forms. Darling, What If is
+        the next chapter of that — a more intentional space, rebuilt from the ground up with clarity about
+        who it's for and what it's trying to do.
+    </p>
+    <p>
+        It's for the woman who's quietly reimagining her life. Not loudly. Not dramatically.
+        Just one small, deliberate choice at a time.
+    </p>
+</section>
+
+
+<!-- PHILOSOPHY -->
+<section class="philosophy">
+    <div class="philosophy__inner">
+        <p class="philosophy__eyebrow">The questions that started everything</p>
+        <h2 class="philosophy__title">Three questions I live by</h2>
+        <div class="philosophy__grid">
+            <div class="philosophy__card">
+                <span class="philosophy__num">01</span>
+                <p class="philosophy__question">"What if I changed my life?"</p>
+                <p class="philosophy__answer">Not all at once. Not loudly. Just one honest choice, made with care — and then another. That's where it begins.</p>
+            </div>
+            <div class="philosophy__card">
+                <span class="philosophy__num">02</span>
+                <p class="philosophy__question">"What if softness is strength?"</p>
+                <p class="philosophy__answer">We've been told the opposite for so long. But I've found that the softer I get — the quieter, the more deliberate — the stronger I actually feel.</p>
+            </div>
+            <div class="philosophy__card">
+                <span class="philosophy__num">03</span>
+                <p class="philosophy__question">"What if beauty is healing?"</p>
+                <p class="philosophy__answer">Not beauty as performance. Beauty as a way of paying attention — to yourself, to your body, to the things that genuinely restore you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- STORY IMAGE — replace div with <img> when you have a lifestyle photo -->
+<div class="about-img" style="padding-top: 72px; padding-bottom: 72px;">
+    <div class="about-img__frame">
+        <!-- <img src="images/gia-lifestyle.jpg" alt="Gia at home" loading="lazy"> -->
+    </div>
+    <p class="about-img__caption">
+        <!-- Add a caption here when the photo is ready -->
+    </p>
+</div>
+
+
+<!-- WHAT YOU'LL FIND -->
+<section class="categories-section">
+    <p class="section-eyebrow">What you'll find here</p>
+    <h2 class="section-title">Five spaces, one <em>philosophy</em></h2>
+    <div class="cat-grid">
+
+        <div class="cat-card" onclick="location.href='wellness.html'">
+            <div class="cat-card__icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402C1 4.183 3.183 2 6.191 2c1.98 0 4.47 1.271 5.809 3.36C13.339 3.271 15.829 2 17.809 2 20.817 2 23 4.183 23 7.191c0 4.105-5.37 8.863-11 14.402z"/></svg>
+            </div>
+            <div class="cat-card__name">Wellness</div>
+            <p class="cat-card__desc">The rituals, routines, and small daily acts that quietly add up to feeling like yourself. Body-first, pressure-free.</p>
+            <a href="wellness.html" class="cat-card__link">Explore Wellness →</a>
+        </div>
+
+        <div class="cat-card" onclick="location.href='mind.html'">
+            <div class="cat-card__icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div class="cat-card__name">Mind</div>
+            <p class="cat-card__desc">Anxiety, burnout, journaling, the mental loops we get stuck in — and what it actually looks like to get unstuck.</p>
+            <a href="mind.html" class="cat-card__link">Explore Mind →</a>
+        </div>
+
+        <div class="cat-card" onclick="location.href='nourish.html'">
+            <div class="cat-card__icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 0v20M2 12h20"/></svg>
+            </div>
+            <div class="cat-card__name">Nourish</div>
+            <p class="cat-card__desc">Food as care. The things we eat that actually do something — for our hair, our energy, our gut, our glow.</p>
+            <a href="nourish.html" class="cat-card__link">Explore Nourish →</a>
+        </div>
+
+        <div class="cat-card" onclick="location.href='living.html'">
+            <div class="cat-card__icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="cat-card__name">Living</div>
+            <p class="cat-card__desc">Home, space, travel, the aesthetics of everyday life — and how the environment you live in shapes the person you're becoming.</p>
+            <a href="living.html" class="cat-card__link">Explore Living →</a>
+        </div>
+
+        <div class="cat-card" onclick="location.href='companion.html'">
+            <div class="cat-card__icon">
+                <svg width="19" height="19" viewBox="43 44 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M51.3679 47.0107L51.1698 47.1632L51.1836 47.1811L51.2003 47.1962L51.3679 47.0107ZM51.7305 48.1759L51.9719 48.2409L51.9719 48.2409L51.7305 48.1759ZM49.822 48.7862L49.9691 48.5841L49.8362 48.4873L49.6947 48.571L49.822 48.7862ZM47.6312 50.0815L47.5039 49.8663L47.375 49.9425L47.3814 50.0922L47.6312 50.0815ZM46.2147 51.3605L46.15 51.602L46.1501 51.602L46.2147 51.3605ZM45.388 50.2489L45.6379 50.2577L45.6397 50.2059L45.6208 50.1577L45.388 50.2489ZM45.2965 49.8913L45.5443 49.858L45.5307 49.7564L45.4496 49.6936L45.2965 49.8913ZM45.0358 49.637L45.2311 49.4808L45.1987 49.4404L45.153 49.4161L45.0358 49.637ZM44.4852 48.3649L44.2438 48.3001L44.2437 48.3001L44.4852 48.3649ZM46.3011 47.7777L46.1669 47.9886L46.2933 48.0691L46.4239 47.9955L46.3011 47.7777ZM48.5174 46.5286L48.6402 46.7464L48.7834 46.6656L48.766 46.5021L48.5174 46.5286ZM50.0011 45.1803L50.0655 44.9388L50.0654 44.9388L50.0011 45.1803ZM50.8258 46.0697L50.5817 46.124L50.5866 46.1457L50.5951 46.1662L50.8258 46.0697ZM50.9495 46.6298L50.6996 46.6343L50.7021 46.7726L50.8206 46.8439L50.9495 46.6298ZM51.3679 47.0107L51.2003 47.1962C51.4467 47.4188 51.5682 47.8174 51.4891 48.1109L51.7305 48.1759L51.9719 48.2409C52.1032 47.7534 51.9115 47.1648 51.5355 46.8252L51.3679 47.0107ZM51.7305 48.1759L51.4891 48.1109C51.3938 48.465 51.161 48.6835 50.8886 48.7678C50.6133 48.8531 50.2759 48.8075 49.9691 48.5841L49.822 48.7862L49.6748 48.9883C50.0991 49.2972 50.599 49.381 51.0366 49.2454C51.4772 49.1089 51.8332 48.7561 51.9719 48.2409L51.7305 48.1759ZM49.822 48.7862L49.6947 48.571L47.5039 49.8663L47.6312 50.0815L47.7584 50.2967L49.9492 49.0014L49.822 48.7862ZM47.6312 50.0815L47.3814 50.0922C47.3937 50.3789 47.2791 50.6893 47.0768 50.8993C46.8824 51.1013 46.612 51.208 46.2793 51.119L46.2147 51.3605L46.1501 51.602C46.6776 51.7431 47.1307 51.5642 47.437 51.2461C47.7356 50.9361 47.8991 50.4919 47.881 50.0707L47.6312 50.0815ZM46.2147 51.3605L46.2794 51.119C45.9699 51.0361 45.8181 50.885 45.7376 50.7381C45.652 50.5821 45.6327 50.4043 45.6379 50.2577L45.388 50.2489L45.1382 50.2402C45.1314 50.4353 45.154 50.7138 45.2991 50.9785C45.4492 51.2522 45.7168 51.486 46.15 51.602L46.2147 51.3605ZM45.388 50.2489L45.6208 50.1577C45.5867 50.0707 45.5596 49.9716 45.5443 49.858L45.2965 49.8913L45.0488 49.9246C45.0694 50.0783 45.1067 50.2163 45.1552 50.3401L45.388 50.2489ZM45.2965 49.8913L45.4496 49.6936C45.3597 49.6239 45.2882 49.5523 45.2311 49.4808L45.0358 49.637L44.8406 49.7931C44.9232 49.8964 45.0232 49.9957 45.1435 50.0889L45.2965 49.8913ZM45.0358 49.637L45.153 49.4161C45.0233 49.3473 44.8786 49.2419 44.786 49.0898C44.6988 48.9467 44.6436 48.7396 44.7267 48.4297L44.4852 48.3649L44.2437 48.3001C44.1274 48.7341 44.1964 49.083 44.3589 49.3499C44.516 49.6079 44.7464 49.7665 44.9187 49.8578L45.0358 49.637ZM44.4852 48.3649L44.7267 48.4297C44.8159 48.097 45.0436 47.9162 45.3157 47.8488C45.5987 47.7786 45.9248 47.8345 46.1669 47.9886L46.3011 47.7777L46.4353 47.5668C46.0796 47.3404 45.6132 47.2599 45.1954 47.3634C44.7667 47.4697 44.3853 47.7727 44.2438 48.3001L44.4852 48.3649ZM46.3011 47.7777L46.4239 47.9955L48.6402 46.7464L48.5174 46.5286L48.3947 46.3108L46.1784 47.5599L46.3011 47.7777ZM48.5174 46.5286L48.766 46.5021C48.7259 46.1248 48.8551 45.8096 49.0669 45.6137C49.2764 45.4198 49.5823 45.3274 49.9367 45.4219L50.0011 45.1803L50.0654 44.9388C49.5498 44.8013 49.0661 44.9333 48.7274 45.2467C48.3909 45.558 48.2133 46.0329 48.2688 46.555L48.5174 46.5286ZM50.0011 45.1803L49.9366 45.4219C50.2278 45.4996 50.5099 45.8006 50.5817 46.124L50.8258 46.0697L51.0698 46.0155C50.9608 45.5246 50.5509 45.0683 50.0655 44.9388L50.0011 45.1803ZM50.8258 46.0697L50.5951 46.1662C50.6666 46.3372 50.6974 46.5126 50.6996 46.6343L50.9495 46.6298L51.1995 46.6252C51.1961 46.4404 51.1523 46.2027 51.0564 45.9733L50.8258 46.0697ZM50.9495 46.6298L50.8206 46.8439C50.9237 46.9061 51.0583 47.0183 51.1698 47.1632L51.3679 47.0107L51.566 46.8582C51.4164 46.6638 51.2349 46.5098 51.0785 46.4156L50.9495 46.6298Z" fill="currentColor"/>
+                </svg>
+            </div>
+            <div class="cat-card__name">Companion</div>
+            <p class="cat-card__desc">On animals, connection, and the particular kind of love that asks nothing of you and gives everything back.</p>
+            <a href="companion.html" class="cat-card__link">Explore Companion →</a>
+        </div>
+
+        <div class="cat-card" style="background: var(--bg-warm); border-style: dashed; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end;">
+            <p style="font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--text-muted); line-height: 1.6; margin-top: auto;">
+                "You don't need to overhaul everything. You just need to begin."
+            </p>
+            <span style="display: block; width: 28px; height: 1px; background: var(--gold-light); margin-top: 20px;"></span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- BELIEFS -->
+<section class="beliefs">
+    <div class="beliefs__inner">
+        <p class="section-eyebrow">What I believe</p>
+        <h2 class="beliefs__title">Things I keep coming back to</h2>
+
+        <div class="belief-item">
+            <span class="belief-item__mark">—</span>
+            <p class="belief-item__text"><strong>Small changes accumulate.</strong> You don't need to transform your life all at once. One clear surface, one glass of water, one honest page of writing. These things add up in ways that are hard to see until suddenly they aren't.</p>
+        </div>
+        <div class="belief-item">
+            <span class="belief-item__mark">—</span>
+            <p class="belief-item__text"><strong>Softness is not the opposite of discipline.</strong> I used to think I had to be harder on myself to get things done. It turns out the most consistent version of me is the gentlest one — the one who approaches her own life with curiosity rather than criticism.</p>
+        </div>
+        <div class="belief-item">
+            <span class="belief-item__mark">—</span>
+            <p class="belief-item__text"><strong>Your body is not a project.</strong> It's the place you live. How you feed it, rest it, and move it should feel like maintenance — even love — not punishment or performance.</p>
+        </div>
+        <div class="belief-item">
+            <span class="belief-item__mark">—</span>
+            <p class="belief-item__text"><strong>Beauty and wellness are not separate things.</strong> The way your skin looks is connected to how you sleep. The way you feel about your home affects how you feel when you wake up. It's all one system, and it responds to being tended to.</p>
+        </div>
+        <div class="belief-item">
+            <span class="belief-item__mark">—</span>
+            <p class="belief-item__text"><strong>You already know more than you think you do.</strong> Most of the answers are already in you. Sometimes you just need a quiet place to hear them — and that's exactly what I hope this blog can be.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact-section">
+    <p class="section-eyebrow" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:12px;">Get in touch</p>
+    <h2 style="font-family:var(--serif); font-size:2rem; font-weight:400; font-style:italic; color:var(--text); margin-bottom:36px; line-height:1.3;">Let's <em style="color:var(--gold-dark);">connect</em></h2>
+    <p>
+        Whether you have a question, a collaboration idea, or you just want to say hello —
+        I genuinely love hearing from the people who read this. My inbox is not intimidating.
+        Please use it.
+    </p>
+    <p>
+        For partnerships, press, and brand collaborations, feel free to reach out directly.
+        I work with brands whose values align with what this blog is actually about — softness,
+        intentionality, and real wellness.
+    </p>
+    <a href="mailto:samsungfaye9@gmail.com" class="contact-email">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        samsungfaye9@gmail.com
+    </a>
+    <div class="social-row">
+        <a href="#" class="social-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+        </a>
+        <a href="#" class="social-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            Pinterest
+        </a>
+        <a href="#" class="social-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m4 4V7"/></svg>
+            TikTok
+        </a>
+    </div>
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <p class="newsletter__eyebrow">Letters from the blog</p>
+        <h2 class="newsletter__title">Stay close, darling.</h2>
+        <p class="newsletter__sub">Slow reads, honest thoughts, and the kind of wellness that doesn't ask you to optimize anything. In your inbox, softly.</p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address">
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No noise. Unsubscribe anytime.</p>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <div class="footer__logo">darling, <em>what if</em></div>
+                <p class="footer__about">A lifestyle blog for women who are quietly reimagining what their lives could look like — one soft, intentional choice at a time.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">pt</a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok">tk</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="wellness.html">Wellness</a></li>
+                    <li><a href="mind.html">Mind</a></li>
+                    <li><a href="nourish.html">Nourish</a></li>
+                    <li><a href="living.html">Living</a></li>
+                    <li><a href="companion.html">Companion</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5>Recent</h5>
+                <ul>
+                    <li><a href="post-morning-pages.html">Morning Pages</a></li>
+                    <li><a href="post-home-mental-health.html">Home & Mind</a></li>
+                    <li><a href="post-burnout.html">On Burnout</a></li>
+                    <li><a href="post-hair-foods.html">Foods for Hair</a></li>
+                    <li><a href="post-nyc-love.html">New York</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5>About</h5>
+                <ul>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html#contact">Contact</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 Darling, What If. All rights reserved.</span>
+            <span>Made with intention.</span>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

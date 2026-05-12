@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ── SEO Meta ── -->
-    <title>What If You're Not Lazy — You're Burned Out? | Darling, What If</title>
-    <meta name="description" content="Burnout isn't just being tired — it's your mind and body asking you to stop. Learn how to recognize the signs of burnout, understand its impact on mental health, and gently begin your recovery.">
-    <meta name="keywords" content="burnout recovery, signs of burnout, burnout symptoms, mental exhaustion, stress and self-care, how to recover from burnout">
-    <meta property="og:title" content="What If You're Not Lazy — You're Burned Out?">
-    <meta property="og:description" content="Burnout isn't just being tired. Here's how to recognize the signs and gently begin healing.">
+    <title>How I Redesigned My Home to Support My Mental Health | Darling, What If</title>
+    <meta name="description" content="Your home is either restoring you or draining you — and most of us don't realize which one it's doing. Here's how I started changing mine, one small shift at a time.">
+    <meta name="keywords" content="home redesign for mental health, calming home environment, biophilic interior design wellbeing, how your home affects mood, creating a calm home">
+    <meta property="og:title" content="How I Redesigned My Home to Support My Mental Health">
+    <meta property="og:description" content="Your space is talking to your nervous system all day long. I didn't know that until I started paying attention to what mine was saying.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta property="og:url" content="https://darlingwhatif.com/living/home-redesign-mental-health">
     <meta name="article:author" content="Gia">
-    <meta name="article:published_time" content="2026-05-07">
-    <link rel="canonical" href="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta name="article:published_time" content="2026-05-08">
+    <link rel="canonical" href="https://darlingwhatif.com/living/home-redesign-mental-health">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,8 +59,9 @@
 
         /* POST HERO */
         .post-hero { position: relative; height: 78vh; min-height: 520px; max-height: 820px; overflow: hidden; }
-        .post-hero__img { position: absolute; inset: 0; width: 100%; height: 100%;
-            background: url('images/pexels-cordero-17343820.jpg') center/cover no-repeat;
+        .post-hero__img {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            background: linear-gradient(150deg, #E8E4DC 0%, #D4CCBC 30%, #B8C4B0 65%, #8FA890 100%);
         }
         .post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(250,250,247,0.12) 100%); pointer-events: none; }
 
@@ -94,16 +95,13 @@
         .content-rule { width: 48px; height: 1px; background: var(--border); margin: 56px auto; }
 
         /* INLINE IMAGE */
-        .post-img { margin: 52px -48px; }
+        .post-img { margin: 52px -48px; position: relative; }
         .post-img__frame { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
         .post-img--contained { margin: 48px 0; }
         .post-img--contained .post-img__frame { aspect-ratio: 3/2; }
         .post-img--portrait { margin: 52px auto; max-width: 500px; }
         .post-img--portrait .post-img__frame { aspect-ratio: 2/3; overflow: hidden; }
-        .post-img--portrait-34 { margin: 48px auto; max-width: 520px; }
-        .post-img--portrait-34 .post-img__frame { aspect-ratio: 3/4; overflow: hidden; }
         .post-img img, .post-img__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .post-img .ph, .post-img__frame .ph { width: 100%; height: 100%; }
         .post-img__caption { font-size: 0.78rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 14px; line-height: 1.6; }
 
         /* PULL QUOTE */
@@ -111,12 +109,13 @@
         .pull-quote::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; color: var(--gold-light); position: absolute; top: 12px; left: 44px; line-height: 1; }
         .pull-quote p { font-family: var(--serif) !important; font-size: clamp(1.2rem, 2vw, 1.55rem) !important; font-style: italic; font-weight: 400; line-height: 1.55 !important; color: var(--text) !important; padding-left: 40px; margin-bottom: 0 !important; }
 
-        /* SYMPTOM / STRATEGY LIST */
-        .post-list { margin: 0 0 28px 0; padding: 0; counter-reset: item; list-style: none; }
-        .post-list li { font-size: 1.02rem; line-height: 1.85; color: var(--text); padding: 16px 0 16px 36px; position: relative; border-bottom: 1px solid var(--border); }
-        .post-list li:first-child { border-top: 1px solid var(--border); }
-        .post-list li::before { content: counter(item); counter-increment: item; position: absolute; left: 0; top: 19px; font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: var(--gold); }
-        .post-list li strong { font-weight: 500; display: block; margin-bottom: 4px; }
+        /* SHIFT LIST — small changes section */
+        .shift-list { margin: 44px 0; padding: 0; }
+        .shift-item { display: grid; grid-template-columns: 32px 1fr; gap: 16px; padding: 22px 0; border-top: 1px solid var(--border); align-items: start; }
+        .shift-item:last-child { border-bottom: 1px solid var(--border); }
+        .shift-item__num { font-family: var(--serif); font-size: 0.95rem; font-style: italic; color: var(--gold); padding-top: 2px; }
+        .shift-item__text { font-size: 1rem; line-height: 1.8; color: var(--text); }
+        .shift-item__text strong { font-weight: 500; display: block; margin-bottom: 3px; }
 
         /* INTERNAL LINKS */
         .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
@@ -173,7 +172,7 @@
         .post-card { background: var(--white); display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .post-card:hover { transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
         .post-card__img-wrap { aspect-ratio: 3/2; overflow: hidden; flex-shrink: 0; }
-        .post-card__img { width: 100%; height: 100%; transition: transform 0.65s ease; }
+        .post-card__img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.65s ease; display: block; }
         .post-card:hover .post-card__img { transform: scale(1.06); }
         .post-card__body { padding: 24px 24px 28px; display: flex; flex-direction: column; flex: 1; }
         .category-label { font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: inline-block; }
@@ -183,11 +182,9 @@
         .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
 
         /* PLACEHOLDER GRADIENTS */
-        .ph-dusk    { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
-        .ph-rose    { background: linear-gradient(145deg, #EAD8D4 0%, #CCA4A0 100%); }
-        .ph-sage    { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
-        .ph-amber   { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
-        .ph-mist    { background: linear-gradient(145deg, #D8E2EC 0%, #94AECE 100%); }
+        .ph-sage   { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
+        .ph-warm   { background: linear-gradient(145deg, #F5ECD8 0%, #D4B896 100%); }
+        .ph-dusk   { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
 
         /* NEWSLETTER */
         .newsletter { background: var(--text); padding: 104px 0; }
@@ -244,15 +241,16 @@
 </head>
 <body>
 
+
 <!-- NAV -->
 <nav class="nav">
     <div class="nav__inner">
         <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
         <ul class="nav__links">
             <li><a href="wellness.html">Wellness</a></li>
-            <li><a href="mind.html" class="active">Mind</a></li>
+            <li><a href="mind.html">Mind</a></li>
             <li><a href="nourish.html">Nourish</a></li>
-            <li><a href="living.html">Living</a></li>
+            <li><a href="living.html" class="active">Living</a></li>
             <li><a href="companion.html">Companion</a></li>
             <li><a href="about.html">About Me</a></li>
         </ul>
@@ -265,9 +263,7 @@
 </nav>
 
 
-<!-- HERO IMAGE
-     Replace .ph-dusk with: background: url('images/burnout-hero.jpg') center/cover no-repeat;
-     Suggested photography: woman sitting quietly by a window, soft morning light, contemplative -->
+<!-- HERO -->
 <header class="post-hero">
     <div class="post-hero__img"></div>
 </header>
@@ -278,20 +274,20 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <div class="breadcrumb__sep"></div>
-        <a href="mind.html">Mind</a>
+        <a href="living.html">Living</a>
         <div class="breadcrumb__sep"></div>
-        <span>What If You're Not Lazy — You're Burned Out?</span>
+        <span>How I Redesigned My Home to Support My Mental Health</span>
     </nav>
 
-    <a href="mind.html" class="post-category-badge">Mind</a>
+    <a href="living.html" class="post-category-badge">Living</a>
 
     <h1 class="post-title">
-        What If You're Not <em>Lazy</em> —<br>
-        You're Burned Out?
+        How I Redesigned My Home<br>
+        to Support My <em>Mental Health</em>
     </h1>
 
     <div class="post-byline">
-        <span>May 7, 2026</span>
+        <span>May 8, 2026</span>
         <div class="byline-dot"></div>
         <span>By <a href="about.html">Gia</a></span>
         <div class="byline-dot"></div>
@@ -301,9 +297,9 @@
     <div class="post-header-rule"></div>
 
     <p class="post-intro">
-        You've been calling it laziness. Or weakness. Or just "a phase."
-        But what if your exhaustion has a name — and what if giving it that name
-        is the first step toward finally feeling like yourself again?
+        Your home is having a conversation with your nervous system, all day long.
+        I didn't realize mine was saying the wrong things — until I started
+        paying attention to how I felt the moment I walked through the door.
     </p>
 </div>
 
@@ -312,145 +308,114 @@
 <article class="post-content" id="post-content">
 
     <p>
-        There's a particular kind of tired that sleep doesn't fix. You wake up already
-        depleted. You move through your days feeling like you're watching yourself from
-        a distance — going through the motions, performing okayness, waiting for the
-        version of you that used to care to come back.
+        It started with a Sunday afternoon that felt heavier than it should have. I was home,
+        I had nowhere to be, and I still couldn't quite relax. Something kept pulling at me —
+        a low, persistent hum of unease that I couldn't name. I looked around the room and
+        finally saw it clearly: the space I was living in was not on my side. It was cluttered
+        and bright in the wrong ways and full of things that didn't mean anything to me anymore.
+        It was taking from me quietly, every single day.
     </p>
 
     <p>
-        This isn't a character flaw. It isn't weakness. It isn't "just stress."
-        What you might be experiencing is burnout — a state of physical, emotional,
-        and mental exhaustion that happens when chronic stress goes unaddressed for
-        too long. And it can affect anyone: the high-achiever, the caregiver, the
-        woman who holds everything together so beautifully that no one thought to
-        ask if she was okay.
-    </p>
-
-
-    <!-- Inline image — portrait 2:3, no crop -->
-    <div class="post-img post-img--portrait">
-        <div class="post-img__frame">
-            <img src="images/pexels-ivan-s-6788688.jpg" alt="A woman lying face-down on a bed in a knit sweater, quietly exhausted" loading="lazy">
-        </div>
-        <p class="post-img__caption">
-            Burnout doesn't always look like collapse. Sometimes it looks like being fine — until you're not.
-        </p>
-    </div>
-
-
-    <h2>What Burnout <em>Actually</em> Is</h2>
-
-    <p>
-        Burnout isn't simply being tired after a hard week. It's what happens when
-        the demands placed on you — by work, by relationships, by your own impossibly
-        high standards — consistently exceed your capacity to recover from them. Over
-        time, the gap between output and restoration grows wider, until you hit a wall
-        so solid it stops you completely.
-    </p>
-
-    <p>
-        It often builds quietly, mistaken for normal stress or busyness, until one
-        day you realize you can't remember the last time something felt genuinely good.
-        That numbness — the emotional flatness, the inability to feel the things you
-        used to feel — is one of burnout's most overlooked signs.
+        That afternoon I moved exactly three things. A lamp. A stack of papers that had been
+        sitting on the kitchen counter for two weeks. And a chair that was facing the wrong way.
+        I sat down in that chair, in the new arrangement, and felt something shift. I know how
+        small that sounds. But that's how it started.
     </p>
 
 
     <!-- Pull quote -->
     <blockquote class="pull-quote">
         <p>
-            Burnout isn't a productivity problem. It's what happens when you give
-            everything you have — and forget to give anything back to yourself.
+            Your home is either restoring you or slowly draining you.
+            Most of us have never stopped to ask which one it's doing.
         </p>
     </blockquote>
 
 
-    <h2>8 Signs Your Body and Mind Are <em>Asking You to Stop</em></h2>
+    <h2>Clutter Is a Feeling, <em>Not Just a Mess</em></h2>
 
     <p>
-        Burnout shows up differently for everyone, but these are the most common
-        ways it tends to speak — often in a whisper, long before it becomes a shout.
+        There is a reason you feel more anxious in a disorganized room than a tidy one —
+        and it's not about perfectionism. Visual clutter creates what researchers call
+        <strong>cognitive load</strong>: your brain is constantly registering every object
+        in your environment, even when you're not consciously looking at it. The pile of
+        unopened mail. The corner that became a landing zone for things without homes.
+        The drawer you've been meaning to sort for months. All of it is quietly costing
+        you mental energy you could be spending elsewhere.
     </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Physical exhaustion that doesn't lift with rest.</strong>
-            Persistent fatigue, low energy, frequent headaches, or muscle tension
-            that sleep doesn't seem to touch. Your body is running on empty — and
-            it's been running that way for a while.
-        </li>
-        <li>
-            <strong>Emotional flatness or overwhelm.</strong>
-            Feeling numb, detached, or strangely unable to access emotions that
-            used to come naturally. Or the opposite — feeling everything too much,
-            too raw, too close to the surface.
-        </li>
-        <li>
-            <strong>Difficulty concentrating or making decisions.</strong>
-            Brain fog, increased mistakes, an inability to focus that feels new
-            and alarming. A mind that used to be sharp now feels like it's wading
-            through something thick.
-        </li>
-        <li>
-            <strong>Withdrawing from people and things you love.</strong>
-            Cancelling plans, going quiet in relationships, losing interest in
-            hobbies that used to light you up. Isolation can feel protective
-            when you have nothing left to give.
-        </li>
-        <li>
-            <strong>A creeping cynicism or sense of meaninglessness.</strong>
-            When things you once cared about feel hollow, or you find yourself
-            going through the motions without any sense of why — that disconnection
-            from purpose is a significant signal.
-        </li>
-        <li>
-            <strong>Nothing feels satisfying, even when it goes well.</strong>
-            Completing things, achieving things, being told you did well — and
-            feeling nothing. The inability to receive your own effort as enough
-            is one of burnout's quietest cruelties.
-        </li>
-        <li>
-            <strong>Sleep that isn't restful.</strong>
-            Falling asleep easily from exhaustion but waking unrefreshed. Or
-            lying awake despite desperately needing rest. A nervous system under
-            sustained stress often struggles to fully downshift.
-        </li>
-        <li>
-            <strong>Increased physical illness.</strong>
-            Getting sick more often, experiencing digestive issues, or noticing
-            your body responding to stress in ways it didn't used to. Chronic
-            stress suppresses immune function — your body is not separating
-            emotional stress from physical threat.
-        </li>
-    </ol>
+    <p>
+        I didn't do a dramatic overhaul. I didn't empty every room and start from scratch.
+        I started with one surface — the kitchen counter — and committed to keeping it
+        clear for a week. Just that one surface. The effect on how I felt in that room
+        was immediate and disproportionate to how little effort it took.
+    </p>
+
+    <p>
+        The rule I now live by: everything has a home, or it doesn't stay. Not for reasons
+        of neatness, but because an object without a place becomes a small, nagging question
+        your mind keeps asking without ever answering.
+    </p>
 
 
-    <!-- Inline image — portrait 3:4, no crop -->
-    <div class="post-img post-img--portrait-34">
+    <!-- Full-bleed image placeholder -->
+    <div class="post-img">
         <div class="post-img__frame">
-            <img src="images/pexels-79380313-9007274.jpg" alt="A woman resting in white bed linens, arms above her head — still, soft, restored" loading="lazy">
+            <div class="ph-sage" style="width:100%;height:100%;"></div>
         </div>
         <p class="post-img__caption">
-            Rest isn't a reward you earn after exhaustion. It's the practice that keeps exhaustion from becoming burnout.
+            A calm room isn't empty — it's intentional. Everything in it has been chosen.
         </p>
     </div>
 
 
-    <h2>Why Burnout Matters for Your <em>Mental Health</em></h2>
+    <h2>The Light You're <em>Actually Living In</em></h2>
 
     <p>
-        Burnout is not a formal clinical diagnosis, but its effects on mental health
-        are very real. Left unaddressed, chronic burnout can contribute to or
-        deepen anxiety, depression, and a generalized disconnection from your own
-        life. The relationship runs in both directions — stress fuels burnout, and
-        burnout creates the conditions in which mental health struggles take root.
+        Before I thought about color or furniture or any of the things I thought "redesigning"
+        meant, I looked at my lighting. And I was horrified. I had overhead lights that cast
+        a flat, clinical brightness across every room — the kind of light that belongs in a
+        hospital hallway, not a home. No wonder I never fully unwound there.
     </p>
 
     <p>
-        This is why naming it matters. Not to pathologize your exhaustion, but to
-        treat it with the seriousness it deserves — the same seriousness you would
-        extend to any other condition that was quietly affecting your quality of life.
+        Natural light became the priority. I pulled back curtains I'd been keeping half-closed
+        out of habit. I moved my desk to face the window instead of the wall. Then I replaced
+        every overhead bulb with something warmer — softer colour temperature, lower wattage,
+        lamps instead of ceiling fixtures wherever I could manage it. The difference by evening
+        was remarkable. The room felt like it was <em>breathing</em>.
+    </p>
+
+    <p>
+        There is real science here. Harsh, blue-toned lighting keeps your cortisol elevated —
+        your body reads it as daylight and stays alert. Warm light in the evening signals
+        wind-down. Your home should shift with you through the day, not stay at the same pitch
+        of bright from morning until you finally turn everything off and try to sleep.
+    </p>
+
+
+    <h2>Nature Doesn't Need to Be <em>Dramatic to Work</em></h2>
+
+    <p>
+        I am not a plant person. I've killed more succulents than I'd like to admit. But after
+        reading enough about biophilic design — the idea that our nervous systems respond
+        measurably well to natural elements — I decided to try again, more thoughtfully this time.
+    </p>
+
+    <p>
+        I started with two plants I couldn't kill: a pothos and a peace lily. Then I replaced a
+        synthetic rug with one made from natural jute. I brought in a small wooden tray for the
+        coffee table. None of these were expensive or dramatic choices. But collectively, they
+        changed the texture of the room in a way I felt more than I could explain. Something
+        about the presence of living, natural things — the way leaves move slightly in a
+        breeze, the warmth of wood grain under your hand — tells your nervous system that
+        you are somewhere safe. Somewhere real.
+    </p>
+
+    <p>
+        If you're starting from nothing, one plant and one natural textile is enough.
+        You're not decorating. You're recalibrating.
     </p>
 
 
@@ -458,86 +423,128 @@
     <div class="internal-links">
         <span class="internal-links__title">You might also want to read</span>
         <ul>
-            <li><a href="#">What If Softness Is Your Greatest Strength</a></li>
-            <li><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></li>
-            <li><a href="#">The Quiet Power of Saying No Without Apologizing</a></li>
+            <li><a href="post-burnout.html">You're Not Lazy — You're Burned Out</a></li>
+            <li><a href="post-companion-dogs.html">The Love That Was Already Here</a></li>
+            <li><a href="post-nyc-love.html">The City That Promised a Love Story — and Delivered Something Unexpected</a></li>
         </ul>
     </div>
 
 
-    <h2>8 Gentle Ways to Begin <em>Coming Back to Yourself</em></h2>
+    <h2>Color Is Quieter <em>Than You Think</em></h2>
 
     <p>
-        Recovery from burnout isn't a hustle. It isn't a new productivity system
-        or a weekend reset. It's a slow, patient return to yourself — one small act
-        of self-honoring at a time.
+        I used to think choosing paint colors was an aesthetic decision. It is — but it's
+        also a physiological one. Color affects the body in ways that happen below conscious
+        awareness. Certain saturated, high-contrast colors keep you stimulated. Soft ones —
+        warm whites, sage greens, dusty blues, the whole range of beige and sand — do the
+        opposite. They give the eye somewhere to rest.
     </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Start with one honest boundary.</strong>
-            Not a full overhaul of your life — just one thing you say no to this
-            week that you would have previously said yes to out of obligation.
-            Boundaries aren't walls. They're the shape of a life you can actually live in.
-        </li>
-        <li>
-            <strong>Bring a stress-reduction practice into your daily rhythm.</strong>
-            Deep breathing. A few minutes of meditation. A slow walk without your
-            phone. These aren't clichés — they are direct interruptions to your
-            nervous system's stress response, and they work when practiced consistently.
-        </li>
-        <li>
-            <strong>Prioritize what genuinely restores you.</strong>
-            Not what you think should restore you — what actually does. For some
-            people that's solitude and silence. For others it's connection and laughter.
-            You know the difference. Start doing more of the thing that actually works.
-        </li>
-        <li>
-            <strong>Move your body gently and regularly.</strong>
-            Not as punishment or performance, but as care. Even 20 minutes of
-            movement that you enjoy can meaningfully shift your nervous system,
-            your mood, and your energy levels over time.
-        </li>
-        <li>
-            <strong>Protect your sleep like it's sacred — because it is.</strong>
-            A consistent sleep schedule, a winding-down ritual, a room that feels
-            safe and quiet. Sleep is the foundation that everything else is built on.
-            Without it, recovery isn't fully possible.
-        </li>
-        <li>
-            <strong>Let someone in.</strong>
-            A friend, a family member, a therapist. You don't have to have the
-            words — you just have to be willing to stop performing okayness with
-            at least one person. Being witnessed in your exhaustion is part of healing.
-        </li>
-        <li>
-            <strong>Revisit what actually matters to you.</strong>
-            Burnout often happens when we've been living by someone else's definition
-            of success. A quiet, honest conversation with yourself about what you
-            actually want — separate from what you're supposed to want — can be
-            quietly revolutionary.
-        </li>
-        <li>
-            <strong>Take breaks before you need them desperately.</strong>
-            A five-minute pause in your workday. A day off before the collapse.
-            Rest taken proactively is far more restorative than rest taken after
-            you've already broken down. You are allowed to rest before you're empty.
-        </li>
-    </ol>
+    <p>
+        I didn't repaint. But I did audit the colors already in my space — the art on the
+        walls, the cushion covers, even the mugs on the open shelf — and noticed how many
+        of them were competing for attention rather than contributing to calm. I swapped some
+        things out. I let some walls stay bare. I added a few things in the tones I was
+        drawn to: a deep sage blanket, a creamy linen throw, a single piece of art in muted,
+        earthy tones. The room became easier to be in. That's the only metric that matters.
+    </p>
+
+
+    <!-- Contained image placeholder -->
+    <div class="post-img post-img--contained">
+        <div class="post-img__frame">
+            <div class="ph-warm" style="width:100%;height:100%;"></div>
+        </div>
+        <p class="post-img__caption">
+            Soft, considered spaces don't happen by accident. They happen by intention.
+        </p>
+    </div>
+
+
+    <h2>One Corner That Knows <em>What It's For</em></h2>
+
+    <p>
+        This might be the single change that made the most difference. I carved out one corner
+        of my living room — about two square meters — and made it entirely purposeful. A chair
+        I love. A small side table. Good light. A blanket. A few books. Nothing else lives there.
+        No chargers, no work, no screens. That corner knows what it's for, and because of that,
+        so does my body when I sit in it.
+    </p>
+
+    <p>
+        The psychological effect of designated spaces is well-documented: when a specific area
+        of your home is consistently used for rest, your nervous system begins to associate it
+        with downregulation. It becomes a cue. You sit there and something in you releases,
+        almost automatically, because it's learned to. You are training your own nervous
+        system through the language of space.
+    </p>
+
+    <p>
+        You don't need a whole room. You need one corner with a clear intention. Start there.
+    </p>
+
+
+    <h2>The Small Shifts That <em>Did the Most</em></h2>
+
+    <p>
+        Here are the changes that cost almost nothing and gave back more than I expected:</p>
+
+    <div class="shift-list">
+        <div class="shift-item">
+            <span class="shift-item__num">1</span>
+            <div class="shift-item__text">
+                <strong>Cleared one surface and kept it clear.</strong>
+                The kitchen counter. Just that. The visual quiet it created spread further than that room.
+            </div>
+        </div>
+        <div class="shift-item">
+            <span class="shift-item__num">2</span>
+            <div class="shift-item__text">
+                <strong>Switched to warm-toned bulbs throughout.</strong>
+                Especially in the bedroom and living room. The difference in evening mood was immediate.
+            </div>
+        </div>
+        <div class="shift-item">
+            <span class="shift-item__num">3</span>
+            <div class="shift-item__text">
+                <strong>Added one living plant.</strong>
+                A pothos on the windowsill. It required nothing from me except occasional water and gave back something I couldn't quite name.
+            </div>
+        </div>
+        <div class="shift-item">
+            <span class="shift-item__num">4</span>
+            <div class="shift-item__text">
+                <strong>Brought in one natural textile.</strong>
+                A linen throw. The texture alone changed how I felt sitting on the sofa.
+            </div>
+        </div>
+        <div class="shift-item">
+            <span class="shift-item__num">5</span>
+            <div class="shift-item__text">
+                <strong>Removed five things I didn't love.</strong>
+                Not a declutter. Just five specific objects that I'd been tolerating rather than choosing. Gone.
+            </div>
+        </div>
+        <div class="shift-item">
+            <span class="shift-item__num">6</span>
+            <div class="shift-item__text">
+                <strong>Made one corner deliberately calm.</strong>
+                A chair, a blanket, nothing else allowed. It became the place I actually go to rest.
+            </div>
+        </div>
+    </div>
+
 
     <div class="content-rule"></div>
 
-    <!-- Gentle conclusion -->
+    <!-- Conclusion -->
     <div class="post-conclusion">
-        <h3 class="post-conclusion__title">A gentle closing thought</h3>
+        <h3 class="post-conclusion__title">Softness in your space is not a luxury. It's maintenance.</h3>
         <p>
-            If you recognized yourself anywhere in this post, please be kind to
-            yourself about it. Burnout isn't a sign that you failed — it's a sign
-            that you gave a great deal for a very long time, often without enough
-            support. The fact that you're here, reading, wondering if things could
-            be different — that is already the beginning of something. And if your
-            symptoms persist or feel overwhelming, please reach out to a mental
-            health professional. You don't have to figure this out alone.
+            You spend more time in your home than anywhere else. The quality of that space
+            accumulates — quietly, consistently — into the quality of how you feel.
+            You don't have to do it all at once. Move one thing. Clear one surface.
+            Let one window breathe. Your nervous system will notice before you do.
         </p>
     </div>
 
@@ -552,74 +559,91 @@
 
     <div class="faq-item" id="faq1">
         <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
-            <span class="faq-question__text">How do I know if I'm burned out or just going through a rough patch?</span>
+            <span class="faq-question__text">Where do I start if my whole home feels overwhelming?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                A rough patch tends to have a visible cause and a visible end — a hard project,
-                a difficult season, a specific stressor. Burnout is more pervasive: it lingers
-                after the stressor is gone, it affects multiple areas of your life simultaneously,
-                and rest doesn't restore you the way it used to. If you've been feeling this way
-                for weeks or months rather than days, burnout is worth considering seriously.
+                One surface. That's it — just choose one horizontal surface in your home and commit to
+                keeping it clear for seven days. The kitchen counter, your bedside table, the coffee table.
+                One surface creates a visual anchor of calm that your brain registers every time you see
+                it. From there, momentum builds naturally. Don't start with the whole house. Start with
+                the thing you'll see most often.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq2">
         <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
-            <span class="faq-question__text">Can burnout happen even if I love what I do?</span>
+            <span class="faq-question__text">Does redesigning your home actually affect mental health, or is it just aesthetic?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Absolutely — and this is one of the most painful forms of burnout, because
-                it can come with guilt and confusion. Loving what you do doesn't make you
-                immune to depletion. Burnout is about the ratio of output to recovery, not
-                about whether your work is meaningful. Passionate people often burn out
-                precisely because they care so much that they forget to stop.
+                It's not just aesthetic — the research is clear on this. Environmental psychology studies
+                have shown that visual clutter elevates cortisol, poor lighting disrupts circadian rhythm
+                and melatonin production, and the presence of natural elements measurably reduces stress
+                markers. Your surroundings are in constant communication with your nervous system. What
+                you do with your environment is a genuine act of care for your mental health.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq3">
         <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
-            <span class="faq-question__text">How long does it take to recover from burnout?</span>
+            <span class="faq-question__text">I rent and can't make major changes — is this still possible?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Recovery varies enormously depending on how long burnout has been building,
-                what caused it, and what changes you're able to make. Mild burnout might lift
-                with a few weeks of intentional rest and boundary-setting. Deeper burnout —
-                especially when it's contributed to depression or anxiety — may take months
-                and benefit significantly from professional support. Be patient with the
-                timeline. Healing is not linear.
+                Completely. None of the changes that made the biggest difference for me required
+                permission from a landlord. Swapping lightbulbs, adding plants, choosing textiles
+                with intention, clearing surfaces, rearranging furniture, curating what's on your
+                shelves — all of it is available to you regardless of whether you own the walls.
+                The goal isn't renovation. It's curation.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq4">
         <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
-            <span class="faq-question__text">When should I seek professional help for burnout?</span>
+            <span class="faq-question__text">What's biophilic design and do I actually need it?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                If your symptoms are significantly affecting your daily functioning,
-                relationships, or physical health — or if you're noticing signs of
-                depression or anxiety alongside your burnout — please reach out to a
-                therapist, counselor, or your doctor. You don't have to reach a crisis
-                point to deserve support. Asking for help early is one of the wisest
-                things you can do.
+                Biophilic design is simply the practice of bringing nature into built spaces — plants,
+                natural materials, daylight, organic textures. "Need" is a strong word, but the evidence
+                that our nervous systems respond well to natural elements is solid. We evolved in
+                nature, not in offices with fluorescent lighting. A single plant and a jute rug count.
+                You don't need to redesign around it — just let a little of it in.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq5">
+        <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">
+            <span class="faq-question__text">How do I create a calm corner if I don't have much space?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                Scale it down. A calm corner doesn't require a whole armchair and side table — it can
+                be a single floor cushion by a window, a small section of your sofa that you've decided
+                is for reading and nothing else, or even a spot on your bed with a specific pillow
+                arrangement you only use when you're resting intentionally. The size isn't the point.
+                The <em>intention</em> is. Once a space has a clear purpose, your body learns to respond
+                to it accordingly.
             </p>
         </div>
     </div>
@@ -627,14 +651,17 @@
 </section>
 
 
-<!-- TAGS — Category + 3 SEO tags -->
+<!-- TAGS -->
 <div class="post-tags-section">
-    <span class="post-tags-section__label">Tagged in</span>
+    <span class="post-tags-section__label">Topics</span>
     <div class="tags">
-        <a href="mind.html" class="tag tag--category">Mind</a>
-        <a href="/tag/burnout-recovery" class="tag">burnout recovery</a>
-        <a href="/tag/mental-exhaustion" class="tag">mental exhaustion</a>
-        <a href="/tag/stress-and-self-care" class="tag">stress and self-care</a>
+        <a href="living.html" class="tag tag--category">Living</a>
+        <a href="#" class="tag">home redesign for mental health</a>
+        <a href="#" class="tag">calming home environment</a>
+        <a href="#" class="tag">biophilic interior design</a>
+        <a href="#" class="tag">home and wellbeing</a>
+        <a href="#" class="tag">slow living</a>
+        <a href="#" class="tag">intentional space</a>
     </div>
 </div>
 
@@ -644,13 +671,8 @@
     <div class="author-bio__inner">
         <div class="author-bio__avatar"></div>
         <div class="author-bio__info">
-            <h4>Written by Gia</h4>
-            <p>
-                Wellness blogger, designer, and wanderer at heart. I believe deeply that
-                beauty is healing and softness is a form of power. "Darling… what if" is
-                my ongoing love letter to the life I'm choosing — one small and intentional
-                moment at a time.
-            </p>
+            <h4>Gia</h4>
+            <p>Writing about the small, deliberate choices that quietly change everything — from what we eat to how we rest to who we become in the process. Welcome to <em>darling, what if.</em></p>
         </div>
     </div>
 </div>
@@ -660,37 +682,38 @@
 <section class="related-posts">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Keep <em>Reading</em></h2>
+            <h2 class="section-title">More from <em>Living</em></h2>
+            <a href="living.html" style="font-size:0.78rem;color:var(--gold);letter-spacing:0.08em;">View all →</a>
         </div>
         <div class="related-grid">
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-sage"></div>
+                    <img class="post-card__img" src="images/pexels-cordero-17343820.jpg" alt="Woman resting, exhausted" loading="lazy">
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Wellness</a>
-                    <h3 class="post-card__title"><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></h3>
-                    <div class="post-card__date">May 7, 2026 &nbsp;·&nbsp; 6 min read</div>
+                    <a href="wellness.html" class="category-label">Wellness</a>
+                    <h3 class="post-card__title"><a href="post-burnout.html">You're Not Lazy — You're Burned Out</a></h3>
+                    <p class="post-card__date">May 8, 2026</p>
                 </div>
             </article>
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-rose"></div>
+                    <img class="post-card__img" src="images/pexels-dmitriy-piskarev-8529355.jpg" alt="Woman with her dog in the forest" loading="lazy">
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="#">The Quiet Power of Saying No Without Apologizing</a></h3>
-                    <div class="post-card__date">April 3, 2026 &nbsp;·&nbsp; 6 min read</div>
+                    <a href="companion.html" class="category-label">Companion</a>
+                    <h3 class="post-card__title"><a href="post-companion-dogs.html">The Love That Was Already Here</a></h3>
+                    <p class="post-card__date">May 8, 2026</p>
                 </div>
             </article>
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-amber"></div>
+                    <div class="ph-dusk" style="width:100%;height:100%;"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="post-morning-pages.html">Morning Pages & Why They Rewired My Anxious Brain</a></h3>
-                    <div class="post-card__date">May 4, 2026 &nbsp;·&nbsp; 5 min read</div>
+                    <a href="mind.html" class="category-label">Mind</a>
+                    <h3 class="post-card__title"><a href="post-nyc-love.html">The City That Promised a Love Story — and Delivered Something Unexpected</a></h3>
+                    <p class="post-card__date">May 8, 2026</p>
                 </div>
             </article>
         </div>
@@ -699,18 +722,16 @@
 
 
 <!-- NEWSLETTER -->
-<section class="newsletter" id="newsletter">
-    <div class="container">
-        <div class="newsletter__inner">
-            <span class="newsletter__eyebrow">Letters from Gia</span>
-            <h2 class="newsletter__title">What if your inbox felt like<br><em>a warm cup of tea?</em></h2>
-            <p class="newsletter__body">Soft stories, honest reflections, and small ideas that might just change the way you see your day.</p>
-            <form class="newsletter__form" onsubmit="handleSignup(event)">
-                <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
-                <button type="submit" class="newsletter__btn">Yes, I'm in</button>
-            </form>
-            <p class="newsletter__note">No spam, ever. Unsubscribe anytime.</p>
-        </div>
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <span class="newsletter__eyebrow">Stay in the loop</span>
+        <h2 class="newsletter__title">Letters from <em>darling, what if</em></h2>
+        <p class="newsletter__body">Quiet reflections on how we live, eat, rest, and begin again. No noise, no spam — just the kind of writing you actually want in your inbox.</p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address">
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No spam, ever. Unsubscribe any time.</p>
     </div>
 </section>
 
@@ -721,11 +742,11 @@
         <div class="footer__grid">
             <div>
                 <div class="footer__logo">darling, <em>what if</em></div>
-                <p class="footer__about">A lifestyle space for women who are quietly questioning everything and bravely choosing to begin again.</p>
+                <p class="footer__about">A lifestyle philosophy for women who believe softness is strength, beauty is healing, and small choices can quietly change everything.</p>
                 <div class="footer__social">
-                    <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
-                    <a href="https://pinterest.com" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">PI</a>
-                    <a href="mailto:hello@darlingwhatif.com" class="footer__social-link" aria-label="Email">@</a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">PT</a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok">TK</a>
                 </div>
             </div>
             <div class="footer__col">
@@ -739,29 +760,32 @@
                 </ul>
             </div>
             <div class="footer__col">
-                <h5>Connect</h5>
+                <h5>Recent</h5>
                 <ul>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="#newsletter">Newsletter</a></li>
-                    <li><a href="/collaborate">Collaborate</a></li>
+                    <li><a href="post-home-mental-health.html">Home &amp; Mental Health</a></li>
+                    <li><a href="post-hair-foods.html">Hair &amp; Nutrition</a></li>
+                    <li><a href="post-nyc-love.html">NYC Love Story</a></li>
+                    <li><a href="post-acv-honey.html">ACV &amp; Honey</a></li>
+                    <li><a href="post-water.html">Morning Water</a></li>
                 </ul>
             </div>
             <div class="footer__col">
-                <h5>Legal</h5>
+                <h5>Connect</h5>
                 <ul>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/disclosure">Disclosure</a></li>
-                    <li><a href="/terms">Terms of Use</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#">Work With Me</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Privacy</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__bottom">
-            <span>© 2026 <a href="index.html">darlingwhatif.com</a> — All rights reserved</span>
-            <span>Made with intention ✦</span>
+            <span>© 2026 darling, what if. All rights reserved.</span>
+            <a href="#">Back to top ↑</a>
         </div>
     </div>
 </footer>
+
 
 <script>
     function toggleFaq(id) {
@@ -775,15 +799,6 @@
             item.classList.add('open');
             item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
         }
-    }
-    function handleSignup(e) {
-        e.preventDefault();
-        const input = e.target.querySelector('.newsletter__input');
-        const btn = e.target.querySelector('.newsletter__btn');
-        btn.textContent = 'You\'re in ✦';
-        btn.style.background = '#7A6B50';
-        input.disabled = true;
-        btn.disabled = true;
     }
 </script>
 

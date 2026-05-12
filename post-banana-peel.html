@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ── SEO Meta ── -->
-    <title>What If You're Not Lazy — You're Burned Out? | Darling, What If</title>
-    <meta name="description" content="Burnout isn't just being tired — it's your mind and body asking you to stop. Learn how to recognize the signs of burnout, understand its impact on mental health, and gently begin your recovery.">
-    <meta name="keywords" content="burnout recovery, signs of burnout, burnout symptoms, mental exhaustion, stress and self-care, how to recover from burnout">
-    <meta property="og:title" content="What If You're Not Lazy — You're Burned Out?">
-    <meta property="og:description" content="Burnout isn't just being tired. Here's how to recognize the signs and gently begin healing.">
+    <title>The Part of the Banana You've Been Throwing Away | Darling, What If</title>
+    <meta name="description" content="Before you toss that banana peel, there are a few things worth knowing. Skincare, teeth whitening, and first aid — all from the part most people treat as kitchen waste.">
+    <meta name="keywords" content="banana peel skincare benefits, banana peel for acne scars, banana peel teeth whitening, banana peel sunburn relief, banana peel wart removal, natural skincare remedies">
+    <meta property="og:title" content="The Part of the Banana You've Been Throwing Away">
+    <meta property="og:description" content="You eat the banana and toss the peel. But that peel carries more of the banana's goodness than most people realize — and the uses are wider than you'd expect.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta property="og:url" content="https://darlingwhatif.com/nourish/banana-peel-skin-benefits">
     <meta name="article:author" content="Gia">
-    <meta name="article:published_time" content="2026-05-07">
-    <link rel="canonical" href="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta name="article:published_time" content="2026-05-10">
+    <link rel="canonical" href="https://darlingwhatif.com/nourish/banana-peel-skin-benefits">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,8 +59,9 @@
 
         /* POST HERO */
         .post-hero { position: relative; height: 78vh; min-height: 520px; max-height: 820px; overflow: hidden; }
-        .post-hero__img { position: absolute; inset: 0; width: 100%; height: 100%;
-            background: url('images/pexels-cordero-17343820.jpg') center/cover no-repeat;
+        .post-hero__img {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            background: url('images/pexels-yulia-shapereva-s-58861876-7941294.jpg') center/cover no-repeat;
         }
         .post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(250,250,247,0.12) 100%); pointer-events: none; }
 
@@ -94,14 +95,11 @@
         .content-rule { width: 48px; height: 1px; background: var(--border); margin: 56px auto; }
 
         /* INLINE IMAGE */
-        .post-img { margin: 52px -48px; }
+        .post-img { margin: 52px -48px; position: relative; }
         .post-img__frame { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
         .post-img--contained { margin: 48px 0; }
-        .post-img--contained .post-img__frame { aspect-ratio: 3/2; }
-        .post-img--portrait { margin: 52px auto; max-width: 500px; }
-        .post-img--portrait .post-img__frame { aspect-ratio: 2/3; overflow: hidden; }
-        .post-img--portrait-34 { margin: 48px auto; max-width: 520px; }
-        .post-img--portrait-34 .post-img__frame { aspect-ratio: 3/4; overflow: hidden; }
+        .post-img--contained .post-img__frame { aspect-ratio: 3670/2752; }
+        .post-img--portrait .post-img__frame { aspect-ratio: 2/3; max-width: 420px; margin: 0 auto; }
         .post-img img, .post-img__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .post-img .ph, .post-img__frame .ph { width: 100%; height: 100%; }
         .post-img__caption { font-size: 0.78rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 14px; line-height: 1.6; }
@@ -111,12 +109,34 @@
         .pull-quote::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; color: var(--gold-light); position: absolute; top: 12px; left: 44px; line-height: 1; }
         .pull-quote p { font-family: var(--serif) !important; font-size: clamp(1.2rem, 2vw, 1.55rem) !important; font-style: italic; font-weight: 400; line-height: 1.55 !important; color: var(--text) !important; padding-left: 40px; margin-bottom: 0 !important; }
 
-        /* SYMPTOM / STRATEGY LIST */
-        .post-list { margin: 0 0 28px 0; padding: 0; counter-reset: item; list-style: none; }
-        .post-list li { font-size: 1.02rem; line-height: 1.85; color: var(--text); padding: 16px 0 16px 36px; position: relative; border-bottom: 1px solid var(--border); }
-        .post-list li:first-child { border-top: 1px solid var(--border); }
-        .post-list li::before { content: counter(item); counter-increment: item; position: absolute; left: 0; top: 19px; font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: var(--gold); }
-        .post-list li strong { font-weight: 500; display: block; margin-bottom: 4px; }
+        /* RESEARCH NOTE */
+        .research-note { margin: 44px 0; padding: 28px 32px; background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold-mid); }
+        .research-note__label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
+        .research-note p { font-size: 0.92rem !important; line-height: 1.8 !important; color: var(--text-muted) !important; margin-bottom: 0 !important; }
+
+        /* BENEFIT CARDS */
+        .benefit-overview { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin: 52px 0; }
+        .benefit-card { background: var(--bg-warm); padding: 32px 28px; text-align: center; }
+        .benefit-card__icon { font-size: 1.6rem; margin-bottom: 14px; display: block; }
+        .benefit-card__title { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--text); margin-bottom: 8px; }
+        .benefit-card__desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.7; }
+
+        /* USE CASES LIST */
+        .use-list { margin: 28px 0 40px; display: flex; flex-direction: column; gap: 0; }
+        .use-item { display: grid; grid-template-columns: 36px 1fr; gap: 0 20px; padding: 22px 0; border-bottom: 1px solid var(--border); align-items: start; }
+        .use-item:first-child { border-top: 1px solid var(--border); }
+        .use-item__marker { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--gold); padding-top: 2px; }
+        .use-item__text { font-size: 1.0rem; line-height: 1.85; color: var(--text); }
+        .use-item__text strong { font-weight: 500; display: block; margin-bottom: 4px; }
+        .use-item__text span { font-size: 0.92rem; color: var(--text-muted); line-height: 1.8; }
+
+        /* TIPS BOX */
+        .tips-box { margin: 48px 0; padding: 40px 44px; border: 1px solid var(--border); background: var(--white); }
+        .tips-box__title { font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 26px; display: block; }
+        .tips-list { display: flex; flex-direction: column; gap: 16px; }
+        .tips-list li { font-size: 0.97rem; line-height: 1.8; color: var(--text-muted); padding-left: 20px; position: relative; }
+        .tips-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold-mid); font-style: italic; }
+        .tips-list li strong { color: var(--text); font-weight: 500; }
 
         /* INTERNAL LINKS */
         .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
@@ -183,11 +203,10 @@
         .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
 
         /* PLACEHOLDER GRADIENTS */
-        .ph-dusk    { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
-        .ph-rose    { background: linear-gradient(145deg, #EAD8D4 0%, #CCA4A0 100%); }
-        .ph-sage    { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
-        .ph-amber   { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
-        .ph-mist    { background: linear-gradient(145deg, #D8E2EC 0%, #94AECE 100%); }
+        .ph-amber  { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
+        .ph-honey  { background: linear-gradient(145deg, #F0DFA8 0%, #D4A040 50%, #A06818 100%); }
+        .ph-warm   { background: linear-gradient(145deg, #E8D4B8 0%, #C8A878 50%, #A07848 100%); }
+        .ph-sage   { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
 
         /* NEWSLETTER */
         .newsletter { background: var(--text); padding: 104px 0; }
@@ -227,6 +246,7 @@
             .related-grid { grid-template-columns: 1fr 1fr; }
             .post-img { margin-left: 0; margin-right: 0; }
             .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+            .benefit-overview { grid-template-columns: 1fr; gap: 2px; }
         }
         @media (max-width: 680px) {
             .container { padding-left: 24px; padding-right: 24px; }
@@ -239,10 +259,12 @@
             .newsletter__form { flex-direction: column; }
             .newsletter__input { border-right: 1px solid rgba(255,255,255,0.14); border-bottom: none; }
             .footer__grid { grid-template-columns: 1fr; }
+            .tips-box { padding: 28px 24px; }
         }
     </style>
 </head>
 <body>
+
 
 <!-- NAV -->
 <nav class="nav">
@@ -250,8 +272,8 @@
         <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
         <ul class="nav__links">
             <li><a href="wellness.html">Wellness</a></li>
-            <li><a href="mind.html" class="active">Mind</a></li>
-            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="mind.html">Mind</a></li>
+            <li><a href="nourish.html" class="active">Nourish</a></li>
             <li><a href="living.html">Living</a></li>
             <li><a href="companion.html">Companion</a></li>
             <li><a href="about.html">About Me</a></li>
@@ -265,9 +287,7 @@
 </nav>
 
 
-<!-- HERO IMAGE
-     Replace .ph-dusk with: background: url('images/burnout-hero.jpg') center/cover no-repeat;
-     Suggested photography: woman sitting quietly by a window, soft morning light, contemplative -->
+<!-- HERO -->
 <header class="post-hero">
     <div class="post-hero__img"></div>
 </header>
@@ -278,32 +298,32 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <div class="breadcrumb__sep"></div>
-        <a href="mind.html">Mind</a>
+        <a href="nourish.html">Nourish</a>
         <div class="breadcrumb__sep"></div>
-        <span>What If You're Not Lazy — You're Burned Out?</span>
+        <span>The Part of the Banana You've Been Throwing Away</span>
     </nav>
 
-    <a href="mind.html" class="post-category-badge">Mind</a>
+    <a href="nourish.html" class="post-category-badge">Nourish</a>
 
     <h1 class="post-title">
-        What If You're Not <em>Lazy</em> —<br>
-        You're Burned Out?
+        The Part of the Banana<br>
+        You've Been <em>Throwing Away</em>
     </h1>
 
     <div class="post-byline">
-        <span>May 7, 2026</span>
+        <span>May 10, 2026</span>
         <div class="byline-dot"></div>
         <span>By <a href="about.html">Gia</a></span>
         <div class="byline-dot"></div>
-        <span>7 min read</span>
+        <span>5 min read</span>
     </div>
 
     <div class="post-header-rule"></div>
 
     <p class="post-intro">
-        You've been calling it laziness. Or weakness. Or just "a phase."
-        But what if your exhaustion has a name — and what if giving it that name
-        is the first step toward finally feeling like yourself again?
+        You eat the banana. You toss the peel. That's just what you do.
+        But one woman's trash, as they say — and this particular piece of kitchen
+        waste is carrying more than you'd think.
     </p>
 </div>
 
@@ -312,232 +332,238 @@
 <article class="post-content" id="post-content">
 
     <p>
-        There's a particular kind of tired that sleep doesn't fix. You wake up already
-        depleted. You move through your days feeling like you're watching yourself from
-        a distance — going through the motions, performing okayness, waiting for the
-        version of you that used to care to come back.
+        Bananas are already one of the most quietly nutritious things you can reach for — potassium
+        for your heart, fiber for your gut, vitamin C for your skin and immunity. We know this.
+        What most of us don't know is that a significant portion of those nutrients lives not in
+        the fruit itself, but in the peel we've been throwing away since childhood.
     </p>
 
     <p>
-        This isn't a character flaw. It isn't weakness. It isn't "just stress."
-        What you might be experiencing is burnout — a state of physical, emotional,
-        and mental exhaustion that happens when chronic stress goes unaddressed for
-        too long. And it can affect anyone: the high-achiever, the caregiver, the
-        woman who holds everything together so beautifully that no one thought to
-        ask if she was okay.
+        Banana peels are rich in antioxidants, vitamins B6 and B12, magnesium, and potassium.
+        They're also packed with lutein — a compound with real, documented benefits for skin and eye health.
+        Beyond what they contain, there's something about the texture and natural oils in a fresh peel
+        that makes it unexpectedly effective for topical use. In many parts of the world, this isn't
+        a beauty hack — it's just common knowledge.
+    </p>
+
+    <p>
+        Here's what a banana peel can actually do.
     </p>
 
 
-    <!-- Inline image — portrait 2:3, no crop -->
-    <div class="post-img post-img--portrait">
-        <div class="post-img__frame">
-            <img src="images/pexels-ivan-s-6788688.jpg" alt="A woman lying face-down on a bed in a knit sweater, quietly exhausted" loading="lazy">
+    <!-- BENEFIT OVERVIEW CARDS -->
+    <div class="benefit-overview" aria-label="Three main uses">
+        <div class="benefit-card">
+            <span class="benefit-card__icon">✦</span>
+            <div class="benefit-card__title">Skincare</div>
+            <p class="benefit-card__desc">Tone, brighten, fade scars, reduce puffiness. A fresh peel does more for your skin than most things in your cabinet.</p>
         </div>
-        <p class="post-img__caption">
-            Burnout doesn't always look like collapse. Sometimes it looks like being fine — until you're not.
-        </p>
+        <div class="benefit-card">
+            <span class="benefit-card__icon">✦</span>
+            <div class="benefit-card__title">Teeth & Gums</div>
+            <p class="benefit-card__desc">A gentle daily massage with the inner peel supports gum health and gradually lifts surface staining.</p>
+        </div>
+        <div class="benefit-card">
+            <span class="benefit-card__icon">✦</span>
+            <div class="benefit-card__title">First Aid</div>
+            <p class="benefit-card__desc">Bug bites, sunburn, skin irritation — the peel's anti-inflammatory compounds provide real, immediate relief.</p>
+        </div>
     </div>
 
 
-    <h2>What Burnout <em>Actually</em> Is</h2>
+    <h2>For <em>Your Skin</em></h2>
 
     <p>
-        Burnout isn't simply being tired after a hard week. It's what happens when
-        the demands placed on you — by work, by relationships, by your own impossibly
-        high standards — consistently exceed your capacity to recover from them. Over
-        time, the gap between output and restoration grows wider, until you hit a wall
-        so solid it stops you completely.
+        This is where the peel really earns its place. The inside of a banana peel — that pale,
+        slightly slippery surface — is rich in antioxidants and has a mild astringent quality
+        that makes it genuinely useful for skin. Not in a vague, wellness-trend way. In a
+        practical, tried-and-tested way.
     </p>
 
+    <div class="use-list">
+        <div class="use-item">
+            <span class="use-item__marker">→</span>
+            <div class="use-item__text">
+                <strong>Tone and tighten</strong>
+                <span>Rub the inside of the peel across clean skin in gentle circular motions.
+                The natural astringents help tighten pores and firm the skin's surface — most
+                noticeably around the jaw and under the eyes with regular use.</span>
+            </div>
+        </div>
+        <div class="use-item">
+            <span class="use-item__marker">→</span>
+            <div class="use-item__text">
+                <strong>Reduce eye puffiness</strong>
+                <span>Cut two small pieces of peel and place them gently over closed eyes.
+                Leave for 10–15 minutes. The lutein and antioxidants help reduce swelling
+                and dark circles — better than most eye patches, and free.</span>
+            </div>
+        </div>
+        <div class="use-item">
+            <span class="use-item__marker">→</span>
+            <div class="use-item__text">
+                <strong>Fade acne scars</strong>
+                <span>Rubbing the peel directly on hyperpigmentation and post-acne marks daily
+                can gradually fade discolouration over time. It won't happen overnight — but
+                consistently, it works.</span>
+            </div>
+        </div>
+        <div class="use-item">
+            <span class="use-item__marker">→</span>
+            <div class="use-item__text">
+                <strong>Lock in moisture</strong>
+                <span>Apply your moisturiser as usual, then follow with a light rub of the
+                banana peel. The oils in the peel create a gentle barrier that helps your
+                skin hold onto hydration for longer — especially useful in dry weather or
+                after a long flight.</span>
+            </div>
+        </div>
+    </div>
+
     <p>
-        It often builds quietly, mistaken for normal stress or busyness, until one
-        day you realize you can't remember the last time something felt genuinely good.
-        That numbness — the emotional flatness, the inability to feel the things you
-        used to feel — is one of burnout's most overlooked signs.
+        For all of these, the method is the same: use the freshest peel you have, rub gently for
+        about two minutes, leave the residue on for 10–15 minutes, then rinse with cold water.
+        Cold water helps close the pores and lock in everything you just applied. This can be
+        done daily.
     </p>
+
+
+    <!-- Portrait image — woman laughing -->
+    <div class="post-img post-img--portrait">
+        <div class="post-img__frame">
+            <img src="images/pexels-roman-odintsov-4870854.jpg" alt="A woman laughing joyfully near a large tropical leaf, glowing skin, warm and natural" loading="lazy">
+        </div>
+        <p class="post-img__caption">
+            A banana peel costs nothing and takes two minutes. That's the whole routine.
+        </p>
+    </div>
 
 
     <!-- Pull quote -->
     <blockquote class="pull-quote">
         <p>
-            Burnout isn't a productivity problem. It's what happens when you give
-            everything you have — and forget to give anything back to yourself.
+            What if the most useful thing in your fruit bowl
+            isn't the fruit at all — it's the part you've always thrown away?
         </p>
     </blockquote>
 
 
-    <h2>8 Signs Your Body and Mind Are <em>Asking You to Stop</em></h2>
+    <h2>For Your <em>Teeth & Gums</em></h2>
 
     <p>
-        Burnout shows up differently for everyone, but these are the most common
-        ways it tends to speak — often in a whisper, long before it becomes a shout.
+        This one surprises people. The inside of a banana peel contains potassium, magnesium,
+        and manganese — minerals that teeth can absorb directly through the enamel. Rubbing the
+        peel across your teeth and gently massaging your gum line for two minutes each day is one
+        of the gentlest whitening approaches you'll find.
     </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Physical exhaustion that doesn't lift with rest.</strong>
-            Persistent fatigue, low energy, frequent headaches, or muscle tension
-            that sleep doesn't seem to touch. Your body is running on empty — and
-            it's been running that way for a while.
-        </li>
-        <li>
-            <strong>Emotional flatness or overwhelm.</strong>
-            Feeling numb, detached, or strangely unable to access emotions that
-            used to come naturally. Or the opposite — feeling everything too much,
-            too raw, too close to the surface.
-        </li>
-        <li>
-            <strong>Difficulty concentrating or making decisions.</strong>
-            Brain fog, increased mistakes, an inability to focus that feels new
-            and alarming. A mind that used to be sharp now feels like it's wading
-            through something thick.
-        </li>
-        <li>
-            <strong>Withdrawing from people and things you love.</strong>
-            Cancelling plans, going quiet in relationships, losing interest in
-            hobbies that used to light you up. Isolation can feel protective
-            when you have nothing left to give.
-        </li>
-        <li>
-            <strong>A creeping cynicism or sense of meaninglessness.</strong>
-            When things you once cared about feel hollow, or you find yourself
-            going through the motions without any sense of why — that disconnection
-            from purpose is a significant signal.
-        </li>
-        <li>
-            <strong>Nothing feels satisfying, even when it goes well.</strong>
-            Completing things, achieving things, being told you did well — and
-            feeling nothing. The inability to receive your own effort as enough
-            is one of burnout's quietest cruelties.
-        </li>
-        <li>
-            <strong>Sleep that isn't restful.</strong>
-            Falling asleep easily from exhaustion but waking unrefreshed. Or
-            lying awake despite desperately needing rest. A nervous system under
-            sustained stress often struggles to fully downshift.
-        </li>
-        <li>
-            <strong>Increased physical illness.</strong>
-            Getting sick more often, experiencing digestive issues, or noticing
-            your body responding to stress in ways it didn't used to. Chronic
-            stress suppresses immune function — your body is not separating
-            emotional stress from physical threat.
-        </li>
-    </ol>
+    <p>
+        It won't deliver the dramatic results of a bleaching treatment, and it's not trying to.
+        What it does is gradually lift surface staining from coffee, tea, and general daily life
+        while supporting the health of your gums. Healthier gums mean less inflammation, which
+        matters far more for the long-term look and feel of your mouth than whitening alone.
+    </p>
 
-
-    <!-- Inline image — portrait 3:4, no crop -->
-    <div class="post-img post-img--portrait-34">
-        <div class="post-img__frame">
-            <img src="images/pexels-79380313-9007274.jpg" alt="A woman resting in white bed linens, arms above her head — still, soft, restored" loading="lazy">
-        </div>
-        <p class="post-img__caption">
-            Rest isn't a reward you earn after exhaustion. It's the practice that keeps exhaustion from becoming burnout.
+    <div class="research-note">
+        <span class="research-note__label">Worth knowing</span>
+        <p>
+            The research on banana peels for whitening is largely anecdotal — there aren't large
+            clinical studies confirming the mechanism. What we do know is that the minerals present
+            in the peel are the same ones involved in remineralisation of tooth enamel. Whether the
+            absorption is meaningful via topical application is still an open question. As a gentle,
+            daily habit it's harmless; as a replacement for professional dental care, it isn't.
         </p>
     </div>
 
 
-    <h2>Why Burnout Matters for Your <em>Mental Health</em></h2>
+    <!-- Contained image — banana peels pile -->
+    <div class="post-img post-img--contained">
+        <div class="post-img__frame">
+            <img src="images/pexels-julia-kuzenkov-442028-1974514.jpg" alt="A pile of banana peels on a clean white surface, soft natural light" loading="lazy">
+        </div>
+        <p class="post-img__caption">
+            Fresh is everything here — the nutrients in the peel begin to degrade as soon as it's separated from the fruit.
+        </p>
+    </div>
+
+
+    <h2>For <em>Minor Irritations</em></h2>
 
     <p>
-        Burnout is not a formal clinical diagnosis, but its effects on mental health
-        are very real. Left unaddressed, chronic burnout can contribute to or
-        deepen anxiety, depression, and a generalized disconnection from your own
-        life. The relationship runs in both directions — stress fuels burnout, and
-        burnout creates the conditions in which mental health struggles take root.
+        This is perhaps the most underrated use. A banana peel has natural anti-inflammatory and
+        antimicrobial properties, and pressing the cool, moist inside of the peel against irritated
+        skin offers real, immediate relief — not just a placebo sense of doing something.
     </p>
 
-    <p>
-        This is why naming it matters. Not to pathologize your exhaustion, but to
-        treat it with the seriousness it deserves — the same seriousness you would
-        extend to any other condition that was quietly affecting your quality of life.
-    </p>
+    <div class="use-list">
+        <div class="use-item">
+            <span class="use-item__marker">→</span>
+            <div class="use-item__text">
+                <strong>Sunburn and heat rash</strong>
+                <span>Press the inside of a chilled peel against the affected area and hold
+                it gently in place. The cooling effect is immediate; the anti-inflammatory
+                compounds do their work over the following minutes. Repeat as needed.</span>
+            </div>
+        </div>
+        <div class="use-item">
+            <span class="use-item__marker">→</span>
+            <div class="use-item__text">
+                <strong>Bug bites and poison ivy</strong>
+                <span>The itch from a bug bite or poison ivy rash is your skin's inflammatory
+                response. The peel's compounds help calm that response directly. Press and
+                hold — don't rub — for a few minutes for the best effect.</span>
+            </div>
+        </div>
+        <div class="use-item">
+            <span class="use-item__marker">→</span>
+            <div class="use-item__text">
+                <strong>Warts</strong>
+                <span>Cut a piece of peel to size, place it flesh-side down on the wart, and
+                secure it with a small bandage. Leave overnight. Repeat nightly until the
+                wart resolves — typically a few weeks with consistent treatment. The enzymes
+                in the peel are believed to break down the wart gradually.</span>
+            </div>
+        </div>
+    </div>
 
 
-    <!-- Internal links -->
-    <div class="internal-links">
-        <span class="internal-links__title">You might also want to read</span>
-        <ul>
-            <li><a href="#">What If Softness Is Your Greatest Strength</a></li>
-            <li><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></li>
-            <li><a href="#">The Quiet Power of Saying No Without Apologizing</a></li>
+    <!-- TIPS -->
+    <div class="tips-box">
+        <span class="tips-box__title">A few things that make all the difference</span>
+        <ul class="tips-list">
+            <li><strong>Always use a fresh peel.</strong> The nutrients degrade once the banana is eaten and the peel is exposed to air. Use it immediately.</li>
+            <li><strong>Never refrigerate bananas or their peels.</strong> Cold temperatures accelerate blackening and break down the beneficial compounds. Keep bananas at room temperature, away from direct sunlight and heat sources.</li>
+            <li><strong>Rinse with cold water.</strong> After leaving the peel residue on your skin, rinse with cold water — not warm. Cold helps close pores and lock in what you just applied.</li>
+            <li><strong>Consistency is the whole point.</strong> One use won't do much. Daily use over two to four weeks is where results become visible — particularly for scars and skin tone.</li>
+            <li><strong>The riper, the better for skin.</strong> A ripe peel (yellow with some spots) contains more antioxidants than an underripe one. For warts and irritation, a less ripe peel works fine.</li>
         </ul>
     </div>
 
 
-    <h2>8 Gentle Ways to Begin <em>Coming Back to Yourself</em></h2>
+    <!-- Internal links -->
+    <div class="internal-links">
+        <span class="internal-links__title">More from the kitchen</span>
+        <ul>
+            <li>
+                <a href="post-acv-honey.html">Apple Cider Vinegar & Honey — the morning ritual your gut has been waiting for</a>
+            </li>
+            <li>
+                <a href="post-hair-foods.html">The Foods That Actually Feed Your Hair — nutrients, not supplements</a>
+            </li>
+            <li>
+                <a href="post-water.html">How Much Water Do You Actually Need? The honest answer</a>
+            </li>
+        </ul>
+    </div>
 
-    <p>
-        Recovery from burnout isn't a hustle. It isn't a new productivity system
-        or a weekend reset. It's a slow, patient return to yourself — one small act
-        of self-honoring at a time.
-    </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Start with one honest boundary.</strong>
-            Not a full overhaul of your life — just one thing you say no to this
-            week that you would have previously said yes to out of obligation.
-            Boundaries aren't walls. They're the shape of a life you can actually live in.
-        </li>
-        <li>
-            <strong>Bring a stress-reduction practice into your daily rhythm.</strong>
-            Deep breathing. A few minutes of meditation. A slow walk without your
-            phone. These aren't clichés — they are direct interruptions to your
-            nervous system's stress response, and they work when practiced consistently.
-        </li>
-        <li>
-            <strong>Prioritize what genuinely restores you.</strong>
-            Not what you think should restore you — what actually does. For some
-            people that's solitude and silence. For others it's connection and laughter.
-            You know the difference. Start doing more of the thing that actually works.
-        </li>
-        <li>
-            <strong>Move your body gently and regularly.</strong>
-            Not as punishment or performance, but as care. Even 20 minutes of
-            movement that you enjoy can meaningfully shift your nervous system,
-            your mood, and your energy levels over time.
-        </li>
-        <li>
-            <strong>Protect your sleep like it's sacred — because it is.</strong>
-            A consistent sleep schedule, a winding-down ritual, a room that feels
-            safe and quiet. Sleep is the foundation that everything else is built on.
-            Without it, recovery isn't fully possible.
-        </li>
-        <li>
-            <strong>Let someone in.</strong>
-            A friend, a family member, a therapist. You don't have to have the
-            words — you just have to be willing to stop performing okayness with
-            at least one person. Being witnessed in your exhaustion is part of healing.
-        </li>
-        <li>
-            <strong>Revisit what actually matters to you.</strong>
-            Burnout often happens when we've been living by someone else's definition
-            of success. A quiet, honest conversation with yourself about what you
-            actually want — separate from what you're supposed to want — can be
-            quietly revolutionary.
-        </li>
-        <li>
-            <strong>Take breaks before you need them desperately.</strong>
-            A five-minute pause in your workday. A day off before the collapse.
-            Rest taken proactively is far more restorative than rest taken after
-            you've already broken down. You are allowed to rest before you're empty.
-        </li>
-    </ol>
-
-    <div class="content-rule"></div>
-
-    <!-- Gentle conclusion -->
+    <!-- Conclusion -->
     <div class="post-conclusion">
-        <h3 class="post-conclusion__title">A gentle closing thought</h3>
+        <h3 class="post-conclusion__title">The best remedies don't always come in packaging.</h3>
         <p>
-            If you recognized yourself anywhere in this post, please be kind to
-            yourself about it. Burnout isn't a sign that you failed — it's a sign
-            that you gave a great deal for a very long time, often without enough
-            support. The fact that you're here, reading, wondering if things could
-            be different — that is already the beginning of something. And if your
-            symptoms persist or feel overwhelming, please reach out to a mental
-            health professional. You don't have to figure this out alone.
+            That banana peel you've been tossing has a longer useful life than the banana itself.
+            Two minutes, fresh peel, cold water to finish. That's the whole thing. Sometimes the
+            simplest routines are the ones worth keeping.
         </p>
     </div>
 
@@ -552,74 +578,92 @@
 
     <div class="faq-item" id="faq1">
         <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
-            <span class="faq-question__text">How do I know if I'm burned out or just going through a rough patch?</span>
+            <span class="faq-question__text">Does the color of the banana matter?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                A rough patch tends to have a visible cause and a visible end — a hard project,
-                a difficult season, a specific stressor. Burnout is more pervasive: it lingers
-                after the stressor is gone, it affects multiple areas of your life simultaneously,
-                and rest doesn't restore you the way it used to. If you've been feeling this way
-                for weeks or months rather than days, burnout is worth considering seriously.
+                Yes — and it depends on what you're using the peel for. A ripe, yellow peel (ideally
+                with a few brown spots) has a higher antioxidant content, which makes it better for
+                skincare, eye puffiness, and general skin brightening. A less ripe, greener peel has
+                more astringent compounds, which some people find more effective for toning and tightening.
+                For first aid uses like bug bites and sunburn, either works well. Avoid very black or
+                overripe peels — they're past their point of usefulness for topical application.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq2">
         <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
-            <span class="faq-question__text">Can burnout happen even if I love what I do?</span>
+            <span class="faq-question__text">How long before I see results on my skin?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Absolutely — and this is one of the most painful forms of burnout, because
-                it can come with guilt and confusion. Loving what you do doesn't make you
-                immune to depletion. Burnout is about the ratio of output to recovery, not
-                about whether your work is meaningful. Passionate people often burn out
-                precisely because they care so much that they forget to stop.
+                For immediate uses like eye puffiness and bug bite relief, you'll notice something
+                within 10–15 minutes. For skin tone, acne scars, and general brightening, give it
+                two to four weeks of daily use before expecting visible changes. Skin turns over
+                slowly, and natural remedies work with that cycle rather than against it. The key
+                is not doing it once and hoping — it's doing it every day until it becomes a habit
+                you don't think about.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq3">
         <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
-            <span class="faq-question__text">How long does it take to recover from burnout?</span>
+            <span class="faq-question__text">Is it safe for sensitive skin?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Recovery varies enormously depending on how long burnout has been building,
-                what caused it, and what changes you're able to make. Mild burnout might lift
-                with a few weeks of intentional rest and boundary-setting. Deeper burnout —
-                especially when it's contributed to depression or anxiety — may take months
-                and benefit significantly from professional support. Be patient with the
-                timeline. Healing is not linear.
+                For most people, yes — banana peels are gentle enough for sensitive skin, and their
+                natural compounds are far less disruptive than many commercial skincare ingredients.
+                That said, if you have a latex allergy, proceed with caution: banana and latex share
+                certain proteins that can trigger a reaction in some people. As with anything new,
+                test on a small area of skin first and wait 24 hours before using it more broadly.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq4">
         <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
-            <span class="faq-question__text">When should I seek professional help for burnout?</span>
+            <span class="faq-question__text">Can I use a peel that's been sitting out?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                If your symptoms are significantly affecting your daily functioning,
-                relationships, or physical health — or if you're noticing signs of
-                depression or anxiety alongside your burnout — please reach out to a
-                therapist, counselor, or your doctor. You don't have to reach a crisis
-                point to deserve support. Asking for help early is one of the wisest
-                things you can do.
+                Ideally, no. The beneficial compounds in the peel — particularly the antioxidants
+                and natural enzymes — start to degrade as soon as the peel is removed and exposed
+                to air. For skincare, you want to use the peel within a few minutes of peeling
+                the banana. For the overnight wart treatment, freshness also matters — don't
+                save a peel from the morning to use at night.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq5">
+        <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">
+            <span class="faq-question__text">Why no refrigerator?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                Cold temperatures cause the cell walls in banana skin to break down rapidly, which
+                is why refrigerated bananas turn black so quickly. This same breakdown degrades the
+                nutrients and plant compounds that make the peel useful. Store your bananas at room
+                temperature — away from direct heat or sunlight — and they'll stay at their best
+                longer, with peels that are actually worth using.
             </p>
         </div>
     </div>
@@ -627,14 +671,17 @@
 </section>
 
 
-<!-- TAGS — Category + 3 SEO tags -->
+<!-- TAGS -->
 <div class="post-tags-section">
-    <span class="post-tags-section__label">Tagged in</span>
+    <span class="post-tags-section__label">Filed under</span>
     <div class="tags">
-        <a href="mind.html" class="tag tag--category">Mind</a>
-        <a href="/tag/burnout-recovery" class="tag">burnout recovery</a>
-        <a href="/tag/mental-exhaustion" class="tag">mental exhaustion</a>
-        <a href="/tag/stress-and-self-care" class="tag">stress and self-care</a>
+        <a href="nourish.html" class="tag tag--category">Nourish</a>
+        <a href="#" class="tag">Natural Skincare</a>
+        <a href="#" class="tag">Kitchen Remedies</a>
+        <a href="#" class="tag">Beauty</a>
+        <a href="#" class="tag">Skin Health</a>
+        <a href="#" class="tag">Wellness</a>
+        <a href="#" class="tag">Zero Waste</a>
     </div>
 </div>
 
@@ -646,10 +693,9 @@
         <div class="author-bio__info">
             <h4>Written by Gia</h4>
             <p>
-                Wellness blogger, designer, and wanderer at heart. I believe deeply that
-                beauty is healing and softness is a form of power. "Darling… what if" is
-                my ongoing love letter to the life I'm choosing — one small and intentional
-                moment at a time.
+                A lifestyle writer exploring the small, quiet shifts that change how we live.
+                Darling, What If is a space for women who are ready to ask better questions —
+                starting with the ones no one else is asking.
             </p>
         </div>
     </div>
@@ -657,60 +703,71 @@
 
 
 <!-- RELATED POSTS -->
-<section class="related-posts">
+<section class="related-posts" aria-label="More from Nourish">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Keep <em>Reading</em></h2>
+            <h2 class="section-title">More from <em>Nourish</em></h2>
         </div>
         <div class="related-grid">
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-honey"></div>
+                </div>
+                <div class="post-card__body">
+                    <span class="category-label">Nourish</span>
+                    <h3 class="post-card__title">
+                        <a href="post-acv-honey.html">What If the Oldest Gut Remedy Was Already in Your Pantry?</a>
+                    </h3>
+                    <div class="post-card__date">May 8, 2026</div>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-warm"></div>
+                </div>
+                <div class="post-card__body">
+                    <span class="category-label">Nourish</span>
+                    <h3 class="post-card__title">
+                        <a href="post-hair-foods.html">The Foods That Actually Feed Your Hair</a>
+                    </h3>
+                    <div class="post-card__date">May 8, 2026</div>
+                </div>
+            </article>
+
             <article class="post-card">
                 <div class="post-card__img-wrap">
                     <div class="post-card__img ph-sage"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Wellness</a>
-                    <h3 class="post-card__title"><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></h3>
-                    <div class="post-card__date">May 7, 2026 &nbsp;·&nbsp; 6 min read</div>
+                    <span class="category-label">Nourish</span>
+                    <h3 class="post-card__title">
+                        <a href="post-water.html">How Much Water Do You Actually Need?</a>
+                    </h3>
+                    <div class="post-card__date">May 8, 2026</div>
                 </div>
             </article>
-            <article class="post-card">
-                <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-rose"></div>
-                </div>
-                <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="#">The Quiet Power of Saying No Without Apologizing</a></h3>
-                    <div class="post-card__date">April 3, 2026 &nbsp;·&nbsp; 6 min read</div>
-                </div>
-            </article>
-            <article class="post-card">
-                <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-amber"></div>
-                </div>
-                <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="post-morning-pages.html">Morning Pages & Why They Rewired My Anxious Brain</a></h3>
-                    <div class="post-card__date">May 4, 2026 &nbsp;·&nbsp; 5 min read</div>
-                </div>
-            </article>
+
         </div>
     </div>
 </section>
 
 
 <!-- NEWSLETTER -->
-<section class="newsletter" id="newsletter">
-    <div class="container">
-        <div class="newsletter__inner">
-            <span class="newsletter__eyebrow">Letters from Gia</span>
-            <h2 class="newsletter__title">What if your inbox felt like<br><em>a warm cup of tea?</em></h2>
-            <p class="newsletter__body">Soft stories, honest reflections, and small ideas that might just change the way you see your day.</p>
-            <form class="newsletter__form" onsubmit="handleSignup(event)">
-                <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
-                <button type="submit" class="newsletter__btn">Yes, I'm in</button>
-            </form>
-            <p class="newsletter__note">No spam, ever. Unsubscribe anytime.</p>
-        </div>
+<section class="newsletter" aria-label="Newsletter signup">
+    <div class="newsletter__inner">
+        <span class="newsletter__eyebrow">Stay close</span>
+        <h2 class="newsletter__title">Letters for women who are <em>quietly beginning again</em></h2>
+        <p class="newsletter__body">
+            New posts, slow thoughts, and the occasional thing I found beautiful this week.
+            No noise. Just what matters.
+        </p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address">
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+        <p class="newsletter__note">Unsubscribe any time. No spam, ever.</p>
     </div>
 </section>
 
@@ -719,15 +776,20 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__grid">
+
             <div>
                 <div class="footer__logo">darling, <em>what if</em></div>
-                <p class="footer__about">A lifestyle space for women who are quietly questioning everything and bravely choosing to begin again.</p>
+                <p class="footer__about">
+                    A lifestyle space for women who are quietly questioning everything
+                    and bravely choosing to begin again. Beauty. Softness. Healing.
+                </p>
                 <div class="footer__social">
-                    <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
-                    <a href="https://pinterest.com" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">PI</a>
-                    <a href="mailto:hello@darlingwhatif.com" class="footer__social-link" aria-label="Email">@</a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">PT</a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok">TK</a>
                 </div>
             </div>
+
             <div class="footer__col">
                 <h5>Explore</h5>
                 <ul>
@@ -738,30 +800,35 @@
                     <li><a href="companion.html">Companion</a></li>
                 </ul>
             </div>
+
             <div class="footer__col">
-                <h5>Connect</h5>
+                <h5>Reading</h5>
+                <ul>
+                    <li><a href="post-morning-pages.html">Morning Pages</a></li>
+                    <li><a href="post-burnout.html">On Burnout</a></li>
+                    <li><a href="post-hair-foods.html">Hair Foods</a></li>
+                    <li><a href="post-acv-honey.html">ACV & Honey</a></li>
+                    <li><a href="post-water.html">On Water</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h5>More</h5>
                 <ul>
                     <li><a href="about.html">About Me</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="#newsletter">Newsletter</a></li>
-                    <li><a href="/collaborate">Collaborate</a></li>
+                    <li><a href="mailto:samsungfaye9@gmail.com">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer__col">
-                <h5>Legal</h5>
-                <ul>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/disclosure">Disclosure</a></li>
-                    <li><a href="/terms">Terms of Use</a></li>
-                </ul>
-            </div>
+
         </div>
+
         <div class="footer__bottom">
-            <span>© 2026 <a href="index.html">darlingwhatif.com</a> — All rights reserved</span>
-            <span>Made with intention ✦</span>
+            <span>© 2026 Darling, What If. All rights reserved.</span>
+            <span>Made with softness &amp; intention.</span>
         </div>
     </div>
 </footer>
+
 
 <script>
     function toggleFaq(id) {
@@ -775,15 +842,6 @@
             item.classList.add('open');
             item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
         }
-    }
-    function handleSignup(e) {
-        e.preventDefault();
-        const input = e.target.querySelector('.newsletter__input');
-        const btn = e.target.querySelector('.newsletter__btn');
-        btn.textContent = 'You\'re in ✦';
-        btn.style.background = '#7A6B50';
-        input.disabled = true;
-        btn.disabled = true;
     }
 </script>
 

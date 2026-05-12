@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ── SEO Meta ── -->
-    <title>What If You're Not Lazy — You're Burned Out? | Darling, What If</title>
-    <meta name="description" content="Burnout isn't just being tired — it's your mind and body asking you to stop. Learn how to recognize the signs of burnout, understand its impact on mental health, and gently begin your recovery.">
-    <meta name="keywords" content="burnout recovery, signs of burnout, burnout symptoms, mental exhaustion, stress and self-care, how to recover from burnout">
-    <meta property="og:title" content="What If You're Not Lazy — You're Burned Out?">
-    <meta property="og:description" content="Burnout isn't just being tired. Here's how to recognize the signs and gently begin healing.">
+    <title>Everything Your Hair Has Been Asking You to Eat | Darling, What If</title>
+    <meta name="description" content="Grey hair isn't just about age — nutrition plays a bigger role than most of us realize. Here are the 14 foods that support hair health, protect your color, and give your hair its shine back.">
+    <meta name="keywords" content="foods that prevent grey hair, best foods for hair health and shine, vitamins and minerals for hair growth, hair nutrition diet, what to eat for healthy hair">
+    <meta property="og:title" content="Everything Your Hair Has Been Asking You to Eat">
+    <meta property="og:description" content="Grey hair isn't only about age. Your plate has more to do with it than you think — here are the 14 foods that can actually make a difference.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta property="og:url" content="https://darlingwhatif.com/nourish/foods-for-healthy-hair-prevent-grey">
     <meta name="article:author" content="Gia">
-    <meta name="article:published_time" content="2026-05-07">
-    <link rel="canonical" href="https://darlingwhatif.com/mind/what-if-youre-not-lazy-youre-burned-out">
+    <meta name="article:published_time" content="2026-05-08">
+    <link rel="canonical" href="https://darlingwhatif.com/nourish/foods-for-healthy-hair-prevent-grey">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,8 +59,9 @@
 
         /* POST HERO */
         .post-hero { position: relative; height: 78vh; min-height: 520px; max-height: 820px; overflow: hidden; }
-        .post-hero__img { position: absolute; inset: 0; width: 100%; height: 100%;
-            background: url('images/pexels-cordero-17343820.jpg') center/cover no-repeat;
+        .post-hero__img {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            background: url('images/pexels-will-wenwenyu-725741824-27824885.jpg') center/cover no-repeat;
         }
         .post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(250,250,247,0.12) 100%); pointer-events: none; }
 
@@ -93,17 +94,32 @@
         .post-content a:hover { border-color: var(--gold); }
         .content-rule { width: 48px; height: 1px; background: var(--border); margin: 56px auto; }
 
+        /* FOOD LIST */
+        .food-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; margin: 44px 0; border: 1px solid var(--border); }
+        .food-item { display: flex; align-items: flex-start; gap: 16px; padding: 20px 24px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); }
+        .food-item:nth-child(even) { border-right: none; }
+        .food-item:nth-last-child(-n+2) { border-bottom: none; }
+        .food-item__num { font-family: var(--serif); font-size: 1.1rem; font-style: italic; color: var(--gold); flex-shrink: 0; min-width: 24px; line-height: 1.4; }
+        .food-item__name { font-size: 0.95rem; font-weight: 400; color: var(--text); line-height: 1.5; }
+        .food-item__note { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; margin-top: 3px; }
+        @media (max-width: 560px) {
+            .food-grid { grid-template-columns: 1fr; }
+            .food-item { border-right: none; }
+            .food-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
+            .food-item:last-child { border-bottom: none; }
+        }
+
         /* INLINE IMAGE */
-        .post-img { margin: 52px -48px; }
+        .post-img { margin: 52px -48px; position: relative; }
         .post-img__frame { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
         .post-img--contained { margin: 48px 0; }
         .post-img--contained .post-img__frame { aspect-ratio: 3/2; }
+        .post-img--natural { margin: 48px 0; }
+        .post-img--natural .post-img__frame { aspect-ratio: 4/3; background: var(--white); }
         .post-img--portrait { margin: 52px auto; max-width: 500px; }
         .post-img--portrait .post-img__frame { aspect-ratio: 2/3; overflow: hidden; }
-        .post-img--portrait-34 { margin: 48px auto; max-width: 520px; }
-        .post-img--portrait-34 .post-img__frame { aspect-ratio: 3/4; overflow: hidden; }
         .post-img img, .post-img__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .post-img .ph, .post-img__frame .ph { width: 100%; height: 100%; }
+        .post-img--natural .post-img__frame img { object-fit: contain; }
         .post-img__caption { font-size: 0.78rem; color: var(--text-muted); font-style: italic; text-align: center; margin-top: 14px; line-height: 1.6; }
 
         /* PULL QUOTE */
@@ -111,12 +127,14 @@
         .pull-quote::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; color: var(--gold-light); position: absolute; top: 12px; left: 44px; line-height: 1; }
         .pull-quote p { font-family: var(--serif) !important; font-size: clamp(1.2rem, 2vw, 1.55rem) !important; font-style: italic; font-weight: 400; line-height: 1.55 !important; color: var(--text) !important; padding-left: 40px; margin-bottom: 0 !important; }
 
-        /* SYMPTOM / STRATEGY LIST */
-        .post-list { margin: 0 0 28px 0; padding: 0; counter-reset: item; list-style: none; }
-        .post-list li { font-size: 1.02rem; line-height: 1.85; color: var(--text); padding: 16px 0 16px 36px; position: relative; border-bottom: 1px solid var(--border); }
-        .post-list li:first-child { border-top: 1px solid var(--border); }
-        .post-list li::before { content: counter(item); counter-increment: item; position: absolute; left: 0; top: 19px; font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: var(--gold); }
-        .post-list li strong { font-weight: 500; display: block; margin-bottom: 4px; }
+        /* RESEARCH NOTE */
+        .research-note { margin: 44px 0; padding: 28px 32px; background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold-mid); }
+        .research-note__label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
+        .research-note p { font-size: 0.92rem !important; line-height: 1.8 !important; color: var(--text-muted) !important; margin-bottom: 0 !important; }
+
+        /* NUTRIENT SECTION */
+        .nutrient-tag { display: inline-block; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; background: var(--gold-faint); color: var(--gold-dark); padding: 4px 12px; border-radius: 100px; margin-bottom: 8px; }
+        .nutrient-tag + h2 { margin-top: 8px; }
 
         /* INTERNAL LINKS */
         .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
@@ -183,11 +201,9 @@
         .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
 
         /* PLACEHOLDER GRADIENTS */
-        .ph-dusk    { background: linear-gradient(145deg, #DCD4E8 0%, #A494CC 100%); }
-        .ph-rose    { background: linear-gradient(145deg, #EAD8D4 0%, #CCA4A0 100%); }
-        .ph-sage    { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
-        .ph-amber   { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
-        .ph-mist    { background: linear-gradient(145deg, #D8E2EC 0%, #94AECE 100%); }
+        .ph-warm   { background: linear-gradient(145deg, #F5ECD8 0%, #D4B896 100%); }
+        .ph-amber  { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
+        .ph-sage   { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
 
         /* NEWSLETTER */
         .newsletter { background: var(--text); padding: 104px 0; }
@@ -244,14 +260,15 @@
 </head>
 <body>
 
+
 <!-- NAV -->
 <nav class="nav">
     <div class="nav__inner">
         <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
         <ul class="nav__links">
             <li><a href="wellness.html">Wellness</a></li>
-            <li><a href="mind.html" class="active">Mind</a></li>
-            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="mind.html">Mind</a></li>
+            <li><a href="nourish.html" class="active">Nourish</a></li>
             <li><a href="living.html">Living</a></li>
             <li><a href="companion.html">Companion</a></li>
             <li><a href="about.html">About Me</a></li>
@@ -265,9 +282,7 @@
 </nav>
 
 
-<!-- HERO IMAGE
-     Replace .ph-dusk with: background: url('images/burnout-hero.jpg') center/cover no-repeat;
-     Suggested photography: woman sitting quietly by a window, soft morning light, contemplative -->
+<!-- HERO -->
 <header class="post-hero">
     <div class="post-hero__img"></div>
 </header>
@@ -278,32 +293,32 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <div class="breadcrumb__sep"></div>
-        <a href="mind.html">Mind</a>
+        <a href="nourish.html">Nourish</a>
         <div class="breadcrumb__sep"></div>
-        <span>What If You're Not Lazy — You're Burned Out?</span>
+        <span>Everything Your Hair Has Been Asking You to Eat</span>
     </nav>
 
-    <a href="mind.html" class="post-category-badge">Mind</a>
+    <a href="nourish.html" class="post-category-badge">Nourish</a>
 
     <h1 class="post-title">
-        What If You're Not <em>Lazy</em> —<br>
-        You're Burned Out?
+        Everything Your Hair Has<br>
+        <em>Been Asking You to Eat</em>
     </h1>
 
     <div class="post-byline">
-        <span>May 7, 2026</span>
+        <span>May 8, 2026</span>
         <div class="byline-dot"></div>
         <span>By <a href="about.html">Gia</a></span>
         <div class="byline-dot"></div>
-        <span>7 min read</span>
+        <span>6 min read</span>
     </div>
 
     <div class="post-header-rule"></div>
 
     <p class="post-intro">
-        You've been calling it laziness. Or weakness. Or just "a phase."
-        But what if your exhaustion has a name — and what if giving it that name
-        is the first step toward finally feeling like yourself again?
+        Going grey isn't only a matter of age — and most people don't know that.
+        Your plate, your stress levels, and the nutrients you're quietly running low on
+        have more to do with your hair than any product on your bathroom shelf.
     </p>
 </div>
 
@@ -312,145 +327,151 @@
 <article class="post-content" id="post-content">
 
     <p>
-        There's a particular kind of tired that sleep doesn't fix. You wake up already
-        depleted. You move through your days feeling like you're watching yourself from
-        a distance — going through the motions, performing okayness, waiting for the
-        version of you that used to care to come back.
+        Let's start with something nobody likes to admit: grey hair doesn't always arrive on schedule.
+        It can show up early, accelerate suddenly, and respond — genuinely respond — to what you're
+        eating, how you're sleeping, and how much chronic stress you're carrying around. Lifestyle,
+        pollution, and nutritional gaps all play a real role in how your hair ages. The good news
+        is that some of that is in your hands.
     </p>
 
     <p>
-        This isn't a character flaw. It isn't weakness. It isn't "just stress."
-        What you might be experiencing is burnout — a state of physical, emotional,
-        and mental exhaustion that happens when chronic stress goes unaddressed for
-        too long. And it can affect anyone: the high-achiever, the caregiver, the
-        woman who holds everything together so beautifully that no one thought to
-        ask if she was okay.
+        Exercise helps too — regular movement improves circulation, and better blood flow means
+        better delivery of nutrients to your scalp and follicles. But let's talk about what you
+        can put on your plate. Because some of the most effective hair support isn't in a supplement
+        aisle. It's in your kitchen.
     </p>
 
 
-    <!-- Inline image — portrait 2:3, no crop -->
+    <!-- Portrait image — no cropping, full 2:3 ratio -->
     <div class="post-img post-img--portrait">
         <div class="post-img__frame">
-            <img src="images/pexels-ivan-s-6788688.jpg" alt="A woman lying face-down on a bed in a knit sweater, quietly exhausted" loading="lazy">
+            <img src="images/pexels-greta-hoffman-9475729.jpg" alt="A woman brushing her long dark hair with a wooden brush in soft morning light" loading="lazy">
         </div>
         <p class="post-img__caption">
-            Burnout doesn't always look like collapse. Sometimes it looks like being fine — until you're not.
+            Hair that's well-nourished from within carries a quality no product can replicate.
         </p>
     </div>
-
-
-    <h2>What Burnout <em>Actually</em> Is</h2>
-
-    <p>
-        Burnout isn't simply being tired after a hard week. It's what happens when
-        the demands placed on you — by work, by relationships, by your own impossibly
-        high standards — consistently exceed your capacity to recover from them. Over
-        time, the gap between output and restoration grows wider, until you hit a wall
-        so solid it stops you completely.
-    </p>
-
-    <p>
-        It often builds quietly, mistaken for normal stress or busyness, until one
-        day you realize you can't remember the last time something felt genuinely good.
-        That numbness — the emotional flatness, the inability to feel the things you
-        used to feel — is one of burnout's most overlooked signs.
-    </p>
 
 
     <!-- Pull quote -->
     <blockquote class="pull-quote">
         <p>
-            Burnout isn't a productivity problem. It's what happens when you give
-            everything you have — and forget to give anything back to yourself.
+            The best hair treatment you own isn't in a bottle.
+            It's in your grocery basket — and it's been there all along.
         </p>
     </blockquote>
 
 
-    <h2>8 Signs Your Body and Mind Are <em>Asking You to Stop</em></h2>
+    <h2>The 14 Foods <em>That Actually Make a Difference</em></h2>
 
     <p>
-        Burnout shows up differently for everyone, but these are the most common
-        ways it tends to speak — often in a whisper, long before it becomes a shout.
+        These aren't obscure superfoods or supplements with a long list of caveats.
+        They are real, accessible ingredients that work together to support hair color,
+        strength, and shine from the inside. Here's what they are and why each one earns its place.
     </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Physical exhaustion that doesn't lift with rest.</strong>
-            Persistent fatigue, low energy, frequent headaches, or muscle tension
-            that sleep doesn't seem to touch. Your body is running on empty — and
-            it's been running that way for a while.
-        </li>
-        <li>
-            <strong>Emotional flatness or overwhelm.</strong>
-            Feeling numb, detached, or strangely unable to access emotions that
-            used to come naturally. Or the opposite — feeling everything too much,
-            too raw, too close to the surface.
-        </li>
-        <li>
-            <strong>Difficulty concentrating or making decisions.</strong>
-            Brain fog, increased mistakes, an inability to focus that feels new
-            and alarming. A mind that used to be sharp now feels like it's wading
-            through something thick.
-        </li>
-        <li>
-            <strong>Withdrawing from people and things you love.</strong>
-            Cancelling plans, going quiet in relationships, losing interest in
-            hobbies that used to light you up. Isolation can feel protective
-            when you have nothing left to give.
-        </li>
-        <li>
-            <strong>A creeping cynicism or sense of meaninglessness.</strong>
-            When things you once cared about feel hollow, or you find yourself
-            going through the motions without any sense of why — that disconnection
-            from purpose is a significant signal.
-        </li>
-        <li>
-            <strong>Nothing feels satisfying, even when it goes well.</strong>
-            Completing things, achieving things, being told you did well — and
-            feeling nothing. The inability to receive your own effort as enough
-            is one of burnout's quietest cruelties.
-        </li>
-        <li>
-            <strong>Sleep that isn't restful.</strong>
-            Falling asleep easily from exhaustion but waking unrefreshed. Or
-            lying awake despite desperately needing rest. A nervous system under
-            sustained stress often struggles to fully downshift.
-        </li>
-        <li>
-            <strong>Increased physical illness.</strong>
-            Getting sick more often, experiencing digestive issues, or noticing
-            your body responding to stress in ways it didn't used to. Chronic
-            stress suppresses immune function — your body is not separating
-            emotional stress from physical threat.
-        </li>
-    </ol>
 
-
-    <!-- Inline image — portrait 3:4, no crop -->
-    <div class="post-img post-img--portrait-34">
+    <!-- Food reference image -->
+    <div class="post-img post-img--natural">
         <div class="post-img__frame">
-            <img src="images/pexels-79380313-9007274.jpg" alt="A woman resting in white bed linens, arms above her head — still, soft, restored" loading="lazy">
+            <img src="images/hairhealth_psjadore_naturalremendy-1.webp" alt="14 foods that support hair health: milk, walnuts, eggs, chicken, yogurt, lentils, liver, salmon, cheese, broccoli, oysters, shrimp, red meat, and sardines" loading="lazy">
         </div>
         <p class="post-img__caption">
-            Rest isn't a reward you earn after exhaustion. It's the practice that keeps exhaustion from becoming burnout.
+            The 14: milk · walnuts · eggs · chicken · yogurt · lentils · liver · salmon · cheese · broccoli · oysters · shrimp · red meat · sardines
         </p>
     </div>
 
 
-    <h2>Why Burnout Matters for Your <em>Mental Health</em></h2>
+    <div class="nutrient-tag">01 — B Vitamins</div>
+    <h2>The Nutrient Your Hair <em>Can't Do Without</em></h2>
 
     <p>
-        Burnout is not a formal clinical diagnosis, but its effects on mental health
-        are very real. Left unaddressed, chronic burnout can contribute to or
-        deepen anxiety, depression, and a generalized disconnection from your own
-        life. The relationship runs in both directions — stress fuels burnout, and
-        burnout creates the conditions in which mental health struggles take root.
+        B vitamins — and B12 in particular — are foundational for hair health. They support
+        red blood cell production, which carries oxygen and nutrients to the scalp. When
+        B12 is low, hair can lose color, thin, and become dull before its time.
     </p>
 
     <p>
-        This is why naming it matters. Not to pathologize your exhaustion, but to
-        treat it with the seriousness it deserves — the same seriousness you would
-        extend to any other condition that was quietly affecting your quality of life.
+        <strong>Salmon, eggs, chicken, and liver</strong> are all excellent sources of B12.
+        Lentils are a plant-based powerhouse here too — they're rich in B9 (folate) and B12,
+        and they actively support red blood cell production, which helps your body retain
+        hair color longer. If you eat legumes regularly, consider adding chickpeas alongside
+        your lentils — they carry similarly impressive levels of B9 and B12, and the combination
+        is genuinely effective.
+    </p>
+
+    <p>
+        One important note: as we get older, our ability to absorb B12 from food can decrease.
+        It's worth having your levels checked if greying has been accelerating — sometimes the
+        fix is simpler than you'd think.
+    </p>
+
+
+    <div class="nutrient-tag">02 — Protein</div>
+    <h2>Build the Foundation <em>From Within</em></h2>
+
+    <p>
+        Hair is almost entirely made of protein — keratin, specifically. So it follows that
+        a diet low in quality protein will show up in your hair before it shows up anywhere else:
+        in texture, in thickness, and in how quickly it grows. Protein also helps your body
+        absorb and retain B12 more effectively, which makes it doubly important for hair color.
+    </p>
+
+    <p>
+        <strong>Chicken</strong> is one of the best sources for hair health — it's protein-dense
+        and packed with B vitamins that support follicle function. But you don't need to rely on
+        a single source. <strong>Eggs, yogurt, cheese, red meat, and sardines</strong> all contribute
+        meaningfully. If you eat a plant-forward diet, <strong>lentils, beans, and nuts</strong>
+        are solid alternatives — just be more intentional about combining them through the day.
+    </p>
+
+
+    <div class="nutrient-tag">03 — Omega-3 &amp; Zinc</div>
+    <h2>Shellfish: The Shine <em>You're Missing</em></h2>
+
+    <p>
+        Shrimp and oysters are quietly one of the most underrated additions to a hair-focused diet.
+        They're loaded with <strong>zinc</strong>, a mineral that plays a direct role in hair tissue
+        growth and repair, and helps keep the oil glands around your follicles working properly.
+        Low zinc is one of the most common (and most overlooked) causes of hair loss and dullness.
+    </p>
+
+    <p>
+        Shellfish also deliver <strong>omega-3 fatty acids</strong> — the oils responsible for
+        that mirror-like shine that no dry shampoo can replicate. <strong>Salmon and sardines</strong>
+        are particularly rich in omega-3, along with selenium and B12. If you're eating salmon
+        twice a week, your hair is already benefiting — even if you haven't noticed yet.
+    </p>
+
+
+    <div class="research-note">
+        <span class="research-note__label">Worth knowing</span>
+        <p>
+            Zinc deficiency is more common than it gets credit for, and one of its earliest signs
+            is changes in hair — slower growth, increased shedding, loss of shine. Oysters are
+            the single richest dietary source of zinc available. A serving of six oysters delivers
+            more zinc than almost any other food on this list combined.
+        </p>
+    </div>
+
+
+    <div class="nutrient-tag">04 — Copper &amp; Minerals</div>
+    <h2>Walnuts and Liver — <em>The Melanin Protectors</em></h2>
+
+    <p>
+        This is the part of the conversation that surprises most people. <strong>Copper</strong>
+        has a direct relationship with melanin production — and melanin is what gives your hair
+        its color. Without sufficient copper, melanin production slows, and grey appears sooner
+        and faster than it otherwise would.
+    </p>
+
+    <p>
+        <strong>Walnuts</strong> are one of the best dietary sources of copper, and they're
+        also rich in selenium, zinc, and vitamin E. A small handful a day is genuinely worth
+        making a habit. <strong>Liver</strong> is even more mineral-dense — packed with copper,
+        iron, zinc, and B12 together, it's one of the most nutrient-complete foods you can eat
+        for hair health. If you're not eating liver regularly, you might want to rethink that.
+        Even once a week makes a measurable difference.
     </p>
 
 
@@ -458,86 +479,148 @@
     <div class="internal-links">
         <span class="internal-links__title">You might also want to read</span>
         <ul>
-            <li><a href="#">What If Softness Is Your Greatest Strength</a></li>
-            <li><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></li>
-            <li><a href="#">The Quiet Power of Saying No Without Apologizing</a></li>
+            <li><a href="post-acv-honey.html">The Oldest Gut Remedy Was Already in Your Pantry</a></li>
+            <li><a href="post-water.html">The Glass of Water on Your Nightstand Has Been Waiting</a></li>
+            <li><a href="post-burnout.html">You're Not Lazy — You're Burned Out</a></li>
         </ul>
     </div>
 
 
-    <h2>8 Gentle Ways to Begin <em>Coming Back to Yourself</em></h2>
+    <div class="nutrient-tag">05 — Folic Acid</div>
+    <h2>Broccoli: <em>Quiet, Essential, Easy</em></h2>
 
     <p>
-        Recovery from burnout isn't a hustle. It isn't a new productivity system
-        or a weekend reset. It's a slow, patient return to yourself — one small act
-        of self-honoring at a time.
+        Broccoli is loaded with <strong>folic acid</strong> — B9 — which supports cell renewal
+        and the overall health of your scalp tissue. It also contains vitamin C, which helps
+        your body absorb iron more effectively, and sulforaphane, which has been studied for
+        its role in reducing oxidative stress. Oxidative stress is one of the key drivers of
+        premature greying, which makes broccoli more useful than its humble reputation suggests.
     </p>
 
-    <ol class="post-list">
-        <li>
-            <strong>Start with one honest boundary.</strong>
-            Not a full overhaul of your life — just one thing you say no to this
-            week that you would have previously said yes to out of obligation.
-            Boundaries aren't walls. They're the shape of a life you can actually live in.
-        </li>
-        <li>
-            <strong>Bring a stress-reduction practice into your daily rhythm.</strong>
-            Deep breathing. A few minutes of meditation. A slow walk without your
-            phone. These aren't clichés — they are direct interruptions to your
-            nervous system's stress response, and they work when practiced consistently.
-        </li>
-        <li>
-            <strong>Prioritize what genuinely restores you.</strong>
-            Not what you think should restore you — what actually does. For some
-            people that's solitude and silence. For others it's connection and laughter.
-            You know the difference. Start doing more of the thing that actually works.
-        </li>
-        <li>
-            <strong>Move your body gently and regularly.</strong>
-            Not as punishment or performance, but as care. Even 20 minutes of
-            movement that you enjoy can meaningfully shift your nervous system,
-            your mood, and your energy levels over time.
-        </li>
-        <li>
-            <strong>Protect your sleep like it's sacred — because it is.</strong>
-            A consistent sleep schedule, a winding-down ritual, a room that feels
-            safe and quiet. Sleep is the foundation that everything else is built on.
-            Without it, recovery isn't fully possible.
-        </li>
-        <li>
-            <strong>Let someone in.</strong>
-            A friend, a family member, a therapist. You don't have to have the
-            words — you just have to be willing to stop performing okayness with
-            at least one person. Being witnessed in your exhaustion is part of healing.
-        </li>
-        <li>
-            <strong>Revisit what actually matters to you.</strong>
-            Burnout often happens when we've been living by someone else's definition
-            of success. A quiet, honest conversation with yourself about what you
-            actually want — separate from what you're supposed to want — can be
-            quietly revolutionary.
-        </li>
-        <li>
-            <strong>Take breaks before you need them desperately.</strong>
-            A five-minute pause in your workday. A day off before the collapse.
-            Rest taken proactively is far more restorative than rest taken after
-            you've already broken down. You are allowed to rest before you're empty.
-        </li>
-    </ol>
+    <p>
+        It doesn't need to be complicated. Steam it, roast it, add it to whatever you're already
+        cooking. Just make it a regular presence on your plate — a few times a week is enough
+        to make a real contribution to your body's overall hair health picture.
+    </p>
+
+
+    <!-- Food grid reference -->
+    <h2>Your Quick-Reference <em>Shopping List</em></h2>
+
+    <p>Here's every food from this post, organized at a glance:</p>
+
+    <div class="food-grid">
+        <div class="food-item">
+            <span class="food-item__num">1</span>
+            <div>
+                <div class="food-item__name">Milk</div>
+                <div class="food-item__note">Protein + B12 + calcium</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">2</span>
+            <div>
+                <div class="food-item__name">Walnuts</div>
+                <div class="food-item__note">Copper + zinc + selenium + vitamin E</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">3</span>
+            <div>
+                <div class="food-item__name">Eggs</div>
+                <div class="food-item__note">Protein + B12 + biotin</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">4</span>
+            <div>
+                <div class="food-item__name">Chicken</div>
+                <div class="food-item__note">High-quality protein + B vitamins</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">5</span>
+            <div>
+                <div class="food-item__name">Yogurt</div>
+                <div class="food-item__note">Protein + B12 + probiotics</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">6</span>
+            <div>
+                <div class="food-item__name">Lentils</div>
+                <div class="food-item__note">B9 + B12 + iron + plant protein</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">7</span>
+            <div>
+                <div class="food-item__name">Liver</div>
+                <div class="food-item__note">Copper + iron + zinc + B12</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">8</span>
+            <div>
+                <div class="food-item__name">Salmon</div>
+                <div class="food-item__note">Omega-3 + B12 + selenium</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">9</span>
+            <div>
+                <div class="food-item__name">Cheese</div>
+                <div class="food-item__note">Protein + B12 + calcium</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">10</span>
+            <div>
+                <div class="food-item__name">Broccoli</div>
+                <div class="food-item__note">Folic acid + vitamin C + antioxidants</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">11</span>
+            <div>
+                <div class="food-item__name">Oysters</div>
+                <div class="food-item__note">Richest dietary source of zinc</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">12</span>
+            <div>
+                <div class="food-item__name">Shrimp</div>
+                <div class="food-item__note">Zinc + omega-3 + lean protein</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">13</span>
+            <div>
+                <div class="food-item__name">Red Meat</div>
+                <div class="food-item__note">B12 + iron + zinc + protein</div>
+            </div>
+        </div>
+        <div class="food-item">
+            <span class="food-item__num">14</span>
+            <div>
+                <div class="food-item__name">Sardines</div>
+                <div class="food-item__note">Omega-3 + B12 + selenium + calcium</div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="content-rule"></div>
 
-    <!-- Gentle conclusion -->
+    <!-- Conclusion -->
     <div class="post-conclusion">
-        <h3 class="post-conclusion__title">A gentle closing thought</h3>
+        <h3 class="post-conclusion__title">Your hair is paying attention to everything you do.</h3>
         <p>
-            If you recognized yourself anywhere in this post, please be kind to
-            yourself about it. Burnout isn't a sign that you failed — it's a sign
-            that you gave a great deal for a very long time, often without enough
-            support. The fact that you're here, reading, wondering if things could
-            be different — that is already the beginning of something. And if your
-            symptoms persist or feel overwhelming, please reach out to a mental
-            health professional. You don't have to figure this out alone.
+            Eating well-balanced meals that support your body's overall health is the most reliable
+            beauty investment there is. You don't need to overhaul your diet overnight — just start
+            adding these ingredients consistently, one week at a time. Your hair will notice before
+            you do.
         </p>
     </div>
 
@@ -552,74 +635,90 @@
 
     <div class="faq-item" id="faq1">
         <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
-            <span class="faq-question__text">How do I know if I'm burned out or just going through a rough patch?</span>
+            <span class="faq-question__text">Can food actually reverse grey hair?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                A rough patch tends to have a visible cause and a visible end — a hard project,
-                a difficult season, a specific stressor. Burnout is more pervasive: it lingers
-                after the stressor is gone, it affects multiple areas of your life simultaneously,
-                and rest doesn't restore you the way it used to. If you've been feeling this way
-                for weeks or months rather than days, burnout is worth considering seriously.
+                In some cases, yes — particularly when greying has been accelerated by a nutritional
+                deficiency. Studies have shown that correcting a B12 deficiency, for example, can slow
+                or even partially reverse premature greying. For greying that's purely genetic, food
+                can't undo it — but it can slow the process and significantly improve the overall
+                health and quality of your hair.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq2">
         <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
-            <span class="faq-question__text">Can burnout happen even if I love what I do?</span>
+            <span class="faq-question__text">How long before I see results from changing my diet?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Absolutely — and this is one of the most painful forms of burnout, because
-                it can come with guilt and confusion. Loving what you do doesn't make you
-                immune to depletion. Burnout is about the ratio of output to recovery, not
-                about whether your work is meaningful. Passionate people often burn out
-                precisely because they care so much that they forget to stop.
+                Hair grows slowly — typically about half an inch per month — so changes from diet
+                won't appear overnight. Most people start to notice a difference in shine, texture,
+                and thickness within two to three months of consistent dietary changes. For color
+                preservation and grey prevention, you're looking at a longer timeline, but the
+                earlier you start, the better the outcome.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq3">
         <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
-            <span class="faq-question__text">How long does it take to recover from burnout?</span>
+            <span class="faq-question__text">Is stress really a factor in going grey?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                Recovery varies enormously depending on how long burnout has been building,
-                what caused it, and what changes you're able to make. Mild burnout might lift
-                with a few weeks of intentional rest and boundary-setting. Deeper burnout —
-                especially when it's contributed to depression or anxiety — may take months
-                and benefit significantly from professional support. Be patient with the
-                timeline. Healing is not linear.
+                Yes — this one is actually well-supported by science. Chronic stress triggers the
+                release of norepinephrine, which can deplete the stem cells responsible for producing
+                melanin in hair follicles. A Harvard study found a direct causal link between stress
+                and accelerated greying. Managing stress isn't just good for your mental health —
+                it's genuinely protecting your hair color.
             </p>
         </div>
     </div>
 
     <div class="faq-item" id="faq4">
         <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
-            <span class="faq-question__text">When should I seek professional help for burnout?</span>
+            <span class="faq-question__text">Should I take supplements instead of eating these foods?</span>
             <div class="faq-question__icon">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
             </div>
         </button>
         <div class="faq-answer">
             <p>
-                If your symptoms are significantly affecting your daily functioning,
-                relationships, or physical health — or if you're noticing signs of
-                depression or anxiety alongside your burnout — please reach out to a
-                therapist, counselor, or your doctor. You don't have to reach a crisis
-                point to deserve support. Asking for help early is one of the wisest
-                things you can do.
+                Supplements can fill gaps — especially B12, zinc, and copper if your diet is limited.
+                But food sources are almost always better absorbed and more bioavailable than their
+                supplement equivalents. The nutrients in whole food also work synergistically in ways
+                that isolated supplements can't fully replicate. Think of supplements as a backup, not
+                a substitute. Food first, always.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq5">
+        <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">
+            <span class="faq-question__text">What's the single most important nutrient for hair color?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                If you had to pick one, it would be B12. It's essential for red blood cell production,
+                supports melanin synthesis, and deficiency is surprisingly common — especially in
+                people over 40, vegetarians, and vegans. Getting your B12 levels checked is one of
+                the most useful things you can do if you're concerned about premature greying.
+                Copper is a close second — and most people don't think about it at all.
             </p>
         </div>
     </div>
@@ -627,14 +726,17 @@
 </section>
 
 
-<!-- TAGS — Category + 3 SEO tags -->
+<!-- TAGS -->
 <div class="post-tags-section">
-    <span class="post-tags-section__label">Tagged in</span>
+    <span class="post-tags-section__label">Topics</span>
     <div class="tags">
-        <a href="mind.html" class="tag tag--category">Mind</a>
-        <a href="/tag/burnout-recovery" class="tag">burnout recovery</a>
-        <a href="/tag/mental-exhaustion" class="tag">mental exhaustion</a>
-        <a href="/tag/stress-and-self-care" class="tag">stress and self-care</a>
+        <a href="nourish.html" class="tag tag--category">Nourish</a>
+        <a href="#" class="tag">foods that prevent grey hair</a>
+        <a href="#" class="tag">best foods for hair health and shine</a>
+        <a href="#" class="tag">vitamins and minerals for hair growth</a>
+        <a href="#" class="tag">hair nutrition</a>
+        <a href="#" class="tag">B12 for hair</a>
+        <a href="#" class="tag">zinc and copper for hair</a>
     </div>
 </div>
 
@@ -644,13 +746,8 @@
     <div class="author-bio__inner">
         <div class="author-bio__avatar"></div>
         <div class="author-bio__info">
-            <h4>Written by Gia</h4>
-            <p>
-                Wellness blogger, designer, and wanderer at heart. I believe deeply that
-                beauty is healing and softness is a form of power. "Darling… what if" is
-                my ongoing love letter to the life I'm choosing — one small and intentional
-                moment at a time.
-            </p>
+            <h4>Gia</h4>
+            <p>Writing about the small, deliberate choices that quietly change everything — from what we eat to how we rest to who we become in the process. Welcome to <em>darling, what if.</em></p>
         </div>
     </div>
 </div>
@@ -660,37 +757,38 @@
 <section class="related-posts">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Keep <em>Reading</em></h2>
+            <h2 class="section-title">More from <em>Nourish</em></h2>
+            <a href="nourish.html" style="font-size:0.78rem;color:var(--gold);letter-spacing:0.08em;">View all →</a>
         </div>
         <div class="related-grid">
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-sage"></div>
+                    <img class="post-card__img" src="images/pexels-jahratreza-37112385.jpg" alt="A warm mug of ACV and honey drink with steam rising" loading="lazy">
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Wellness</a>
-                    <h3 class="post-card__title"><a href="#">The Art of Doing Less — A Guide to Intentional Rest</a></h3>
-                    <div class="post-card__date">May 7, 2026 &nbsp;·&nbsp; 6 min read</div>
+                    <a href="nourish.html" class="category-label">Nourish</a>
+                    <h3 class="post-card__title"><a href="post-acv-honey.html">The Oldest Gut Remedy Was Already in Your Pantry</a></h3>
+                    <p class="post-card__date">May 8, 2026</p>
                 </div>
             </article>
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-rose"></div>
+                    <img class="post-card__img" src="images/pexels-image-hunter-281453274-13092685.jpg" alt="A dark moody water splash — the power of hydration" loading="lazy">
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="#">The Quiet Power of Saying No Without Apologizing</a></h3>
-                    <div class="post-card__date">April 3, 2026 &nbsp;·&nbsp; 6 min read</div>
+                    <a href="nourish.html" class="category-label">Nourish</a>
+                    <h3 class="post-card__title"><a href="post-water.html">The Glass of Water on Your Nightstand Has Been Waiting</a></h3>
+                    <p class="post-card__date">May 8, 2026</p>
                 </div>
             </article>
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <div class="post-card__img ph-amber"></div>
+                    <div class="ph-sage" style="width:100%;height:100%;"></div>
                 </div>
                 <div class="post-card__body">
-                    <a href="#" class="category-label">Mind</a>
-                    <h3 class="post-card__title"><a href="post-morning-pages.html">Morning Pages & Why They Rewired My Anxious Brain</a></h3>
-                    <div class="post-card__date">May 4, 2026 &nbsp;·&nbsp; 5 min read</div>
+                    <a href="wellness.html" class="category-label">Wellness</a>
+                    <h3 class="post-card__title"><a href="post-burnout.html">You're Not Lazy — You're Burned Out</a></h3>
+                    <p class="post-card__date">May 8, 2026</p>
                 </div>
             </article>
         </div>
@@ -699,18 +797,16 @@
 
 
 <!-- NEWSLETTER -->
-<section class="newsletter" id="newsletter">
-    <div class="container">
-        <div class="newsletter__inner">
-            <span class="newsletter__eyebrow">Letters from Gia</span>
-            <h2 class="newsletter__title">What if your inbox felt like<br><em>a warm cup of tea?</em></h2>
-            <p class="newsletter__body">Soft stories, honest reflections, and small ideas that might just change the way you see your day.</p>
-            <form class="newsletter__form" onsubmit="handleSignup(event)">
-                <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
-                <button type="submit" class="newsletter__btn">Yes, I'm in</button>
-            </form>
-            <p class="newsletter__note">No spam, ever. Unsubscribe anytime.</p>
-        </div>
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <span class="newsletter__eyebrow">Stay in the loop</span>
+        <h2 class="newsletter__title">Letters from <em>darling, what if</em></h2>
+        <p class="newsletter__body">Quiet reflections on how we live, eat, rest, and begin again. No noise, no spam — just the kind of writing you actually want in your inbox.</p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address">
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No spam, ever. Unsubscribe any time.</p>
     </div>
 </section>
 
@@ -721,11 +817,11 @@
         <div class="footer__grid">
             <div>
                 <div class="footer__logo">darling, <em>what if</em></div>
-                <p class="footer__about">A lifestyle space for women who are quietly questioning everything and bravely choosing to begin again.</p>
+                <p class="footer__about">A lifestyle philosophy for women who believe softness is strength, beauty is healing, and small choices can quietly change everything.</p>
                 <div class="footer__social">
-                    <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
-                    <a href="https://pinterest.com" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">PI</a>
-                    <a href="mailto:hello@darlingwhatif.com" class="footer__social-link" aria-label="Email">@</a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">PT</a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok">TK</a>
                 </div>
             </div>
             <div class="footer__col">
@@ -739,29 +835,32 @@
                 </ul>
             </div>
             <div class="footer__col">
-                <h5>Connect</h5>
+                <h5>Recent</h5>
                 <ul>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="#newsletter">Newsletter</a></li>
-                    <li><a href="/collaborate">Collaborate</a></li>
+                    <li><a href="post-hair-foods.html">Hair &amp; Nutrition</a></li>
+                    <li><a href="post-acv-honey.html">ACV &amp; Honey</a></li>
+                    <li><a href="post-nyc-love.html">NYC Love Story</a></li>
+                    <li><a href="post-water.html">Morning Water</a></li>
+                    <li><a href="post-companion-dogs.html">Dogs &amp; Love</a></li>
                 </ul>
             </div>
             <div class="footer__col">
-                <h5>Legal</h5>
+                <h5>Connect</h5>
                 <ul>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/disclosure">Disclosure</a></li>
-                    <li><a href="/terms">Terms of Use</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#">Work With Me</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Privacy</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__bottom">
-            <span>© 2026 <a href="index.html">darlingwhatif.com</a> — All rights reserved</span>
-            <span>Made with intention ✦</span>
+            <span>© 2026 darling, what if. All rights reserved.</span>
+            <a href="#">Back to top ↑</a>
         </div>
     </div>
 </footer>
+
 
 <script>
     function toggleFaq(id) {
@@ -775,15 +874,6 @@
             item.classList.add('open');
             item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
         }
-    }
-    function handleSignup(e) {
-        e.preventDefault();
-        const input = e.target.querySelector('.newsletter__input');
-        const btn = e.target.querySelector('.newsletter__btn');
-        btn.textContent = 'You\'re in ✦';
-        btn.style.background = '#7A6B50';
-        input.disabled = true;
-        btn.disabled = true;
     }
 </script>
 

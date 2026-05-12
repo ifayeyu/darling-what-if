@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ── SEO Meta ── -->
+    <title>Morning Pages & Why They Rewired My Anxious Brain | Darling, What If</title>
+    <meta name="description" content="Morning Pages are three pages of stream-of-consciousness writing every morning — and they've quietly become one of the most consistent mental health practices I return to. Here's what they actually do.">
+    <meta name="keywords" content="morning pages mental health, daily brain dump benefits, journaling for anxiety, Julia Cameron Artist's Way, stream of consciousness writing, journaling self-awareness">
+    <meta property="og:title" content="Morning Pages & Why They Rewired My Anxious Brain">
+    <meta property="og:description" content="Three pages. Every morning. No rules, no readers, no pressure to be good. Here's why Morning Pages have become one of the quietest and most effective things I do for my mental health.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://darlingwhatif.com/mind/morning-pages-rewired-anxious-brain">
+    <meta name="article:author" content="Gia">
+    <meta name="article:published_time" content="2026-05-09">
+    <link rel="canonical" href="https://darlingwhatif.com/mind/morning-pages-rewired-anxious-brain">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --gold:        #9B8968;
+            --gold-dark:   #7A6B50;
+            --gold-mid:    #B09E80;
+            --gold-light:  #C4B49A;
+            --gold-faint:  #F2EDE5;
+            --bg:          #FAFAF7;
+            --bg-warm:     #F5F1EB;
+            --text:        #1D1B19;
+            --text-muted:  #6B6462;
+            --border:      #EAE5DF;
+            --white:       #FFFFFF;
+            --serif:       'Playfair Display', Georgia, serif;
+            --sans:        'DM Sans', system-ui, -apple-system, sans-serif;
+            --content-w:   720px;
+        }
+
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; font-weight: 300; -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* NAV */
+        .nav { position: sticky; top: 0; z-index: 200; background: rgba(250,250,247,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); height: 76px; display: flex; align-items: center; }
+        .nav__inner { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
+        .nav__logo { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: var(--text); letter-spacing: -0.01em; white-space: nowrap; }
+        .nav__logo strong { font-weight: 600; font-style: normal; color: var(--gold); }
+        .nav__links { display: flex; align-items: center; gap: 36px; }
+        .nav__links a { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
+        .nav__links a:hover { color: var(--gold); }
+        .nav__links a.active { color: var(--gold); font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+        .nav__search { background: none; border: none; cursor: pointer; color: var(--text-muted); padding: 4px; transition: color 0.2s; }
+        .nav__search:hover { color: var(--text); }
+
+        /* HERO */
+        .post-hero { width: 100%; height: 520px; overflow: hidden; }
+        .post-hero__img {
+            width: 100%; height: 100%;
+            background: url('images/pexels-n-voitkevich-10060448.jpg') center/cover no-repeat;
+        }
+
+        /* POST HEADER */
+        .post-header { max-width: var(--content-w); margin: 0 auto; padding: 64px 24px 0; text-align: center; }
+        .breadcrumb { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 28px; }
+        .breadcrumb a { transition: color 0.2s; }
+        .breadcrumb a:hover { color: var(--gold); }
+        .breadcrumb__sep { width: 4px; height: 4px; border-radius: 50%; background: var(--border); }
+        .breadcrumb span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 220px; }
+        .post-category-badge { display: inline-block; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; transition: color 0.2s; }
+        .post-category-badge:hover { color: var(--gold-dark); }
+        .post-title { font-family: var(--serif); font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 400; line-height: 1.18; color: var(--text); margin-bottom: 28px; }
+        .post-title em { font-style: italic; }
+        .post-byline { display: flex; align-items: center; justify-content: center; font-size: 0.76rem; color: var(--text-muted); letter-spacing: 0.03em; margin-bottom: 36px; }
+        .byline-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border); margin: 0 14px; }
+        .post-byline a { color: var(--gold); transition: color 0.2s; }
+        .post-header-rule { width: 52px; height: 1px; background: var(--gold-mid); margin: 0 auto 40px; }
+        .post-intro { font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.35rem); font-weight: 400; font-style: italic; line-height: 1.65; color: var(--text); max-width: 640px; margin: 0 auto 72px; }
+
+        /* ARTICLE CONTENT */
+        .post-content { max-width: var(--content-w); margin: 0 auto; padding: 52px 48px 0; }
+        .post-content p { font-size: 1.02rem; line-height: 1.85; color: var(--text); margin-bottom: 28px; }
+        .post-content h2 { font-family: var(--serif); font-size: 1.55rem; font-weight: 500; line-height: 1.3; letter-spacing: -0.015em; margin: 60px 0 20px; color: var(--text); }
+        .post-content h2 em { font-style: italic; color: var(--gold-dark); }
+        .post-content h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; line-height: 1.4; margin: 40px 0 16px; color: var(--text); }
+        .post-content strong { font-weight: 500; color: var(--text); }
+        .post-content em { font-style: italic; }
+        .post-content a { color: var(--gold); border-bottom: 1px solid var(--gold-faint); transition: border-color 0.2s; }
+        .post-content a:hover { border-color: var(--gold); }
+
+        /* PULL QUOTE */
+        .pull-quote { position: relative; margin: 52px -64px; padding: 44px 56px 44px 72px; background: var(--bg-warm); border-left: 2px solid var(--gold-light); }
+        .pull-quote::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; line-height: 1; color: var(--gold-light); position: absolute; top: 20px; left: 24px; }
+        .pull-quote p { font-family: var(--serif); font-style: italic; font-size: 1.3rem; line-height: 1.65; color: var(--text); margin: 0; padding-left: 0; }
+
+        /* INLINE IMAGES */
+        .post-img { margin: 52px -48px; }
+        .post-img__frame { aspect-ratio: 16/9; overflow: hidden; background: var(--bg-warm); }
+        .post-img__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .post-img__caption { font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.04em; line-height: 1.6; padding-top: 12px; text-align: center; font-style: italic; }
+
+        .post-img--portrait { margin: 52px auto; max-width: 500px; }
+        .post-img--portrait .post-img__frame { aspect-ratio: 2/3; overflow: hidden; }
+        .post-img--portrait-34 { margin: 48px auto; max-width: 520px; }
+        .post-img--portrait-34 .post-img__frame { aspect-ratio: 3/4; overflow: hidden; }
+        .post-img img, .post-img__frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        /* PROMPTS SECTION */
+        .prompt-section { margin: 64px 0; }
+        .prompt-section__header { margin-bottom: 12px; }
+        .prompt-section__eyebrow { display: block; font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 400; margin-bottom: 10px; }
+        .prompt-section__title { font-family: var(--serif); font-size: 1.45rem; font-weight: 500; line-height: 1.3; color: var(--text); }
+        .prompt-section__title em { font-style: italic; color: var(--gold-dark); }
+        .prompt-section__intro { font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; margin-top: 14px; margin-bottom: 36px; }
+        .prompt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .prompt-card { background: var(--bg-warm); border: 1px solid var(--border); padding: 22px 26px 24px; }
+        .prompt-card__num { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 400; margin-bottom: 10px; display: block; }
+        .prompt-card__text { font-family: var(--serif); font-style: italic; font-size: 1.02rem; line-height: 1.55; color: var(--text); }
+
+        /* SHIFT LIST (numbered tips) */
+        .tip-list { margin: 40px 0; display: flex; flex-direction: column; gap: 0; }
+        .tip-item { display: flex; gap: 24px; align-items: flex-start; padding: 24px 0; border-bottom: 1px solid var(--border); }
+        .tip-item:first-child { border-top: 1px solid var(--border); }
+        .tip-item__num { font-family: var(--serif); font-size: 1.45rem; font-style: italic; color: var(--gold-light); line-height: 1; flex-shrink: 0; width: 28px; padding-top: 2px; }
+        .tip-item__body { flex: 1; }
+        .tip-item__label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-weight: 400; margin-bottom: 6px; }
+        .tip-item__text { font-size: 0.97rem; color: var(--text-muted); line-height: 1.75; }
+
+        /* CONCLUSION */
+        .post-conclusion { margin: 64px 0 0; padding: 48px 52px; background: var(--bg-warm); border-top: 2px solid var(--gold-light); }
+        .post-conclusion__title { font-family: var(--serif); font-size: 1.3rem; font-style: italic; font-weight: 400; color: var(--text); margin-bottom: 18px; line-height: 1.45; }
+        .post-conclusion p { font-size: 0.97rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 0; }
+
+        /* FAQ */
+        .post-faq { max-width: var(--content-w); margin: 0 auto; padding: 72px 48px; }
+        .faq-header { margin-bottom: 40px; }
+        .faq-header h2 { font-family: var(--serif); font-size: 1.65rem; font-weight: 500; }
+        .faq-header h2 em { font-style: italic; color: var(--gold-dark); }
+        .faq-item { border-bottom: 1px solid var(--border); }
+        .faq-question { width: 100%; background: none; border: none; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 0; cursor: pointer; text-align: left; }
+        .faq-question__text { font-family: var(--sans); font-size: 0.97rem; font-weight: 400; color: var(--text); line-height: 1.5; }
+        .faq-question__icon { width: 28px; height: 28px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gold); transition: all 0.25s; }
+        .faq-question[aria-expanded="true"] .faq-question__icon { background: var(--gold); color: var(--white); border-color: var(--gold); transform: rotate(45deg); }
+        .faq-answer { display: none; padding: 0 0 24px; }
+        .faq-answer p { font-size: 0.94rem; color: var(--text-muted); line-height: 1.85; }
+        .faq-answer.open { display: block; }
+
+        /* TAGS */
+        .post-tags-section { max-width: var(--content-w); margin: 0 auto; padding: 0 48px 56px; display: flex; align-items: flex-start; gap: 20px; }
+        .post-tags-section__label { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); padding-top: 6px; white-space: nowrap; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { display: inline-block; font-size: 0.72rem; letter-spacing: 0.06em; padding: 7px 14px; border: 1px solid var(--border); color: var(--text-muted); transition: all 0.2s; }
+        .tag:hover, .tag--category { background: var(--gold-faint); border-color: var(--gold-light); color: var(--gold-dark); }
+
+        /* AUTHOR BIO */
+        .author-bio { max-width: var(--content-w); margin: 0 auto; padding: 0 48px 72px; }
+        .author-bio__inner { display: flex; align-items: center; gap: 28px; padding: 36px; background: var(--bg-warm); border: 1px solid var(--border); }
+        .author-bio__avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--gold-faint), var(--gold-light)); flex-shrink: 0; }
+        .author-bio h4 { font-family: var(--serif); font-size: 1.1rem; font-weight: 500; margin-bottom: 8px; }
+        .author-bio p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; margin: 0; }
+        .author-bio em { color: var(--gold); font-style: italic; }
+
+        /* RELATED POSTS */
+        .related-posts { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0; }
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+        .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 40px; }
+        .section-title { font-family: var(--serif); font-size: 1.65rem; font-weight: 500; }
+        .section-title em { font-style: italic; color: var(--gold-dark); }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .post-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; }
+        .post-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.07); }
+        .post-card__img { aspect-ratio: 16/9; overflow: hidden; background: var(--bg-warm); }
+        .post-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.45s; }
+        .post-card:hover .post-card__img img { transform: scale(1.04); }
+        .post-card__body { padding: 24px; }
+        .post-card__category { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 400; margin-bottom: 10px; }
+        .post-card__title { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; line-height: 1.4; color: var(--text); margin-bottom: 12px; }
+        .post-card__excerpt { font-size: 0.83rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 18px; }
+        .post-card__meta { font-size: 0.72rem; color: var(--text-muted); }
+
+        /* NEWSLETTER */
+        .newsletter { background: #2A2520; padding: 80px 0; }
+        .newsletter__inner { max-width: 640px; margin: 0 auto; padding: 0 48px; text-align: center; }
+        .newsletter__eyebrow { font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 18px; }
+        .newsletter__title { font-family: var(--serif); font-size: 2rem; font-weight: 400; font-style: italic; color: #F5F1EB; line-height: 1.3; margin-bottom: 14px; }
+        .newsletter__sub { font-size: 0.9rem; color: rgba(245,241,235,0.55); line-height: 1.75; margin-bottom: 36px; }
+        .newsletter__form { display: flex; border: 1px solid rgba(255,255,255,0.14); }
+        .newsletter__input { flex: 1; background: transparent; border: none; padding: 16px 20px; font-family: var(--sans); font-size: 0.87rem; color: #F5F1EB; outline: none; }
+        .newsletter__input::placeholder { color: rgba(245,241,235,0.3); }
+        .newsletter__btn { padding: 17px 28px; background: var(--gold); color: var(--white); border: none; font-family: var(--sans); font-size: 0.68rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: nowrap; transition: background 0.25s; }
+        .newsletter__btn:hover { background: var(--gold-dark); }
+        .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); margin-top: 14px; }
+
+        /* FOOTER */
+        .footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0 32px; }
+        .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 52px; margin-bottom: 64px; }
+        .footer__logo { font-family: var(--serif); font-size: 1.45rem; font-style: italic; color: var(--text); margin-bottom: 16px; }
+        .footer__logo em { color: var(--gold); font-style: normal; font-weight: 600; }
+        .footer__about { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; }
+        .footer__social { display: flex; gap: 12px; }
+        .footer__social-link { width: 38px; height: 38px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.72rem; font-weight: 500; transition: all 0.2s; }
+        .footer__social-link:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
+        .footer__col h5 { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); font-weight: 400; margin-bottom: 22px; }
+        .footer__col ul { display: flex; flex-direction: column; gap: 11px; }
+        .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s; }
+        .footer__col a:hover { color: var(--gold); }
+        .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
+        .footer__bottom a { transition: color 0.2s; }
+        .footer__bottom a:hover { color: var(--gold); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .nav__links { display: none; }
+            .related-grid { grid-template-columns: 1fr 1fr; }
+            .post-img { margin-left: 0; margin-right: 0; }
+            .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+            .pull-quote { margin-left: 0; margin-right: 0; }
+            .prompt-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 680px) {
+            .container { padding-left: 24px; padding-right: 24px; }
+            .nav__inner { padding-left: 24px; padding-right: 24px; }
+            .related-grid { grid-template-columns: 1fr; }
+            .pull-quote { margin-left: 0; margin-right: 0; padding: 36px 28px; }
+            .pull-quote::before { display: none; }
+            .pull-quote p { padding-left: 0; }
+            .author-bio__inner { flex-direction: column; }
+            .newsletter__form { flex-direction: column; }
+            .newsletter__input { border-right: 1px solid rgba(255,255,255,0.14); border-bottom: none; }
+            .footer__grid { grid-template-columns: 1fr; }
+            .post-header, .post-content, .post-faq, .post-tags-section, .author-bio { padding-left: 24px; padding-right: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
+        <ul class="nav__links">
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="mind.html" class="active">Mind</a></li>
+            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="living.html">Living</a></li>
+            <li><a href="companion.html">Companion</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+        <button class="nav__search" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+
+<!-- HERO
+     Replace with: background: url('images/YOUR-IMAGE.jpg') center/cover no-repeat;
+     Suggested photography: woman writing in notebook, soft morning light, warm tones, coffee nearby -->
+<header class="post-hero">
+    <div class="post-hero__img"></div>
+</header>
+
+
+<!-- POST HEADER -->
+<div class="post-header">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <div class="breadcrumb__sep"></div>
+        <a href="mind.html">Mind</a>
+        <div class="breadcrumb__sep"></div>
+        <span>Morning Pages & Why They Rewired My Anxious Brain</span>
+    </nav>
+
+    <a href="mind.html" class="post-category-badge">Mind</a>
+
+    <h1 class="post-title">
+        Morning Pages &amp; Why They<br>
+        <em>Rewired My Anxious Brain</em>
+    </h1>
+
+    <div class="post-byline">
+        <span>May 9, 2026</span>
+        <div class="byline-dot"></div>
+        <span>By <a href="about.html">Gia</a></span>
+        <div class="byline-dot"></div>
+        <span>8 min read</span>
+    </div>
+
+    <div class="post-header-rule"></div>
+
+    <p class="post-intro">
+        Three pages. Every morning. No rules about what goes there, no reader
+        but yourself, no pressure to be good. I didn't expect much from it.
+        And then it quietly became one of the most consistent things I do for
+        my mental health.
+    </p>
+</div>
+
+
+<!-- MAIN CONTENT -->
+<article class="post-content" id="post-content">
+
+    <p>
+        There is a particular kind of mental noise that doesn't announce itself. It just hums
+        in the background — a decision you keep circling, a conversation that replayed three
+        times without resolving, a feeling you can identify by its weight but not by its name.
+        You think about it on the way to work. You think about it in the shower. You think
+        about it at 2am, which is the least productive time possible to think about anything.
+    </p>
+
+    <p>
+        For a long time I thought the solution was to think harder. More systematically.
+        To analyze my way into clarity. That didn't work. What worked — almost embarrassingly
+        simply — was writing it down. Not in any formal way. Not in a diary I'd curate
+        or a journal I'd worry about. Just moving the thoughts from inside my head to outside
+        it, somewhere I could actually see them.
+    </p>
+
+    <p>
+        This serves one purpose above all others: it gets the thoughts out of your head and
+        onto the page. And that distance — from carrying something inside you to looking at
+        it from the outside — turns out to be enough. Enough to find the clarity you were
+        searching for. Enough to see the direction you want to take. Enough to finally stop
+        circling and decide.
+    </p>
+
+
+    <!-- Pull quote -->
+    <blockquote class="pull-quote">
+        <p>
+            The act of writing separates you from your thoughts.
+            Suddenly they're outside you — and that distance is
+            enough to finally see them clearly.
+        </p>
+    </blockquote>
+
+
+    <h2>What Morning Pages <em>Actually Are</em></h2>
+
+    <p>
+        Julia Cameron introduced Morning Pages in her book <em>The Artist's Way</em> —
+        originally as a tool for creatives who'd lost their way. The practice is almost
+        aggressively simple: three pages of longhand, stream-of-consciousness writing,
+        every morning, in a notebook. No topic requirements. No editing. No rereading.
+        The pages are private. That's essentially the whole instruction.
+    </p>
+
+    <p>
+        Cameron's framing was specifically about creative unblocking, but what she was
+        really describing is a daily brain dump — a way to clear whatever is sitting in
+        your mind before the day asks anything of you. Not a record for posterity.
+        Not a finished product. Just the thoughts that are there, moved somewhere they
+        can exhaust themselves without living in your nervous system.
+    </p>
+
+    <p>
+        The goal, as Cameron puts it, is not to create something worth keeping. The goal
+        is to reconnect with yourself — your actual thoughts, your inner world, the
+        quiet voice that gets crowded out by noise — before the noise starts again.
+        Some days that looks like pages of profound self-reflection. Other days it looks
+        like: <em>I need to buy milk. I'm annoyed at that email. The light this morning is
+        beautiful. Why am I tired. I don't know what I want for lunch.</em> Both are valid.
+        Both are the practice.
+    </p>
+
+
+    <!-- Inline image — portrait 2:3, no crop -->
+    <div class="post-img post-img--portrait">
+        <div class="post-img__frame">
+            <img src="images/pexels-lilartsy-3278767.jpg" alt="A hand writing longhand in an open notebook beside a coffee mug, soft morning light" loading="lazy">
+        </div>
+        <p class="post-img__caption">
+            Morning Pages don't have to be beautiful. They just have to be honest.
+        </p>
+    </div>
+
+
+    <h2>What Happens When You <em>Show Up Every Day</em></h2>
+
+    <p>
+        I want to walk through what Morning Pages actually do — not the idealized version,
+        but what I've noticed in practice, and what the people I've seen adopt this practice
+        have noticed too.
+    </p>
+
+    <p>
+        The first thing is <strong>self-awareness</strong>, and it's the one that sneaks up
+        on you. When you write every day, patterns emerge that you can't see in the moment
+        but become impossible to miss over time. You notice you've written about the same
+        worry in three different forms this week. That Monday mornings have a specific
+        texture. That a particular relationship consistently costs you more energy than
+        you let yourself acknowledge out loud. Having it there — in your own handwriting,
+        in your own words — makes it harder to look away from.
+    </p>
+
+    <p>
+        The second is <strong>emotional regulation</strong>. There is something physiologically
+        different about externalizing anxiety, frustration, or fear onto a page versus
+        holding it inside you. Writing doesn't make the thing causing those feelings disappear.
+        But it changes your relationship to it — and that shift is real. Morning Pages provide
+        a safe, private outlet where the feeling can exist without it being performed for
+        anyone or managed for anyone. It reduces stress in a way that just thinking about
+        something, no matter how intently, does not.
+    </p>
+
+    <p>
+        And then there's the creativity piece, which I'll admit I was skeptical about until
+        it started happening. The private nature of the pages — the fact that nothing has
+        to be good — means your mind will occasionally wander somewhere it wouldn't go
+        through deliberate thinking. A project idea. A solution that surfaces sideways.
+        A memory that holds something you needed. When there's no pressure on the page,
+        sometimes something genuinely surprising comes through.
+    </p>
+
+    <p>
+        Over time, you also accumulate something quietly valuable: a record of who you
+        were. The worries that felt enormous and eventually resolved. The shift in how
+        you thought about something from January to April. The version of yourself that
+        was scared of something you no longer are. Looking back at Morning Pages is one
+        of the stranger and more grounding experiences — it shows you your own growth
+        in a way that's hard to fake or rationalize.
+    </p>
+
+
+    <h2>Three Pages Is a Lot. <em>Start Smaller.</em></h2>
+
+    <p>
+        I'll be honest with you: when I first encountered "three pages of longhand, every
+        morning," my instinct was to close the book. Three pages is a significant commitment.
+        Longhand is slower than typing. And "every morning, without exception" sounds like
+        one more thing to fail at before 9am.
+    </p>
+
+    <p>
+        Here is what I want to say clearly: any Morning Pages are better than none.
+        The practice is a tool, not a rule. Cameron's own framework is generous — the
+        three pages are a guideline for what she found most effective, not a requirement
+        for doing it at all. Miss a day. Write half a page. Type it. Do it at noon instead
+        of morning and call them Daily Pages. The adaptation is allowed.
+    </p>
+
+
+    <!-- Inline image — landscape, alarm clock -->
+    <div class="post-img">
+        <div class="post-img__frame">
+            <img src="images/pexels-miriam-alonso-7623546.jpg" alt="A hand reaching to silence a gold alarm clock on a bedside table, early morning" loading="lazy">
+        </div>
+        <p class="post-img__caption">
+            The morning is the only time the day hasn't asked anything of you yet.
+        </p>
+    </div>
+
+    <!-- Tips / habit stacking ways in -->
+    <div class="tip-list">
+        <div class="tip-item">
+            <span class="tip-item__num">1</span>
+            <div class="tip-item__body">
+                <div class="tip-item__label">Start smaller than you think</div>
+                <p class="tip-item__text">Half a page. Five minutes. A loose bulleted list of what's already on your mind. Once that feels natural, expand. You don't need to begin at three pages to benefit — you need to begin.</p>
+            </div>
+        </div>
+        <div class="tip-item">
+            <span class="tip-item__num">2</span>
+            <div class="tip-item__body">
+                <div class="tip-item__label">Let the medium work for you</div>
+                <p class="tip-item__text">Longhand is the traditional form, and there is something to the slowness of it — it forces your thoughts to articulate rather than just stream. But if writing by hand is genuinely inaccessible or painful for you, type it. Voice-to-text counts. The medium isn't sacred. The showing up is.</p>
+            </div>
+        </div>
+        <div class="tip-item">
+            <span class="tip-item__num">3</span>
+            <div class="tip-item__body">
+                <div class="tip-item__label">Anchor it to something you already do</div>
+                <p class="tip-item__text">James Clear calls this habit stacking in <em>Atomic Habits</em> — attaching a new practice to an existing ritual so the ritual becomes the cue. Coffee first thing? Keep your notebook next to the coffee maker. If you're already sitting with a hot drink every morning, writing while it cools costs you almost nothing.</p>
+            </div>
+        </div>
+        <div class="tip-item">
+            <span class="tip-item__num">4</span>
+            <div class="tip-item__body">
+                <div class="tip-item__label">Remove the friction in advance</div>
+                <p class="tip-item__text">Keep your writing tools ready and visible. The barrier between thinking about writing and actually writing should be as small as possible. If you have to go find a pen, you might not. If the notebook is already open on the table from yesterday, you probably will.</p>
+            </div>
+        </div>
+        <div class="tip-item">
+            <span class="tip-item__num">5</span>
+            <div class="tip-item__body">
+                <div class="tip-item__label">Use prompts when you're stuck</div>
+                <p class="tip-item__text">Sometimes you sit down and have genuinely nothing to say. That's okay — it's part of the practice. Below, I've collected the prompts I return to most. Starting with one line is enough to unlock the rest.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Inline image — portrait 2:3, woman at window -->
+    <div class="post-img post-img--portrait">
+        <div class="post-img__frame">
+            <img src="images/pexels-prolificpeople-29973437.jpg" alt="A woman holding a warm mug, looking out a window at bare winter trees, soft and contemplative" loading="lazy">
+        </div>
+        <p class="post-img__caption">
+            A notebook, a quiet few minutes, and whatever's on your mind. That's the whole practice.
+        </p>
+    </div>
+
+
+    <!-- PROMPTS SECTION -->
+    <div class="prompt-section">
+        <div class="prompt-section__header">
+            <span class="prompt-section__eyebrow">For when you need a place to start</span>
+            <h2 class="prompt-section__title">Morning Pages <em>Prompts</em></h2>
+        </div>
+        <p class="prompt-section__intro">
+            These are the ones I come back to most — the ones that tend to open something up
+            when the page feels blank. You don't have to answer them fully. Let one line
+            lead to the next.
+        </p>
+        <div class="prompt-grid">
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 01</span>
+                <p class="prompt-card__text">"Today I feel…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 02</span>
+                <p class="prompt-card__text">"What I really want to say but haven't is…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 03</span>
+                <p class="prompt-card__text">"I am worried about…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 04</span>
+                <p class="prompt-card__text">"If I could let go of one thing right now, it would be…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 05</span>
+                <p class="prompt-card__text">"If I weren't afraid, I would…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 06</span>
+                <p class="prompt-card__text">"Something I've been craving is…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 07</span>
+                <p class="prompt-card__text">"A small change that would make today easier is…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 08</span>
+                <p class="prompt-card__text">"What I keep circling back to lately is…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 09</span>
+                <p class="prompt-card__text">"Wouldn't it be fun if…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 10</span>
+                <p class="prompt-card__text">"If my life were a movie right now, the scene would be…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 11</span>
+                <p class="prompt-card__text">"One thing I'm grateful for is…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 12</span>
+                <p class="prompt-card__text">"My body feels…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 13</span>
+                <p class="prompt-card__text">"If I could focus on only one thing today, it would be…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 14</span>
+                <p class="prompt-card__text">"A word I want to carry into the day is…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 15</span>
+                <p class="prompt-card__text">"A place I'd love to go is…"</p>
+            </div>
+            <div class="prompt-card">
+                <span class="prompt-card__num">Prompt 16</span>
+                <p class="prompt-card__text">"The weirdest thought I had yesterday was…"</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Conclusion -->
+    <div class="post-conclusion">
+        <h3 class="post-conclusion__title">Showing up for yourself doesn't have to look like anything in particular. It just has to be consistent.</h3>
+        <p>
+            Morning Pages work because they're yours and no one else's. There's no standard to
+            meet, no audience to perform for, no version of them that counts as doing it wrong.
+            The most important part is not the three pages — it's the act of giving yourself a
+            few minutes every day where your thoughts are allowed to be honest, unfiltered, and
+            private. That's rarer than it sounds. And it matters more than you might expect.
+        </p>
+        <br>
+        <p>
+            Write the thoughts down. Get them out of your head and onto the page.
+            Then see what's left.
+        </p>
+    </div>
+
+</article>
+
+
+<!-- FAQ -->
+<section class="post-faq" aria-label="Frequently asked questions">
+    <div class="faq-header">
+        <h2>Frequently Asked <em>Questions</em></h2>
+    </div>
+
+    <div class="faq-item" id="faq1">
+        <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
+            <span class="faq-question__text">Do Morning Pages have to be done in the morning?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                The morning timing in Cameron's original framework is intentional — writing before
+                the day fully starts means writing before your inner critic fully wakes up too.
+                But if morning genuinely doesn't work for your life, the practice adapts. Some
+                people do them at lunch, others at the end of the day. What you lose in timing
+                you make up for in consistency. Call them Daily Pages if that framing helps.
+                The practice showing up in your life matters more than when it shows up.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq2">
+        <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
+            <span class="faq-question__text">Can I type my Morning Pages instead of writing longhand?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                Yes. Longhand writing does have a specific quality to it — the slower pace naturally
+                slows your thinking down, which can deepen the practice. But if longhand is painful,
+                inaccessible, or simply a barrier that stops you from doing it at all, typing is fine.
+                Voice-to-text is fine. The point is to externalize your thoughts, not to use a
+                specific tool to do it. I type mine most days, and the practice still works.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq3">
+        <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
+            <span class="faq-question__text">What do I do when I have nothing to write?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                Write that. "I have nothing to write. My mind feels blank. I don't know what I
+                want to say." Cameron herself suggests this — the practice of writing "I have
+                nothing to write" often opens a door within a few sentences. The prompts above
+                are also there specifically for this. And some days, "nothing" actually means
+                nothing, and three pages of fairly mundane observations is exactly what you needed
+                to clear the slate. That counts too.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq4">
+        <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
+            <span class="faq-question__text">Should I ever reread my Morning Pages?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                Cameron's original guidance is to not reread them — at least not right away,
+                and ideally not for the first few months. The reason is that rereading invites
+                the inner critic back in, which can compromise the honesty you brought to
+                writing them. That said, looking back after weeks or months can be genuinely
+                illuminating: you see patterns, growth, and old anxieties that have since
+                resolved. A good rule of thumb is to write without looking back, and only
+                return to them once enough time has passed that you're reading from a place
+                of curiosity rather than judgment.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq5">
+        <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">
+            <span class="faq-question__text">Is this the same as journaling?</span>
+            <div class="faq-question__icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg>
+            </div>
+        </button>
+        <div class="faq-answer">
+            <p>
+                They're related but meaningfully different. Traditional journaling often involves
+                reflection — writing about what happened, what you feel, what you think it means.
+                Morning Pages are more like a mental flush. The intention is not to analyze or
+                understand but to empty — to move whatever is in your head onto the page with
+                as little filtering as possible. The stream-of-consciousness quality is the
+                distinguishing feature. Both practices have value. They serve different purposes,
+                and plenty of people do both.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- TAGS -->
+<div class="post-tags-section">
+    <span class="post-tags-section__label">Topics</span>
+    <div class="tags">
+        <a href="mind.html" class="tag tag--category">Mind</a>
+        <a href="#" class="tag">morning pages</a>
+        <a href="#" class="tag">journaling for mental health</a>
+        <a href="#" class="tag">daily brain dump</a>
+        <a href="#" class="tag">The Artist's Way</a>
+        <a href="#" class="tag">self-awareness</a>
+        <a href="#" class="tag">emotional regulation</a>
+        <a href="#" class="tag">mindfulness practice</a>
+    </div>
+</div>
+
+
+<!-- AUTHOR BIO -->
+<div class="author-bio">
+    <div class="author-bio__inner">
+        <div class="author-bio__avatar"></div>
+        <div class="author-bio__info">
+            <h4>Gia</h4>
+            <p>Writing about the small, deliberate choices that quietly change everything — from what we eat to how we rest to who we become in the process. Welcome to <em>darling, what if.</em></p>
+        </div>
+    </div>
+</div>
+
+
+<!-- RELATED POSTS -->
+<section class="related-posts">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">More from <em>Mind</em></h2>
+            <a href="mind.html" style="font-size:0.78rem;color:var(--gold);letter-spacing:0.08em;">View all →</a>
+        </div>
+        <div class="related-grid">
+
+            <article class="post-card">
+                <a href="post-burnout.html">
+                    <div class="post-card__img">
+                        <img src="images/pexels-cordero-17343820.jpg" alt="What If You're Not Lazy — You're Burned Out?" loading="lazy">
+                    </div>
+                </a>
+                <div class="post-card__body">
+                    <div class="post-card__category">Mind</div>
+                    <h3 class="post-card__title"><a href="post-burnout.html">What If You're Not Lazy — You're Burned Out?</a></h3>
+                    <p class="post-card__excerpt">The exhaustion that sleep doesn't fix, and the name that might change everything.</p>
+                    <div class="post-card__meta">May 7, 2026</div>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <a href="post-home-mental-health.html">
+                    <div class="post-card__img">
+                        <div style="width:100%;height:100%;background:linear-gradient(150deg,#E8E4DC 0%,#D4CCBC 30%,#B8C4B0 65%,#8FA890 100%);"></div>
+                    </div>
+                </a>
+                <div class="post-card__body">
+                    <div class="post-card__category">Living</div>
+                    <h3 class="post-card__title"><a href="post-home-mental-health.html">How I Redesigned My Home to Support My Mental Health</a></h3>
+                    <p class="post-card__excerpt">Your space is in conversation with your nervous system all day long. Here's what I did when I finally started listening.</p>
+                    <div class="post-card__meta">May 8, 2026</div>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <a href="post-nyc-love.html">
+                    <div class="post-card__img">
+                        <img src="images/pexels-di-lai-567499892-19076822.jpg" alt="The City That Promised a Love Story" loading="lazy">
+                    </div>
+                </a>
+                <div class="post-card__body">
+                    <div class="post-card__category">Mind</div>
+                    <h3 class="post-card__title"><a href="post-nyc-love.html">The City That Promised a Love Story — and Delivered Something Unexpected</a></h3>
+                    <p class="post-card__excerpt">Eight million people, and I came here looking for one in particular. The city had other plans.</p>
+                    <div class="post-card__meta">May 6, 2026</div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <p class="newsletter__eyebrow">Letters from the blog</p>
+        <h2 class="newsletter__title">Stay close, darling.</h2>
+        <p class="newsletter__sub">Slow reads, honest thoughts, and the kind of wellness that doesn't ask you to optimize anything. In your inbox, softly.</p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address">
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No noise. Unsubscribe anytime.</p>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <div class="footer__logo">darling, <em>what if</em></div>
+                <p class="footer__about">A lifestyle blog for women who are quietly reimagining what their lives could look like — one soft, intentional choice at a time.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">pt</a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok">tk</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="wellness.html">Wellness</a></li>
+                    <li><a href="mind.html">Mind</a></li>
+                    <li><a href="nourish.html">Nourish</a></li>
+                    <li><a href="living.html">Living</a></li>
+                    <li><a href="companion.html">Companion</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5>Journal</h5>
+                <ul>
+                    <li><a href="post-morning-pages.html">Morning Pages</a></li>
+                    <li><a href="post-burnout.html">On Burnout</a></li>
+                    <li><a href="post-home-mental-health.html">Home & Mind</a></li>
+                    <li><a href="post-hair-foods.html">Foods for Hair</a></li>
+                    <li><a href="post-nyc-love.html">New York</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5>About</h5>
+                <ul>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="/about#contact">Contact</a></li>
+                    <li><a href="/privacy">Privacy</a></li>
+                    <li><a href="/terms">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 Darling, What If. All rights reserved.</span>
+            <span>Made with intention.</span>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    function toggleFaq(id) {
+        const item = document.getElementById(id);
+        const btn = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const isOpen = answer.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq-answer.open').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.faq-question[aria-expanded="true"]').forEach(el => el.setAttribute('aria-expanded', 'false'));
+
+        if (!isOpen) {
+            answer.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+        }
+    }
+</script>
+
+</body>
+</html>
