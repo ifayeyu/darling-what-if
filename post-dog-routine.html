@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ── SEO Meta ── -->
+    <title>How My Labrador Became My Best Health Habit — Darling, What If</title>
+    <meta name="description" content="I didn't plan to become a morning person, or someone who walks every day without fail. My Labrador Retriever had other ideas — and quietly built me a healthier life.">
+    <meta property="og:title" content="How My Labrador Became My Best Health Habit">
+    <meta property="og:description" content="The most consistent health routine I've ever had wasn't something I designed. My dog designed it for me.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://darlingwhatif.com/companion/dog-health-routine">
+    <meta name="article:author" content="Gia">
+    <meta name="article:published_time" content="2026-05-13">
+    <link rel="canonical" href="https://darlingwhatif.com/companion/dog-health-routine">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* ============================================================
+           RESET & BASE
+        ============================================================ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --gold:        #9B8968;
+            --gold-dark:   #7A6B50;
+            --gold-mid:    #B09E80;
+            --gold-light:  #C4B49A;
+            --gold-faint:  #F2EDE5;
+            --bg:          #FAFAF7;
+            --bg-warm:     #F5F1EB;
+            --text:        #1D1B19;
+            --text-muted:  #6B6462;
+            --border:      #EAE5DF;
+            --white:       #FFFFFF;
+            --serif:       'Playfair Display', Georgia, serif;
+            --sans:        'DM Sans', system-ui, -apple-system, sans-serif;
+            --content-w:   720px;
+        }
+
+        html { font-size: 16px; scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* ============================================================
+           NAVIGATION
+        ============================================================ */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            background: rgba(250, 250, 247, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            height: 76px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__inner {
+            width: 100%;
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-family: var(--serif);
+            font-size: 1.2rem;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--text);
+            letter-spacing: 0.01em;
+        }
+
+        .nav__logo strong { font-style: italic; font-weight: 500; color: var(--gold); }
+
+        .nav__links { display: flex; align-items: center; gap: 38px; }
+
+        .nav__links a {
+            font-size: 0.7rem;
+            font-weight: 400;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            transition: color 0.2s ease;
+        }
+
+        .nav__links a:hover { color: var(--gold); }
+        .nav__links a.active { color: var(--gold); font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+
+        .nav__search {
+            background: none; border: none; cursor: pointer;
+            color: var(--text-muted); padding: 4px;
+            display: flex; align-items: center; transition: color 0.2s ease;
+        }
+
+        .nav__search:hover { color: var(--gold); }
+
+        /* ============================================================
+           POST HERO
+        ============================================================ */
+        .post-hero {
+            position: relative;
+            height: 78vh;
+            min-height: 520px;
+            max-height: 820px;
+            overflow: hidden;
+        }
+
+        .post-hero__img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/dog walk.jpg') center/cover no-repeat;
+            transition: transform 0.1s ease;
+        }
+
+        .post-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 55%, rgba(250,250,247,0.15) 100%);
+            pointer-events: none;
+        }
+
+        /* ============================================================
+           POST HEADER
+        ============================================================ */
+        .post-header {
+            max-width: var(--content-w);
+            margin: 0 auto;
+            padding: 64px 24px 0;
+            text-align: center;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.7rem;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+        }
+
+        .breadcrumb a { transition: color 0.2s ease; }
+        .breadcrumb a:hover { color: var(--gold); }
+
+        .breadcrumb__sep {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--border);
+        }
+
+        .post-category-badge {
+            display: inline-block;
+            font-size: 0.66rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 22px;
+            transition: color 0.2s ease;
+        }
+
+        .post-category-badge:hover { color: var(--gold-dark); }
+
+        .post-title {
+            font-family: var(--serif);
+            font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+            font-weight: 400;
+            line-height: 1.18;
+            color: var(--text);
+            margin-bottom: 28px;
+        }
+
+        .post-title em { font-style: italic; }
+
+        .post-byline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            letter-spacing: 0.03em;
+            margin-bottom: 36px;
+        }
+
+        .byline-dot {
+            width: 3px; height: 3px;
+            border-radius: 50%;
+            background: var(--border);
+            margin: 0 14px;
+            flex-shrink: 0;
+        }
+
+        .post-byline a { color: var(--gold); transition: color 0.2s ease; }
+        .post-byline a:hover { color: var(--gold-dark); }
+
+        .post-header-rule {
+            width: 52px;
+            height: 1px;
+            background: var(--gold-mid);
+            margin: 0 auto 40px;
+        }
+
+        .post-intro {
+            font-family: var(--serif);
+            font-size: clamp(1.15rem, 2vw, 1.35rem);
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.65;
+            color: var(--text);
+            max-width: 640px;
+            margin: 0 auto 72px;
+        }
+
+        /* ============================================================
+           POST CONTENT
+        ============================================================ */
+        .post-content {
+            max-width: var(--content-w);
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .post-content p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text);
+            margin-bottom: 28px;
+        }
+
+        .post-content p:last-child { margin-bottom: 0; }
+
+        .post-content h2 {
+            font-family: var(--serif);
+            font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+            font-weight: 400;
+            line-height: 1.3;
+            color: var(--text);
+            margin: 64px 0 24px;
+        }
+
+        .post-content h2 em { font-style: italic; color: var(--gold); }
+
+        .post-content h3 {
+            font-family: var(--serif);
+            font-size: 1.2rem;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--text-muted);
+            margin: 40px 0 18px;
+        }
+
+        .post-content strong { font-weight: 500; color: var(--text); }
+
+        .post-content a {
+            color: var(--gold);
+            border-bottom: 1px solid var(--gold-faint);
+            transition: border-color 0.2s ease;
+        }
+
+        .post-content a:hover { border-color: var(--gold); }
+
+        /* ── Section divider ── */
+        .content-rule {
+            width: 48px;
+            height: 1px;
+            background: var(--border);
+            margin: 56px auto;
+        }
+
+        /* ── Inline image ── */
+        .post-img { margin: 52px -24px; position: relative; }
+
+        .post-img__frame { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
+        .post-img__frame .ph { width: 100%; height: 100%; }
+
+        .post-img--contained { margin: 48px 0; }
+        .post-img--contained .post-img__frame { aspect-ratio: 3/2; }
+
+        .post-img__caption {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            font-style: italic;
+            text-align: center;
+            margin-top: 14px;
+            line-height: 1.6;
+        }
+
+        /* ── Pull quote ── */
+        .pull-quote {
+            margin: 56px -24px;
+            padding: 48px 48px;
+            background: var(--bg-warm);
+            border-left: 3px solid var(--gold);
+            position: relative;
+        }
+
+        .pull-quote::before {
+            content: '\201C';
+            font-family: var(--serif);
+            font-size: 5rem;
+            color: var(--gold-light);
+            position: absolute;
+            top: 12px;
+            left: 44px;
+            line-height: 1;
+        }
+
+        .pull-quote p {
+            font-family: var(--serif) !important;
+            font-size: clamp(1.2rem, 2vw, 1.55rem) !important;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1.55 !important;
+            color: var(--text) !important;
+            padding-left: 40px;
+            margin-bottom: 0 !important;
+        }
+
+        /* ── Numbered list ── */
+        .post-list {
+            margin: 0 0 28px 0;
+            padding-left: 0;
+            counter-reset: item;
+            list-style: none;
+        }
+
+        .post-list li {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text);
+            padding: 8px 0 8px 28px;
+            position: relative;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-list li:first-child { border-top: 1px solid var(--border); }
+
+        .post-list li::before {
+            content: counter(item);
+            counter-increment: item;
+            position: absolute;
+            left: 0;
+            top: 11px;
+            font-family: var(--serif);
+            font-size: 0.82rem;
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        /* ── Conclusion block ── */
+        .post-conclusion {
+            margin: 64px 0;
+            padding: 48px;
+            background: var(--gold-faint);
+            text-align: center;
+        }
+
+        .post-conclusion__title {
+            font-family: var(--serif);
+            font-size: 1.35rem;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+
+        .post-conclusion p {
+            font-size: 0.97rem !important;
+            color: var(--text-muted) !important;
+            max-width: 520px;
+            margin: 0 auto !important;
+            line-height: 1.85 !important;
+        }
+
+        /* ============================================================
+           FAQ
+        ============================================================ */
+        .post-faq {
+            max-width: var(--content-w);
+            margin: 0 auto;
+            padding: 0 24px 96px;
+        }
+
+        .faq-header { display: flex; align-items: center; gap: 20px; margin-bottom: 36px; }
+
+        .faq-header h2 {
+            font-family: var(--serif);
+            font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+            font-weight: 400;
+            color: var(--text);
+        }
+
+        .faq-header h2 em { font-style: italic; color: var(--gold); }
+
+        .faq-item { border-top: 1px solid var(--border); }
+        .faq-item:last-child { border-bottom: 1px solid var(--border); }
+
+        .faq-question {
+            width: 100%; background: none; border: none;
+            padding: 24px 0; display: flex; align-items: center;
+            justify-content: space-between; gap: 20px;
+            cursor: pointer; text-align: left;
+        }
+
+        .faq-question__text {
+            font-family: var(--serif);
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--text);
+            line-height: 1.4;
+        }
+
+        .faq-question__icon {
+            flex-shrink: 0; width: 28px; height: 28px;
+            border: 1px solid var(--border); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--gold); transition: all 0.25s ease;
+        }
+
+        .faq-item.open .faq-question__icon {
+            background: var(--gold); border-color: var(--gold);
+            color: var(--white); transform: rotate(45deg);
+        }
+
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; }
+        .faq-item.open .faq-answer { max-height: 400px; padding-bottom: 28px; }
+
+        .faq-answer p { font-size: 0.97rem; line-height: 1.85; color: var(--text-muted); }
+
+        /* ============================================================
+           TAGS
+        ============================================================ */
+        .post-tags-section {
+            max-width: var(--content-w);
+            margin: 0 auto;
+            padding: 0 24px 64px;
+        }
+
+        .post-tags-section__label {
+            font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase;
+            color: var(--text-muted); margin-bottom: 16px; display: block;
+        }
+
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+        .tag {
+            display: inline-block; padding: 6px 16px;
+            background: var(--gold-faint); color: var(--gold-dark);
+            font-size: 0.68rem; letter-spacing: 0.07em; border-radius: 100px;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .tag:hover { background: var(--gold); color: var(--white); }
+        .tag--category { background: var(--gold); color: var(--white); }
+        .tag--category:hover { background: var(--gold-dark); }
+
+        /* ============================================================
+           AUTHOR BIO
+        ============================================================ */
+        .author-bio { max-width: var(--content-w); margin: 0 auto 64px; padding: 0 24px; }
+
+        .author-bio__inner {
+            display: flex; align-items: flex-start; gap: 28px;
+            padding: 36px 40px; background: var(--bg-warm);
+            border-top: 2px solid var(--gold);
+        }
+
+        .author-bio__avatar {
+            width: 68px; height: 68px; border-radius: 50%;
+            background: linear-gradient(145deg, #E0CCAF 0%, #C4A47A 100%);
+            flex-shrink: 0;
+        }
+
+        .author-bio__info h4 {
+            font-family: var(--serif); font-size: 1.05rem;
+            font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 6px;
+        }
+
+        .author-bio__info p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; }
+
+        /* ============================================================
+           RELATED POSTS
+        ============================================================ */
+        .related-posts { background: var(--bg-warm); padding: 96px 0; }
+
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+
+        .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 48px; }
+
+        .section-title { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: var(--text); }
+        .section-title em { font-style: italic; color: var(--gold); }
+
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+
+        .post-card { background: var(--white); display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .post-card:hover { transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+
+        .post-card__img-wrap { aspect-ratio: 3/2; overflow: hidden; flex-shrink: 0; }
+        .post-card__img { width: 100%; height: 100%; transition: transform 0.65s ease; }
+        .post-card:hover .post-card__img { transform: scale(1.06); }
+
+        .post-card__body { padding: 24px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+
+        .category-label { font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: inline-block; }
+
+        .post-card__title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; line-height: 1.4; color: var(--text); margin-bottom: 10px; }
+        .post-card__title a { transition: color 0.2s ease; }
+        .post-card__title a:hover { color: var(--gold); }
+
+        .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
+
+        .ph-honey  { background: linear-gradient(145deg, #EAD8BB 0%, #CBA87C 100%); }
+        .ph-rose   { background: linear-gradient(145deg, #EAD8D4 0%, #CCA4A0 100%); }
+        .ph-sage   { background: linear-gradient(145deg, #D8E0D4 0%, #9CB898 100%); }
+        .ph-linen  { background: linear-gradient(145deg, #ECE4DA 0%, #C8B8A6 100%); }
+        .ph-amber  { background: linear-gradient(145deg, #ECD4A6 0%, #C89C5C 100%); }
+        .ph-mist   { background: linear-gradient(145deg, #D8E2EC 0%, #94AECE 100%); }
+
+        /* ============================================================
+           NEWSLETTER
+        ============================================================ */
+        .newsletter { background: var(--text); padding: 104px 0; }
+        .newsletter__inner { max-width: 580px; margin: 0 auto; text-align: center; }
+
+        .newsletter__eyebrow { display: block; font-size: 0.67rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 22px; }
+
+        .newsletter__title { font-family: var(--serif); font-size: clamp(1.9rem, 3.2vw, 2.8rem); font-weight: 400; color: var(--white); line-height: 1.3; margin-bottom: 18px; }
+        .newsletter__title em { font-style: italic; color: #EDD8BE; }
+
+        .newsletter__body { font-size: 0.94rem; color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 44px; }
+
+        .newsletter__form { display: flex; max-width: 440px; margin: 0 auto 16px; }
+
+        .newsletter__input {
+            flex: 1; padding: 17px 22px; background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.14); border-right: none;
+            color: var(--white); font-family: var(--sans); font-size: 0.9rem;
+            font-weight: 300; outline: none; transition: background 0.2s, border-color 0.2s;
+        }
+
+        .newsletter__input::placeholder { color: rgba(255,255,255,0.3); }
+        .newsletter__input:focus { background: rgba(255,255,255,0.11); border-color: var(--gold-mid); }
+
+        .newsletter__btn {
+            padding: 17px 28px; background: var(--gold); color: var(--white); border: none;
+            font-family: var(--sans); font-size: 0.68rem; font-weight: 400;
+            letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
+            white-space: nowrap; transition: background 0.25s ease;
+        }
+
+        .newsletter__btn:hover { background: var(--gold-dark); }
+        .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); }
+
+        /* ============================================================
+           FOOTER
+        ============================================================ */
+        .footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0 32px; }
+
+        .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 52px; margin-bottom: 64px; }
+
+        .footer__logo { font-family: var(--serif); font-size: 1.45rem; font-style: italic; font-weight: 400; color: var(--text); margin-bottom: 16px; }
+        .footer__logo em { color: var(--gold); font-style: normal; font-weight: 600; }
+
+        .footer__about { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; }
+
+        .footer__social { display: flex; gap: 12px; }
+
+        .footer__social-link {
+            width: 38px; height: 38px; border: 1px solid var(--border); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--text-muted); font-size: 0.72rem; font-weight: 500; transition: all 0.2s ease;
+        }
+
+        .footer__social-link:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
+
+        .footer__col h5 { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); font-weight: 400; margin-bottom: 22px; }
+        .footer__col ul { display: flex; flex-direction: column; gap: 11px; }
+        .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s ease; }
+        .footer__col a:hover { color: var(--gold); }
+
+        .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
+        .footer__bottom a { transition: color 0.2s ease; }
+        .footer__bottom a:hover { color: var(--gold); }
+
+        /* ============================================================
+           RESPONSIVE
+        ============================================================ */
+        @media (max-width: 900px) {
+            .nav__links { display: none; }
+            .related-grid { grid-template-columns: 1fr 1fr; }
+            .post-img { margin-left: 0; margin-right: 0; }
+            .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+        }
+
+        @media (max-width: 680px) {
+            .container { padding-left: 24px; padding-right: 24px; }
+            .nav__inner { padding-left: 24px; padding-right: 24px; }
+            .related-grid { grid-template-columns: 1fr; }
+            .pull-quote { margin-left: 0; margin-right: 0; padding: 36px 28px; }
+            .pull-quote::before { display: none; }
+            .pull-quote p { padding-left: 0; }
+            .post-conclusion { padding: 36px 28px; }
+            .author-bio__inner { flex-direction: column; }
+            .newsletter__form { flex-direction: column; }
+            .newsletter__input { border-right: 1px solid rgba(255,255,255,0.14); border-bottom: none; }
+            .footer__grid { grid-template-columns: 1fr; }
+        }
+
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
+        <ul class="nav__links">
+            <li><a href="beauty.html">Beauty</a></li>
+            <li><a href="mind.html">Mind</a></li>
+            <li><a href="nourish.html">Nourish</a></li>
+            <li><a href="living.html">Living</a></li>
+            <li><a href="companion.html" class="active">Companion</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+        <button class="nav__search" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+
+<header class="post-hero" role="banner">
+    <div class="post-hero__img"></div>
+</header>
+
+
+<div class="post-header">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <div class="breadcrumb__sep"></div>
+        <a href="companion.html">Companion</a>
+        <div class="breadcrumb__sep"></div>
+        <span>Dog Health Routine</span>
+    </nav>
+
+    <a href="companion.html" class="post-category-badge">Companion</a>
+
+    <h1 class="post-title">
+        The Best Health Habit I<br><em>Never Planned</em>
+    </h1>
+
+    <div class="post-byline">
+        <span>May 13, 2026</span>
+        <div class="byline-dot"></div>
+        <span>By <a href="about.html">Gia</a></span>
+        <div class="byline-dot"></div>
+        <span>5 min read</span>
+    </div>
+
+    <div class="post-header-rule"></div>
+
+    <p class="post-intro">
+        I didn't plan to become a morning person. Or someone who walks every single day, rain or shine. My Labrador Retriever had other plans — and quietly built me a healthier lifestyle while I wasn't paying attention.
+    </p>
+
+</div>
+
+
+<article class="post-content" id="post-content">
+
+    <p>I've tried a lot of health routines. Gym memberships that lasted six weeks. Morning alarm habits that dissolved by Thursday. Elaborate wellness plans that felt inspiring on Sunday night and exhausting by Monday afternoon. None of them stuck the way I hoped they would.</p>
+
+    <p>What finally stuck wasn't something I designed at all. It was a Labrador Retriever with a feeding schedule, an unwavering need for walks twice a day, and absolutely zero interest in my excuses.</p>
+
+    <p>Owning a dog is one of the most underrated wellness decisions I've ever made — not because I set out to improve my health, but because he made it inevitable.</p>
+
+
+    <div class="post-img">
+        <div class="post-img__frame">
+            <img src="images/cold winter dog.jpg" alt="Walking a dog on a snowy winter morning" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <p class="post-img__caption">Morning walks started as his routine. Somewhere along the way, they became mine too.</p>
+    </div>
+
+
+    <h2>The Schedule That <em>Chose Me</em></h2>
+
+    <p>Labradors are creatures of rhythm. They know when it's feeding time before you've even thought about it. They appear at your side, patient and expectant, at the same hour every morning. And whether you slept badly, whether it's cold outside, whether you'd planned to stay in bed a little longer — none of that information reaches them. The walk is happening.</p>
+
+    <p>In the beginning, that felt like pressure. After a few months, I realised it was something I'd never quite managed to give myself: consistency that didn't depend on motivation. My Lab doesn't care whether I feel like going outside. He just needs to go — and I need to take him. That non-negotiable quality is exactly what every health routine I'd previously tried had lacked.</p>
+
+    <p>Research bears this out. Dog owners walk an average of 22 more minutes per day than people without dogs, and take over 2,700 additional steps. But the number isn't the point. The point is that it happens — because it has to. And "it has to" is a more reliable engine than "I want to."</p>
+
+
+    <blockquote class="pull-quote">
+        <p>
+            A dog's routine doesn't negotiate. And that's exactly the kind of consistency I'd never quite managed to give myself.
+        </p>
+    </blockquote>
+
+
+    <h2>What a Daily Walk <em>Actually Does</em></h2>
+
+    <p>I used to think of walking as the lazy option — the thing you do when you're not doing real exercise. Living with a Labrador has entirely dismantled that idea. Thirty minutes of walking daily reduces the risk of heart disease, supports bone density, helps regulate blood sugar, and contributes to better sleep. It's one of the most evidence-backed forms of movement there is, and most of us are chronically under-doing it.</p>
+
+    <p>There's also the outdoor component, which I didn't fully appreciate until I started tracking how different I felt on days when we walked early versus days when I stayed inside until afternoon. Sunlight in the morning regulates cortisol and sets your circadian rhythm. Fresh air is not a metaphor — it genuinely shifts something. My Lab gets me outside before I've had a chance to talk myself out of it, and my body thanks me for it in ways I feel by evening.</p>
+
+    <p>Beyond the walk itself, the physical activity of dog ownership adds up in smaller, quieter ways too — the play sessions, the stairs, the reaching and bending and crouching. None of it is dramatic. All of it is real.</p>
+
+
+    <div class="post-img post-img--contained">
+        <div class="post-img__frame">
+            <img src="images/Leo_morning walk.png" alt="Leo the Labrador on a morning walk" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <p class="post-img__caption">Labradors are built for movement — and they'll generously bring you along for the ride.</p>
+    </div>
+
+
+    <h2>How His Needs Became <em>My Habits</em></h2>
+
+    <p>There's a concept in habit research called a "habit loop" — a cue, a routine, and a reward that repeat until the behaviour becomes automatic. My Lab built me several of these without my involvement. His morning energy cue triggers the walk routine, which delivers the reward of fresh air, movement, and a dog who is visibly joyful. His dinnertime cue anchors my evenings. His winding-down at night signals that it's time to stop, sit, and be still.</p>
+
+    <p>These weren't habits I constructed deliberately. They grew around his needs — and then they became my rhythms too. I sleep better now because my evenings have shape. I move more because my mornings have a non-optional start. My days feel more grounded because they have consistent anchors.</p>
+
+    <p>What I've come to understand is that structure isn't something you impose on yourself through willpower alone. Sometimes it's something that arrives in a 30-kilogram, tail-wagging form and installs itself quietly into your life.</p>
+
+
+    <h2>A Few Things Worth <em>Knowing</em></h2>
+
+    <ol class="post-list">
+        <li><strong>Breed matters for your lifestyle match.</strong> Labradors are high-energy dogs who genuinely need daily movement. If your daily activity level is lower, a breed with calmer energy requirements might be a better fit — and will still give you all the routine benefits without the guilt on low-energy days.</li>
+        <li><strong>The routine builds gradually.</strong> The first few weeks of dog ownership feel like adjustment, not structure. Give it two to three months before you feel the rhythm settle. The consistency comes — it just takes time to form.</li>
+        <li><strong>You don't have to run.</strong> Walking is enough. Light-to-moderate daily walking delivers cardiovascular benefits, improves mood, and supports weight management. You don't need to turn walks into workouts for them to matter.</li>
+        <li><strong>The health benefits are mutual.</strong> Dogs who receive consistent walks, feeding schedules, and play are calmer, healthier, and less prone to behavioural issues. You're not just building your own routine — you're building his too.</li>
+    </ol>
+
+
+    <div class="content-rule"></div>
+
+
+    <div class="post-conclusion">
+        <h3 class="post-conclusion__title">The habit you didn't know you needed</h3>
+        <p>
+            The most sustainable health routines aren't always the ones we design. Sometimes they're the ones that arrive when we bring home a dog who has no idea he's quietly changing our lives — and wouldn't care either way, as long as the walk happens on time.
+        </p>
+    </div>
+
+</article>
+
+
+<section class="post-faq" aria-label="Frequently asked questions">
+    <div class="faq-header">
+        <h2>Frequently Asked <em>Questions</em></h2>
+    </div>
+
+    <div class="faq-item" id="faq1">
+        <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
+            <span class="faq-question__text">Does the breed of dog really affect how much healthier you become?</span>
+            <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+        </button>
+        <div class="faq-answer">
+            <p>To some extent, yes. High-energy breeds like Labradors, Border Collies, and Vizslas will demand more walking and active play, which naturally translates to more physical activity for you. Lower-energy breeds still provide meaningful routine and companionship benefits — just with less intensity. The most important thing is choosing a breed whose energy level genuinely matches yours, so the routine feels sustainable rather than draining.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq2">
+        <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
+            <span class="faq-question__text">What if I already have a dog but haven't noticed a health difference?</span>
+            <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+        </button>
+        <div class="faq-answer">
+            <p>The benefits tend to be most pronounced when the dog's needs are building genuinely new habits — moving more than you otherwise would, going outside at set times, structuring your day around a living creature's schedule. If the dog's routine has blended entirely into your existing one without adding movement, consider whether the walks are long enough or frequent enough to genuinely push your activity levels. Even small increases, done consistently, compound significantly over months.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq3">
+        <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
+            <span class="faq-question__text">How long before a dog's routine starts to feel like your own?</span>
+            <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+        </button>
+        <div class="faq-answer">
+            <p>Most people find the transition happens naturally around the two to three month mark. The early weeks are adjustment — everything feels new and effortful. By month three, the walks have become something your body expects. You stop thinking of them as something you do for your dog and start feeling it when they don't happen. That shift — from obligation to rhythm — is when the real health benefit kicks in.</p>
+        </div>
+    </div>
+
+    <div class="faq-item" id="faq4">
+        <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
+            <span class="faq-question__text">Is dog ownership worth it for health benefits alone?</span>
+            <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+        </button>
+        <div class="faq-answer">
+            <p>Probably not on its own — dog ownership is a significant commitment, and the decision should be driven by a genuine desire to care for another living being, not just the lifestyle benefits. That said, the health outcomes are real and well-documented: more movement, better sleep, lower blood pressure, stronger social connection. If you're ready for the responsibility, the health benefits are a genuinely meaningful bonus. And if you're anything like me — you'll stop thinking of them as bonuses fairly quickly.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<div class="post-tags-section">
+    <span class="post-tags-section__label">Tagged in</span>
+    <div class="tags">
+        <a href="companion.html" class="tag tag--category">Companion</a>
+        <a href="#" class="tag">dog ownership</a>
+        <a href="#" class="tag">daily routine</a>
+        <a href="#" class="tag">healthy habits</a>
+        <a href="#" class="tag">Labrador</a>
+        <a href="#" class="tag">walking benefits</a>
+    </div>
+</div>
+
+
+<div class="author-bio">
+    <div class="author-bio__inner">
+        <div class="author-bio__avatar"></div>
+        <div class="author-bio__info">
+            <h4>Written by Gia</h4>
+            <p>Lifestyle blogger and creative at heart. I believe deeply that beauty is healing
+               and softness is a form of power. "Darling, what if" is my ongoing love letter to
+               the life I'm choosing — one small and intentional moment at a time. 
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<section class="related-posts">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Keep <em>Reading</em></h2>
+        </div>
+        <div class="related-grid">
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-honey"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="companion.html" class="category-label">Companion</a>
+                    <h3 class="post-card__title"><a href="post-dog-love.html">The Kind of Love Only a Dog Gives You</a></h3>
+                    <div class="post-card__date">May 13, 2026 &nbsp;·&nbsp; 5 min read</div>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-sage"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="mind.html" class="category-label">Mind</a>
+                    <h3 class="post-card__title"><a href="post-morning-pages.html">Morning Pages & Why They Rewired My Anxious Brain</a></h3>
+                    <div class="post-card__date">May 6, 2026 &nbsp;·&nbsp; 5 min read</div>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <div class="post-card__img ph-linen"></div>
+                </div>
+                <div class="post-card__body">
+                    <a href="nourish.html" class="category-label">Nourish</a>
+                    <h3 class="post-card__title"><a href="post-water.html">What If a Glass of Water, at the Right Time, Changed Everything?</a></h3>
+                    <div class="post-card__date">May 8, 2026 &nbsp;·&nbsp; 5 min read</div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="newsletter" id="newsletter">
+    <div class="container">
+        <div class="newsletter__inner">
+            <span class="newsletter__eyebrow">Letters from Gia</span>
+            <h2 class="newsletter__title">
+                What if your inbox felt like<br>
+                <em>a warm cup of tea?</em>
+            </h2>
+            <p class="newsletter__body">
+                Soft stories, honest reflections, and small ideas that might just change the way you see your day. Delivered when it matters, never when it doesn't.
+            </p>
+            <form class="newsletter__form" onsubmit="handleSignup(event)">
+                <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
+                <button type="submit" class="newsletter__btn">Yes, I'm in</button>
+            </form>
+            <p class="newsletter__note">No spam, ever. Unsubscribe anytime with one click.</p>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <div class="footer__logo">darling, <em>what if</em></div>
+                <p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p>
+                <div class="footer__social">
+                    <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+                    <a href="https://pinterest.com" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">PI</a>
+                    <a href="mailto:hello@darlingwhatif.com" class="footer__social-link" aria-label="Email">@</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="beauty.html">Beauty</a></li>
+                    <li><a href="mind.html">Mind</a></li>
+                    <li><a href="nourish.html">Nourish</a></li>
+                    <li><a href="living.html">Living</a></li>
+                    <li><a href="companion.html">Companion</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5>Info</h5>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="collaborate.html">Collaborate</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="disclosure.html">Disclosure &amp; Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 <a href="index.html">darlingwhatif.com</a> — All rights reserved</span>
+            <span>Made with intention ✦</span>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    function toggleFaq(id) {
+        const item = document.getElementById(id);
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+            el.classList.remove('open');
+            el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
+        }
+    }
+
+    function handleSignup(e) {
+        e.preventDefault();
+        const input = e.target.querySelector('.newsletter__input');
+        const btn   = e.target.querySelector('.newsletter__btn');
+        btn.textContent  = 'You\'re in ✦';
+        btn.style.background = '#7A6B50';
+        input.disabled = true;
+        btn.disabled   = true;
+    }
+</script>
+
+</body>
+</html>

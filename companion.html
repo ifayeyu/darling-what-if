@@ -53,10 +53,21 @@
         .read-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--gold-faint); padding-bottom: 2px; transition: border-color 0.2s; align-self: flex-start; }
         .read-btn:hover { border-color: var(--gold); }
 
-        /* MORE COMING SOON */
-        .coming-soon { background: var(--bg-warm); border: 1px solid var(--border); border-style: dashed; padding: 52px; text-align: center; margin-top: 0; margin-bottom: 88px; }
-        .coming-soon p { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--text-muted); line-height: 1.7; }
-        .coming-soon span { display: block; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-top: 14px; }
+        /* POST GRID */
+        .posts-section { padding: 0 0 88px; }
+        .posts-section__label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 32px; }
+        .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .post-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.3s; display: flex; flex-direction: column; }
+        .post-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); }
+        .post-card__img { aspect-ratio: 16/9; overflow: hidden; background: var(--bg-warm); }
+        .post-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+        .post-card:hover .post-card__img img { transform: scale(1.04); }
+        .post-card__img.ph-honey { background: linear-gradient(145deg, #EAD8BB 0%, #CBA87C 100%); }
+        .post-card__body { padding: 28px 28px 32px; display: flex; flex-direction: column; flex: 1; }
+        .post-card__cat { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+        .post-card__title { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; line-height: 1.35; color: var(--text); margin-bottom: 12px; }
+        .post-card__excerpt { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px; flex: 1; }
+        .post-card__meta { font-size: 0.72rem; color: var(--text-muted); }
 
         .newsletter { background: #2A2520; padding: 80px 0; }
         .newsletter__inner { max-width: 640px; margin: 0 auto; padding: 0 48px; text-align: center; }
@@ -82,8 +93,8 @@
         .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s; }
         .footer__col a:hover { color: var(--gold); }
         .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
-        @media (max-width: 900px) { .nav__links { display: none; } .solo-post { grid-template-columns: 1fr; } .solo-post__img { aspect-ratio: 16/9; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
-        @media (max-width: 680px) { .nav__inner, .container, .cat-hero { padding-left: 24px; padding-right: 24px; } .solo-post__body { padding: 32px 24px; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { .nav__links { display: none; } .solo-post { grid-template-columns: 1fr; } .solo-post__img { aspect-ratio: 16/9; } .posts-grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
+        @media (max-width: 680px) { .nav__inner, .container, .cat-hero { padding-left: 24px; padding-right: 24px; } .solo-post__body { padding: 32px 24px; } .posts-grid { grid-template-columns: 1fr; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -108,7 +119,7 @@
         <p class="cat-hero__eyebrow">Category</p>
         <h1 class="cat-hero__title">Companion</h1>
         <p class="cat-hero__desc">On the relationships that don't need explaining. The animals who love us without condition, and what they teach us about presence, loyalty, and the kind of connection that fills something specific.</p>
-        <span class="cat-hero__count">1 post</span>
+        <span class="cat-hero__count">3 posts</span>
     </div>
 </section>
 
@@ -122,7 +133,7 @@
                 </div>
                 <div class="solo-post__body">
                     <div class="solo-post__cat">Companion</div>
-                    <h2 class="solo-post__title">What If Your Dog Is Your<br><em>Most Meaningful Relationship?</em></h2>
+                    <h2 class="solo-post__title">What If Your Dog Is Your <em>Most Meaningful Relationship?</em></h2>
                     <p class="solo-post__excerpt">They are simply, completely, always there. And science is beginning to confirm what dog owners have known their whole lives — that this bond does something real to our nervous systems, our loneliness, and our capacity to feel fully seen.</p>
                     <div class="solo-post__meta"><span>May 8, 2026</span><div class="meta-dot"></div><span>7 min read</span></div>
                     <span class="read-btn">Read post →</span>
@@ -130,9 +141,36 @@
             </div>
         </a>
 
-        <div class="coming-soon">
-            <p>"More is coming to this space — on animals, on the bonds that anchor us, and on what it means to be fully present with another living thing."</p>
-            <span>More posts coming soon</span>
+    </div>
+
+    <div class="posts-section">
+        <p class="posts-section__label">More in Companion</p>
+        <div class="posts-grid">
+
+            <a href="post-dog-routine.html" class="post-card">
+                <div class="post-card__img">
+                    <img src="images/dog walk.jpg" alt="Labrador walking on cobblestone path" loading="lazy">
+                </div>
+                <div class="post-card__body">
+                    <div class="post-card__cat">Companion</div>
+                    <h3 class="post-card__title">The Best Health Habit I Never Planned</h3>
+                    <p class="post-card__excerpt">I didn't set out to become someone with a daily routine. My Labrador had other ideas — and quietly built me a healthier life without me noticing until it was already mine.</p>
+                    <div class="post-card__meta">May 13, 2026 &nbsp;·&nbsp; 6 min read</div>
+                </div>
+            </a>
+
+            <a href="post-dog-love.html" class="post-card">
+                <div class="post-card__img">
+                    <img src="images/dog-love.jpg" alt="The kind of love only a dog gives you" loading="lazy">
+                </div>
+                <div class="post-card__body">
+                    <div class="post-card__cat">Companion</div>
+                    <h3 class="post-card__title">The Kind of Love Only a Dog Gives You</h3>
+                    <p class="post-card__excerpt">It isn't conditional. It doesn't depend on how you showed up today, whether you were productive or kind or put-together. It's just there — soft, warm, and completely certain of you.</p>
+                    <div class="post-card__meta">May 13, 2026 &nbsp;·&nbsp; 6 min read</div>
+                </div>
+            </a>
+
         </div>
     </div>
 </div>
@@ -150,7 +188,8 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__grid">
-            <div><div class="footer__logo">darling, <em>what if</em></div><p class="footer__about">A lifestyle blog for women who are quietly reimagining what their lives could look like — one soft, intentional choice at a time.</p><div class="footer__social"><a href="#" class="footer__social-link">ig</a><a href="#" class="footer__social-link">pt</a><a href="#" class="footer__social-link">tk</a></div></div>
+            <div><div class="footer__logo">darling, <em>what if</em></div><p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p><div class="footer__social"><a href="#" class="footer__social-link">ig</a><a href="#" class="footer__social-link">pt</a><a href="#" class="footer__social-link">tk</a></div></div>
+            <div class="footer__col"><h5>Explore</h5><ul><li><a href="beauty.html">Beauty</a></li><li><a href="mind.html">Mind</a></li><li><a href="nourish.html">Nourish</a></li><li><a href="living.html">Living</a></li><li><a href="companion.html">Companion</a></li></ul></div>
             <div class="footer__col"><h5>Recent</h5><ul><li><a href="post-companion-dogs.html">Dogs & Connection</a></li><li><a href="post-morning-pages.html">Morning Pages</a></li><li><a href="post-burnout.html">On Burnout</a></li><li><a href="post-hair-foods.html">Foods for Hair</a></li></ul></div>
                                                 <div class="footer__col">
                 <h5>Info</h5>

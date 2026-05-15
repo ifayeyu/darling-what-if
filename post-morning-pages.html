@@ -157,12 +157,11 @@
         .tag:hover, .tag--category { background: var(--gold-faint); border-color: var(--gold-light); color: var(--gold-dark); }
 
         /* AUTHOR BIO */
-        .author-bio { max-width: var(--content-w); margin: 0 auto; padding: 0 48px 72px; }
-        .author-bio__inner { display: flex; align-items: center; gap: 28px; padding: 36px; background: var(--bg-warm); border: 1px solid var(--border); }
-        .author-bio__avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--gold-faint), var(--gold-light)); flex-shrink: 0; }
-        .author-bio h4 { font-family: var(--serif); font-size: 1.1rem; font-weight: 500; margin-bottom: 8px; }
-        .author-bio p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; margin: 0; }
-        .author-bio em { color: var(--gold); font-style: italic; }
+        .author-bio { max-width: var(--content-w); margin: 0 auto 64px; padding: 0 24px; }
+        .author-bio__inner { display: flex; align-items: flex-start; gap: 28px; padding: 36px 40px; background: var(--bg-warm); border-top: 2px solid var(--gold); }
+        .author-bio__avatar { width: 68px; height: 68px; border-radius: 50%; background: linear-gradient(145deg, #E0CCAF 0%, #C4A47A 100%); flex-shrink: 0; }
+        .author-bio__info h4 { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 6px; }
+        .author-bio__info p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; }
 
         /* RELATED POSTS */
         .related-posts { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0; }
@@ -244,6 +243,7 @@
     <div class="nav__inner">
         <a href="index.html" class="nav__logo">darling, <strong>what if</strong></a>
         <ul class="nav__links">
+            <li><a href="beauty.html">Beauty</a></li>
             <li><a href="mind.html" class="active">Mind</a></li>
             <li><a href="nourish.html">Nourish</a></li>
             <li><a href="living.html">Living</a></li>
@@ -734,8 +734,12 @@
     <div class="author-bio__inner">
         <div class="author-bio__avatar"></div>
         <div class="author-bio__info">
-            <h4>Gia</h4>
-            <p>Writing about the small, deliberate choices that quietly change everything — from what we eat to how we rest to who we become in the process. Welcome to <em>darling, what if.</em></p>
+            <h4>Written by Gia</h4>
+            <p>
+                Lifestyle blogger and creative at heart. I believe deeply that beauty is healing
+                and softness is a form of power. "Darling, what if" is my ongoing love letter to
+                the life I'm choosing — one small and intentional moment at a time.
+            </p>
         </div>
     </div>
 </div>
@@ -818,7 +822,7 @@
         <div class="footer__grid">
             <div>
                 <div class="footer__logo">darling, <em>what if</em></div>
-                <p class="footer__about">A lifestyle blog for women who are quietly reimagining what their lives could look like — one soft, intentional choice at a time.</p>
+                <p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p>
                 <div class="footer__social">
                     <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
                     <a href="#" class="footer__social-link" aria-label="Pinterest">pt</a>

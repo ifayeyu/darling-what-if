@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty — Rituals, Routines & Self-Care | Darling, What If</title>
-    <meta name="description" content="Beauty rituals, skincare, and the small intentional acts that make you feel like yourself — explored softly and honestly on Darling, What If.">>
+    <title>Beauty — Rituals, Glow & Inner Wellness | Darling, What If</title>
+    <meta name="description" content="Thoughtful beauty rituals, inner wellness practices, and the everyday habits that connect how you care for yourself to how you glow.">
     <meta property="og:title" content="Beauty | Darling, What If">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://darlingwhatif.com/beauty">
-    <link rel="canonical" href="https://darlingwhatif.com/beauty">
+    <meta property="og:url" content="https://darlingwhatif.com/wellness">
+    <link rel="canonical" href="https://darlingwhatif.com/wellness">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
@@ -35,25 +35,38 @@
         .cat-hero__count { display: inline-block; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--white); color: var(--text-muted); padding: 8px 18px; border: 1px solid var(--border); }
         .container { max-width: var(--content-w); margin: 0 auto; padding: 0 48px; }
 
-        /* EMPTY STATE */
-        .empty-wrap { padding: 80px 0 100px; }
-        .empty-state { text-align: center; padding: 100px 48px; border: 1px dashed var(--border); background: var(--bg-warm); }
-        .empty-state__icon { width: 64px; height: 64px; border-radius: 50%; background: var(--gold-faint); display: flex; align-items: center; justify-content: center; margin: 0 auto 28px; }
-        .empty-state__title { font-family: var(--serif); font-size: 1.65rem; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 16px; line-height: 1.3; }
-        .empty-state__text { font-size: 0.97rem; color: var(--text-muted); line-height: 1.85; max-width: 440px; margin: 0 auto 36px; }
-        .empty-state__cta { display: inline-block; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--gold); color: var(--white); padding: 14px 28px; transition: background 0.2s; }
-        .empty-state__cta:hover { background: var(--gold-dark); }
+        /* SOLO FEATURED */
+        .solo-wrap { padding: 72px 0 56px; }
+        .solo-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+        .solo-post { display: grid; grid-template-columns: 3fr 2fr; border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.3s; }
+        .solo-post:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+        .solo-post__img { aspect-ratio: 4/3; overflow: hidden; background: var(--bg-warm); }
+        .solo-post__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+        .solo-post:hover .solo-post__img img { transform: scale(1.03); }
+        .solo-post__body { padding: 60px 52px; display: flex; flex-direction: column; justify-content: center; background: var(--white); }
+        .solo-post__cat { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+        .solo-post__title { font-family: var(--serif); font-size: 2rem; font-weight: 500; line-height: 1.25; color: var(--text); margin-bottom: 20px; }
+        .solo-post__title em { font-style: italic; color: var(--gold-dark); }
+        .solo-post__excerpt { font-size: 0.97rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 32px; }
+        .solo-post__meta { font-size: 0.74rem; color: var(--text-muted); margin-bottom: 32px; display: flex; gap: 12px; align-items: center; }
+        .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border); }
+        .read-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--gold-faint); padding-bottom: 2px; transition: border-color 0.2s; align-self: flex-start; }
+        .read-btn:hover { border-color: var(--gold); }
 
-        /* WHAT TO EXPECT */
-        .preview-section { padding: 0 0 88px; }
-        .preview-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
-        .preview-title { font-family: var(--serif); font-size: 1.65rem; font-weight: 500; color: var(--text); margin-bottom: 40px; line-height: 1.3; }
-        .preview-title em { font-style: italic; color: var(--gold-dark); }
-        .preview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .preview-card { background: var(--white); border: 1px solid var(--border); padding: 32px 28px; }
-        .preview-card__num { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 14px; }
-        .preview-card__title { font-family: var(--serif); font-size: 1rem; font-weight: 500; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
-        .preview-card__desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.75; }
+        /* POST GRID */
+        .posts-section { padding: 0 0 88px; }
+        .posts-section__label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 32px; }
+        .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .post-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.3s; display: flex; flex-direction: column; }
+        .post-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); }
+        .post-card__img { aspect-ratio: 16/9; overflow: hidden; background: var(--bg-warm); }
+        .post-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+        .post-card:hover .post-card__img img { transform: scale(1.04); }
+        .post-card__body { padding: 28px 28px 32px; display: flex; flex-direction: column; flex: 1; }
+        .post-card__cat { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+        .post-card__title { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; line-height: 1.35; color: var(--text); margin-bottom: 12px; }
+        .post-card__excerpt { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px; flex: 1; }
+        .post-card__meta { font-size: 0.72rem; color: var(--text-muted); }
 
         .newsletter { background: #2A2520; padding: 80px 0; }
         .newsletter__inner { max-width: 640px; margin: 0 auto; padding: 0 48px; text-align: center; }
@@ -79,8 +92,8 @@
         .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s; }
         .footer__col a:hover { color: var(--gold); }
         .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
-        @media (max-width: 900px) { .nav__links { display: none; } .preview-grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
-        @media (max-width: 680px) { .nav__inner, .container, .cat-hero { padding-left: 24px; padding-right: 24px; } .preview-grid { grid-template-columns: 1fr; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { .nav__links { display: none; } .solo-post { grid-template-columns: 1fr; } .solo-post__img { aspect-ratio: 16/9; } .posts-grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
+        @media (max-width: 680px) { .nav__inner, .container, .cat-hero { padding-left: 24px; padding-right: 24px; } .posts-grid { grid-template-columns: 1fr; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -104,58 +117,58 @@
     <div class="cat-hero__inner">
         <p class="cat-hero__eyebrow">Category</p>
         <h1 class="cat-hero__title">Beauty</h1>
-        <p class="cat-hero__desc">The rituals, routines, and small daily acts that quietly add up to feeling like yourself. Body-first, pressure-free wellness for women who are done performing health.</p>
-        <span class="cat-hero__count">Coming soon</span>
+        <p class="cat-hero__desc">Beauty from within. Thoughtful rituals, inner wellness, and everyday practices that support healthy skin, radiance, and grace.</p>
+        <span class="cat-hero__count">3 posts</span>
     </div>
 </section>
 
 <div class="container">
 
-    <div class="empty-wrap">
-        <div class="empty-state">
-            <div class="empty-state__icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9B8968" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402C1 4.183 3.183 2 6.191 2c1.98 0 4.47 1.271 5.809 3.36C13.339 3.271 15.829 2 17.809 2 20.817 2 23 4.183 23 7.191c0 4.105-5.37 8.863-11 14.402z"/></svg>
+    <!-- FEATURED POST -->
+    <div class="solo-wrap">
+        <p class="solo-label">Latest</p>
+        <a href="post-smile-white.html">
+            <div class="solo-post">
+                <div class="solo-post__img" style="background: linear-gradient(150deg, #F0E8DC 0%, #D4C4A8 40%, #B8A080 100%);"></div>
+                <div class="solo-post__body">
+                    <div class="solo-post__cat">Beauty</div>
+                    <h2 class="solo-post__title">How I Keep My Teeth White <em>Without Giving Up Coffee</em></h2>
+                    <p class="solo-post__excerpt">I'm a caffeine fiend who's spent years experimenting with teeth whitening. Here are the natural DIY methods that actually worked — and one product I keep coming back to.</p>
+                    <div class="solo-post__meta"><span>May 12, 2026</span><div class="meta-dot"></div><span>5 min read</span></div>
+                    <span class="read-btn">Read post →</span>
+                </div>
             </div>
-            <h2 class="empty-state__title">This space is being tended to.</h2>
-            <p class="empty-state__text">Wellness posts are on their way — on morning rituals, body care, seasonal routines, and the small acts of maintenance that accumulate into something meaningful. Subscribe to be the first to know.</p>
-            <a href="#newsletter" class="empty-state__cta">Notify me when it's ready</a>
-        </div>
+        </a>
     </div>
 
-    <div class="preview-section">
-        <p class="preview-label">What's coming</p>
-        <h2 class="preview-title">Topics I'll be <em>writing about</em></h2>
-        <div class="preview-grid">
-            <div class="preview-card">
-                <span class="preview-card__num">01 — Morning Rituals</span>
-                <div class="preview-card__title">The first hour and why it matters more than you think</div>
-                <p class="preview-card__desc">Not a productivity hack — a genuine exploration of how the first part of your morning sets the tone for your nervous system all day.</p>
-            </div>
-            <div class="preview-card">
-                <span class="preview-card__num">02 — Body Care</span>
-                <div class="preview-card__title">Skincare, movement, and taking care of the body you live in</div>
-                <p class="preview-card__desc">Low-pressure practices for feeling good in your body — not because it needs to look a certain way, but because you live there.</p>
-            </div>
-            <div class="preview-card">
-                <span class="preview-card__num">03 — Seasonal Rhythms</span>
-                <div class="preview-card__title">How to let your energy shift with the seasons instead of fighting it</div>
-                <p class="preview-card__desc">On aligning how you rest, eat, move, and show up with where nature actually is — and why it makes everything easier.</p>
-            </div>
-            <div class="preview-card">
-                <span class="preview-card__num">04 — Sleep & Rest</span>
-                <div class="preview-card__title">Rest as a wellness practice, not a productivity reward</div>
-                <p class="preview-card__desc">What quality sleep actually looks like, and what gets in the way of it more often than we realize.</p>
-            </div>
-            <div class="preview-card">
-                <span class="preview-card__num">05 — Natural Remedies</span>
-                <div class="preview-card__title">The ancient and the evidence-backed, side by side</div>
-                <p class="preview-card__desc">Exploring the rituals that have endured — and what we're learning about why they actually work.</p>
-            </div>
-            <div class="preview-card">
-                <span class="preview-card__num">06 — Gentle Habits</span>
-                <div class="preview-card__title">Small, sustainable practices that don't require overhauling your life</div>
-                <p class="preview-card__desc">The wellness that fits into real life — not the kind that requires a sabbatical or a pantry full of supplements.</p>
-            </div>
+    <!-- MORE POSTS GRID -->
+    <div class="posts-section">
+        <p class="posts-section__label">More in Beauty</p>
+        <div class="posts-grid">
+
+            <a href="post-screen-skin.html" class="post-card">
+                <div class="post-card__img" style="background: linear-gradient(150deg, #C8CECE 0%, #A8B4B8 40%, #8899A0 100%);"></div>
+                <div class="post-card__body">
+                    <div class="post-card__cat">Beauty</div>
+                    <h3 class="post-card__title">What Your Screen Is Quietly Doing to Your Skin</h3>
+                    <p class="post-card__excerpt">You've heard about blue light. But the full picture of what prolonged screen time does to your skin — and what actually helps — is a conversation worth having quietly.</p>
+                    <div class="post-card__meta">May 12, 2026 &nbsp;·&nbsp; 6 min read</div>
+                </div>
+            </a>
+
+            <a href="post-banana-peel.html" class="post-card">
+                <div class="post-card__img">
+                    <img src="images/pexels-yulia-shapereva-s-58861876-7941294.jpg" alt="Banana peel skincare" loading="lazy">
+                </div>
+                <div class="post-card__body">
+                    <div class="post-card__cat">Beauty</div>
+                    <h3 class="post-card__title">The Part of the Banana You've Been Throwing Away</h3>
+                    <p class="post-card__excerpt">You eat the banana. You toss the peel. But dermatologists and skin-care devotees have quietly been using it for years — and the results are hard to dismiss.</p>
+                    <div class="post-card__meta">May 10, 2026 &nbsp;·&nbsp; 5 min read</div>
+                </div>
+            </a>
+
+
         </div>
     </div>
 
@@ -163,9 +176,9 @@
 
 <section class="newsletter" id="newsletter">
     <div class="newsletter__inner">
-        <p class="newsletter__eyebrow">Be the first to know</p>
-        <h2 class="newsletter__title">Wellness posts are coming.</h2>
-        <p class="newsletter__sub">Subscribe and I'll let you know the moment the first Wellness post goes live — plus everything else I'm writing in the meantime.</p>
+        <p class="newsletter__eyebrow">Letters from the blog</p>
+        <h2 class="newsletter__title">Stay close, darling.</h2>
+        <p class="newsletter__sub">Slow reads, honest thoughts, and the kind of beauty that doesn't ask you to optimize anything. In your inbox, softly.</p>
         <form class="newsletter__form" onsubmit="return false;"><input type="email" class="newsletter__input" placeholder="your@email.com"><button type="submit" class="newsletter__btn">Subscribe</button></form>
         <p class="newsletter__note">No noise. Unsubscribe anytime.</p>
     </div>
@@ -174,7 +187,8 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__grid">
-            <div><div class="footer__logo">darling, <em>what if</em></div><p class="footer__about">A lifestyle blog for women who are quietly reimagining what their lives could look like — one soft, intentional choice at a time.</p><div class="footer__social"><a href="#" class="footer__social-link">ig</a><a href="#" class="footer__social-link">pt</a><a href="#" class="footer__social-link">tk</a></div></div>
+            <div><div class="footer__logo">darling, <em>what if</em></div><p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p><div class="footer__social"><a href="#" class="footer__social-link">ig</a><a href="#" class="footer__social-link">pt</a><a href="#" class="footer__social-link">tk</a></div></div>
+            <div class="footer__col"><h5>Explore</h5><ul><li><a href="beauty.html">Beauty</a></li><li><a href="mind.html">Mind</a></li><li><a href="nourish.html">Nourish</a></li><li><a href="living.html">Living</a></li><li><a href="companion.html">Companion</a></li></ul></div>
             <div class="footer__col"><h5>Recent</h5><ul><li><a href="post-morning-pages.html">Morning Pages</a></li><li><a href="post-burnout.html">On Burnout</a></li><li><a href="post-hair-foods.html">Foods for Hair</a></li><li><a href="post-home-mental-health.html">Home & Mind</a></li></ul></div>
                                                 <div class="footer__col">
                 <h5>Info</h5>
