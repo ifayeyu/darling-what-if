@@ -14,16 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root { --gold: #9B8968; --gold-dark: #7A6B50; --gold-mid: #B09E80; --gold-light: #C4B49A; --gold-faint: #F2EDE5; --bg: #FAFAF7; --bg-warm: #F5F1EB; --text: #1D1B19; --text-muted: #6B6462; --border: #EAE5DF; --white: #FFFFFF; --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif; --content-w: 1240px; --prose-w: 720px; }
+        :root { --gold: #9B8968; --gold-dark: #7A6B50; --gold-mid: #B09E80; --gold-light: #C4B49A; --gold-faint: #F2EDE5; --bg: #FAFAF7; --bg-warm: #F5F1EB; --text: #1D1B19; --text-muted: #6B6462; --border: #EAE5DF; --white: #FFFFFF; --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', system-ui, -apple-system, sans-serif; --content-w: 720px; }
         html { font-size: 16px; scroll-behavior: smooth; }
         body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; font-weight: 300; -webkit-font-smoothing: antialiased; }
         a { text-decoration: none; color: inherit; } img { display: block; width: 100%; } ul { list-style: none; }
 
         /* NAV */
-        .nav { position: sticky; top: 0; z-index: 200; background: rgba(250,250,247,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); height: 76px; display: flex; align-items: center; }
-        .nav__inner { width: 100%; max-width: var(--content-w); margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
-        .nav__logo { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: var(--text); letter-spacing: -0.01em; white-space: nowrap; }
-        .nav__logo strong { font-weight: 600; font-style: normal; color: var(--gold); }
+        .nav { position: sticky; top: 0; z-index: 200; background: rgba(250,250,247,0.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); height: 76px; display: flex; align-items: center; }
+        .nav__inner { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
+        .nav__logo { font-family: var(--serif); font-size: 1.2rem; font-style: italic; font-weight: 400; color: var(--text); letter-spacing: 0.01em; }
+        .nav__logo strong { font-weight: 500; font-style: italic; color: var(--gold); }
         .nav__links { display: flex; align-items: center; gap: 36px; }
         .nav__links a { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
         .nav__links a:hover { color: var(--gold); }
@@ -32,29 +32,29 @@
 
         /* HERO */
         .post-hero { position: relative; height: 78vh; min-height: 520px; max-height: 820px; overflow: hidden; }
-        .post-hero__img { position: absolute; inset: 0; background: url('Images/screen-skin-hero.jpg') center/cover no-repeat; }
-        .post-hero__img--placeholder { background: linear-gradient(150deg, #C8CECE 0%, #A8B4B8 40%, #8899A0 100%); }
-        .post-hero__veil { position: absolute; inset: 0; background: linear-gradient(to top, rgba(18,15,12,0.18) 0%, rgba(18,15,12,0.04) 60%, transparent 100%); }
+        .post-hero__img { position: absolute; inset: 0; width: 100%; height: 100%; background: url('images/screen-skin-hero.jpg') center/cover no-repeat; transition: transform 0.1s ease; }
+        .post-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(250,250,247,0.15) 100%); pointer-events: none; }
 
         /* POST HEADER */
-        .post-header { max-width: var(--prose-w); margin: 0 auto; padding: 64px 48px 0; text-align: center; }
-        .post-breadcrumb { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; }
-        .post-breadcrumb a { color: var(--text-muted); transition: color 0.2s; }
-        .post-breadcrumb a:hover { color: var(--gold); }
-        .post-breadcrumb span { margin: 0 8px; opacity: 0.4; }
+        .post-header { max-width: var(--content-w); margin: 0 auto; padding: 64px 24px 0; text-align: center; }
+        .breadcrumb { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 28px; }
+        .breadcrumb a { transition: color 0.2s ease; }
+        .breadcrumb a:hover { color: var(--gold); }
+        .breadcrumb__sep { width: 4px; height: 4px; border-radius: 50%; background: var(--border); }
         .post-category-badge { display: inline-block; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; transition: color 0.2s; }
         .post-category-badge:hover { color: var(--gold-dark); }
         .post-title { font-family: var(--serif); font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 400; line-height: 1.18; color: var(--text); margin-bottom: 28px; }
-        .post-byline { display: flex; align-items: center; justify-content: center; font-size: 0.76rem; color: var(--text-muted); letter-spacing: 0.03em; margin-bottom: 36px; gap: 10px; }
-        .byline-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border); }
-        .post-header-rule { width: 52px; height: 1px; background: var(--gold); margin: 0 auto 48px; }
+        .post-byline { display: flex; align-items: center; justify-content: center; font-size: 0.76rem; color: var(--text-muted); letter-spacing: 0.03em; margin-bottom: 36px; gap: 0; }
+        .byline-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border); margin: 0 14px; flex-shrink: 0; }
+        .post-header-rule { width: 52px; height: 1px; background: var(--gold-mid); margin: 0 auto 40px; }
         .post-intro { font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.35rem); font-weight: 400; font-style: italic; line-height: 1.65; color: var(--text); max-width: 640px; margin: 0 auto 72px; }
 
         /* PROSE */
-        .post-body { max-width: var(--prose-w); margin: 0 auto; padding: 0 48px 80px; }
+        .post-body { max-width: var(--content-w); margin: 0 auto; padding: 0 24px 80px; }
         .post-body p { font-size: 1.05rem; line-height: 1.9; color: var(--text); margin-bottom: 28px; font-weight: 300; }
-        .post-body h2 { font-family: var(--serif); font-size: 1.65rem; font-weight: 400; color: var(--text); margin: 56px 0 20px; line-height: 1.3; }
-        .post-body h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; color: var(--text); margin: 36px 0 14px; line-height: 1.35; }
+        .post-body h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-weight: 400; color: var(--text); margin: 64px 0 24px; line-height: 1.3; }
+        .post-body h2 em { font-style: italic; color: var(--gold); }
+        .post-body h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; font-style: italic; color: var(--text-muted); margin: 40px 0 18px; line-height: 1.35; }
         .post-body a { color: var(--gold); border-bottom: 1px solid var(--gold-faint); transition: border-color 0.2s; }
         .post-body a:hover { border-color: var(--gold); }
         .post-body strong { font-weight: 500; color: var(--text); }
@@ -62,8 +62,8 @@
 
         /* SKIN CONCERN BLOCKS */
         .concern-block { background: var(--bg-warm); border-left: 3px solid var(--gold); padding: 36px 40px; margin: 44px 0; }
-        .concern-block__label { font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
-        .concern-block__title { font-family: var(--serif); font-size: 1.25rem; font-weight: 500; color: var(--text); margin-bottom: 20px; line-height: 1.3; }
+        .concern-block__label { font-size: 0.62rem !important; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold) !important; margin-bottom: 10px !important; line-height: 1.2 !important; font-weight: 400 !important; display: block; }
+        .concern-block__title { font-family: var(--serif); font-size: 1.25rem !important; font-weight: 400 !important; margin: 0 0 20px !important; line-height: 1.3; }
         .concern-block p { font-size: 0.97rem; line-height: 1.85; color: var(--text-muted); margin-bottom: 16px; }
         .concern-block p:last-child { margin-bottom: 0; }
         .concern-block a { color: var(--gold); border-bottom: 1px solid var(--gold-faint); transition: border-color 0.2s; }
@@ -80,8 +80,9 @@
         .post-img__caption { font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 14px; font-style: italic; }
 
         /* PULL QUOTE */
-        .pull-quote { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 40px 0; margin: 56px 0; text-align: center; }
-        .pull-quote p { font-family: var(--serif); font-size: clamp(1.2rem, 2.2vw, 1.5rem); font-style: italic; color: var(--text); line-height: 1.55; max-width: 560px; margin: 0 auto; }
+        .pull-quote { margin: 56px -24px; padding: 48px 48px; background: var(--bg-warm); border-left: 3px solid var(--gold); position: relative; }
+        .pull-quote::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; color: var(--gold-light); position: absolute; top: 12px; left: 44px; line-height: 1; }
+        .pull-quote p { font-family: var(--serif) !important; font-size: clamp(1.2rem, 2vw, 1.55rem) !important; font-style: italic; font-weight: 400; line-height: 1.55 !important; color: var(--text) !important; padding-left: 40px; margin-bottom: 0 !important; }
 
         /* ROUTINE BLOCK */
         .routine-block { background: var(--white); border: 1px solid var(--border); padding: 40px 44px; margin: 44px 0; }
@@ -92,7 +93,7 @@
         .routine-step__text { font-size: 0.95rem; color: var(--text-muted); line-height: 1.75; }
 
         /* FAQ */
-        .post-faq { max-width: var(--prose-w); margin: 0 auto; padding: 0 24px 96px; }
+        .post-faq { max-width: var(--content-w); margin: 0 auto; padding: 0 24px 96px; }
         .faq-header { margin-bottom: 36px; }
         .faq-header h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.85rem); font-weight: 400; color: var(--text); }
         .faq-header h2 em { font-style: italic; color: var(--gold); }
@@ -107,7 +108,7 @@
         .faq-answer p { font-size: 0.97rem; line-height: 1.85; color: var(--text-muted); }
 
         /* TAGS */
-        .post-tags-section { max-width: var(--prose-w); margin: 0 auto; padding: 0 24px 64px; }
+        .post-tags-section { max-width: var(--content-w); margin: 0 auto; padding: 0 24px 64px; }
         .post-tags-section__label { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px; display: block; }
         .tags { display: flex; flex-wrap: wrap; gap: 8px; }
         .tag { display: inline-block; padding: 6px 16px; background: var(--gold-faint); color: var(--gold-dark); font-size: 0.68rem; letter-spacing: 0.07em; border-radius: 100px; transition: background 0.2s, color 0.2s; }
@@ -116,7 +117,7 @@
         .tag--category:hover { background: var(--gold-dark); }
 
         /* AUTHOR BIO */
-        .author-bio { max-width: var(--prose-w); margin: 0 auto 64px; padding: 0 24px; }
+        .author-bio { max-width: var(--content-w); margin: 0 auto 64px; padding: 0 24px; }
         .author-bio__inner { display: flex; align-items: flex-start; gap: 28px; padding: 36px 40px; background: var(--bg-warm); border-top: 2px solid var(--gold); }
         .author-bio__avatar { width: 68px; height: 68px; border-radius: 50%; background: linear-gradient(145deg, #E0CCAF 0%, #C4A47A 100%); flex-shrink: 0; }
         .author-bio__info h4 { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 6px; }
@@ -125,6 +126,7 @@
         /* RELATED POSTS */
         .related-posts { background: var(--bg-warm); padding: 96px 0; }
         .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+        /* prose-width sections */
         .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 48px; }
         .section-title { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: var(--text); }
         .section-title em { font-style: italic; color: var(--gold); }
@@ -173,7 +175,6 @@
         .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s; }
         .footer__col a:hover { color: var(--gold); }
         .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
-        .container { max-width: var(--content-w); margin: 0 auto; padding: 0 48px; }
 
         @media (max-width: 900px) { .nav__links { display: none; } .related-grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
         @media (max-width: 680px) { .nav__inner { padding: 0 24px; } .post-header { padding: 48px 24px 0; } .post-body { padding: 0 24px 64px; } .concern-block { padding: 28px 24px; } .routine-block { padding: 28px 24px; } .related-grid { grid-template-columns: 1fr; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } }
@@ -197,20 +198,21 @@
 </nav>
 
 <!-- HERO -->
-<div class="post-hero">
-    <div class="post-hero__img post-hero__img--placeholder"></div>
-    <div class="post-hero__veil"></div>
-</div>
+<header class="post-hero" role="banner">
+    <div class="post-hero__img"></div>
+</header>
 
 <!-- POST HEADER -->
 <div class="post-header">
-    <p class="post-breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
-        <span>·</span>
+        <div class="breadcrumb__sep"></div>
         <a href="beauty.html">Beauty</a>
-    </p>
+        <div class="breadcrumb__sep"></div>
+        <span>What Your Screen Is Quietly Doing to Your Skin</span>
+    </nav>
     <a href="beauty.html" class="post-category-badge">Beauty</a>
-    <h1 class="post-title">What Your Screen Is Quietly<br>Doing to Your Skin</h1>
+    <h1 class="post-title">What Your Screen Is <em>Quietly</em><br>Doing to Your Skin</h1>
     <div class="post-byline">
         <span>By Gia</span>
         <div class="byline-dot"></div>
@@ -236,30 +238,25 @@
     <p>This isn't about panic. It's about paying attention. And once you know what to look for, the right adjustments are simpler than you'd think.</p>
 
     <div class="post-img--full">
-        <div class="img-placeholder">
-            <span>Image — woman at screen / skincare ritual</span>
-        </div>
+        <div class="img-placeholder"></div>
     </div>
 
     <div class="concern-block">
         <p class="concern-block__label">If you're noticing</p>
-        <h2 class="concern-block__title">Wrinkles & Fine Lines</h2>
+        <h3 class="concern-block__title">Wrinkles & Fine Lines</h3>
         <p>Screen exposure accelerates the breakdown of collagen — the protein responsible for keeping skin firm and smooth. The repetitive squinting and facial tension that comes with long hours at a computer doesn't help either. The good news is that retinol remains one of the most evidence-backed ingredients for reversing this kind of damage.</p>
-        <p><a href="https://www.sephora.com/product/a-passioni-retinol-cream-P439926" target="_blank" rel="noopener"><span class="product-mention">Drunk Elephant A-Passioni Retinol Cream</span></a> speeds cell turnover and promotes collagen production to smooth and firm skin over time. For a more concentrated approach, <a href="https://www.elizabetharden.com/skincare/serums-capsules/face-serums/retinol-ceramide-capsules-line-erasing-night-serum---90-piece-A0119122.html" target="_blank" rel="noopener"><span class="product-mention">Elizabeth Arden Retinol Ceramide Capsules</span></a> deliver 76% more potent retinol than unencapsulated formulas — each single-use capsule improves texture and elasticity with daily use. Start slowly, a few nights a week, and let your skin adjust before building up.</p>
     </div>
 
     <div class="concern-block">
         <p class="concern-block__label">If you're noticing</p>
-        <h2 class="concern-block__title">Dullness & Lost Glow</h2>
+        <h3 class="concern-block__title">Dullness & Lost Glow</h3>
         <p>Blue light generates oxidative stress, which depletes the skin's natural luminosity and leaves it looking flat, tired, and uneven. A brightening serum works on two levels: long-term correction and an immediate lift in radiance.</p>
-        <p><a href="https://www.glossier.com/products/futuredew" target="_blank" rel="noopener"><span class="product-mention">Glossier Futuredew</span></a> gives skin an instant dewy glow that builds over time — it layers beautifully under or over your moisturiser. If you want something that works as both skincare and makeup, <a href="https://www.sephora.com/product/illuminator-P461217" target="_blank" rel="noopener"><span class="product-mention">Iconic London Illuminator Liquid Highlight</span></a> is a concentrated liquid shimmer that can be mixed into foundation, primer, or moisturiser, or worn alone for a lit-from-within look.</p>
     </div>
 
     <div class="concern-block">
         <p class="concern-block__label">If you're noticing</p>
-        <h2 class="concern-block__title">Breakouts & Congestion</h2>
+        <h3 class="concern-block__title">Breakouts & Congestion</h3>
         <p>Inflammation triggered by blue light can disrupt the skin's barrier and contribute to congestion and breakouts — especially along the cheeks and jawline where we tend to rest our faces. Gentle exfoliation helps clear away the dead skin cells that clog pores before problems surface.</p>
-        <p><a href="https://www.sephora.com/product/daily-microfoliant-P423688" target="_blank" rel="noopener"><span class="product-mention">Dermalogica Daily Microfoliant</span></a> is a rice-based powder exfoliant that brightens, smooths texture, and clears pores without stripping the skin. For a softer option, <a href="https://www.iherb.com/pr/Cure-Natural-Natural-Aqua-Gel-8-82-oz-250-ml/98119" target="_blank" rel="noopener"><span class="product-mention">Cure Natural Aqua Gel</span></a> gently removes dry and dead skin to reveal a clearer, firmer surface underneath. Both are gentle enough for daily use.</p>
     </div>
 
     <div class="pull-quote">
@@ -466,12 +463,13 @@
                     <li><a href="collaborate.html">Collaborate</a></li>
                     <li><a href="privacy.html">Privacy</a></li>
                     <li><a href="terms.html">Terms</a></li>
+                    <li><a href="disclosure.html">Disclosure &amp; Disclaimer</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__bottom">
-            <span>© 2026 Darling, What If. All rights reserved.</span>
-            <span>Made with intention.</span>
+            <span>© 2026 <a href="index.html">darlingwhatif.com</a> — All rights reserved</span>
+            <span>Made with intention ✦</span>
         </div>
     </div>
 </footer>
