@@ -2,35 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core pages -->
-  <url><loc>https://darlingwhatif.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://darlingwhatif.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/wellness</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/mind</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/nourish</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/living</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/companion</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/</loc><lastmod>2026-05-18</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://darlingwhatif.com/about</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/beauty</loc><lastmod>2026-05-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/mind</loc><lastmod>2026-05-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/nourish</loc><lastmod>2026-05-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/living</loc><lastmod>2026-05-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/companion</loc><lastmod>2026-05-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
-  <!-- Blog posts -->
-  <url><loc>https://darlingwhatif.com/post-burnout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-anxiety</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-morning-pages</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-water</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-acv-honey</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-banana-peel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-hair-foods</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-home-mental-health</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-companion-dogs</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-maui</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-maui-valley-isle</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-nyc-love</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Blog posts — Mind -->
+  <url><loc>https://darlingwhatif.com/post-burnout</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-anxiety</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-morning-pages</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-softness</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-nyc-love</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Blog posts — Nourish -->
+  <url><loc>https://darlingwhatif.com/post-water</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-acv-honey</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-banana-peel</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-hair-foods</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-breakfast</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-tea-timing</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-gut-health</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Blog posts — Beauty -->
+  <url><loc>https://darlingwhatif.com/post-screen-skin</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-smile-white</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Blog posts — Living -->
+  <url><loc>https://darlingwhatif.com/post-home-mental-health</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-maui</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-maui-valley-isle</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Blog posts — Companion -->
+  <url><loc>https://darlingwhatif.com/post-companion-dogs</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-dog-love</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-dog-routine</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Supporting pages -->
-  <url><loc>https://darlingwhatif.com/newsletter</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://darlingwhatif.com/collaborate</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://darlingwhatif.com/contact</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://darlingwhatif.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://darlingwhatif.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://darlingwhatif.com/disclaimer</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://darlingwhatif.com/disclosure</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://darlingwhatif.com/newsletter</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://darlingwhatif.com/collaborate</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://darlingwhatif.com/contact</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://darlingwhatif.com/privacy</loc><lastmod>2026-05-18</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://darlingwhatif.com/terms</loc><lastmod>2026-05-18</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://darlingwhatif.com/disclosure</loc><lastmod>2026-05-18</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
 </urlset>
