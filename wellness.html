@@ -7,5 +7,24 @@
     <link rel="canonical" href="https://darlingwhatif.com/beauty">
     <title>Redirecting... | Darling, What If</title>
 </head>
-<body><p>Redirecting to <a href="beauty.html">Beauty</a>...</p></body>
+<body><p>Redirecting to <a href="beauty.html">Beauty</a>...</p><script>
+(function(){
+    var btn=document.getElementById('hamburger');
+    var menu=document.getElementById('mobile-nav');
+    if(!btn||!menu)return;
+    btn.addEventListener('click',function(){
+        var open=menu.classList.toggle('open');
+        btn.classList.toggle('open',open);
+        btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click',function(){
+            menu.classList.remove('open');
+            btn.classList.remove('open');
+            btn.setAttribute('aria-expanded','false');
+        });
+    });
+})();
+</script>
+</body>
 </html>
