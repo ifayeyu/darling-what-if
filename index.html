@@ -1423,10 +1423,15 @@
     .then(function (all) {
       all.sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
       var picks = [];
-      CATS.forEach(function (cat) {
+      // 1 latest from each non-Mind category
+      ['beauty', 'nourish', 'living', 'companion'].forEach(function (cat) {
         var post = all.find(function (p) { return p.category === cat; });
         if (post) picks.push(post);
       });
+      // 2 latest from Mind
+      var mindPosts = all.filter(function (p) { return p.category === 'mind'; });
+      if (mindPosts[0]) picks.push(mindPosts[0]);
+      if (mindPosts[1]) picks.push(mindPosts[1]);
       grid.innerHTML = picks.map(function (p) {
         return '<article class="post-card">' +
           '<div class="post-card__img-wrap">' +
