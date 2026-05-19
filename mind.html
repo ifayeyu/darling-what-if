@@ -201,6 +201,7 @@
         <button class="nav__search" aria-label="Search">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
 </nav>
 
@@ -220,113 +221,11 @@
         <p class="cat-hero__eyebrow">Category</p>
         <h1 class="cat-hero__title">Mind</h1>
         <p class="cat-hero__desc">For the thoughts that won't quiet down — and the practices that help. Anxiety, burnout, journaling, and what it actually looks like to get unstuck.</p>
-        <span class="cat-hero__count">5 posts</span>
     </div>
 </section>
 
 <div class="container">
-
-    <!-- FEATURED -->
-    <div class="featured-wrap">
-        <p class="featured-label">Latest</p>
-        <a href="post-softness.html">
-            <div class="featured-post">
-                <div class="featured-post__img">
-                    <img src="images/softness-hero.jpg" alt="What If Softness Is Your Greatest Strength?" loading="lazy">
-                </div>
-                <div class="featured-post__body">
-                    <div class="featured-post__cat">Mind</div>
-                    <h2 class="featured-post__title">What If Softness Is <em>Your Greatest Strength?</em></h2>
-                    <p class="featured-post__excerpt">We've been taught that strength looks like hardness. But what if the bravest thing you ever do is soften?</p>
-                    <div class="featured-post__meta">
-                        <span>May 13, 2026</span>
-                        <div class="meta-dot"></div>
-                        <span>6 min read</span>
-                    </div>
-                    <span class="read-btn">Read post →</span>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <!-- GRID -->
-    <div class="posts-wrap">
-        <p class="posts-wrap__label">All posts in Mind</p>
-        <div class="posts-grid">
-
-            <article class="post-card">
-                <a href="post-softness.html">
-                    <div class="post-card__img">
-                        <img src="images/softness-hero.jpg" alt="What If Softness Is Your Greatest Strength?" loading="lazy">
-                    </div>
-                </a>
-                <div class="post-card__body">
-                    <div class="post-card__category">Mind</div>
-                    <h3 class="post-card__title"><a href="post-softness.html">What If Softness Is Your Greatest Strength?</a></h3>
-                    <p class="post-card__excerpt">We've been taught that strength looks like hardness. But what if the bravest thing you ever do is soften?</p>
-                    <div class="post-card__meta">May 13, 2026 · 6 min read</div>
-                </div>
-            </article>
-
-            <article class="post-card">
-                <a href="post-anxiety.html">
-                    <div class="post-card__img">
-                        <img src="images/anxiety-overwhelm.jpg" alt="What If Your Anxiety Has Been Trying to Protect You All Along?" loading="lazy">
-                    </div>
-                </a>
-                <div class="post-card__body">
-                    <div class="post-card__category">Mind</div>
-                    <h3 class="post-card__title"><a href="post-anxiety.html">What If Your Anxiety Has Been Trying to Protect You All Along?</a></h3>
-                    <p class="post-card__excerpt">Anxiety isn't a character flaw — it's a signal. Understanding the types, what triggers them, and what actually helps.</p>
-                    <div class="post-card__meta">May 10, 2026 · 10 min read</div>
-                </div>
-            </article>
-
-            <article class="post-card">
-                <a href="post-morning-pages.html">
-                    <div class="post-card__img">
-                        <img src="images/pexels-n-voitkevich-10060448.jpg" alt="Morning Pages" loading="lazy">
-                    </div>
-                </a>
-                <div class="post-card__body">
-                    <div class="post-card__category">Mind</div>
-                    <h3 class="post-card__title"><a href="post-morning-pages.html">Morning Pages & Why They Rewired My Anxious Brain</a></h3>
-                    <p class="post-card__excerpt">Three pages. Every morning. No rules about content, no reader but yourself. Here's what quietly changes when you show up.</p>
-                    <div class="post-card__meta">May 9, 2026 · 8 min read</div>
-                </div>
-            </article>
-
-            <article class="post-card">
-                <a href="post-nyc-love.html">
-                    <div class="post-card__img">
-                        <img src="images/pexels-di-lai-567499892-19076822.jpg" alt="NYC Love Letter" loading="lazy">
-                    </div>
-                </a>
-                <div class="post-card__body">
-                    <div class="post-card__category">Mind</div>
-                    <h3 class="post-card__title"><a href="post-nyc-love.html">The City That Promised a Love Story — and Delivered Something Unexpected</a></h3>
-                    <p class="post-card__excerpt">New York sells you a cinematic love affair. The real one is far more honest, and somehow more beautiful.</p>
-                    <div class="post-card__meta">May 8, 2026 · 7 min read</div>
-                </div>
-            </article>
-
-            <article class="post-card">
-                <a href="post-burnout.html">
-                    <div class="post-card__img">
-                        <img src="images/pexels-cordero-17343820.jpg" alt="Burnout" loading="lazy">
-                    </div>
-                </a>
-                <div class="post-card__body">
-                    <div class="post-card__category">Mind</div>
-                    <h3 class="post-card__title"><a href="post-burnout.html">What If You're Not Lazy — You're Burned Out?</a></h3>
-                    <p class="post-card__excerpt">The exhaustion that sleep doesn't fix, and the name that might change everything.</p>
-                    <div class="post-card__meta">May 7, 2026 · 7 min read</div>
-                </div>
-            </article>
-
-        </div>
-    </div>
-
+    <div id="posts-output" data-category="mind" data-style="featured"></div>
 </div>
 
 <section class="newsletter">
@@ -399,5 +298,6 @@
     });
 })();
 </script>
+<script src="posts.js"></script>
 </body>
 </html>

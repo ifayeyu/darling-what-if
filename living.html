@@ -163,6 +163,7 @@
             <li><a href="about.html">About Me</a></li>
         </ul>
         <button class="nav__search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
 </nav>
 
@@ -182,63 +183,11 @@
         <p class="cat-hero__eyebrow">Category</p>
         <h1 class="cat-hero__title">Living</h1>
         <p class="cat-hero__desc">Home, space, travel, the aesthetics of everyday life — and how the environment you live in quietly shapes the person you're becoming.</p>
-        <span class="cat-hero__count">3 posts</span>
     </div>
 </section>
 
 <div class="container">
-    <div class="featured-wrap">
-        <p class="featured-label">Latest</p>
-        <a href="post-home-mental-health.html">
-            <div class="featured-post">
-                <div class="featured-post__img">
-                    <div class="placeholder"></div>
-                </div>
-                <div class="featured-post__body">
-                    <div class="featured-post__cat">Living</div>
-                    <h2 class="featured-post__title">How I Redesigned My Home to <em>Support My Mental Health</em></h2>
-                    <p class="featured-post__excerpt">Your space is in constant conversation with your nervous system. Here's what I changed — and what quietly shifted in me as a result.</p>
-                    <div class="featured-post__meta"><span>May 8, 2026</span><div class="meta-dot"></div><span>7 min read</span></div>
-                    <span class="read-btn">Read post →</span>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <div class="posts-wrap">
-        <p class="posts-wrap__label">All posts in Living</p>
-        <div class="posts-grid">
-
-            <article class="post-card">
-                <a href="post-maui.html">
-                    <div class="post-card__img">
-                        <div style="width:100%;height:100%;background:linear-gradient(135deg,#D4E8D8 0%,#A8CCA8 50%,#7AAA82 100%);"></div>
-                    </div>
-                </a>
-                <div class="post-card__body">
-                    <div class="post-card__category">Living</div>
-                    <h3 class="post-card__title"><a href="post-maui.html">Mahalo, Maui — A Love Letter to the Island That Changed Me</a></h3>
-                    <p class="post-card__excerpt">Raw, ancient, alive — and it sent me home a little different. Some places change you whether you're ready or not.</p>
-                    <div class="post-card__meta">May 8, 2026 · 9 min read</div>
-                </div>
-            </article>
-
-            <article class="post-card">
-                <a href="post-maui-valley-isle.html">
-                    <div class="post-card__img">
-                        <div style="width:100%;height:100%;background:linear-gradient(135deg,#D8E4EC 0%,#A8C0CC 50%,#7AA0B2 100%);"></div>
-                    </div>
-                </a>
-                <div class="post-card__body">
-                    <div class="post-card__category">Living</div>
-                    <h3 class="post-card__title"><a href="post-maui-valley-isle.html">Maui: The Valley Isle</a></h3>
-                    <p class="post-card__excerpt">Sun-drenched, glamorous, and entirely its own world. The other side of Maui that pulls you in and doesn't let go.</p>
-                    <div class="post-card__meta">May 8, 2026 · 8 min read</div>
-                </div>
-            </article>
-
-        </div>
-    </div>
+    <div id="posts-output" data-category="living" data-style="featured"></div>
 </div>
 
 <section class="newsletter">
@@ -290,5 +239,6 @@
     });
 })();
 </script>
+<script src="posts.js"></script>
 </body>
 </html>

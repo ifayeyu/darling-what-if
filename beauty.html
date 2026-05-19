@@ -8,8 +8,8 @@
     <meta name="description" content="Thoughtful beauty rituals, inner wellness practices, and the everyday habits that connect how you care for yourself to how you glow.">
     <meta property="og:title" content="Beauty | Darling, What If">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://darlingwhatif.com/wellness">
-    <link rel="canonical" href="https://darlingwhatif.com/wellness">
+    <meta property="og:url" content="https://darlingwhatif.com/beauty">
+    <link rel="canonical" href="https://darlingwhatif.com/beauty">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
@@ -167,6 +167,7 @@
             <li><a href="about.html">About Me</a></li>
         </ul>
         <button class="nav__search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
 </nav>
 
@@ -186,62 +187,11 @@
         <p class="cat-hero__eyebrow">Category</p>
         <h1 class="cat-hero__title">Beauty</h1>
         <p class="cat-hero__desc">Beauty from within. Thoughtful rituals, inner wellness, and everyday practices that support healthy skin, radiance, and grace.</p>
-        <span class="cat-hero__count">3 posts</span>
     </div>
 </section>
 
 <div class="container">
-
-    <!-- FEATURED POST -->
-    <div class="solo-wrap">
-        <p class="solo-label">Latest</p>
-        <a href="post-smile-white.html">
-            <div class="solo-post">
-                <div class="solo-post__img">
-                    <img src="images/smile-white-hero.jpg" alt="How I keep my teeth white without giving up coffee" loading="lazy">
-                </div>
-                <div class="solo-post__body">
-                    <div class="solo-post__cat">Beauty</div>
-                    <h2 class="solo-post__title">How I Keep My Teeth White <em>Without Giving Up Coffee</em></h2>
-                    <p class="solo-post__excerpt">I'm a caffeine fiend who's spent years experimenting with teeth whitening. Here are the natural DIY methods that actually worked — and one product I keep coming back to.</p>
-                    <div class="solo-post__meta"><span>May 12, 2026</span><div class="meta-dot"></div><span>5 min read</span></div>
-                    <span class="read-btn">Read post →</span>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <!-- MORE POSTS GRID -->
-    <div class="posts-section">
-        <p class="posts-section__label">More in Beauty</p>
-        <div class="posts-grid">
-
-            <a href="post-screen-skin.html" class="post-card">
-                <div class="post-card__img"><img src="images/bluelight_image1.jpg" alt="What Your Screen Is Quietly Doing to Your Skin" loading="lazy"></div>
-                <div class="post-card__body">
-                    <div class="post-card__cat">Beauty</div>
-                    <h3 class="post-card__title">What Your Screen Is Quietly Doing to Your Skin</h3>
-                    <p class="post-card__excerpt">You've heard about blue light. But the full picture of what prolonged screen time does to your skin — and what actually helps — is a conversation worth having quietly.</p>
-                    <div class="post-card__meta">May 12, 2026 &nbsp;·&nbsp; 6 min read</div>
-                </div>
-            </a>
-
-            <a href="post-banana-peel.html" class="post-card">
-                <div class="post-card__img">
-                    <img src="images/pexels-yulia-shapereva-s-58861876-7941294.jpg" alt="Banana peel skincare" loading="lazy">
-                </div>
-                <div class="post-card__body">
-                    <div class="post-card__cat">Beauty</div>
-                    <h3 class="post-card__title">The Part of the Banana You've Been Throwing Away</h3>
-                    <p class="post-card__excerpt">You eat the banana. You toss the peel. But dermatologists and skin-care devotees have quietly been using it for years — and the results are hard to dismiss.</p>
-                    <div class="post-card__meta">May 10, 2026 &nbsp;·&nbsp; 5 min read</div>
-                </div>
-            </a>
-
-
-        </div>
-    </div>
-
+    <div id="posts-output" data-category="beauty" data-style="solo"></div>
 </div>
 
 <section class="newsletter" id="newsletter">
@@ -293,5 +243,6 @@
     });
 })();
 </script>
+<script src="posts.js"></script>
 </body>
 </html>

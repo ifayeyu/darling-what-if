@@ -168,6 +168,7 @@
             <li><a href="about.html">About Me</a></li>
         </ul>
         <button class="nav__search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
 </nav>
 
@@ -187,60 +188,11 @@
         <p class="cat-hero__eyebrow">Category</p>
         <h1 class="cat-hero__title">Companion</h1>
         <p class="cat-hero__desc">On the relationships that don't need explaining. The animals who love us without condition, and what they teach us about presence, loyalty, and the kind of connection that fills something specific.</p>
-        <span class="cat-hero__count">3 posts</span>
     </div>
 </section>
 
 <div class="container">
-    <div class="solo-wrap">
-        <p class="solo-label">Featured</p>
-        <a href="post-companion-dogs.html">
-            <div class="solo-post">
-                <div class="solo-post__img">
-                    <img src="images/pexels-dmitriy-piskarev-8529355.jpg" alt="Dogs and mental health" loading="lazy">
-                </div>
-                <div class="solo-post__body">
-                    <div class="solo-post__cat">Companion</div>
-                    <h2 class="solo-post__title">What If Your Dog Is Your <em>Most Meaningful Relationship?</em></h2>
-                    <p class="solo-post__excerpt">They are simply, completely, always there. And science is beginning to confirm what dog owners have known their whole lives — that this bond does something real to our nervous systems, our loneliness, and our capacity to feel fully seen.</p>
-                    <div class="solo-post__meta"><span>May 8, 2026</span><div class="meta-dot"></div><span>7 min read</span></div>
-                    <span class="read-btn">Read post →</span>
-                </div>
-            </div>
-        </a>
-
-    </div>
-
-    <div class="posts-section">
-        <p class="posts-section__label">More in Companion</p>
-        <div class="posts-grid">
-
-            <a href="post-dog-routine.html" class="post-card">
-                <div class="post-card__img">
-                    <img src="images/dog walk.jpg" alt="Labrador walking on cobblestone path" loading="lazy">
-                </div>
-                <div class="post-card__body">
-                    <div class="post-card__cat">Companion</div>
-                    <h3 class="post-card__title">The Best Health Habit I Never Planned</h3>
-                    <p class="post-card__excerpt">I didn't set out to become someone with a daily routine. My Labrador had other ideas — and quietly built me a healthier life without me noticing until it was already mine.</p>
-                    <div class="post-card__meta">May 13, 2026 &nbsp;·&nbsp; 6 min read</div>
-                </div>
-            </a>
-
-            <a href="post-dog-love.html" class="post-card">
-                <div class="post-card__img">
-                    <img src="images/dog-love.jpg" alt="The kind of love only a dog gives you" loading="lazy">
-                </div>
-                <div class="post-card__body">
-                    <div class="post-card__cat">Companion</div>
-                    <h3 class="post-card__title">The Kind of Love Only a Dog Gives You</h3>
-                    <p class="post-card__excerpt">It isn't conditional. It doesn't depend on how you showed up today, whether you were productive or kind or put-together. It's just there — soft, warm, and completely certain of you.</p>
-                    <div class="post-card__meta">May 13, 2026 &nbsp;·&nbsp; 6 min read</div>
-                </div>
-            </a>
-
-        </div>
-    </div>
+    <div id="posts-output" data-category="companion" data-style="solo"></div>
 </div>
 
 <section class="newsletter">
@@ -292,5 +244,6 @@
     });
 })();
 </script>
+<script src="posts.js"></script>
 </body>
 </html>
