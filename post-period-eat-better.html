@@ -156,6 +156,22 @@
         .newsletter__btn:hover { background: var(--gold-dark); }
         .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); margin-top: 14px; }
 
+        /* TAGS */
+        .post-tags-section { max-width: 720px; margin: 0 auto; padding: 0 24px 64px; }
+        .post-tags-section__label { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px; display: block; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { display: inline-block; padding: 6px 16px; background: var(--gold-faint); color: var(--gold-dark); font-size: 0.68rem; letter-spacing: 0.07em; border-radius: 100px; transition: background 0.2s, color 0.2s; }
+        .tag:hover { background: var(--gold); color: var(--white); }
+        .tag--category { background: var(--gold); color: var(--white); }
+        .tag--category:hover { background: var(--gold-dark); }
+
+        /* AUTHOR BIO */
+        .author-bio { max-width: 720px; margin: 0 auto 64px; padding: 0 24px; }
+        .author-bio__inner { display: flex; align-items: flex-start; gap: 28px; padding: 36px 40px; background: var(--bg-warm); border-top: 2px solid var(--gold); }
+        .author-bio__avatar { width: 68px; height: 68px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+        .author-bio__info h4 { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 6px; }
+        .author-bio__info p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; }
+
         /* FOOTER */
         .footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0 32px; }
         .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 52px; margin-bottom: 64px; }
@@ -421,6 +437,40 @@
     </div>
 
 </main>
+
+
+<!-- TAGS -->
+<div class="post-tags-section">
+    <span class="post-tags-section__label">Filed under</span>
+    <div class="tags">
+        <a href="nourish.html" class="tag tag--category">Nourish</a>
+        <a href="#" class="tag">Period Health</a>
+        <a href="#" class="tag">Menstrual Nutrition</a>
+        <a href="#" class="tag">Hormone Balance</a>
+        <a href="#" class="tag">Period Cramps</a>
+        <a href="#" class="tag">Women's Wellness</a>
+        <a href="#" class="tag">Anti-Inflammatory Foods</a>
+        <a href="#" class="tag">Cycle Syncing</a>
+        <a href="#" class="tag">Iron-Rich Foods</a>
+    </div>
+</div>
+
+
+<!-- AUTHOR BIO -->
+<div class="author-bio">
+    <div class="author-bio__inner">
+        <div class="author-bio__avatar"><img src="images/Gia.png" alt="Gia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;"></div>
+        <div class="author-bio__info">
+            <h4>Written by Gia</h4>
+            <p>
+                Lifestyle blogger and creative at heart. I believe deeply that beauty is healing
+                and softness is a form of power. "Darling, what if" is my ongoing love letter to
+                the life I'm choosing — one small and intentional moment at a time.
+            </p>
+        </div>
+    </div>
+</div>
+
 
 <section class="related">
     <div class="related__inner">
