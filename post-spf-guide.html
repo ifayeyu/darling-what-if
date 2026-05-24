@@ -25,7 +25,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=optional" rel="stylesheet">
 
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -575,39 +575,6 @@
         </div>
     </div>
 </section>
-
-<section class="newsletter">
-    <div class="newsletter__inner">
-        <p class="newsletter__eyebrow">Letters from Gia</p>
-        <h2 class="newsletter__title">What if your inbox felt like a warm cup of tea?</h2>
-        <p class="newsletter__sub">Slow reads, honest thoughts, and the kind of wellness that doesn't ask you to optimise anything.</p>
-        <form class="newsletter__form" onsubmit="handleSignup(event)">
-            <input type="email" class="newsletter__input" placeholder="your@email.com" required>
-            <button type="submit" class="newsletter__btn">Yes, I'm in</button>
-        </form>
-        <p class="newsletter__note">No noise. Unsubscribe anytime.</p>
-    </div>
-</section>
-
-<script>
-function handleSignup(e) {
-    e.preventDefault();
-    const input = e.target.querySelector('.newsletter__input');
-    const btn = e.target.querySelector('.newsletter__btn');
-    btn.textContent = 'You\'re in ✦';
-    btn.style.background = 'var(--gold-dark)';
-    input.value = '';
-    input.disabled = true;
-    btn.disabled = true;
-}
-function toggleFaq(btn) {
-    const item = btn.closest('.faq-item');
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-    btn.setAttribute('aria-expanded', !isOpen);
-}
-</script>
 
 <footer class="footer">
     <div style="max-width:1240px;margin:0 auto;padding:0 48px;">
