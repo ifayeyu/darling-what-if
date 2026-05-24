@@ -1,5 +1,23 @@
 [
   {
+    "slug": "post-sugar-cravings",
+    "title": "Your Sugar Cravings Are Not a Character Flaw",
+    "excerpt": "Sugar cravings are your body's intelligent signals — for blood sugar balance, hydration, missing minerals, or hormonal support. Here's how to actually listen.",
+    "date": "2026-05-24",
+    "category": "nourish",
+    "image": "images/Sugar_craving_hero.jpg",
+    "readTime": 7
+  },
+  {
+    "slug": "post-90-30-50",
+    "title": "The 90-30-50 Method Keeps Showing Up on My Feed. Here's What Nutritionists Actually Say",
+    "excerpt": "TikTok's viral 90-30-50 method promises weight loss without calorie counting. Here's what dietitians say — plus a full-day whole-foods meal plan.",
+    "date": "2026-05-24",
+    "category": "nourish",
+    "image": "images/903050post_hero.jpg",
+    "readTime": 8
+  },
+  {
     "slug": "post-spf-guide",
     "title": "Your Future Skin Is Being Written Right Now",
     "excerpt": "Up to 90% of visible skin aging comes from UV damage — and most of us are skipping the one step that prevents it. Here's how to make SPF the part of your routine you actually love.",
