@@ -55,6 +55,17 @@
         .form-row textarea { min-height: 140px; resize: vertical; }
         .btn { display: inline-block; background: var(--gold); color: var(--white); font-family: var(--sans); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 16px 36px; border: none; cursor: pointer; transition: background 0.2s; }
         .btn:hover { background: var(--gold-dark); }
+        .newsletter { background: var(--text); padding: 104px 0; }
+        .newsletter__inner { max-width: 640px; margin: 0 auto; padding: 0 48px; text-align: center; }
+        .newsletter__eyebrow { font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 18px; }
+        .newsletter__title { font-family: var(--serif); font-size: 2rem; font-weight: 400; font-style: italic; color: #F5F1EB; line-height: 1.3; margin-bottom: 14px; }
+        .newsletter__sub { font-size: 0.9rem; color: rgba(245,241,235,0.55); line-height: 1.75; margin-bottom: 36px; }
+        .newsletter__form { display: flex; border: 1px solid rgba(255,255,255,0.14); }
+        .newsletter__input { flex: 1; background: transparent; border: none; padding: 16px 20px; font-family: var(--sans); font-size: 0.87rem; color: #F5F1EB; outline: none; }
+        .newsletter__input::placeholder { color: rgba(245,241,235,0.3); }
+        .newsletter__btn { padding: 17px 28px; background: var(--gold); color: #fff; border: none; font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: nowrap; transition: background 0.25s; }
+        .newsletter__btn:hover { background: var(--gold-dark); }
+        .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); margin-top: 14px; }
         .newsletter-box { background: var(--bg-warm); border: 1px solid var(--border); border-radius: 4px; padding: 64px 48px; text-align: center; margin-top: 40px; }
         .newsletter-box h2 { font-family: var(--serif); font-size: 2rem; font-weight: 500; margin-bottom: 12px; }
         .newsletter-box p { color: var(--text-muted); font-size: 0.97rem; margin-bottom: 32px; }
@@ -197,6 +208,32 @@
     <p>To inquire about working together, please send a note to <a href="mailto:hello@darlingwhatif.com">hello@darlingwhatif.com</a> with a brief introduction to your brand and what you have in mind. I respond to all inquiries personally.</p>
     <p>Please review our <a href="disclosure.html">Disclosure & Disclaimer</a> before reaching out — all partnerships are disclosed openly to my readers.</p>
 </div>
+
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <p class="newsletter__eyebrow">Letters from the blog</p>
+        <h2 class="newsletter__title">Stay close, darling.</h2>
+        <p class="newsletter__sub">Slow reads, honest thoughts, and the kind of wellness that doesn't ask you to optimize anything. In your inbox, softly.</p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" id="collab-newsletter-email">
+            <button type="submit" class="newsletter__btn" onclick="handleSignup(this, 'collab-newsletter-email')">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No noise. Unsubscribe anytime.</p>
+    </div>
+</section>
+
+<script>
+function handleSignup(btn, inputId) {
+    const input = document.getElementById(inputId);
+    if (input && input.value && input.value.includes('@')) {
+        btn.textContent = "You're in ✦";
+        btn.style.background = 'var(--gold-dark)';
+        btn.disabled = true;
+        input.disabled = true;
+    }
+}
+</script>
+
 <footer class="footer">
     <div class="container">
         <div class="footer__grid">
