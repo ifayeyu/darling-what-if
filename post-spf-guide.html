@@ -231,6 +231,58 @@
 
         @media (max-width: 900px) { .nav__links { display: none; } .related-grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
         @media (max-width: 680px) { .nav__inner { padding-left: 24px; padding-right: 24px; } .container { padding-left: 24px; padding-right: 24px; } .post-content { padding: 0 20px 64px; } .post-img { margin-left: -20px; margin-right: -20px; } .pull-quote { margin-left: -20px; margin-right: -20px; padding: 40px 28px 40px 36px; } .pull-quote::before { left: 28px; } .product-recs { grid-template-columns: 1fr; } .spf-tip { grid-template-columns: 44px 1fr; } .related-grid { grid-template-columns: 1fr; } .newsletter__form { flex-direction: column; } .newsletter__input { border-right: 1px solid rgba(255,255,255,0.14); border-bottom: none; } .footer__grid { grid-template-columns: 1fr; } .criteria-box { padding: 32px 24px; } .author-bio__inner { flex-direction: column; } }
+
+        .nav__hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            margin-left: 10px;
+        }
+        .nav__hamburger span {
+            display: block;
+            width: 22px;
+            height: 1.5px;
+            background: var(--text);
+            transition: all 0.25s ease;
+            transform-origin: center;
+        }
+        .nav__hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .nav__hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+        .nav__hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 76px;
+            left: 0;
+            right: 0;
+            background: rgba(250, 250, 247, 0.98);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            z-index: 199;
+            padding: 8px 0 24px;
+        }
+        .mobile-nav.open { display: block; }
+        .mobile-nav__links { list-style: none; }
+        .mobile-nav__links li { border-bottom: 1px solid var(--border); }
+        .mobile-nav__links li:first-child { border-top: 1px solid var(--border); }
+        .mobile-nav__links a {
+            display: block;
+            padding: 17px 28px;
+            font-size: 0.72rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            transition: color 0.2s ease, background 0.2s ease;
+        }
+        .mobile-nav__links a:hover { color: var(--gold); background: var(--gold-faint); }
+        @media (max-width: 900px) { .nav__hamburger { display: flex; } }
     </style>
 
     <script type="application/ld+json">
@@ -260,11 +312,27 @@
             <li><a href="companion.html">Companion</a></li>
             <li><a href="about.html">About Me</a></li>
         </ul>
-        <button class="nav__search" aria-label="Search">
+                <div class="nav__right">
+            <button class="nav__search" aria-label="Search">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </button>
+            <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </div>
 </nav>
+
+<div class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <ul class="mobile-nav__links">
+        <li><a href="beauty.html">Beauty</a></li>
+        <li><a href="mind.html">Mind</a></li>
+        <li><a href="nourish.html">Nourish</a></li>
+        <li><a href="living.html">Living</a></li>
+        <li><a href="companion.html">Companion</a></li>
+        <li><a href="about.html">About Me</a></li>
+    </ul>
+</div>
 
 <header class="post-hero" role="banner">
     <div class="post-hero__img"></div>
@@ -614,5 +682,24 @@
     </div>
 </footer>
 
+<script>
+    (function(){
+        var btn=document.getElementById('hamburger');
+        var menu=document.getElementById('mobile-nav');
+        if(!btn||!menu)return;
+        btn.addEventListener('click',function(){
+            var open=menu.classList.toggle('open');
+            btn.classList.toggle('open',open);
+            btn.setAttribute('aria-expanded',open?'true':'false');
+        });
+        menu.querySelectorAll('a').forEach(function(a){
+            a.addEventListener('click',function(){
+                menu.classList.remove('open');
+                btn.classList.remove('open');
+                btn.setAttribute('aria-expanded','false');
+            });
+        });
+    })();
+    </script>
 </body>
 </html>
