@@ -33,7 +33,8 @@
         .nav__links a { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
         .nav__links a:hover { color: var(--gold); }
         .nav__links a.active { color: var(--gold); font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
-        .nav__search { background: none; border: none; cursor: pointer; color: var(--text-muted); padding: 4px; }
+        .nav__search { background: none; border: none; cursor: pointer; color: var(--text-muted); padding: 4px; display: flex; align-items: center; transition: color 0.2s ease; }
+        .nav__right { display: flex; align-items: center; gap: 20px; }
         .cat-hero { background: linear-gradient(150deg, #EBE6DC 0%, #DDD5C5 40%, #CFCAB8 100%); padding: 80px 48px 72px; }
         .cat-hero__inner { max-width: var(--content-w); margin: 0 auto; }
         .cat-hero__eyebrow { font-size: 0.63rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
@@ -168,8 +169,10 @@
             <li><a href="companion.html">Companion</a></li>
             <li><a href="about.html">About Me</a></li>
         </ul>
-        <button class="nav__search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
-        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav__right">
+            <button class="nav__search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+            <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
     </div>
 </nav>
 
