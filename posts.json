@@ -1,5 +1,32 @@
 [
   {
+    "slug": "post-emotional-safety",
+    "title": "The Love Language Nobody Talks About: Feeling Emotionally Safe",
+    "excerpt": "Emotional safety is the foundation every other love language depends on. Without it, even the most beautiful expressions of love simply cannot reach you.",
+    "date": "2026-05-30",
+    "category": "love",
+    "image": "images/post-emotional-safety-hero.jpg",
+    "readTime": 6
+  },
+  {
+    "slug": "post-quiet-love",
+    "title": "The Quiet Ways People Show You They Love You",
+    "excerpt": "Real love rarely announces itself. It lives in the coffee order remembered, the exhaustion noticed before you say a word, the steadiness on your worst days.",
+    "date": "2026-05-27",
+    "category": "love",
+    "image": "images/post-quiet-love-hero.jpg",
+    "readTime": 6
+  },
+  {
+    "slug": "post-love-left",
+    "title": "What to Do With All the Love You Still Have Left",
+    "excerpt": "When you lose a partner, the love doesn't leave with them. It stays — warm, real, and looking for somewhere to go. Here's how to honor it.",
+    "date": "2026-05-27",
+    "category": "love",
+    "image": "images/post-love-left-hero.jpg",
+    "readTime": 7
+  },
+  {
     "slug": "post-sugar-cravings",
     "title": "Your Sugar Cravings Are Not a Character Flaw",
     "excerpt": "Sugar cravings are your body's intelligent signals — for blood sugar balance, hydration, missing minerals, or hormonal support. Here's how to actually listen.",

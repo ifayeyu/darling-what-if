@@ -10,21 +10,32 @@
     <link rel="icon" type="image/png" sizes="192x192" href="images/Darling_Favicon_192x192.png">
     <meta name="google-site-verification" content="wkk6U2OqpK3aWR9FP4pI-9kBfzM9YsWkX28b5xr4FvQ" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Companion — Animals, Connection & Love | Darling, What If</title>
-    <meta name="description" content="On the relationships that don't need explaining. The animals who love us without condition, and what they teach us about presence and connection.">
-    <meta property="og:title" content="Companion | Darling, What If">
+    <title>Love — Relationships & Emotional Intimacy | Darling, What If</title>
+    <meta name="description" content="On love languages, emotional safety, and the quiet work of loving well. Introspective, honest, and never prescriptive — this is love as inner work.">
+    <meta property="og:title" content="Love | Darling, What If">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://darlingwhatif.com/companion">
-    <link rel="canonical" href="https://darlingwhatif.com/companion">
+    <meta property="og:url" content="https://darlingwhatif.com/love">
+    <link rel="canonical" href="https://darlingwhatif.com/love">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=optional" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root { --gold: #9B8968; --gold-dark: #7A6B50; --gold-mid: #B09E80; --gold-light: #C4B49A; --gold-faint: #F2EDE5; --bg: #FAFAF7; --bg-warm: #F5F1EB; --text: #1D1B19; --text-muted: #6B6462; --border: #EAE5DF; --white: #FFFFFF; --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif; --content-w: 1240px; }
+        :root {
+            --gold: #9B8968; --gold-dark: #7A6B50; --gold-mid: #B09E80;
+            --gold-light: #C4B49A; --gold-faint: #F2EDE5;
+            --bg: #FAFAF7; --bg-warm: #F5F1EB; --text: #1D1B19;
+            --text-muted: #6B6462; --border: #EAE5DF; --white: #FFFFFF;
+            --serif: 'Playfair Display', Georgia, serif;
+            --sans: 'DM Sans', system-ui, sans-serif;
+            --content-w: 1240px;
+        }
         html { font-size: 16px; scroll-behavior: smooth; }
         body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; font-weight: 300; -webkit-font-smoothing: antialiased; }
-        a { text-decoration: none; color: inherit; } ul { list-style: none; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* NAV */
         .nav { position: sticky; top: 0; z-index: 200; background: rgba(250,250,247,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); height: 76px; display: flex; align-items: center; }
         .nav__inner { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
         .nav__logo { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: var(--text); letter-spacing: -0.01em; white-space: nowrap; }
@@ -35,48 +46,55 @@
         .nav__links a.active { color: var(--gold); font-weight: 500; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
         .nav__search { background: none; border: none; cursor: pointer; color: var(--text-muted); padding: 4px; display: flex; align-items: center; transition: color 0.2s ease; }
         .nav__right { display: flex; align-items: center; gap: 20px; }
-        .cat-hero { background: linear-gradient(150deg, #EDE7DF 0%, #E2D8CC 40%, #D4C8B8 100%); padding: 80px 48px 72px; }
+        .nav__search:hover { color: var(--gold); }
+
+        /* CATEGORY HERO */
+        .cat-hero { background: linear-gradient(150deg, #EDE0D4 0%, #E0CCC0 40%, #D0B8AA 100%); padding: 80px 48px 72px; }
         .cat-hero__inner { max-width: var(--content-w); margin: 0 auto; }
         .cat-hero__eyebrow { font-size: 0.63rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
         .cat-hero__title { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); font-weight: 400; font-style: italic; color: var(--text); line-height: 1.05; margin-bottom: 20px; }
         .cat-hero__desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; max-width: 560px; margin-bottom: 28px; }
         .cat-hero__count { display: inline-block; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--white); color: var(--text-muted); padding: 8px 18px; border: 1px solid var(--border); }
+
+        /* CONTAINER */
         .container { max-width: var(--content-w); margin: 0 auto; padding: 0 48px; }
 
-        /* SOLO FEATURED — full width, tall */
-        .solo-wrap { padding: 72px 0 88px; }
-        .solo-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
-        .solo-post { display: grid; grid-template-columns: 3fr 2fr; border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.3s; }
-        .solo-post:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
-        .solo-post__img { aspect-ratio: 4/3; overflow: hidden; background: var(--bg-warm); }
-        .solo-post__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
-        .solo-post:hover .solo-post__img img { transform: scale(1.03); }
-        .solo-post__body { padding: 60px 52px; display: flex; flex-direction: column; justify-content: center; background: var(--white); }
-        .solo-post__cat { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
-        .solo-post__title { font-family: var(--serif); font-size: 2rem; font-weight: 500; line-height: 1.25; color: var(--text); margin-bottom: 20px; }
-        .solo-post__title em { font-style: italic; color: var(--gold-dark); }
-        .solo-post__excerpt { font-size: 0.97rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 32px; }
-        .solo-post__meta { font-size: 0.74rem; color: var(--text-muted); margin-bottom: 32px; display: flex; gap: 12px; align-items: center; }
+        /* FEATURED POST */
+        .featured-wrap { padding: 72px 0 0; }
+        .featured-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+        .featured-post { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.3s; }
+        .featured-post:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+        .featured-post__img { aspect-ratio: 4/3; overflow: hidden; background: var(--bg-warm); }
+        .featured-post__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+        .featured-post:hover .featured-post__img img { transform: scale(1.03); }
+        .featured-post__body { padding: 52px 48px; display: flex; flex-direction: column; justify-content: center; background: var(--white); }
+        .featured-post__cat { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+        .featured-post__title { font-family: var(--serif); font-size: 1.85rem; font-weight: 500; line-height: 1.25; color: var(--text); margin-bottom: 18px; }
+        .featured-post__title em { font-style: italic; color: var(--gold-dark); }
+        .featured-post__excerpt { font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; }
+        .featured-post__meta { font-size: 0.74rem; color: var(--text-muted); margin-bottom: 28px; display: flex; gap: 12px; align-items: center; }
         .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border); }
         .read-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--gold-faint); padding-bottom: 2px; transition: border-color 0.2s; align-self: flex-start; }
         .read-btn:hover { border-color: var(--gold); }
 
-        /* POST GRID */
-        .posts-section { padding: 0 0 88px; }
-        .posts-section__label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 32px; }
-        .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .post-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.3s; display: flex; flex-direction: column; }
-        .post-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); }
+        /* POSTS GRID */
+        .posts-wrap { padding: 52px 0 88px; }
+        .posts-wrap__label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+        .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .post-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; }
+        .post-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.07); }
         .post-card__img { aspect-ratio: 16/9; overflow: hidden; background: var(--bg-warm); }
-        .post-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+        .post-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.45s; }
         .post-card:hover .post-card__img img { transform: scale(1.04); }
-        .post-card__img.ph-honey { background: linear-gradient(145deg, #EAD8BB 0%, #CBA87C 100%); }
-        .post-card__body { padding: 28px 28px 32px; display: flex; flex-direction: column; flex: 1; }
-        .post-card__cat { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
-        .post-card__title { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; line-height: 1.35; color: var(--text); margin-bottom: 12px; }
-        .post-card__excerpt { font-size: 0.87rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px; flex: 1; }
+        .post-card__body { padding: 24px; }
+        .post-card__category { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+        .post-card__title { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; line-height: 1.4; color: var(--text); margin-bottom: 12px; }
+        .post-card__title a { color: inherit; transition: color 0.2s; }
+        .post-card__title a:hover { color: var(--gold); }
+        .post-card__excerpt { font-size: 0.83rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 18px; }
         .post-card__meta { font-size: 0.72rem; color: var(--text-muted); }
 
+        /* NEWSLETTER */
         .newsletter { background: #2A2520; padding: 80px 0; }
         .newsletter__inner { max-width: 640px; margin: 0 auto; padding: 0 48px; text-align: center; }
         .newsletter__eyebrow { font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 18px; }
@@ -88,6 +106,8 @@
         .newsletter__btn { padding: 17px 28px; background: var(--gold); color: var(--white); border: none; font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: nowrap; transition: background 0.25s; }
         .newsletter__btn:hover { background: var(--gold-dark); }
         .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); margin-top: 14px; }
+
+        /* FOOTER */
         .footer { background: var(--bg-warm); border-top: 1px solid var(--border); padding: 72px 0 32px; }
         .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 52px; margin-bottom: 64px; }
         .footer__logo { font-family: var(--serif); font-size: 1.45rem; font-style: italic; color: var(--text); margin-bottom: 16px; }
@@ -101,65 +121,38 @@
         .footer__col a { font-size: 0.87rem; color: var(--text-muted); transition: color 0.2s; }
         .footer__col a:hover { color: var(--gold); }
         .footer__bottom { border-top: 1px solid var(--border); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: var(--text-muted); }
-        @media (max-width: 900px) { .nav__links { display: none; } .solo-post { grid-template-columns: 1fr; } .solo-post__img { aspect-ratio: 16/9; } .posts-grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
-        @media (max-width: 680px) { .nav__inner, .container, .cat-hero { padding-left: 24px; padding-right: 24px; } .solo-post__body { padding: 32px 24px; } .posts-grid { grid-template-columns: 1fr; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } }
-    
-        /* ============================================================
-           MOBILE NAVIGATION DRAWER
-        ============================================================ */
-        .nav__hamburger {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            gap: 5px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            margin-left: 10px;
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .nav__links { display: none; }
+            .featured-post { grid-template-columns: 1fr; }
+            .featured-post__img { aspect-ratio: 16/9; }
+            .posts-grid { grid-template-columns: 1fr 1fr; }
+            .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; }
         }
-        .nav__hamburger span {
-            display: block;
-            width: 22px;
-            height: 1.5px;
-            background: var(--text);
-            transition: all 0.25s ease;
-            transform-origin: center;
+        @media (max-width: 680px) {
+            .nav__inner, .container, .cat-hero { padding-left: 24px; padding-right: 24px; }
+            .posts-grid { grid-template-columns: 1fr; }
+            .featured-post__body { padding: 32px 24px; }
+            .newsletter__form { flex-direction: column; }
+            .footer__grid { grid-template-columns: 1fr; }
         }
+
+        /* MOBILE NAVIGATION DRAWER */
+        .nav__hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; margin-left: 10px; }
+        .nav__hamburger span { display: block; width: 22px; height: 1.5px; background: var(--text); transition: all 0.25s ease; transform-origin: center; }
         .nav__hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
         .nav__hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
         .nav__hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-        .mobile-nav {
-            display: none;
-            position: fixed;
-            top: 76px;
-            left: 0;
-            right: 0;
-            background: rgba(250, 250, 247, 0.98);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--border);
-            z-index: 199;
-            padding: 8px 0 24px;
-        }
+        .mobile-nav { display: none; position: fixed; top: 76px; left: 0; right: 0; background: rgba(250,250,247,0.98); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 199; padding: 8px 0 24px; }
         .mobile-nav.open { display: block; }
         .mobile-nav__links { list-style: none; }
         .mobile-nav__links li { border-bottom: 1px solid var(--border); }
         .mobile-nav__links li:first-child { border-top: 1px solid var(--border); }
-        .mobile-nav__links a {
-            display: block;
-            padding: 17px 28px;
-            font-size: 0.72rem;
-            font-weight: 400;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            transition: color 0.2s ease, background 0.2s ease;
-        }
+        .mobile-nav__links a { display: block; padding: 17px 28px; font-size: 0.72rem; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s ease, background 0.2s ease; }
         .mobile-nav__links a:hover { color: var(--gold); background: var(--gold-faint); }
         @media (max-width: 900px) { .nav__hamburger { display: flex; } }
-
-        </style>
+    </style>
 </head>
 <body>
 
@@ -171,12 +164,14 @@
             <li><a href="mind.html">Mind</a></li>
             <li><a href="nourish.html">Nourish</a></li>
             <li><a href="living.html">Living</a></li>
-            <li><a href="love.html">Love</a></li>
-            <li><a href="companion.html" class="active">Companion</a></li>
+            <li><a href="love.html" class="active">Love</a></li>
+            <li><a href="companion.html">Companion</a></li>
             <li><a href="about.html">About Me</a></li>
         </ul>
         <div class="nav__right">
-            <button class="nav__search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+            <button class="nav__search" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </button>
             <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
     </div>
@@ -197,43 +192,55 @@
 <section class="cat-hero">
     <div class="cat-hero__inner">
         <p class="cat-hero__eyebrow">Category</p>
-        <h1 class="cat-hero__title">Companion</h1>
-        <p class="cat-hero__desc">On the relationships that don't need explaining. The animals who love us without condition, and what they teach us about presence, loyalty, and the kind of connection that fills something specific.</p>
+        <h1 class="cat-hero__title">Love</h1>
+        <p class="cat-hero__desc">On love languages, emotional safety, and the quiet work of loving well. Not dating tips — something deeper. This is love as inner work, explored with curiosity and honesty.</p>
     </div>
 </section>
 
-<!-- ── CANADA PET CARE AFFILIATE BANNER ──────────────────────────────── -->
-<div style="background:var(--bg-warm);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:36px 48px;">
-  <div style="max-width:var(--content-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
-    <div>
-      <p style="font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Pet wellness</p>
-      <p style="font-family:var(--serif);font-size:1.35rem;font-weight:500;font-style:italic;color:var(--text);line-height:1.3;margin-bottom:6px;">Your trusted online vet pharmacy.</p>
-      <p style="font-size:0.87rem;color:var(--text-muted);line-height:1.7;max-width:480px;">Canada Pet Care offers prescription and over-the-counter pet medications at a fraction of the cost — flea, tick, heartworm, and more, delivered to your door.</p>
-    </div>
-    <div style="flex-shrink:0;text-align:center;">
-      <a href="https://www.dpbolvw.net/click-101758671-11745449" target="_blank" rel="noopener sponsored"
-         style="display:inline-block;background:var(--gold);color:var(--white);padding:14px 28px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;white-space:nowrap;">
-        Shop Pet Care →
-      </a>
-      <p style="font-size:0.68rem;color:var(--text-muted);margin-top:8px;letter-spacing:0.05em;">Flea · Tick · Heartworm · Rx Meds</p>
-    </div>
-  </div>
-</div>
-<img src="https://www.tqlkg.com/image-101758671-11745449" width="1" height="1" border="0" alt="" style="display:none;" />
-<!-- ── END CANADA PET CARE ────────────────────────────────────────────── -->
-
 <div class="container">
-    <div id="posts-output" data-category="companion" data-style="solo"></div>
+    <div id="posts-output" data-category="love" data-style="featured"></div>
 </div>
+
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <p class="newsletter__eyebrow">Letters from Gia</p>
+        <h2 class="newsletter__title">What if your inbox felt like a love letter?</h2>
+        <p class="newsletter__sub">Gentle reflections on love, life, and the quiet moments worth noticing — delivered softly, never more than once a week.</p>
+        <form class="newsletter__form" onsubmit="return false;">
+            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address">
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No noise. Unsubscribe anytime.</p>
+    </div>
+</section>
 
 <footer class="footer">
     <div class="container">
         <div class="footer__grid">
-            <div><div class="footer__logo">darling, <em>what if</em></div><p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p><div class="footer__social"><a href="https://www.instagram.com/darling_whatif/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">ig</a><a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">pt</a><a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener">tk</a></div></div>
-            <div class="footer__col"><h5>Explore</h5><ul><li><a href="beauty.html">Beauty</a></li><li><a href="mind.html">Mind</a></li><li><a href="nourish.html">Nourish</a></li><li><a href="living.html">Living</a></li><li><a href="love.html">Love</a></li>
-            <li><a href="companion.html">Companion</a></li></ul></div>
-            <div class="footer__col"><h5>Recent</h5><ul><li><a href="post-companion-dogs.html">Dogs & Connection</a></li><li><a href="post-morning-pages.html">Morning Pages</a></li><li><a href="post-burnout.html">On Burnout</a></li><li><a href="post-hair-foods.html">Foods for Hair</a></li></ul></div>
-                                                <div class="footer__col">
+            <div>
+                <div class="footer__logo">darling, <em>what if</em></div>
+                <p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+                    <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">pt</a>
+                    <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener">tk</a>
+                </div>
+            </div>
+            <div class="footer__col"><h5>Explore</h5><ul>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="mind.html">Mind</a></li>
+                <li><a href="nourish.html">Nourish</a></li>
+                <li><a href="living.html">Living</a></li>
+                <li><a href="love.html">Love</a></li>
+                <li><a href="companion.html">Companion</a></li>
+            </ul></div>
+            <div class="footer__col"><h5>Recent</h5><ul>
+                <li><a href="post-emotional-safety.html">Emotional Safety</a></li>
+                <li><a href="post-quiet-love.html">Quiet Ways of Love</a></li>
+                <li><a href="post-love-left.html">Love You Have Left</a></li>
+                <li><a href="post-softness.html">Softness as Strength</a></li>
+            </ul></div>
+            <div class="footer__col">
                 <h5>Info</h5>
                 <ul>
                     <li><a href="contact.html">Contact</a></li>
@@ -247,6 +254,7 @@
         <div class="footer__bottom"><span>© 2026 Darling, What If. All rights reserved.</span><span>Made with intention.</span></div>
     </div>
 </footer>
+
 <script>
 (function(){
     var btn=document.getElementById('hamburger');
