@@ -164,7 +164,7 @@
         .hero__bg {
             position: absolute;
             inset: 0;
-            background: url('images/903050post_hero.jpg') center/cover no-repeat;
+            background: url('images/Quiet_love_hero.jpg') center/cover no-repeat;
         }
 
         /* Subtle texture overlay */
@@ -1057,16 +1057,15 @@
 <section class="hero" aria-label="Featured story">
     <div class="hero__bg"></div>
     <div class="hero__content">
-        <span class="hero__tag">Featured Story &nbsp;·&nbsp; Nourish</span>
+        <span class="hero__tag">Featured Story &nbsp;·&nbsp; Love</span>
         <h1 class="hero__title">
-            The 90-30-50 Method Keeps Showing Up <em>on My Feed</em>
+            The Quiet Ways People Show You <em>They Love You</em>
         </h1>
         <p class="hero__excerpt">
-            TikTok's viral macro method promises weight loss without calorie counting.
-            Here's what nutritionists actually say — and a full-day whole-foods meal plan
-            to show you exactly how it eats.
+            Real love rarely announces itself. It lives in the coffee order remembered,
+            the exhaustion noticed before you say a word, the steadiness on your worst days.
         </p>
-        <a href="post-90-30-50.html" class="hero__cta">
+        <a href="post-quiet-love.html" class="hero__cta">
             Read the post
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14m-7-7 7 7-7 7"/>
@@ -1116,32 +1115,32 @@
 
         <div class="featured__grid">
             <div class="featured__img-wrap">
-                <img class="featured__img" src="images/SPF-sun-hero.jpg" alt="Sun protection guide" style="width:100%;height:100%;object-fit:cover;display:block;">
+                <img class="featured__img" src="images/903050post_hero.jpg" alt="90-30-50 method" style="width:100%;height:100%;object-fit:cover;display:block;">
             </div>
 
             <div class="featured__content">
-                <a href="beauty.html" class="category-label">Beauty</a>
+                <a href="nourish.html" class="category-label">Nourish</a>
                 <h2 class="featured__title">
-                    Your Future Skin Is Being Written <em>Right Now</em>
+                    The 90-30-50 Method Keeps Showing Up <em>on My Feed</em>
                 </h2>
                 <div class="post-byline">
-                    <span>May 21, 2026</span>
+                    <span>May 24, 2026</span>
                     <div class="byline-dot"></div>
                     <span>By Gia</span>
                     <div class="byline-dot"></div>
-                    <span>7 min read</span>
+                    <span>8 min read</span>
                 </div>
                 <p class="featured__excerpt">
-                    Up to 90% of visible skin aging comes from UV damage — and most of us
-                    are skipping the one step that prevents it. Here's how to make SPF
-                    the part of your routine you actually love.
+                    TikTok's viral macro method promises weight loss without calorie counting.
+                    Here's what nutritionists actually say — and a full-day whole-foods meal plan
+                    to show you exactly how it eats.
                 </p>
                 <div class="tags">
-                    <a href="#" class="tag">SPF</a>
-                    <a href="#" class="tag">sun protection</a>
-                    <a href="#" class="tag">daily skincare</a>
+                    <a href="#" class="tag">90-30-50</a>
+                    <a href="#" class="tag">macros</a>
+                    <a href="#" class="tag">nutrition</a>
                 </div>
-                <a href="post-spf-guide.html" class="read-more">
+                <a href="post-90-30-50.html" class="read-more">
                     Read full story
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14m-7-7 7 7-7 7"/>
@@ -1429,10 +1428,12 @@
         var post = all.find(function (p) { return p.category === cat; });
         if (post) picks.push(post);
       });
-      // 2 latest from Mind
+      // 1 latest from Mind
       var mindPosts = all.filter(function (p) { return p.category === 'mind'; });
       if (mindPosts[0]) picks.push(mindPosts[0]);
-      if (mindPosts[1]) picks.push(mindPosts[1]);
+      // 6th card: Quiet Love (pinned)
+      var quietLove = all.find(function (p) { return p.slug === 'post-quiet-love'; });
+      if (quietLove) picks.push(quietLove);
       grid.innerHTML = picks.map(function (p) {
         return '<article class="post-card">' +
           '<div class="post-card__img-wrap">' +
