@@ -1,5 +1,23 @@
 [
   {
+    "slug": "post-beauty-premium",
+    "title": "The Beauty Premium: What Nobody Tells You About Makeup and Money",
+    "excerpt": "Studies show women who wear professional makeup earn 20-30% more. It's not fair — but it's real. Here's what the research actually says, and what to do with it.",
+    "date": "2026-06-02",
+    "category": "beauty",
+    "image": "images/SPF-sun-hero.jpg",
+    "readTime": 8
+  },
+  {
+    "slug": "post-dog-sad",
+    "title": "Why My Dog Knows When I'm Sad Before I Do",
+    "excerpt": "Before I've said a word, before I've even admitted it to myself — he already knows. The quiet science behind why dogs read our emotions better than we do.",
+    "date": "2026-06-02",
+    "category": "companion",
+    "image": "images/cold winter dog.jpg",
+    "readTime": 7
+  },
+  {
     "slug": "post-emotional-safety",
     "title": "The Love Language Nobody Talks About: Feeling Emotionally Safe",
     "excerpt": "Emotional safety is the foundation every other love language depends on. Without it, even the most beautiful expressions of love simply cannot reach you.",
