@@ -1423,17 +1423,11 @@
     .then(function (all) {
       all.sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
       var picks = [];
-      // 1 latest from each non-Mind category
-      ['beauty', 'nourish', 'living', 'companion'].forEach(function (cat) {
+      // 1 latest per category in display order: beauty, mind, nourish, living, love, companion
+      ['beauty', 'mind', 'nourish', 'living', 'love', 'companion'].forEach(function (cat) {
         var post = all.find(function (p) { return p.category === cat; });
         if (post) picks.push(post);
       });
-      // 1 latest from Mind
-      var mindPosts = all.filter(function (p) { return p.category === 'mind'; });
-      if (mindPosts[0]) picks.push(mindPosts[0]);
-      // 6th card: Quiet Love (pinned)
-      var quietLove = all.find(function (p) { return p.slug === 'post-quiet-love'; });
-      if (quietLove) picks.push(quietLove);
       grid.innerHTML = picks.map(function (p) {
         return '<article class="post-card">' +
           '<div class="post-card__img-wrap">' +
