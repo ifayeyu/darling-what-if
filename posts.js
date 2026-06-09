@@ -115,16 +115,19 @@
       return;
     }
 
-    var featured   = posts[0];
-    var rest       = posts.slice(1);
-    var totalPages = Math.max(1, Math.ceil(rest.length / PAGE_SIZE));
+    /* Paginate the full posts array in slices of PAGE_SIZE.
+       Page 1: pageItems[0] gets the featured hero treatment, [1..] go in the grid.
+       Page 2+: all pageItems go in the grid — no featured block. */
+    var totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
     var page       = Math.min(getPage(), totalPages);
-    var start      = (page - 1) * PAGE_SIZE;
-    var pageItems  = rest.slice(start, start + PAGE_SIZE);
+    var pageItems  = posts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
     var html       = '';
 
-    /* ── FEATURED BLOCK (page 1 only) ──────────────────────────────── */
-    if (page === 1) {
+    /* ── FEATURED BLOCK (first post, page 1 only) ───────────────────── */
+    if (page === 1 && pageItems.length) {
+      var featured  = pageItems[0];
+      var gridItems = pageItems.slice(1);
+
       if (style === 'solo') {
         /* beauty / companion */
         html += '<div class="solo-wrap">';
@@ -154,15 +157,18 @@
         html += '<span class="read-btn">Read post →</span>';
         html += '</div></div></a></div>';
       }
+    } else {
+      /* Pages 2+: all items go in the grid */
+      var gridItems = pageItems;
     }
 
-    /* ── PAGINATED POSTS GRID ───────────────────────────────────────── */
-    if (pageItems.length) {
+    /* ── POSTS GRID ─────────────────────────────────────────────────── */
+    if (gridItems.length) {
       if (style === 'solo') {
         html += '<div class="posts-section">';
         html += '<p class="posts-section__label">More in ' + esc(labelFor(cat)) + '</p>';
         html += '<div class="posts-grid">';
-        pageItems.forEach(function (p) {
+        gridItems.forEach(function (p) {
           html += '<a href="' + p.slug + '.html" class="post-card">';
           html += '<div class="post-card__img"><img src="' + esc(p.image) + '" alt="' + esc(p.title) + '" loading="lazy"></div>';
           html += '<div class="post-card__body">';
@@ -177,7 +183,7 @@
         html += '<div class="posts-wrap">';
         html += '<p class="posts-wrap__label">All posts in ' + esc(labelFor(cat)) + '</p>';
         html += '<div class="posts-grid">';
-        pageItems.forEach(function (p) {
+        gridItems.forEach(function (p) {
           html += '<article class="post-card">';
           html += '<a href="' + p.slug + '.html"><div class="post-card__img"><img src="' + esc(p.image) + '" alt="' + esc(p.title) + '" loading="lazy"></div></a>';
           html += '<div class="post-card__body">';
