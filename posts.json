@@ -1,5 +1,23 @@
 [
   {
+    "slug": "post-gut-axis",
+    "title": "What If Your Gut Is Running the Show — for Your Skin, Your Hair, and Your Mind?",
+    "excerpt": "Your microbiome governs your skin, your hair, and 90% of your serotonin. Here's the science behind the gut-skin, gut-hair, and gut-brain axes — and what to eat to nourish all three.",
+    "date": "2026-06-09",
+    "category": "nourish",
+    "image": "images/gut-axis-hero.jpg",
+    "readTime": 10
+  },
+  {
+    "slug": "post-gut-glow",
+    "title": "What If Your Gut Has Been Holding Your Glow Hostage?",
+    "excerpt": "Real glow doesn't start on your skincare shelf. It starts in your gut. The gut-skin axis, the gray hair nutrition story, and the inside-out beauty protocol that actually works.",
+    "date": "2026-06-09",
+    "category": "beauty",
+    "image": "images/gut-glow-hero.jpg",
+    "readTime": 9
+  },
+  {
     "slug": "post-over-exfoliation",
     "title": "Why Everyone Stopped Over-Exfoliating (And What They're Using Instead)",
     "excerpt": "The skin barrier can only handle so much. Here's why aggressive exfoliation is out, and what gentle alternatives are in.",
