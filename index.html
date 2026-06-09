@@ -1398,6 +1398,9 @@
   var grid = document.getElementById('home-latest-grid');
   if (!grid) return;
 
+  /* Reserve height immediately so the footer never shifts when posts load */
+  grid.style.minHeight = '700px';
+
   var CATS = ['beauty', 'mind', 'nourish', 'living', 'companion'];
   var MONTHS = ['January','February','March','April','May','June',
                 'July','August','September','October','November','December'];
@@ -1422,6 +1425,7 @@
         var post = all.find(function (p) { return p.category === cat; });
         if (post) picks.push(post);
       });
+      grid.style.minHeight = '';
       grid.innerHTML = picks.map(function (p) {
         return '<article class="post-card">' +
           '<div class="post-card__img-wrap">' +
@@ -1439,7 +1443,10 @@
         '</article>';
       }).join('');
     })
-    .catch(function (err) { console.error('[home-latest]', err); });
+    .catch(function (err) {
+      grid.style.minHeight = '';
+      console.error('[home-latest]', err);
+    });
 }());
 </script>
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
