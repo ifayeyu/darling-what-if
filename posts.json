@@ -1,5 +1,23 @@
 [
   {
+    "slug": "post-home-color-mood",
+    "title": "What If the Color of Your Walls Is the Reason You Can't Relax?",
+    "excerpt": "The 2026 home color movement is about one thing: your nervous system. From greige to color drenching, here's what's changing — and why your walls may have been quietly working against you.",
+    "date": "2026-06-12",
+    "category": "living",
+    "image": "images/home-color-mood-hero.jpg",
+    "readTime": 8
+  },
+  {
+    "slug": "post-talk-to-dog",
+    "title": "What If Talking to Your Dog Is One of the Most Intelligent Things You Do?",
+    "excerpt": "People laugh at it. But the psychology of anthropomorphism reveals something unexpected — the way you talk to your dog says more about your empathy and emotional intelligence than almost anything else.",
+    "date": "2026-06-12",
+    "category": "companion",
+    "image": "images/Talk-to-dog-hero.jpg",
+    "readTime": 9
+  },
+  {
     "slug": "post-money-wealth",
     "title": "What If Making More Money Is Making You Feel Poorer?",
     "excerpt": "More income. More stress. Still not enough. The thing nobody tells you about money — and why earning more can quietly leave you feeling less wealthy than before.",
