@@ -54,6 +54,15 @@
     "readTime": 12
   },
   {
+    "slug": "post-being-loved-feeling-loved",
+    "title": "Why You Can Be Loved and Still Feel Completely Alone",
+    "excerpt": "You can be loved and still feel completely alone. Emotional intimacy requires attunement, presence, and being truly seen — not just declarations of love.",
+    "date": "2026-06-07",
+    "category": "love",
+    "image": "images/Being-loved-feeling-loved-hero.jpg",
+    "readTime": 9
+  },
+  {
     "slug": "post-over-exfoliation",
     "title": "Why Everyone Stopped Over-Exfoliating (And What They're Using Instead)",
     "excerpt": "The skin barrier can only handle so much. Here's why aggressive exfoliation is out, and what gentle alternatives are in.",
@@ -104,7 +113,7 @@
     "excerpt": "Real love rarely announces itself. It lives in the coffee order remembered, the exhaustion noticed before you say a word, the steadiness on your worst days.",
     "date": "2026-05-27",
     "category": "love",
-    "image": "images/Quiet_Love_Hero.jpg",
+    "image": "images/Quiet_love_hero.jpg",
     "readTime": 6
   },
   {
@@ -121,7 +130,7 @@
     "title": "Your Sugar Cravings Are Not a Character Flaw",
     "excerpt": "Sugar cravings are your body's intelligent signals — for blood sugar balance, hydration, missing minerals, or hormonal support. Here's how to actually listen.",
     "date": "2026-05-24",
-    "category": "gut-health",
+    "category": "nourish",
     "image": "images/Sugar_craving_hero.jpg",
     "readTime": 7
   },
@@ -220,7 +229,7 @@
     "title": "Five Things Your Gut Has Been Quietly Asking You For",
     "excerpt": "Your gut shapes your mood, trains your immune system, and influences almost everything in your body. Here are five gentle ways to start giving it what it needs.",
     "date": "2026-05-17",
-    "category": "gut-health",
+    "category": "nourish",
     "image": "images/gut-health-hero.jpg",
     "readTime": 7
   },
@@ -247,7 +256,7 @@
     "title": "What If a Glass of Water, at the Right Time, Changed Everything?",
     "excerpt": "You know you should drink more water. But timing matters just as much as quantity — and no one ever told you when.",
     "date": "2026-05-08",
-    "category": "gut-health",
+    "category": "nourish",
     "image": "images/pexels-image-hunter-281453274-13092685.jpg",
     "readTime": 5
   },
@@ -256,7 +265,7 @@
     "title": "What If the Oldest Gut Remedy Was Already in Your Pantry?",
     "excerpt": "The ancient morning ritual that's been sitting in your kitchen all along — and what it actually does for your gut.",
     "date": "2026-05-08",
-    "category": "gut-health",
+    "category": "nourish",
     "image": "images/pexels-jahratreza-37112385.jpg",
     "readTime": 6
   },
@@ -310,7 +319,7 @@
     "title": "Mahalo, Maui — A Love Letter to the Island That Changed Me",
     "excerpt": "Maui is more than a vacation. It's a place that hands you back to yourself — rawer, softer, more grateful. A personal love letter to the island that changed the way I see my days.",
     "date": "2026-05-08",
-    "category": "travel",
+    "category": "living",
     "image": "images/Maui-love-letter-hero.JPG",
     "readTime": 6
   },
@@ -319,7 +328,7 @@
     "title": "Maui, the Valley Isle: A Portrait of an Island in All Its Faces",
     "excerpt": "Maui is the celebrity sibling amongst all Hawaiian islands — radiant, a little rebellious, and full of glamour. From Wailea's five-star spas to the spiritual trails of Hana.",
     "date": "2026-05-08",
-    "category": "travel",
+    "category": "living",
     "image": "images/The Valley Isle-hero.JPG",
     "readTime": 4
   },
