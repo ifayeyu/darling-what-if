@@ -43,7 +43,7 @@ Keep each category to ~3–5 reusable tags. That ceiling is deliberate — it st
 | 1 | **Wellness & Mindful Living** | `mind.html` | anxiety · burnout · nervous system · soft living · journaling |
 | 2 | **Love & Relationships** | `love.html` | love languages · emotional safety · attachment · healing after loss |
 | 3 | **Nourish — Food & Nutrition** | `nourish.html` | high protein · cycle syncing · hormone balance · healthy breakfast · whole foods |
-| 4 | **Home, Space & Living** | `living.html` | small space · cozy home · calm space · intentional living |
+| 4 | **Home, Space & Living** | `living.html` | small space · cozy home · calm space · intentional living · biophilic design · indoor plants |
 | 5 | **Beauty & Skincare Rituals** | `beauty.html` | skincare routine · SPF & anti-aging · skin barrier · natural beauty · hair health · cruelty-free beauty · vegan beauty |
 | 6 | **Dogs & Companions** | `companion.html` | dog mom · dog health · the human-dog bond · pet wellness |
 | 7 | **Gut Health & Probiotics** | `gut-health.html` | gut health · microbiome · blood sugar balance · fibermaxxing · bloating |
