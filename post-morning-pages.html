@@ -183,18 +183,33 @@
         .author-bio__info h4 { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; font-style: italic; color: var(--text); margin-bottom: 6px; }
         .author-bio__info p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; }
 
+        /* INTERNAL LINKS */
+        .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
+        .internal-links__title { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; display: block; }
+        .internal-links ul { display: flex; flex-direction: column; gap: 14px; }
+        .internal-links li { display: flex; align-items: flex-start; gap: 12px; }
+        .internal-links li::before { content: '→'; color: var(--gold); font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+        .internal-links a { font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s ease, border-color 0.2s ease; }
+        .internal-links a:hover { color: var(--gold); border-color: var(--gold); }
+
+        /* CHINESE SUMMARY TILE */
+        .zh-summary-tile { margin: 48px 0 0; padding: 48px; background: var(--gold-faint); text-align: center; }
+        .zh-summary-tile__label { font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; display: block; }
+        .zh-summary-tile__title { font-family: var(--serif); font-size: 1.35rem; font-style: italic; font-weight: 400; color: var(--text); margin-bottom: 18px; }
+        .zh-summary-tile p { font-size: 0.97rem; color: var(--text-muted); max-width: 560px; margin: 0 auto; line-height: 1.9; }
+
         /* RELATED POSTS */
-        .related-posts { background: #1d1b19; border-top: 1px solid rgba(255,255,255,0.08); padding: 72px 0; }
+        .related-posts { background: var(--bg-warm); padding: 96px 0; }
         .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
         .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 40px; }
-        .section-title { font-family: var(--serif); font-size: 1.65rem; font-weight: 500; }
-        .section-title em { font-style: italic; color: var(--gold-dark); }
+        .section-title { font-family: var(--serif); font-size: 1.65rem; font-weight: 500; color: var(--text); }
+        .section-title em { font-style: italic; color: var(--gold); }
         .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
         .post-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; }
         .post-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.07); }
-        .post-card__img { aspect-ratio: 16/9; overflow: hidden; background: var(--bg-warm); }
-        .post-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.45s; }
-        .post-card:hover .post-card__img img { transform: scale(1.04); }
+        .post-card__img-wrap { aspect-ratio: 3/2; overflow: hidden; background: var(--bg-warm); }
+        .post-card__img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.45s; }
+        .post-card:hover .post-card__img-wrap img { transform: scale(1.04); }
         .post-card__body { padding: 24px; }
         .post-card__category { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 400; margin-bottom: 10px; }
         .post-card__title { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; line-height: 1.4; color: var(--text); margin-bottom: 12px; }
@@ -627,6 +642,23 @@
     </div>
 
 
+    <!-- You might also want to read -->
+    <div class="internal-links">
+        <span class="internal-links__title">You might also want to read</span>
+        <ul>
+            <li>
+                <a href="post-quiet-anxiety.html">You Are Not the Worry</a>
+            </li>
+            <li>
+                <a href="post-softness.html">What If Being Soft Was the Bravest Thing You Ever Did?</a>
+            </li>
+            <li>
+                <a href="post-burnout.html">What If Your Burnout Is Trying to Tell You Something?</a>
+            </li>
+        </ul>
+    </div>
+
+
     <!-- PROMPTS SECTION -->
     <div class="prompt-section">
         <div class="prompt-section__header">
@@ -707,31 +739,30 @@
     </div>
 
     <!-- Conclusion -->
-    <div class="post-conclusion">
-        <h3 class="post-conclusion__title">Showing up for yourself doesn't have to look like anything in particular. It just has to be consistent.</h3>
+    <div class=”post-conclusion”>
+        <h3 class=”post-conclusion__title”>Showing up for yourself doesn't have to look like anything in particular. It just has to be consistent.</h3>
         <p>
             Morning Pages work because they're yours and no one else's. There's no standard to
             meet, no audience to perform for, no version of them that counts as doing it wrong.
             The most important part is not the three pages — it's the act of giving yourself a
             few minutes every day where your thoughts are allowed to be honest, unfiltered, and
-            private. That's rarer than it sounds. And it matters more than you might expect. Write the thoughts down. Get them out of your head and onto the page.
+            private. That's rarer than it sounds. And it matters more than you might expect.
+            Write the thoughts down. Get them out of your head and onto the page.
             Then see what's left.
         </p>
-        <br>
-        <p>
+    </div>
 
-    <div class="post-conclusion">
-        <h3 class="post-conclusion__title">照顾自己这件事，其实不需要任何标准答案</h3>
+    <!-- Chinese Summary Tile -->
+    <div class=”zh-summary-tile”>
+        <span class=”zh-summary-tile__label”>中文摘要 · Chinese Summary</span>
+        <h3 class=”zh-summary-tile__title”>照顾自己这件事，其实不需要任何标准答案</h3>
         <p>
-            它不需要看起来“有多正确”，也不需要被任何人看见或认可。重要的只是，你有没有一次又一次地回到自己身上。
+            它不需要看起来”有多正确”，也不需要被任何人看见或认可。重要的只是，你有没有一次又一次地回到自己身上。
             晨间写作之所以有效，是因为它只属于你。没有对错，没有评判，也没有表现给谁看的压力。
             它只是一个小小的空间 — 每天几分钟，让你的思绪可以诚实地存在。不用整理，不用修饰，不用变得好看。
-            只是把它们记录下来。放到纸上。然后你会发现，有些东西会变轻。有些东西会变清晰。而真正重要的，
-            往往就在剩余的部分里。#生活 #心理健康 #成长
+            只是把它们记录下来。放到纸上。然后你会发现，有些东西会变轻。有些东西会变清晰。
+            而真正重要的，往往就在剩余的部分里。
         </p>
-        <br>
-        </p>
-
     </div>
 
 </article>
@@ -848,13 +879,9 @@
     <span class="post-tags-section__label">Topics</span>
     <div class="tags">
         <a href="mind.html" class="tag tag--category">Mind</a>
-        <a href="mind.html" class="tag">morning pages</a>
-        <a href="mind.html" class="tag">journaling for mental health</a>
-        <a href="mind.html" class="tag">daily brain dump</a>
-        <a href="mind.html" class="tag">The Artist's Way</a>
-        <a href="mind.html" class="tag">self-awareness</a>
-        <a href="mind.html" class="tag">emotional regulation</a>
-        <a href="mind.html" class="tag">mindfulness practice</a>
+        <a href="mind.html" class="tag">journaling</a>
+        <a href="mind.html" class="tag">anxiety</a>
+        <a href="mind.html" class="tag">nervous system</a>
     </div>
 </div>
 
@@ -879,7 +906,7 @@
 <section class="related-posts">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">More from <em>Mind</em></h2>
+            <h2 class="section-title">Keep <em>Reading</em></h2>
             <a href="mind.html" style="font-size:0.78rem;color:var(--gold);letter-spacing:0.08em;">View all →</a>
         </div>
         <div class="related-grid">
@@ -908,7 +935,7 @@
 
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <img class="post-card__img" src="images/gut-glow-hero.jpg" alt="What If Your Gut Has Been Holding Your Glow Hostage?" loading="lazy">
+                    <img class="post-card__img" src="images/Gut_glow_hero.jpg" alt="What If Your Gut Has Been Holding Your Glow Hostage?" loading="lazy">
                 </div>
                 <div class="post-card__body">
                     <a href="beauty.html" class="category-label">Beauty</a>
