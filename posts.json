@@ -1,8 +1,26 @@
 [
   {
+    "slug": "post-skin-listening",
+    "title": "Why I Stopped Fighting My Skin and Started Listening to It",
+    "excerpt": "How repairing a damaged skin barrier, simplifying your skincare routine, and understanding the stress-skin connection changed everything. A guide to actually listening to what your skin is trying to tell you.",
+    "date": "2026-06-25",
+    "category": "beauty",
+    "image": "images/skin-listening-hero.jpg",
+    "readTime": 9
+  },
+  {
+    "slug": "post-natural-fragrance",
+    "title": "The Case for Natural Fragrance: What I Switched and Why",
+    "excerpt": "After years of wearing the same synthetic perfume without questioning it, I started researching what was actually in it. What I found changed how I think about everything I apply to my skin.",
+    "date": "2026-06-22",
+    "category": "beauty",
+    "image": "images/natural-fragrance-hero.jpg",
+    "readTime": 9
+  },
+  {
     "slug": "post-rest-recovery",
-    "title": "The Difference Between Rest and Recovery — and Why You Need Both",
-    "excerpt": "Rest is stopping. Recovery is rebuilding. They are not the same physiological process — and confusing one for the other may be exactly why your body is not bouncing back the way you expect.",
+    "title": "The Difference Between Rest and Recovery \u2014 and Why You Need Both",
+    "excerpt": "Rest is stopping. Recovery is rebuilding. They are not the same physiological process \u2014 and confusing one for the other may be exactly why your body is not bouncing back the way you expect.",
     "date": "2026-06-20",
     "category": "nourish",
     "image": "images/rest-recovery-hero.jpg",
@@ -11,7 +29,7 @@
   {
     "slug": "post-intj-personality",
     "title": "What If Your Strength Looks Different? 5 Honest Confessions of a Female INTJ",
-    "excerpt": "INTJ women make up less than 2% of the female population. For most of my life I couldn’t put words to the way I moved through the world — until a personality test named it. Here are five things about being an INTJ woman I’ve never quite managed to explain until now.",
+    "excerpt": "INTJ women make up less than 2% of the female population. For most of my life I couldn\u2019t put words to the way I moved through the world \u2014 until a personality test named it. Here are five things about being an INTJ woman I\u2019ve never quite managed to explain until now.",
     "date": "2026-06-18",
     "category": "mind",
     "image": "images/INTJ-hero.jpg",
@@ -20,7 +38,7 @@
   {
     "slug": "post-dog-human",
     "title": "What If Your Dog Has Been Training You to Be a Better Human All Along?",
-    "excerpt": "Dogs synchronize our cortisol, mirror our emotional state, and demand patience and empathy in ways no human relationship can replicate. The science of the human-animal bond reveals something quieter and more personal: dog ownership is building a better version of you — one walk at a time.",
+    "excerpt": "Dogs synchronize our cortisol, mirror our emotional state, and demand patience and empathy in ways no human relationship can replicate. The science of the human-animal bond reveals something quieter and more personal: dog ownership is building a better version of you \u2014 one walk at a time.",
     "date": "2026-06-18",
     "category": "companion",
     "image": "images/dog-human-hero.jpg",
@@ -29,7 +47,7 @@
   {
     "slug": "post-plants-nervous-system",
     "title": "What If the Plants in Your Home Are Quietly Regulating Your Nervous System?",
-    "excerpt": "Indoor plants do more than look beautiful — research shows they lower cortisol, reduce blood pressure, and shift your body out of stress mode. Here's what the science of biophilic design reveals about greenery and your nervous system.",
+    "excerpt": "Indoor plants do more than look beautiful \u2014 research shows they lower cortisol, reduce blood pressure, and shift your body out of stress mode. Here's what the science of biophilic design reveals about greenery and your nervous system.",
     "date": "2026-06-18",
     "category": "living",
     "image": "images/plants-nervous-system-hero.jpg",
@@ -38,7 +56,7 @@
   {
     "slug": "post-cruelty-free-beauty",
     "title": "What If the Brands You've Always Loved Are Still Testing on Animals?",
-    "excerpt": "I spent months quietly researching which beauty brands still test on animals in 2026. What I found rearranged my vanity table — and how I see the brands I'd been buying for years without thinking.",
+    "excerpt": "I spent months quietly researching which beauty brands still test on animals in 2026. What I found rearranged my vanity table \u2014 and how I see the brands I'd been buying for years without thinking.",
     "date": "2026-06-14",
     "category": "beauty",
     "image": "images/Cruelty-free-beauty-hero.jpg",
@@ -47,7 +65,7 @@
   {
     "slug": "post-home-color-mood",
     "title": "What If the Color of Your Walls Is the Reason You Can't Relax?",
-    "excerpt": "The 2026 home color movement is about one thing: your nervous system. From greige to color drenching, here's what's changing — and why your walls may have been quietly working against you.",
+    "excerpt": "The 2026 home color movement is about one thing: your nervous system. From greige to color drenching, here's what's changing \u2014 and why your walls may have been quietly working against you.",
     "date": "2026-06-12",
     "category": "living",
     "image": "images/home-color-mood-hero.jpg",
@@ -56,7 +74,7 @@
   {
     "slug": "post-talk-to-dog",
     "title": "What If Talking to Your Dog Is One of the Most Intelligent Things You Do?",
-    "excerpt": "People laugh at it. But the psychology of anthropomorphism reveals something unexpected — the way you talk to your dog says more about your empathy and emotional intelligence than almost anything else.",
+    "excerpt": "People laugh at it. But the psychology of anthropomorphism reveals something unexpected \u2014 the way you talk to your dog says more about your empathy and emotional intelligence than almost anything else.",
     "date": "2026-06-12",
     "category": "companion",
     "image": "images/Talk-to-dog-hero.jpg",
@@ -65,7 +83,7 @@
   {
     "slug": "post-money-wealth",
     "title": "What If Making More Money Is Making You Feel Poorer?",
-    "excerpt": "More income. More stress. Still not enough. The thing nobody tells you about money — and why earning more can quietly leave you feeling less wealthy than before.",
+    "excerpt": "More income. More stress. Still not enough. The thing nobody tells you about money \u2014 and why earning more can quietly leave you feeling less wealthy than before.",
     "date": "2026-06-11",
     "category": "mind",
     "image": "images/Money-wealth-hero.jpg",
@@ -73,8 +91,8 @@
   },
   {
     "slug": "post-gut-axis",
-    "title": "What If Your Gut Is Running the Show — for Your Skin, Your Hair, and Your Mind?",
-    "excerpt": "Your microbiome governs your skin, your hair, and 90% of your serotonin. Here's the science behind the gut-skin, gut-hair, and gut-brain axes — and what to eat to nourish all three.",
+    "title": "What If Your Gut Is Running the Show \u2014 for Your Skin, Your Hair, and Your Mind?",
+    "excerpt": "Your microbiome governs your skin, your hair, and 90% of your serotonin. Here's the science behind the gut-skin, gut-hair, and gut-brain axes \u2014 and what to eat to nourish all three.",
     "date": "2026-06-09",
     "category": "nourish",
     "image": "images/Gut_axis_hero.jpg",
@@ -92,7 +110,7 @@
   {
     "slug": "post-maui-guide",
     "title": "Maui: A Love Letter & Complete Guide to the Valley Isle",
-    "excerpt": "Maui is more than a destination — it hands you back to yourself. A love letter and a complete regional guide to the Valley Isle: Wailea, the North Shore, and the Road to Hana.",
+    "excerpt": "Maui is more than a destination \u2014 it hands you back to yourself. A love letter and a complete regional guide to the Valley Isle: Wailea, the North Shore, and the Road to Hana.",
     "date": "2026-06-09",
     "category": "living",
     "image": "images/Maui_guide_hero.JPG",
@@ -101,7 +119,7 @@
   {
     "slug": "post-being-loved-feeling-loved",
     "title": "Why You Can Be Loved and Still Feel Completely Alone",
-    "excerpt": "You can be loved and still feel completely alone. Emotional intimacy requires attunement, presence, and being truly seen — not just declarations of love.",
+    "excerpt": "You can be loved and still feel completely alone. Emotional intimacy requires attunement, presence, and being truly seen \u2014 not just declarations of love.",
     "date": "2026-06-07",
     "category": "love",
     "image": "images/Being-loved-feeling-loved-Hero.jpg",
@@ -119,7 +137,7 @@
   {
     "slug": "post-protecting-love",
     "title": "What If Protecting the People You Love Has Nothing to Do With Gender",
-    "excerpt": "She picked up her butcher knife and went to the battlefield—not waiting to be rescued, but choosing to protect. That pivotal moment from Pursuit of Jade changed how I think about strength and love.",
+    "excerpt": "She picked up her butcher knife and went to the battlefield\u2014not waiting to be rescued, but choosing to protect. That pivotal moment from Pursuit of Jade changed how I think about strength and love.",
     "date": "2026-06-03",
     "category": "love",
     "image": "images/Protecting_love_hero.jpg",
@@ -128,7 +146,7 @@
   {
     "slug": "post-beauty-premium",
     "title": "What If Your Makeup Habit Is Quietly Worth 20% More on Your Paycheck?",
-    "excerpt": "The beauty premium is real — studies show women in professional makeup earn 20-30% more. It's not fair, but here's what the research says and what to do with it.",
+    "excerpt": "The beauty premium is real \u2014 studies show women in professional makeup earn 20-30% more. It's not fair, but here's what the research says and what to do with it.",
     "date": "2026-06-02",
     "category": "beauty",
     "image": "images/Beauty_premium_hero.jpg",
@@ -137,7 +155,7 @@
   {
     "slug": "post-dog-sad",
     "title": "Why My Dog Knows When I'm Sad Before I Do",
-    "excerpt": "Before I've said a word, before I've even admitted it to myself — he already knows. The quiet science behind why dogs read our emotions better than we do.",
+    "excerpt": "Before I've said a word, before I've even admitted it to myself \u2014 he already knows. The quiet science behind why dogs read our emotions better than we do.",
     "date": "2026-06-02",
     "category": "companion",
     "image": "images/Sad_dog_hero.jpg",
@@ -164,7 +182,7 @@
   {
     "slug": "post-love-left",
     "title": "What to Do With All the Love You Still Have Left",
-    "excerpt": "When you lose a partner, the love doesn't leave with them. It stays — warm, real, and looking for somewhere to go. Here's how to honor it.",
+    "excerpt": "When you lose a partner, the love doesn't leave with them. It stays \u2014 warm, real, and looking for somewhere to go. Here's how to honor it.",
     "date": "2026-05-27",
     "category": "love",
     "image": "images/Love_left_hero.jpg",
@@ -173,7 +191,7 @@
   {
     "slug": "post-sugar-cravings",
     "title": "Your Sugar Cravings Are Not a Character Flaw",
-    "excerpt": "Sugar cravings are your body's intelligent signals — for blood sugar balance, hydration, missing minerals, or hormonal support. Here's how to actually listen.",
+    "excerpt": "Sugar cravings are your body's intelligent signals \u2014 for blood sugar balance, hydration, missing minerals, or hormonal support. Here's how to actually listen.",
     "date": "2026-05-24",
     "category": "nourish",
     "image": "images/Sugar_craving_hero.jpg",
@@ -182,7 +200,7 @@
   {
     "slug": "post-90-30-50",
     "title": "The 90-30-50 Method Keeps Showing Up on My Feed. Here's What Nutritionists Actually Say",
-    "excerpt": "TikTok's viral 90-30-50 method promises weight loss without calorie counting. Here's what dietitians say — plus a full-day whole-foods meal plan.",
+    "excerpt": "TikTok's viral 90-30-50 method promises weight loss without calorie counting. Here's what dietitians say \u2014 plus a full-day whole-foods meal plan.",
     "date": "2026-05-24",
     "category": "nourish",
     "image": "images/903050post_hero.jpg",
@@ -191,7 +209,7 @@
   {
     "slug": "post-quiet-anxiety",
     "title": "You Are Not the Worry",
-    "excerpt": "High-functioning anxiety doesn't look like a breakdown — it feels like a low hum beneath everything. Here's how to recognize quiet anxiety, understand what it is, and gently find your way back to yourself.",
+    "excerpt": "High-functioning anxiety doesn't look like a breakdown \u2014 it feels like a low hum beneath everything. Here's how to recognize quiet anxiety, understand what it is, and gently find your way back to yourself.",
     "date": "2026-05-22",
     "category": "mind",
     "image": "images/Quiet_anxiety_hero.jpg",
@@ -200,7 +218,7 @@
   {
     "slug": "post-spf-guide",
     "title": "Your Future Skin Is Being Written Right Now",
-    "excerpt": "Up to 90% of visible skin aging comes from UV damage — and most of us are skipping the one step that prevents it. Here's how to make SPF the part of your routine you actually love.",
+    "excerpt": "Up to 90% of visible skin aging comes from UV damage \u2014 and most of us are skipping the one step that prevents it. Here's how to make SPF the part of your routine you actually love.",
     "date": "2026-05-21",
     "category": "beauty",
     "image": "images/SPF-sun-hero.jpg",
@@ -227,7 +245,7 @@
   {
     "slug": "post-anxiety",
     "title": "What If Your Anxiety Has Been Trying to Protect You All Along?",
-    "excerpt": "Anxiety isn't a character flaw — it's a signal. Understanding the types, what triggers them, and what actually helps.",
+    "excerpt": "Anxiety isn't a character flaw \u2014 it's a signal. Understanding the types, what triggers them, and what actually helps.",
     "date": "2026-05-10",
     "category": "mind",
     "image": "images/anxiety-overwhelm.jpg",
@@ -244,7 +262,7 @@
   },
   {
     "slug": "post-nyc-love",
-    "title": "The City That Promised a Love Story — and Delivered Something Unexpected",
+    "title": "The City That Promised a Love Story \u2014 and Delivered Something Unexpected",
     "excerpt": "New York sells you a cinematic love affair. The real one is far more honest, and somehow more beautiful.",
     "date": "2026-05-08",
     "category": "love",
@@ -253,7 +271,7 @@
   },
   {
     "slug": "post-burnout",
-    "title": "What If You're Not Lazy — You're Burned Out?",
+    "title": "What If You're Not Lazy \u2014 You're Burned Out?",
     "excerpt": "The exhaustion that sleep doesn't fix, and the name that might change everything.",
     "date": "2026-05-07",
     "category": "mind",
@@ -262,7 +280,7 @@
   },
   {
     "slug": "post-period-eat-better",
-    "title": "What to Eat During Your Period — And What to Skip — to Finally Feel Human Again",
+    "title": "What to Eat During Your Period \u2014 And What to Skip \u2014 to Finally Feel Human Again",
     "excerpt": "The foods that replenish and soothe your body this week, and the ones quietly making your symptoms worse. Both sides of the guide, in one place.",
     "date": "2026-05-19",
     "category": "nourish",
@@ -281,7 +299,7 @@
   {
     "slug": "post-tea-timing",
     "title": "Morning, Afternoon & Evening: The Tea Your Body Needs at Every Hour",
-    "excerpt": "Your body moves through different rhythms all day long — and the tea you choose can work with those rhythms or against them.",
+    "excerpt": "Your body moves through different rhythms all day long \u2014 and the tea you choose can work with those rhythms or against them.",
     "date": "2026-05-17",
     "category": "nourish",
     "image": "images/Tea_post.jpg",
@@ -299,7 +317,7 @@
   {
     "slug": "post-water",
     "title": "What If a Glass of Water, at the Right Time, Changed Everything?",
-    "excerpt": "You know you should drink more water. But timing matters just as much as quantity — and no one ever told you when.",
+    "excerpt": "You know you should drink more water. But timing matters just as much as quantity \u2014 and no one ever told you when.",
     "date": "2026-05-08",
     "category": "nourish",
     "image": "images/pexels-image-hunter-281453274-13092685.jpg",
@@ -308,7 +326,7 @@
   {
     "slug": "post-acv-honey",
     "title": "What If the Oldest Gut Remedy Was Already in Your Pantry?",
-    "excerpt": "The ancient morning ritual that's been sitting in your kitchen all along — and what it actually does for your gut.",
+    "excerpt": "The ancient morning ritual that's been sitting in your kitchen all along \u2014 and what it actually does for your gut.",
     "date": "2026-05-08",
     "category": "nourish",
     "image": "images/pexels-jahratreza-37112385.jpg",
@@ -317,7 +335,7 @@
   {
     "slug": "post-smile-white",
     "title": "How I Keep My Teeth White Without Giving Up Coffee",
-    "excerpt": "I'm a caffeine fiend who's spent years experimenting with teeth whitening. Here are the natural DIY methods that actually worked — and one product I keep coming back to.",
+    "excerpt": "I'm a caffeine fiend who's spent years experimenting with teeth whitening. Here are the natural DIY methods that actually worked \u2014 and one product I keep coming back to.",
     "date": "2026-05-12",
     "category": "beauty",
     "image": "images/smile-white-hero.jpg",
@@ -326,7 +344,7 @@
   {
     "slug": "post-screen-skin",
     "title": "What Your Screen Is Quietly Doing to Your Skin",
-    "excerpt": "You've heard about blue light. But the full picture of what prolonged screen time does to your skin — and what actually helps — is a conversation worth having quietly.",
+    "excerpt": "You've heard about blue light. But the full picture of what prolonged screen time does to your skin \u2014 and what actually helps \u2014 is a conversation worth having quietly.",
     "date": "2026-05-12",
     "category": "beauty",
     "image": "images/bluelight_image1.jpg",
@@ -335,7 +353,7 @@
   {
     "slug": "post-banana-peel",
     "title": "The Part of the Banana You've Been Throwing Away",
-    "excerpt": "You eat the banana. You toss the peel. But dermatologists and skin-care devotees have quietly been using it for years — and the results are hard to dismiss.",
+    "excerpt": "You eat the banana. You toss the peel. But dermatologists and skin-care devotees have quietly been using it for years \u2014 and the results are hard to dismiss.",
     "date": "2026-05-10",
     "category": "beauty",
     "image": "images/pexels-yulia-shapereva-s-58861876-7941294.jpg",
@@ -344,7 +362,7 @@
   {
     "slug": "post-hair-foods",
     "title": "Everything Your Hair Has Been Asking You to Eat",
-    "excerpt": "Grey hair isn't just about age — nutrition plays a bigger role than most of us realize. Here are the 14 foods that support hair health, protect your color, and give your hair its shine back.",
+    "excerpt": "Grey hair isn't just about age \u2014 nutrition plays a bigger role than most of us realize. Here are the 14 foods that support hair health, protect your color, and give your hair its shine back.",
     "date": "2026-05-08",
     "category": "beauty",
     "image": "images/pexels-will-wenwenyu-725741824-27824885.jpg",
@@ -353,7 +371,7 @@
   {
     "slug": "post-home-mental-health",
     "title": "How I Redesigned My Home to Support My Mental Health",
-    "excerpt": "Your home is either restoring you or draining you — and most of us don't realize which one it's doing. Here's how I started changing mine, one small shift at a time.",
+    "excerpt": "Your home is either restoring you or draining you \u2014 and most of us don't realize which one it's doing. Here's how I started changing mine, one small shift at a time.",
     "date": "2026-05-08",
     "category": "living",
     "image": "images/Home mental health-Hero.jpg",
@@ -361,8 +379,8 @@
   },
   {
     "slug": "post-maui",
-    "title": "Mahalo, Maui — A Love Letter to the Island That Changed Me",
-    "excerpt": "Maui is more than a vacation. It's a place that hands you back to yourself — rawer, softer, more grateful. A personal love letter to the island that changed the way I see my days.",
+    "title": "Mahalo, Maui \u2014 A Love Letter to the Island That Changed Me",
+    "excerpt": "Maui is more than a vacation. It's a place that hands you back to yourself \u2014 rawer, softer, more grateful. A personal love letter to the island that changed the way I see my days.",
     "date": "2026-05-08",
     "category": "living",
     "image": "images/Maui-love-letter-hero.JPG",
@@ -371,7 +389,7 @@
   {
     "slug": "post-maui-valley-isle",
     "title": "Maui, the Valley Isle: A Portrait of an Island in All Its Faces",
-    "excerpt": "Maui is the celebrity sibling amongst all Hawaiian islands — radiant, a little rebellious, and full of glamour. From Wailea's five-star spas to the spiritual trails of Hana.",
+    "excerpt": "Maui is the celebrity sibling amongst all Hawaiian islands \u2014 radiant, a little rebellious, and full of glamour. From Wailea's five-star spas to the spiritual trails of Hana.",
     "date": "2026-05-08",
     "category": "living",
     "image": "images/The Valley Isle-hero.JPG",
@@ -389,7 +407,7 @@
   {
     "slug": "post-dog-routine",
     "title": "How My Labrador Became My Best Health Habit",
-    "excerpt": "I didn't plan to become a morning person, or someone who walks every day without fail. My Labrador Retriever had other ideas — and quietly built me a healthier life.",
+    "excerpt": "I didn't plan to become a morning person, or someone who walks every day without fail. My Labrador Retriever had other ideas \u2014 and quietly built me a healthier life.",
     "date": "2026-05-13",
     "category": "companion",
     "image": "images/dog-routine-hero.jpg",
@@ -398,7 +416,7 @@
   {
     "slug": "post-companion-dogs",
     "title": "What If Your Dog Is Your Most Meaningful Relationship?",
-    "excerpt": "Dogs offer something rare and quietly radical — unconditional love, presence, and emotional stability that research shows can exceed what human relationships provide.",
+    "excerpt": "Dogs offer something rare and quietly radical \u2014 unconditional love, presence, and emotional stability that research shows can exceed what human relationships provide.",
     "date": "2026-05-08",
     "category": "companion",
     "image": "images/pexels-dmitriy-piskarev-8529355.jpg",
