@@ -1,5 +1,32 @@
 [
   {
+    "slug": "post-table-no-phone",
+    "title": "The Case for Eating at a Table Without Your Phone",
+    "excerpt": "This is not about table manners. A phone at the table sends a message — to whoever is sitting across from you, and to yourself when you're eating alone. The one you send yourself might be the one worth paying attention to.",
+    "date": "2026-07-06",
+    "category": "living",
+    "image": "images/table-no-phone-hero.jpg",
+    "readTime": 8
+  },
+  {
+    "slug": "post-choosing-comfort",
+    "title": "How to Know If You're Choosing Someone or Just Choosing Comfort",
+    "excerpt": "There is a question that most people already know the answer to. They just haven't sat with it long enough to trust what they hear.",
+    "date": "2026-07-01",
+    "category": "love",
+    "image": "images/choosing-comfort-hero.jpg",
+    "readTime": 9
+  },
+  {
+    "slug": "post-slow-love",
+    "title": "What Falling in Love Slowly Actually Looks Like",
+    "excerpt": "The love stories we were given all had a moment — the one where you knew. Nobody told us that the love that holds is usually the kind that arrives on a Tuesday without announcing itself at all.",
+    "date": "2026-07-08",
+    "category": "love",
+    "image": "images/slow-love-hero.jpg",
+    "readTime": 9
+  },
+  {
     "slug": "post-japan-simplicity",
     "title": "What Japan Taught Me About Space, Simplicity, and Enough",
     "excerpt": "Japan has a word — Ma — for the meaningful pause between things. Studying Japanese culture has given me a different philosophy for living: less noise, more intention, and the radical idea that enough already is.",
