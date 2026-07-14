@@ -1,0 +1,8 @@
+# Internal strategy, planning & scratch — NOT for the public site
+_private/
+Darling-What-If_*
+TAXONOMY.md
+index-request-urls.txt
+
+# editor lock files
+.~lock.*
