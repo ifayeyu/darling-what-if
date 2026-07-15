@@ -1,21 +1,39 @@
 [
   {
-    "slug": "post-table-no-phone",
-    "title": "The Case for Eating at a Table Without Your Phone",
-    "excerpt": "This is not about table manners. A phone at the table sends a message — to whoever is sitting across from you, and to yourself when you're eating alone. The one you send yourself might be the one worth paying attention to.",
-    "date": "2026-07-06",
-    "category": "living",
-    "image": "images/table-no-phone-hero.jpg",
-    "readTime": 8
+    "slug": "post-dog-loves-you",
+    "title": "How to Tell If Your Dog Loves You: 10 Signs Backed by Science",
+    "excerpt": "Does your dog love you? 10 science-backed signs — from the oxytocin eye-contact loop to leaning, following you, and puppy-dog eyes. Plus how to love them back.",
+    "date": "2026-07-10",
+    "category": "companion",
+    "image": "images/dog-love.jpg",
+    "readTime": 10
   },
   {
-    "slug": "post-choosing-comfort",
-    "title": "How to Know If You're Choosing Someone or Just Choosing Comfort",
-    "excerpt": "There is a question that most people already know the answer to. They just haven't sat with it long enough to trust what they hear.",
-    "date": "2026-07-01",
+    "slug": "post-attachment-style",
+    "title": "What's My Attachment Style? The 4 Styles, Gently Explained",
+    "excerpt": "What's my attachment style? A gentle, no-shame guide to the 4 attachment styles — secure, anxious, avoidant and disorganized — and how to find yours.",
+    "date": "2026-07-10",
     "category": "love",
-    "image": "images/choosing-comfort-hero.jpg",
-    "readTime": 9
+    "image": "images/attachment-style-hero.jpg",
+    "readTime": 11
+  },
+  {
+    "slug": "post-situationship-relationship",
+    "title": "How to Turn a Situationship Into a Relationship",
+    "excerpt": "How to turn a situationship into a relationship with 'clear-coding' — the 2026 trend of stating your intentions early. Exact phrases + a DTR script.",
+    "date": "2026-07-10",
+    "category": "love",
+    "image": "images/situationship-relationship-hero.jpg",
+    "readTime": 11
+  },
+  {
+    "slug": "post-genuinely-good-person",
+    "title": "Green Flags: 8 Quiet Signs of a Genuinely Good Person",
+    "excerpt": "The quiet green flags of a genuinely good person — self-awareness, consideration, and kindness that never performs. Plus how to grow it yourself.",
+    "date": "2026-07-10",
+    "category": "mind",
+    "image": "images/good-person-hero.jpg",
+    "readTime": 10
   },
   {
     "slug": "post-slow-love",
@@ -27,12 +45,39 @@
     "readTime": 9
   },
   {
+    "slug": "post-nervous-system-reset",
+    "title": "The Nervous System Reset: Small Things That Genuinely Help",
+    "excerpt": "You cannot think your way out of a nervous system response. You have to send the body physical signals of safety. Here are the ones that actually work — and the science behind why.",
+    "date": "2026-07-08",
+    "category": "living",
+    "image": "images/nervous-system-reset-hero.jpg",
+    "readTime": 10
+  },
+  {
+    "slug": "post-table-no-phone",
+    "title": "The Case for Eating at a Table Without Your Phone",
+    "excerpt": "This is not about table manners. A phone at the table sends a message — to whoever is sitting across from you, and to yourself when you're eating alone. The one you send yourself might be the one worth paying attention to.",
+    "date": "2026-07-06",
+    "category": "living",
+    "image": "images/table-no-phone-hero.jpg",
+    "readTime": 8
+  },
+  {
     "slug": "post-japan-simplicity",
     "title": "What Japan Taught Me About Space, Simplicity, and Enough",
     "excerpt": "Japan has a word — Ma — for the meaningful pause between things. Studying Japanese culture has given me a different philosophy for living: less noise, more intention, and the radical idea that enough already is.",
     "date": "2026-07-03",
     "category": "living",
     "image": "images/japan-simplicity-hero.jpg",
+    "readTime": 9
+  },
+  {
+    "slug": "post-choosing-comfort",
+    "title": "How to Know If You're Choosing Someone or Just Choosing Comfort",
+    "excerpt": "There is a question that most people already know the answer to. They just haven't sat with it long enough to trust what they hear.",
+    "date": "2026-07-01",
+    "category": "love",
+    "image": "images/choosing-comfort-hero.jpg",
     "readTime": 9
   },
   {
@@ -207,6 +252,15 @@
     "readTime": 12
   },
   {
+    "slug": "post-cortisol",
+    "title": "How to Lower Cortisol Naturally: 9 Gentle, Proven Ways",
+    "excerpt": "How to lower cortisol naturally: science-backed foods, habits and the viral cortisol cocktail — plus the signs of high cortisol and what actually calms chronic stress.",
+    "date": "2026-06-08",
+    "category": "nourish",
+    "image": "images/pexels-jahratreza-37112385.jpg",
+    "readTime": 9
+  },
+  {
     "slug": "post-being-loved-feeling-loved",
     "title": "Why You Can Be Loved and Still Feel Completely Alone",
     "excerpt": "You can be loved and still feel completely alone. Emotional intimacy requires attunement, presence, and being truly seen — not just declarations of love.",
@@ -324,51 +378,6 @@
     "readTime": 7
   },
   {
-    "slug": "post-softness",
-    "title": "What If Softness Is Your Greatest Strength?",
-    "excerpt": "We've been taught that strength looks like hardness. But what if the bravest thing you ever do is soften?",
-    "date": "2026-05-13",
-    "category": "mind",
-    "image": "images/softness-hero.jpg",
-    "readTime": 6
-  },
-  {
-    "slug": "post-anxiety",
-    "title": "What If Your Anxiety Has Been Trying to Protect You All Along?",
-    "excerpt": "Anxiety isn't a character flaw — it's a signal. Understanding the types, what triggers them, and what actually helps.",
-    "date": "2026-05-10",
-    "category": "mind",
-    "image": "images/anxiety-overwhelm.jpg",
-    "readTime": 10
-  },
-  {
-    "slug": "post-morning-pages",
-    "title": "Morning Pages & Why They Rewired My Anxious Brain",
-    "excerpt": "Three pages. Every morning. No rules about content, no reader but yourself. Here's what quietly changes when you show up.",
-    "date": "2026-05-09",
-    "category": "mind",
-    "image": "images/pexels-n-voitkevich-10060448.jpg",
-    "readTime": 8
-  },
-  {
-    "slug": "post-nyc-love",
-    "title": "The City That Promised a Love Story — and Delivered Something Unexpected",
-    "excerpt": "New York sells you a cinematic love affair. The real one is far more honest, and somehow more beautiful.",
-    "date": "2026-05-08",
-    "category": "love",
-    "image": "images/NYC_love_hero.jpg",
-    "readTime": 7
-  },
-  {
-    "slug": "post-burnout",
-    "title": "What If You're Not Lazy — You're Burned Out?",
-    "excerpt": "The exhaustion that sleep doesn't fix, and the name that might change everything.",
-    "date": "2026-05-07",
-    "category": "mind",
-    "image": "images/pexels-cordero-17343820.jpg",
-    "readTime": 7
-  },
-  {
     "slug": "post-period-eat-better",
     "title": "What to Eat During Your Period — And What to Skip — to Finally Feel Human Again",
     "excerpt": "The foods that replenish and soothe your body this week, and the ones quietly making your symptoms worse. Both sides of the guide, in one place.",
@@ -396,6 +405,33 @@
     "readTime": 6
   },
   {
+    "slug": "post-softness",
+    "title": "What If Softness Is Your Greatest Strength?",
+    "excerpt": "We've been taught that strength looks like hardness. But what if the bravest thing you ever do is soften?",
+    "date": "2026-05-13",
+    "category": "mind",
+    "image": "images/softness-hero.jpg",
+    "readTime": 6
+  },
+  {
+    "slug": "post-dog-love",
+    "title": "The Kind of Love Only a Dog Gives You",
+    "excerpt": "There's something my Labrador does when I come home from a hard day that no human has ever quite managed. It's unconditional in a way that quietly heals you, over and over again.",
+    "date": "2026-05-13",
+    "category": "companion",
+    "image": "images/dog-love.jpg",
+    "readTime": 5
+  },
+  {
+    "slug": "post-dog-routine",
+    "title": "How My Labrador Became My Best Health Habit",
+    "excerpt": "I didn't plan to become a morning person, or someone who walks every day without fail. My Labrador Retriever had other ideas — and quietly built me a healthier life.",
+    "date": "2026-05-13",
+    "category": "companion",
+    "image": "images/dog-routine-hero.jpg",
+    "readTime": 5
+  },
+  {
     "slug": "post-breakfast",
     "title": "Before the Coffee: The Breakfast That Changes How Your Brain Works All Day",
     "excerpt": "Most of us reach for coffee before we think about food. But what we eat in the morning has a direct impact on how clearly we think, how long we focus, and how we feel all day.",
@@ -403,24 +439,6 @@
     "category": "nourish",
     "image": "images/breakfast-hero.jpg",
     "readTime": 5
-  },
-  {
-    "slug": "post-water",
-    "title": "What If a Glass of Water, at the Right Time, Changed Everything?",
-    "excerpt": "You know you should drink more water. But timing matters just as much as quantity — and no one ever told you when.",
-    "date": "2026-05-08",
-    "category": "nourish",
-    "image": "images/pexels-image-hunter-281453274-13092685.jpg",
-    "readTime": 5
-  },
-  {
-    "slug": "post-acv-honey",
-    "title": "What If the Oldest Gut Remedy Was Already in Your Pantry?",
-    "excerpt": "The ancient morning ritual that's been sitting in your kitchen all along — and what it actually does for your gut.",
-    "date": "2026-05-08",
-    "category": "nourish",
-    "image": "images/pexels-jahratreza-37112385.jpg",
-    "readTime": 6
   },
   {
     "slug": "post-smile-white",
@@ -441,6 +459,15 @@
     "readTime": 6
   },
   {
+    "slug": "post-anxiety",
+    "title": "What If Your Anxiety Has Been Trying to Protect You All Along?",
+    "excerpt": "Anxiety isn't a character flaw — it's a signal. Understanding the types, what triggers them, and what actually helps.",
+    "date": "2026-05-10",
+    "category": "mind",
+    "image": "images/anxiety-overwhelm.jpg",
+    "readTime": 10
+  },
+  {
     "slug": "post-banana-peel",
     "title": "The Part of the Banana You've Been Throwing Away",
     "excerpt": "You eat the banana. You toss the peel. But dermatologists and skin-care devotees have quietly been using it for years — and the results are hard to dismiss.",
@@ -448,6 +475,42 @@
     "category": "beauty",
     "image": "images/pexels-yulia-shapereva-s-58861876-7941294.jpg",
     "readTime": 5
+  },
+  {
+    "slug": "post-morning-pages",
+    "title": "Morning Pages & Why They Rewired My Anxious Brain",
+    "excerpt": "Three pages. Every morning. No rules about content, no reader but yourself. Here's what quietly changes when you show up.",
+    "date": "2026-05-09",
+    "category": "mind",
+    "image": "images/pexels-n-voitkevich-10060448.jpg",
+    "readTime": 8
+  },
+  {
+    "slug": "post-nyc-love",
+    "title": "The City That Promised a Love Story — and Delivered Something Unexpected",
+    "excerpt": "New York sells you a cinematic love affair. The real one is far more honest, and somehow more beautiful.",
+    "date": "2026-05-08",
+    "category": "love",
+    "image": "images/NYC_love_hero.jpg",
+    "readTime": 7
+  },
+  {
+    "slug": "post-water",
+    "title": "What If a Glass of Water, at the Right Time, Changed Everything?",
+    "excerpt": "You know you should drink more water. But timing matters just as much as quantity — and no one ever told you when.",
+    "date": "2026-05-08",
+    "category": "nourish",
+    "image": "images/pexels-image-hunter-281453274-13092685.jpg",
+    "readTime": 5
+  },
+  {
+    "slug": "post-acv-honey",
+    "title": "What If the Oldest Gut Remedy Was Already in Your Pantry?",
+    "excerpt": "The ancient morning ritual that's been sitting in your kitchen all along — and what it actually does for your gut.",
+    "date": "2026-05-08",
+    "category": "nourish",
+    "image": "images/pexels-jahratreza-37112385.jpg",
+    "readTime": 6
   },
   {
     "slug": "post-hair-foods",
@@ -486,30 +549,21 @@
     "readTime": 4
   },
   {
-    "slug": "post-dog-love",
-    "title": "The Kind of Love Only a Dog Gives You",
-    "excerpt": "There's something my Labrador does when I come home from a hard day that no human has ever quite managed. It's unconditional in a way that quietly heals you, over and over again.",
-    "date": "2026-05-13",
-    "category": "companion",
-    "image": "images/dog-love.jpg",
-    "readTime": 5
-  },
-  {
-    "slug": "post-dog-routine",
-    "title": "How My Labrador Became My Best Health Habit",
-    "excerpt": "I didn't plan to become a morning person, or someone who walks every day without fail. My Labrador Retriever had other ideas — and quietly built me a healthier life.",
-    "date": "2026-05-13",
-    "category": "companion",
-    "image": "images/dog-routine-hero.jpg",
-    "readTime": 5
-  },
-  {
     "slug": "post-companion-dogs",
     "title": "What If Your Dog Is Your Most Meaningful Relationship?",
     "excerpt": "Dogs offer something rare and quietly radical — unconditional love, presence, and emotional stability that research shows can exceed what human relationships provide.",
     "date": "2026-05-08",
     "category": "companion",
     "image": "images/pexels-dmitriy-piskarev-8529355.jpg",
+    "readTime": 7
+  },
+  {
+    "slug": "post-burnout",
+    "title": "What If You're Not Lazy — You're Burned Out?",
+    "excerpt": "The exhaustion that sleep doesn't fix, and the name that might change everything.",
+    "date": "2026-05-07",
+    "category": "mind",
+    "image": "images/pexels-cordero-17343820.jpg",
     "readTime": 7
   }
 ]
