@@ -1,5 +1,23 @@
 [
   {
+    "slug": "post-egf-skincare",
+    "title": "What Is EGF Skincare? Benefits, Skin Types & How to Use",
+    "excerpt": "EGF skincare, explained: what epidermal growth factor does for your skin barrier, who it's for, which skin types benefit, and how to use and layer it safely.",
+    "date": "2026-07-16",
+    "category": "beauty",
+    "image": "images/egf-skincare-hero.jpg",
+    "readTime": 11
+  },
+  {
+    "slug": "post-food-fertility",
+    "title": "Why American Food May Be Quietly Hurting Your Fertility",
+    "excerpt": "US fertility is at a record low. How ultra-processed food, endocrine disruptors and the US-EU food safety gap may be harming our health — and what you can do.",
+    "date": "2026-07-16",
+    "category": "nourish",
+    "image": "images/food-fertility-hero.jpg",
+    "readTime": 14
+  },
+  {
     "slug": "post-dog-loves-you",
     "title": "How to Tell If Your Dog Loves You: 10 Signs Backed by Science",
     "excerpt": "Does your dog love you? 10 science-backed signs — from the oxytocin eye-contact loop to leaning, following you, and puppy-dog eyes. Plus how to love them back.",
