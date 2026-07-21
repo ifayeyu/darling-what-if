@@ -1,5 +1,23 @@
 [
   {
+    "slug": "post-microbiome-skincare",
+    "title": "Microbiome Skincare: What Pre-, Pro- & Postbiotics Do",
+    "excerpt": "Microbiome skincare, explained: what prebiotics, probiotics and postbiotics actually do for your skin barrier — and how to care for your skin's microbiome.",
+    "date": "2026-07-20",
+    "category": "beauty",
+    "image": "images/microbiome-skincare-hero.jpg",
+    "readTime": 10
+  },
+  {
+    "slug": "post-hormone-disruptors",
+    "title": "Endocrine Disruptors: Hormone-Wrecking Foods & Chemicals",
+    "excerpt": "Endocrine disruptors like BPA, phthalates & PFAS hide in food, plastics & receipts. How they affect your hormones, plus easy ways to cut exposure.",
+    "date": "2026-07-19",
+    "category": "nourish",
+    "image": "images/hormone-disruptors-hero.jpg",
+    "readTime": 13
+  },
+  {
     "slug": "post-egf-skincare",
     "title": "What Is EGF Skincare? Benefits, Skin Types & How to Use",
     "excerpt": "EGF skincare, explained: what epidermal growth factor does for your skin barrier, who it's for, which skin types benefit, and how to use and layer it safely.",
