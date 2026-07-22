@@ -265,7 +265,7 @@
     "title": "What If Your Gut Is Running the Show — for Your Skin, Your Hair, and Your Mind?",
     "excerpt": "Your microbiome governs your skin, your hair, and 90% of your serotonin. Here's the science behind the gut-skin, gut-hair, and gut-brain axes — and what to eat to nourish all three.",
     "date": "2026-06-09",
-    "category": "nourish",
+    "category": "gut-health",
     "image": "images/Gut_axis_hero.jpg",
     "readTime": 10
   },
@@ -283,7 +283,7 @@
     "title": "Maui: A Love Letter & Complete Guide to the Valley Isle",
     "excerpt": "Maui is more than a destination — it hands you back to yourself. A love letter and a complete regional guide to the Valley Isle: Wailea, the North Shore, and the Road to Hana.",
     "date": "2026-06-09",
-    "category": "living",
+    "category": "travel",
     "image": "images/Maui_guide_hero.JPG",
     "readTime": 12
   },
@@ -427,7 +427,7 @@
     "title": "Five Things Your Gut Has Been Quietly Asking You For",
     "excerpt": "Your gut shapes your mood, trains your immune system, and influences almost everything in your body. Here are five gentle ways to start giving it what it needs.",
     "date": "2026-05-17",
-    "category": "nourish",
+    "category": "gut-health",
     "image": "images/gut-health-hero.jpg",
     "readTime": 7
   },
@@ -544,7 +544,7 @@
     "title": "What If the Oldest Gut Remedy Was Already in Your Pantry?",
     "excerpt": "The ancient morning ritual that's been sitting in your kitchen all along — and what it actually does for your gut.",
     "date": "2026-05-08",
-    "category": "nourish",
+    "category": "gut-health",
     "image": "images/pexels-jahratreza-37112385.jpg",
     "readTime": 6
   },
@@ -571,7 +571,7 @@
     "title": "Mahalo, Maui — A Love Letter to the Island That Changed Me",
     "excerpt": "Maui is more than a vacation. It's a place that hands you back to yourself — rawer, softer, more grateful. A personal love letter to the island that changed the way I see my days.",
     "date": "2026-05-08",
-    "category": "living",
+    "category": "travel",
     "image": "images/Maui-love-letter-hero.JPG",
     "readTime": 6
   },
@@ -580,7 +580,7 @@
     "title": "Maui, the Valley Isle: A Portrait of an Island in All Its Faces",
     "excerpt": "Maui is the celebrity sibling amongst all Hawaiian islands — radiant, a little rebellious, and full of glamour. From Wailea's five-star spas to the spiritual trails of Hana.",
     "date": "2026-05-08",
-    "category": "living",
+    "category": "travel",
     "image": "images/The Valley Isle-hero.JPG",
     "readTime": 4
   },

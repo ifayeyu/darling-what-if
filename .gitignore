@@ -6,3 +6,6 @@ index-request-urls.txt
 
 # editor lock files
 .~lock.*
+
+# backup / scratch files
+*.bak
