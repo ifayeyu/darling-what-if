@@ -212,18 +212,19 @@
 <div class="page-content">
     <p>I read every message personally. Whether you want to say hello, share something that resonated, pitch a collaboration, or just connect — I'd love to hear from you.</p>
     <div class="contact-form">
-        <form onsubmit="return false;">
+        <form id="contact-form" action="https://formspree.io/f/xeajzyje" method="POST">
+            <input type="hidden" name="_subject" value="New message from darlingwhatif.com">
             <div class="form-row">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="Your name">
+                <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
             <div class="form-row">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="your@email.com">
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
             </div>
             <div class="form-row">
                 <label for="subject">Subject</label>
-                <select id="subject">
+                <select id="subject" name="subject">
                     <option value="">Select a topic...</option>
                     <option>Just saying hello</option>
                     <option>Collaboration inquiry</option>
@@ -234,32 +235,69 @@
             </div>
             <div class="form-row">
                 <label for="message">Your Message</label>
-                <textarea id="message" placeholder="Write your message here..."></textarea>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
             </div>
-            <button class="btn" type="submit">Send Message</button>
+            <button class="btn" type="submit" id="contact-submit-btn">Send Message</button>
+            <p id="contact-form-status" style="margin-top:16px; font-size:0.88rem; display:none;"></p>
         </form>
     </div>
     <div class="connect-block">
         <p class="section-eyebrow" style="font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:12px;">Or find me here</p>
         <h2>Let's <em>connect</em></h2>
         <p>Whether you have a question, a collaboration idea, or just want to say hello — I genuinely love hearing from the people who read this. My inbox is not intimidating. Please use it.</p>
+        <p>You can also email me directly at <a href="mailto:hello@darlingwhatif.com">hello@darlingwhatif.com</a>.</p>
         <p>For partnerships, press, and brand collaborations, feel free to reach out directly. I work with brands whose values align with what this blog is actually about — softness, intentionality, and real wellness.</p>
         <div class="social-row">
-            <a href="#" class="social-pill">
+            <a href="https://www.instagram.com/darling_whatif/" class="social-pill" target="_blank" rel="noopener">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                 Instagram
             </a>
-            <a href="#" class="social-pill">
+            <a href="https://www.pinterest.com/darling_whatif/" class="social-pill" target="_blank" rel="noopener">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 Pinterest
             </a>
-            <a href="#" class="social-pill">
+            <a href="https://www.tiktok.com/@darling_whatif" class="social-pill" target="_blank" rel="noopener">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m4 4V7"/></svg>
                 TikTok
             </a>
         </div>
     </div>
 </div>
+
+<script>
+(function(){
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('contact-form-status');
+    var btn = document.getElementById('contact-submit-btn');
+    if (!form) return;
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        }).then(function(response){
+            if (response.ok) {
+                form.reset();
+                status.textContent = "Thank you — your message is on its way. I'll be in touch soon.";
+                status.style.color = 'var(--gold-dark)';
+                status.style.display = 'block';
+                btn.textContent = 'Sent ✦';
+            } else {
+                throw new Error('Form submission failed');
+            }
+        }).catch(function(){
+            status.textContent = "Something went wrong sending that. Please try again, or email hello@darlingwhatif.com directly.";
+            status.style.color = '#B04A3F';
+            status.style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = 'Send Message';
+        });
+    });
+})();
+</script>
 
 <section class="newsletter" id="newsletter">
     <div class="newsletter__inner">
