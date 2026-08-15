@@ -238,7 +238,7 @@
                 <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
             </div>
             <button class="btn" type="submit" id="contact-submit-btn">Send Message</button>
-            <p id="contact-form-status" style="margin-top:16px; font-size:0.88rem; display:none;"></p>
+            <p id="contact-form-status" role="status" aria-live="polite" style="margin-top:16px; font-size:0.88rem; display:none;"></p>
         </form>
     </div>
     <div class="connect-block">
@@ -270,10 +270,34 @@
     var status = document.getElementById('contact-form-status');
     var btn = document.getElementById('contact-submit-btn');
     if (!form) return;
+
+    var revertTimer = null;
+    var DEFAULT_LABEL = 'Send Message';
+
+    function resetToReady(){
+        btn.disabled = false;
+        btn.textContent = DEFAULT_LABEL;
+        status.style.display = 'none';
+        status.textContent = '';
+        if (revertTimer) { clearTimeout(revertTimer); revertTimer = null; }
+    }
+
+    // The moment the reader starts a new message, clear any leftover
+    // success/error state from the previous submission — otherwise "Sent ✦"
+    // and the thank-you note just sit there forever, which reads as broken.
+    form.addEventListener('input', function(){
+        if (btn.textContent !== DEFAULT_LABEL && btn.textContent !== 'Sending...') {
+            resetToReady();
+        }
+    });
+
     form.addEventListener('submit', function(e){
         e.preventDefault();
+        if (revertTimer) { clearTimeout(revertTimer); revertTimer = null; }
         btn.disabled = true;
         btn.textContent = 'Sending...';
+        status.style.display = 'none';
+
         fetch(form.action, {
             method: 'POST',
             body: new FormData(form),
@@ -285,6 +309,12 @@
                 status.style.color = 'var(--gold-dark)';
                 status.style.display = 'block';
                 btn.textContent = 'Sent ✦';
+                // Safety net for readers who don't retype (e.g. tabbing back in
+                // with a keyboard) — the button still returns to normal on its own.
+                revertTimer = setTimeout(function(){
+                    btn.disabled = false;
+                    btn.textContent = DEFAULT_LABEL;
+                }, 4000);
             } else {
                 throw new Error('Form submission failed');
             }
@@ -293,7 +323,7 @@
             status.style.color = '#B04A3F';
             status.style.display = 'block';
             btn.disabled = false;
-            btn.textContent = 'Send Message';
+            btn.textContent = DEFAULT_LABEL;
         });
     });
 })();
