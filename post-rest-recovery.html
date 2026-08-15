@@ -254,7 +254,16 @@
       .footer__inner { padding: 0 24px; }
       .footer__grid { grid-template-columns: 1fr; }
     }
-  </style>
+  
+        /* ── Inline related links ── */
+        .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
+        .internal-links__title { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; display: block; }
+        .internal-links ul { display: flex; flex-direction: column; gap: 14px; list-style: none; margin: 0; padding: 0; }
+        .internal-links li { display: flex; align-items: flex-start; gap: 12px; }
+        .internal-links li::before { content: '\2192'; color: var(--gold); font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+        .internal-links a { font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s ease, border-color 0.2s ease; }
+        .internal-links a:hover { color: var(--gold); border-color: var(--gold); }
+</style>
     <script type="application/ld+json">
     {"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Rest vs. Recovery: The Difference (and Why You Need Both)", "description": "Rest and recovery aren't the same — and confusing them may be why you're still exhausted. The science, a 7-day blueprint, and 4 daily pillars.", "image": "https://darlingwhatif.com/images/rest-recovery-hero.jpg", "url": "https://darlingwhatif.com/post-rest-recovery", "datePublished": "2026-06-20", "dateModified": "2026-06-20", "author": {"@type": "Person", "name": "Faye Livia", "url": "https://darlingwhatif.com/about"}, "publisher": {"@type": "Organization", "name": "Darling, What If", "url": "https://darlingwhatif.com", "logo": {"@type": "ImageObject", "url": "https://darlingwhatif.com/images/Gia.png"}}}
     </script>
@@ -587,7 +596,17 @@
 <section class="post-faq" aria-label="Frequently asked questions">
   <div class="faq-header">
     <div class="post-header__divider" style="margin:0;flex-shrink:0;"></div>
-    <h2>Questions I <em>Get Asked</em></h2>
+    
+  <div class="internal-links">
+    <span class="internal-links__title">You might also want to read</span>
+    <ul>
+      <li><a href="post-breakfast.html">Before the Coffee: The Breakfast That Changes How Your Brain Works All Day</a></li>
+      <li><a href="post-gut-health.html">Five Things Your Gut Has Been Quietly Asking You For</a></li>
+      <li><a href="post-water.html">What If a Glass of Water, at the Right Time, Changed Everything?</a></li>
+    </ul>
+  </div>
+
+  <h2>Questions I <em>Get Asked</em></h2>
   </div>
 
   <div class="faq-item" id="faq1">

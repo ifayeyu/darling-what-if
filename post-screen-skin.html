@@ -261,7 +261,16 @@
         .mobile-nav__links a:hover { color: var(--gold); background: var(--gold-faint); }
         @media (max-width: 900px) { .nav__hamburger { display: flex; } }
 
-        </style>
+        
+        /* ── Inline related links ── */
+        .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
+        .internal-links__title { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; display: block; }
+        .internal-links ul { display: flex; flex-direction: column; gap: 14px; list-style: none; margin: 0; padding: 0; }
+        .internal-links li { display: flex; align-items: flex-start; gap: 12px; }
+        .internal-links li::before { content: '\2192'; color: var(--gold); font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+        .internal-links a { font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s ease, border-color 0.2s ease; }
+        .internal-links a:hover { color: var(--gold); border-color: var(--gold); }
+</style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -433,7 +442,17 @@
 <!-- FAQ -->
 <section class="post-faq" aria-label="Frequently asked questions">
     <div class="faq-header">
-        <h2>Frequently Asked <em>Questions</em></h2>
+        
+  <div class="internal-links">
+    <span class="internal-links__title">You might also want to read</span>
+    <ul>
+      <li><a href="post-gut-glow.html">What If Your Gut Has Been Holding Your Glow Hostage?</a></li>
+      <li><a href="post-skin-listening.html">Why I Stopped Fighting My Skin and Started Listening to It</a></li>
+      <li><a href="post-spf-guide.html">Your Future Skin Is Being Written Right Now</a></li>
+    </ul>
+  </div>
+
+  <h2>Frequently Asked <em>Questions</em></h2>
     </div>
 
     <div class="faq-item" id="faq1">

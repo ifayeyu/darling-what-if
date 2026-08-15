@@ -700,7 +700,16 @@
         .mobile-nav__links a:hover { color: var(--gold); background: var(--gold-faint); }
         @media (max-width: 900px) { .nav__hamburger { display: flex; } }
 
-        </style>
+        
+        /* ── Inline related links ── */
+        .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
+        .internal-links__title { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; display: block; }
+        .internal-links ul { display: flex; flex-direction: column; gap: 14px; list-style: none; margin: 0; padding: 0; }
+        .internal-links li { display: flex; align-items: flex-start; gap: 12px; }
+        .internal-links li::before { content: '\2192'; color: var(--gold); font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+        .internal-links a { font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s ease, border-color 0.2s ease; }
+        .internal-links a:hover { color: var(--gold); border-color: var(--gold); }
+</style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -940,7 +949,17 @@
 
 <section class="post-faq" aria-label="Frequently asked questions">
     <div class="faq-header">
-        <h2>Frequently Asked <em>Questions</em></h2>
+        
+  <div class="internal-links">
+    <span class="internal-links__title">You might also want to read</span>
+    <ul>
+      <li><a href="post-dog-love.html">The Kind of Love Only a Dog Gives You</a></li>
+      <li><a href="post-dog-sad.html">Why My Dog Knows When I'm Sad Before I Do</a></li>
+      <li><a href="post-whole-world.html">What It Means to Be Someone's Whole World</a></li>
+    </ul>
+  </div>
+
+  <h2>Frequently Asked <em>Questions</em></h2>
     </div>
 
     <div class="faq-item" id="faq1">
@@ -1017,18 +1036,6 @@
             <h2 class="section-title">Keep <em>Reading</em></h2>
         </div>
         <div class="related-grid">
-
-            <article class="post-card">
-                <div class="post-card__img-wrap">
-                    <img class="post-card__img" src="images/dog-love.jpg" alt="Post Dog Love" loading="lazy">
-                </div>
-                <div class="post-card__body">
-                    <a href="companion.html" class="category-label">Companion</a>
-                    <h3 class="post-card__title"><a href="post-dog-love.html">The Kind of Love Only a Dog Gives You</a></h3>
-                    <div class="post-card__date">May 13, 2026 &nbsp;·&nbsp; 5 min read</div>
-                </div>
-            </article>
-
             <article class="post-card">
                 <div class="post-card__img-wrap">
                     <img class="post-card__img" src="images/pexels-n-voitkevich-10060448.jpg" alt="Post Morning Pages" loading="lazy">
@@ -1039,7 +1046,6 @@
                     <div class="post-card__date">May 6, 2026 &nbsp;·&nbsp; 5 min read</div>
                 </div>
             </article>
-
             <article class="post-card">
                 <div class="post-card__img-wrap">
                     <img class="post-card__img" src="images/pexels-image-hunter-281453274-13092685.jpg" alt="Post Water" loading="lazy">
@@ -1050,7 +1056,16 @@
                     <div class="post-card__date">May 8, 2026 &nbsp;·&nbsp; 5 min read</div>
                 </div>
             </article>
-
+            <article class="post-card">
+                <div class="post-card__img-wrap">
+                    <img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy">
+                </div>
+                <div class="post-card__body">
+                    <a href="love.html" class="category-label">Love</a>
+                    <h3 class="post-card__title"><a href="post-emotional-safety.html">The Love Language Nobody Talks About: Feeling Emotionally Safe</a></h3>
+                    <div class="post-card__date">May 13, 2026 &nbsp;·&nbsp; 5 min read</div>
+                </div>
+            </article>
         </div>
     </div>
 </section>

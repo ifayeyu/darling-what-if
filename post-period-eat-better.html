@@ -260,7 +260,36 @@
         }
         .mobile-nav__links a:hover { color: var(--gold); background: var(--gold-faint); }
         @media (max-width: 900px) { .nav__hamburger { display: flex; } }
-    </style>
+    
+        /* ── Inline related links ── */
+        .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
+        .internal-links__title { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; display: block; }
+        .internal-links ul { display: flex; flex-direction: column; gap: 14px; list-style: none; margin: 0; padding: 0; }
+        .internal-links li { display: flex; align-items: flex-start; gap: 12px; }
+        .internal-links li::before { content: '\2192'; color: var(--gold); font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+        .internal-links a { font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s ease, border-color 0.2s ease; }
+        .internal-links a:hover { color: var(--gold); border-color: var(--gold); }
+
+        /* ── Related posts ── */
+        .related-posts { background: var(--bg-warm); padding: 96px 0; }
+        .related-posts .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+        .related-posts .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 48px; }
+        .related-posts .section-title { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: var(--text); }
+        .related-posts .section-title em { font-style: italic; color: var(--gold); }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .post-card { background: var(--white); display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .post-card:hover { transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+        .post-card__img-wrap { aspect-ratio: 3/2; overflow: hidden; flex-shrink: 0; }
+        .post-card__img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.65s ease; }
+        .post-card:hover .post-card__img { transform: scale(1.06); }
+        .post-card__body { padding: 24px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+        .post-card__title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; line-height: 1.4; color: var(--text); margin-bottom: 10px; }
+        .post-card__title a:hover { color: var(--gold); }
+        .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
+        .category-label { font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: inline-block; }
+        @media (max-width: 900px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 680px) { .related-grid { grid-template-columns: 1fr; } .related-posts .container { padding: 0 24px; } }
+</style>
 
     <script type="application/ld+json">
     {
@@ -453,7 +482,17 @@
         <p class="post-img__caption">Understanding why certain foods make things worse is the first step to choosing differently.</p>
     </div>
 
-    <h2>The Main <em>Culprits</em></h2>
+    
+  <div class="internal-links">
+    <span class="internal-links__title">You might also want to read</span>
+    <ul>
+      <li><a href="post-breakfast.html">Before the Coffee: The Breakfast That Changes How Your Brain Works All Day</a></li>
+      <li><a href="post-water.html">What If a Glass of Water, at the Right Time, Changed Everything?</a></li>
+      <li><a href="post-sugar-cravings.html">Your Sugar Cravings Are Not a Character Flaw</a></li>
+    </ul>
+  </div>
+
+  <h2>The Main <em>Culprits</em></h2>
 
     <p>Two processes drive most period symptoms: inflammation and water retention. Prostaglandins — the compounds your uterus releases to trigger contractions — are inflammatory by nature. Your body is also, for hormonal reasons, more prone to holding onto sodium during this time. The foods below either feed those two processes directly, or disrupt the sleep and hormonal balance you need to recover.</p>
 
@@ -596,6 +635,32 @@
     </div>
 </section>
 
+
+<section class="related-posts">
+    <div class="container">
+        <div class="section-header"><h2 class="section-title">Keep <em>Reading</em></h2></div>
+        <div class="related-grid">
+            <article class="post-card">
+                <a href="post-emotional-safety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy"></div></a>
+                <div class="post-card__body"><a href="love.html" class="category-label">Love</a>
+                <h3 class="post-card__title"><a href="post-emotional-safety.html">The Love Language Nobody Talks About: Feeling Emotionally Safe</a></h3>
+                <p class="post-card__date">May 30, 2026</p></div>
+            </article>
+            <article class="post-card">
+                <a href="post-quiet-anxiety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Quiet_anxiety_hero.jpg" alt="You Are Not the Worry" loading="lazy"></div></a>
+                <div class="post-card__body"><a href="mind.html" class="category-label">Mind</a>
+                <h3 class="post-card__title"><a href="post-quiet-anxiety.html">You Are Not the Worry</a></h3>
+                <p class="post-card__date">May 22, 2026</p></div>
+            </article>
+            <article class="post-card">
+                <a href="post-gut-glow.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Gut_glow_hero.jpg" alt="What If Your Gut Has Been Holding Your Glow Hostage?" loading="lazy"></div></a>
+                <div class="post-card__body"><a href="beauty.html" class="category-label">Beauty</a>
+                <h3 class="post-card__title"><a href="post-gut-glow.html">What If Your Gut Has Been Holding Your Glow Hostage?</a></h3>
+                <p class="post-card__date">June 9, 2026</p></div>
+            </article>
+        </div>
+    </div>
+</section>
 <footer class="footer">
     <div style="max-width:1240px;margin:0 auto;padding:0 48px;">
         <div class="footer__grid">

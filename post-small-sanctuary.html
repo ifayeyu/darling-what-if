@@ -226,7 +226,36 @@
 
         @media (max-width: 900px) { .nav__links { display: none; } .nav__hamburger { display: flex; } .related__grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
         @media (max-width: 680px) { .nav__inner { padding-left: 24px; padding-right: 24px; } .post-body { padding: 0 20px 64px; } .post-img { margin-left: -20px; margin-right: -20px; } .pull-quote { margin-left: -20px; margin-right: -20px; padding: 40px 28px 40px 36px; } .pull-quote::before { left: 28px; } .related__grid { grid-template-columns: 1fr; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } .related__inner { padding: 0 24px; } }
-    </style>
+    
+        /* ── Inline related links ── */
+        .internal-links { margin: 56px 0; padding: 36px 40px; border: 1px solid var(--border); background: var(--white); }
+        .internal-links__title { font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; display: block; }
+        .internal-links ul { display: flex; flex-direction: column; gap: 14px; list-style: none; margin: 0; padding: 0; }
+        .internal-links li { display: flex; align-items: flex-start; gap: 12px; }
+        .internal-links li::before { content: '\2192'; color: var(--gold); font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+        .internal-links a { font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s ease, border-color 0.2s ease; }
+        .internal-links a:hover { color: var(--gold); border-color: var(--gold); }
+
+        /* ── Related posts ── */
+        .related-posts { background: var(--bg-warm); padding: 96px 0; }
+        .related-posts .container { max-width: 1240px; margin: 0 auto; padding: 0 48px; }
+        .related-posts .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 48px; }
+        .related-posts .section-title { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: var(--text); }
+        .related-posts .section-title em { font-style: italic; color: var(--gold); }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .post-card { background: var(--white); display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .post-card:hover { transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+        .post-card__img-wrap { aspect-ratio: 3/2; overflow: hidden; flex-shrink: 0; }
+        .post-card__img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.65s ease; }
+        .post-card:hover .post-card__img { transform: scale(1.06); }
+        .post-card__body { padding: 24px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+        .post-card__title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; line-height: 1.4; color: var(--text); margin-bottom: 10px; }
+        .post-card__title a:hover { color: var(--gold); }
+        .post-card__date { font-size: 0.73rem; color: var(--text-muted); margin-top: auto; padding-top: 16px; }
+        .category-label { font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: inline-block; }
+        @media (max-width: 900px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 680px) { .related-grid { grid-template-columns: 1fr; } .related-posts .container { padding: 0 24px; } }
+</style>
 </head>
 <body>
 
@@ -386,7 +415,17 @@
         Protecting that space means resisting the impulse to add when the impulse arises. It means choosing one beautiful object over three acceptable ones. It means trusting that less can hold more feeling than more ever will.
     </p>
 
-    <h2>Make one ritual that is yours alone</h2>
+    
+  <div class="internal-links">
+    <span class="internal-links__title">You might also want to read</span>
+    <ul>
+      <li><a href="post-japan-simplicity.html">What Japan Taught Me About Space, Simplicity, and Enough</a></li>
+      <li><a href="post-table-no-phone.html">The Case for Eating at a Table Without Your Phone</a></li>
+      <li><a href="post-plants-nervous-system.html">What If the Plants in Your Home Are Quietly Regulating Your Nervous System?</a></li>
+    </ul>
+  </div>
+
+  <h2>Make one ritual that is yours alone</h2>
 
     <p>
         A sanctuary isn't just about how a space looks or feels when you enter it. It's also about what you do there. The rituals that happen in a space are as much a part of it as the walls and the light — maybe more.
@@ -453,6 +492,32 @@
     </div>
 </section>
 
+
+<section class="related-posts">
+    <div class="container">
+        <div class="section-header"><h2 class="section-title">Keep <em>Reading</em></h2></div>
+        <div class="related-grid">
+            <article class="post-card">
+                <a href="post-emotional-safety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy"></div></a>
+                <div class="post-card__body"><a href="love.html" class="category-label">Love</a>
+                <h3 class="post-card__title"><a href="post-emotional-safety.html">The Love Language Nobody Talks About: Feeling Emotionally Safe</a></h3>
+                <p class="post-card__date">May 30, 2026</p></div>
+            </article>
+            <article class="post-card">
+                <a href="post-quiet-anxiety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Quiet_anxiety_hero.jpg" alt="You Are Not the Worry" loading="lazy"></div></a>
+                <div class="post-card__body"><a href="mind.html" class="category-label">Mind</a>
+                <h3 class="post-card__title"><a href="post-quiet-anxiety.html">You Are Not the Worry</a></h3>
+                <p class="post-card__date">May 22, 2026</p></div>
+            </article>
+            <article class="post-card">
+                <a href="post-dog-love.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/dog-love.jpg" alt="The Kind of Love Only a Dog Gives You" loading="lazy"></div></a>
+                <div class="post-card__body"><a href="companion.html" class="category-label">Companion</a>
+                <h3 class="post-card__title"><a href="post-dog-love.html">The Kind of Love Only a Dog Gives You</a></h3>
+                <p class="post-card__date">May 13, 2026</p></div>
+            </article>
+        </div>
+    </div>
+</section>
 <footer class="footer">
     <div style="max-width:1240px;margin:0 auto;padding:0 48px;">
         <div class="footer__grid">
