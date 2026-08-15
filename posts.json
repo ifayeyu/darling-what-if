@@ -1,5 +1,14 @@
 [
   {
+    "slug": "post-writing-by-hand",
+    "title": "Why I Started Writing by Hand Again",
+    "excerpt": "The benefits of writing by hand — what the research says about handwriting vs typing, and the five things I moved back to paper without giving up my laptop.",
+    "date": "2026-08-02",
+    "category": "living",
+    "image": "images/writing-by-hand-hero.jpg",
+    "readTime": 9
+  },
+  {
     "slug": "post-enmeshment-parents",
     "title": "Is Your Parents' Love Making It Hard to Breathe?",
     "excerpt": "Enmeshment with a parent: 7 signs the closeness has become suffocating, why you feel guilty wanting space, and how to find air without losing them.",
@@ -178,6 +187,15 @@
     "category": "nourish",
     "image": "images/collagen-1.jpg",
     "readTime": 9
+  },
+  {
+    "slug": "post-easy-to-love",
+    "title": "Easy to Love, Hard to Leave: When Kindness Keeps You Stuck",
+    "excerpt": "The empathy, ease, and forgiveness that make you easy to love can also make it hard to leave. The tender psychology of the over-giver — and the way out.",
+    "date": "2026-07-21",
+    "category": "love",
+    "image": "images/easy-love-hero.jpg",
+    "readTime": 7
   },
   {
     "slug": "post-microbiome-skincare",
