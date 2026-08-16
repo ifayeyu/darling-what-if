@@ -630,6 +630,15 @@
     "readTime": 12
   },
   {
+    "slug": "post-smile-white",
+    "title": "How I Keep My Teeth White Without Giving Up Coffee",
+    "excerpt": "I'm a caffeine fiend who's spent years experimenting with teeth whitening. Here are the natural DIY methods that actually worked — and one product I keep coming back to.",
+    "date": "2026-05-19",
+    "category": "beauty",
+    "image": "images/smile-white-hero.jpg",
+    "readTime": 5
+  },
+  {
     "slug": "post-gut-health",
     "title": "Five Things Your Gut Has Been Quietly Asking You For",
     "excerpt": "Your gut shapes your mood, trains your immune system, and influences almost everything in your body. Here are five gentle ways to start giving it what it needs.",
@@ -681,15 +690,6 @@
     "date": "2026-05-12",
     "category": "nourish",
     "image": "images/breakfast-hero.jpg",
-    "readTime": 5
-  },
-  {
-    "slug": "post-smile-white",
-    "title": "How I Keep My Teeth White Without Giving Up Coffee",
-    "excerpt": "I'm a caffeine fiend who's spent years experimenting with teeth whitening. Here are the natural DIY methods that actually worked — and one product I keep coming back to.",
-    "date": "2026-05-12",
-    "category": "beauty",
-    "image": "images/smile-white-hero.jpg",
     "readTime": 5
   },
   {
