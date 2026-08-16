@@ -104,8 +104,16 @@
         .footer__col a { font-size: 0.87rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
         .footer__col a:hover { color: var(--gold); }
         .footer__bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: rgba(255,255,255,0.35); }
+        .travel-ad-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+        .travel-ad-card { padding: 52px 48px; }
+        .travel-ad-card__eyebrow { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+        .travel-ad-card__title { font-family: var(--serif); font-size: clamp(1.4rem, 2.4vw, 1.7rem); font-weight: 500; font-style: italic; color: var(--text); line-height: 1.3; margin-bottom: 16px; }
+        .travel-ad-card__desc { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 28px; }
+        .travel-ad-card__btn { display: inline-block; background: var(--gold); color: var(--white); padding: 14px 28px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: background 0.2s; }
+        .travel-ad-card__btn:hover { background: var(--gold-dark); }
+        .travel-ad-card__caption { font-size: 0.68rem; color: var(--text-muted); margin-top: 14px; letter-spacing: 0.05em; }
         @media (max-width: 900px) { .nav__links { display: none; } .featured-post { grid-template-columns: 1fr; } .featured-post__img { aspect-ratio: 16/9; } .posts-grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
-        @media (max-width: 680px) { .nav__inner, .container, .cat-hero { padding-left: 24px; padding-right: 24px; } .posts-grid { grid-template-columns: 1fr; } .featured-post__body { padding: 32px 24px; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } }
+        @media (max-width: 680px) { .nav__inner, .container, .cat-hero { padding-left: 24px; padding-right: 24px; } .posts-grid { grid-template-columns: 1fr; } .featured-post__body { padding: 32px 24px; } .newsletter__form { flex-direction: column; } .footer__grid { grid-template-columns: 1fr; } .travel-ad-grid { grid-template-columns: 1fr; } .travel-ad-card { padding: 40px 28px; } }
     
         /* ============================================================
            MOBILE NAVIGATION DRAWER
@@ -205,45 +213,35 @@
     </div>
 </section>
 
-<!-- ── CHEAPOAIR AFFILIATE BANNER ─────────────────────────────────────── -->
-<div style="background:var(--bg-warm);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:36px 48px;">
-  <div style="max-width:var(--content-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
-    <div>
-      <p style="font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Travel Well</p>
-      <p style="font-family:var(--serif);font-size:1.35rem;font-weight:500;font-style:italic;color:var(--text);line-height:1.3;margin-bottom:6px;">Fly a little fancier, darling.</p>
-      <p style="font-size:0.87rem;color:var(--text-muted);line-height:1.7;max-width:480px;">Business class doesn't have to be a dream. CheapOair finds premium fares at prices that actually make sense — so you arrive rested, not regretful.</p>
-    </div>
-    <div style="flex-shrink:0;text-align:center;">
-      <a href="https://www.kqzyfj.com/click-101758671-11947507" target="_blank" rel="noopener sponsored"
-         style="display:inline-block;background:var(--gold);color:var(--white);padding:14px 28px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;transition:background 0.2s;white-space:nowrap;">
+<!-- ── TRAVEL AFFILIATE CARDS (CheapOair + VRBO, side by side) ─────────── -->
+<div style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="travel-ad-grid">
+
+    <div class="travel-ad-card" style="background:var(--bg-warm);">
+      <p class="travel-ad-card__eyebrow">Travel Well</p>
+      <p class="travel-ad-card__title">Fly a little fancier, darling.</p>
+      <p class="travel-ad-card__desc">Business class doesn't have to be a dream. CheapOair finds premium fares at prices that actually make sense — so you arrive rested, not regretful.</p>
+      <a class="travel-ad-card__btn" href="https://www.kqzyfj.com/click-101758671-11947507" target="_blank" rel="noopener sponsored">
         Explore Flight Deals →
       </a>
-      <p style="font-size:0.68rem;color:var(--text-muted);margin-top:8px;letter-spacing:0.05em;">Flights · Business &amp; First Class</p>
+      <p class="travel-ad-card__caption">Flights · Business &amp; First Class</p>
     </div>
+
+    <div class="travel-ad-card" style="background:var(--white);">
+      <p class="travel-ad-card__eyebrow">Where to stay</p>
+      <p class="travel-ad-card__title">A whole home, all to yourself.</p>
+      <p class="travel-ad-card__desc">Skip the hotel. VRBO's weekly vacation rentals give you more space, more privacy, and more of the feeling that you actually live there — for less than you'd expect.</p>
+      <a class="travel-ad-card__btn" href="https://www.kqzyfj.com/click-101758672-14506917" target="_blank" rel="noopener sponsored">
+        Find a Vacation Rental →
+      </a>
+      <p class="travel-ad-card__caption">Weekly stays · Entire homes · 190 countries</p>
+    </div>
+
   </div>
 </div>
 <img src="https://www.awltovhc.com/image-101758671-11947507" width="1" height="1" border="0" alt="" style="display:none;" />
-<!-- ── END CHEAPOAIR ──────────────────────────────────────────────────── -->
-
-<!-- ── VRBO AFFILIATE BANNER ─────────────────────────────────────────── -->
-<div style="background:var(--white);border-bottom:1px solid var(--border);padding:36px 48px;">
-  <div style="max-width:var(--content-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
-    <div>
-      <p style="font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Where to stay</p>
-      <p style="font-family:var(--serif);font-size:1.35rem;font-weight:500;font-style:italic;color:var(--text);line-height:1.3;margin-bottom:6px;">A whole home, all to yourself.</p>
-      <p style="font-size:0.87rem;color:var(--text-muted);line-height:1.7;max-width:480px;">Skip the hotel. VRBO's weekly vacation rentals give you more space, more privacy, and more of the feeling that you actually live there — for less than you'd expect.</p>
-    </div>
-    <div style="flex-shrink:0;text-align:center;">
-      <a href="https://www.kqzyfj.com/click-101758672-14506917" target="_blank" rel="noopener sponsored"
-         style="display:inline-block;background:var(--gold);color:var(--white);padding:14px 28px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;white-space:nowrap;">
-        Find a Vacation Rental →
-      </a>
-      <p style="font-size:0.68rem;color:var(--text-muted);margin-top:8px;letter-spacing:0.05em;">Weekly stays · Entire homes · 190 countries</p>
-    </div>
-  </div>
-</div>
 <img src="https://www.lduhtrp.net/image-101758672-14506917" width="1" height="1" border="0" alt="" style="display:none;" />
-<!-- ── END VRBO ────────────────────────────────────────────────────────── -->
+<!-- ── END TRAVEL AFFILIATE CARDS ────────────────────────────────────────── -->
 
 <div class="container">
     <div id="posts-output" data-category="living" data-style="featured"></div>

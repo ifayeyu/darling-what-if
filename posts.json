@@ -243,6 +243,15 @@
     "readTime": 12
   },
   {
+    "slug": "post-attachment-style",
+    "title": "What's My Attachment Style? The 4 Styles, Gently Explained",
+    "excerpt": "What's my attachment style? A gentle, no-shame guide to the 4 attachment styles — secure, anxious, avoidant and disorganized — and how to find yours.",
+    "date": "2026-07-12",
+    "category": "love",
+    "image": "images/attachment-style-hero.jpg",
+    "readTime": 11
+  },
+  {
     "slug": "post-dog-loves-you",
     "title": "How to Tell If Your Dog Loves You: 10 Signs Backed by Science",
     "excerpt": "Does your dog love you? 10 science-backed signs — from the oxytocin eye-contact loop to leaning, following you, and puppy-dog eyes. Plus how to love them back.",
@@ -250,15 +259,6 @@
     "category": "companion",
     "image": "images/dog-loves-u-hero-2.jpg",
     "readTime": 10
-  },
-  {
-    "slug": "post-attachment-style",
-    "title": "What's My Attachment Style? The 4 Styles, Gently Explained",
-    "excerpt": "What's my attachment style? A gentle, no-shame guide to the 4 attachment styles — secure, anxious, avoidant and disorganized — and how to find yours.",
-    "date": "2026-07-10",
-    "category": "love",
-    "image": "images/attachment-style-hero.jpg",
-    "readTime": 11
   },
   {
     "slug": "post-situationship-relationship",
