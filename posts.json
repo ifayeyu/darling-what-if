@@ -36,6 +36,15 @@
     "readTime": 12
   },
   {
+    "slug": "post-vitamin-d-hormone",
+    "title": "What If Vitamin D Was Never a Vitamin at All?",
+    "excerpt": "Vitamin D is a secosteroid hormone your skin makes from sunlight, not a vitamin. How the conversion works — and the most natural ways to raise your levels.",
+    "date": "2026-08-07",
+    "category": "nourish",
+    "image": "images/v-d-hormone-hero.jpg",
+    "readTime": 12
+  },
+  {
     "slug": "post-eldest-daughter-syndrome",
     "title": "Eldest Daughter Syndrome: What If You Were Never Supposed to Hold All of It?",
     "excerpt": "Eldest daughter syndrome: the signs in adult women, why parentification happens, and how to stop over-functioning when your worth was built on being needed.",
@@ -69,15 +78,6 @@
     "date": "2026-08-02",
     "category": "mind",
     "image": "images/childhood-emotional-neglect-hero.jpg",
-    "readTime": 12
-  },
-  {
-    "slug": "post-vitamin-d-hormone",
-    "title": "What If Vitamin D Was Never a Vitamin at All?",
-    "excerpt": "Vitamin D is a secosteroid hormone your skin makes from sunlight, not a vitamin. How the conversion works — and the most natural ways to raise your levels.",
-    "date": "2026-08-02",
-    "category": "nourish",
-    "image": "images/v-d-hormone-hero.jpg",
     "readTime": 12
   },
   {
@@ -585,15 +585,6 @@
     "readTime": 7
   },
   {
-    "slug": "post-90-30-50",
-    "title": "The 90-30-50 Method Keeps Showing Up on My Feed. Here's What Nutritionists Actually Say",
-    "excerpt": "TikTok's viral 90-30-50 method promises weight loss without calorie counting. Here's what dietitians say — plus a full-day whole-foods meal plan.",
-    "date": "2026-05-24",
-    "category": "nourish",
-    "image": "images/903050post_hero.jpg",
-    "readTime": 8
-  },
-  {
     "slug": "post-quiet-anxiety",
     "title": "You Are Not the Worry",
     "excerpt": "High-functioning anxiety doesn't look like a breakdown — it feels like a low hum beneath everything. Here's how to recognize quiet anxiety, understand what it is, and gently find your way back to yourself.",
@@ -601,6 +592,15 @@
     "category": "mind",
     "image": "images/Quiet_anxiety_hero.jpg",
     "readTime": 10
+  },
+  {
+    "slug": "post-90-30-50",
+    "title": "The 90-30-50 Method Keeps Showing Up on My Feed. Here's What Nutritionists Actually Say",
+    "excerpt": "TikTok's viral 90-30-50 method promises weight loss without calorie counting. Here's what dietitians say — plus a full-day whole-foods meal plan.",
+    "date": "2026-05-21",
+    "category": "nourish",
+    "image": "images/903050post_hero.jpg",
+    "readTime": 8
   },
   {
     "slug": "post-spf-guide",
