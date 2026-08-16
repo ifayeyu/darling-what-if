@@ -9,6 +9,42 @@
     "readTime": 12
   },
   {
+    "slug": "post-enmeshment-parents",
+    "title": "Is Your Parents' Love Making It Hard to Breathe?",
+    "excerpt": "Enmeshment with a parent: 7 signs the closeness has become suffocating, why you feel guilty wanting space, and how to find air without losing them.",
+    "date": "2026-08-11",
+    "category": "mind",
+    "image": "images/heavy-love-hero.jpg",
+    "readTime": 12
+  },
+  {
+    "slug": "post-self-compassion-vs-self-esteem",
+    "title": "What If You've Been Trying to Feel Good About Yourself the Wrong Way?",
+    "excerpt": "Self-esteem needs you to be above average, so it leaves the moment you fail. The research on self-compassion — why it's steadier, and how to actually build it.",
+    "date": "2026-08-10",
+    "category": "mind",
+    "image": "images/self-compassion-hero.jpg",
+    "readTime": 11
+  },
+  {
+    "slug": "post-evening-sleep-routine",
+    "title": "How I Designed My Evening to Protect My Sleep",
+    "excerpt": "An evidence-based evening routine for better sleep — the light, temperature, caffeine and wind-down changes that actually work, and the ones that don't.",
+    "date": "2026-08-07",
+    "category": "mind",
+    "image": "images/sleep-routine-hero.jpg",
+    "readTime": 12
+  },
+  {
+    "slug": "post-eldest-daughter-syndrome",
+    "title": "Eldest Daughter Syndrome: What If You Were Never Supposed to Hold All of It?",
+    "excerpt": "Eldest daughter syndrome: the signs in adult women, why parentification happens, and how to stop over-functioning when your worth was built on being needed.",
+    "date": "2026-08-05",
+    "category": "mind",
+    "image": "images/eldest-daughter-syndrome-hero.jpg",
+    "readTime": 12
+  },
+  {
     "slug": "post-writing-by-hand",
     "title": "Why I Started Writing by Hand Again",
     "excerpt": "The benefits of writing by hand — what the research says about handwriting vs typing, and the five things I moved back to paper without giving up my laptop.",
@@ -18,15 +54,6 @@
     "readTime": 9
   },
   {
-    "slug": "post-enmeshment-parents",
-    "title": "Is Your Parents' Love Making It Hard to Breathe?",
-    "excerpt": "Enmeshment with a parent: 7 signs the closeness has become suffocating, why you feel guilty wanting space, and how to find air without losing them.",
-    "date": "2026-08-02",
-    "category": "mind",
-    "image": "images/heavy-love-hero.jpg",
-    "readTime": 12
-  },
-  {
     "slug": "post-do-dogs-feel-guilt",
     "title": "Do Dogs Feel Guilt? The Study That Changes How You'll See That Face",
     "excerpt": "Do dogs feel guilt? A landmark study says the guilty look isn't guilt at all — it's a response to your anger. What your dog is really saying, and why it matters.",
@@ -34,33 +61,6 @@
     "category": "companion",
     "image": "images/dog-guilt-hero.jpg",
     "readTime": 11
-  },
-  {
-    "slug": "post-self-compassion-vs-self-esteem",
-    "title": "What If You've Been Trying to Feel Good About Yourself the Wrong Way?",
-    "excerpt": "Self-esteem needs you to be above average, so it leaves the moment you fail. The research on self-compassion — why it's steadier, and how to actually build it.",
-    "date": "2026-08-02",
-    "category": "mind",
-    "image": "images/self-compassion-hero.jpg",
-    "readTime": 11
-  },
-  {
-    "slug": "post-evening-sleep-routine",
-    "title": "How I Designed My Evening to Protect My Sleep",
-    "excerpt": "An evidence-based evening routine for better sleep — the light, temperature, caffeine and wind-down changes that actually work, and the ones that don't.",
-    "date": "2026-08-02",
-    "category": "mind",
-    "image": "images/sleep-routine-hero.jpg",
-    "readTime": 12
-  },
-  {
-    "slug": "post-eldest-daughter-syndrome",
-    "title": "Eldest Daughter Syndrome: What If You Were Never Supposed to Hold All of It?",
-    "excerpt": "Eldest daughter syndrome: the signs in adult women, why parentification happens, and how to stop over-functioning when your worth was built on being needed.",
-    "date": "2026-08-02",
-    "category": "mind",
-    "image": "images/eldest-daughter-syndrome-hero.jpg",
-    "readTime": 12
   },
   {
     "slug": "post-childhood-emotional-neglect",
@@ -117,15 +117,6 @@
     "readTime": 11
   },
   {
-    "slug": "post-emotional-maturity",
-    "title": "What Real Emotional Maturity Actually Looks Like",
-    "excerpt": "Real emotional maturity isn't about having no emotions. It's about what you do with them. Here are the quiet signs someone has done — or is doing — the work.",
-    "date": "2026-07-29",
-    "category": "love",
-    "image": "images/emo-maturity-hero.jpg",
-    "readTime": 10
-  },
-  {
     "slug": "post-rescue-animal-trust",
     "title": "What a Rescue Carries: Invisible Wounds and the Long Road Back to Trust",
     "excerpt": "Rescue animals carry invisible physical and emotional wounds caused by human hands. Here's what happens inside a traumatized dog's mind — and what it actually takes to bring them home.",
@@ -135,10 +126,19 @@
     "readTime": 11
   },
   {
+    "slug": "post-emotional-maturity",
+    "title": "What Real Emotional Maturity Actually Looks Like",
+    "excerpt": "Real emotional maturity isn't about having no emotions. It's about what you do with them. Here are the quiet signs someone has done — or is doing — the work.",
+    "date": "2026-07-29",
+    "category": "love",
+    "image": "images/emo-maturity-hero.jpg",
+    "readTime": 10
+  },
+  {
     "slug": "post-compatibility",
     "title": "Relationship Compatibility: A Partner Assessment & Checkup",
     "excerpt": "How to assess relationship compatibility — the core areas that actually matter, the 80/20 rule, and a free self-scored compatibility checkup you can do today.",
-    "date": "2026-07-21",
+    "date": "2026-07-24",
     "category": "love",
     "image": "images/compatibility-hero.jpg",
     "readTime": 12
@@ -151,24 +151,6 @@
     "category": "love",
     "image": "images/friendship-green-hero.jpg",
     "readTime": 8
-  },
-  {
-    "slug": "post-anxious-attachment",
-    "title": "Anxious Attachment in Relationships: Signs, Triggers & How to Feel Safe",
-    "excerpt": "The message was read two hours ago, and your whole body has organized itself around the silence. If love sometimes feels less like warmth and more like waiting, you may be loving with anxious attachment — and there is a way to feel safe in it.",
-    "date": "2026-07-14",
-    "category": "love",
-    "image": "images/anxious-attachment-hero.jpg",
-    "readTime": 12
-  },
-  {
-    "slug": "post-red-flags",
-    "title": "The Quiet Red Flags People Ignore — 8 Signs Worth Trusting",
-    "excerpt": "Not the loud ones — the quiet red flags we explain away. 8 subtle signs your gut notices first, and when to finally trust the feeling.",
-    "date": "2026-07-21",
-    "category": "love",
-    "image": "images/red-flag-hero.jpg",
-    "readTime": 9
   },
   {
     "slug": "post-pet-present",
@@ -198,15 +180,6 @@
     "readTime": 9
   },
   {
-    "slug": "post-easy-to-love",
-    "title": "Easy to Love, Hard to Leave: When Kindness Keeps You Stuck",
-    "excerpt": "The empathy, ease, and forgiveness that make you easy to love can also make it hard to leave. The tender psychology of the over-giver — and the way out.",
-    "date": "2026-07-21",
-    "category": "love",
-    "image": "images/easy-love-hero.jpg",
-    "readTime": 7
-  },
-  {
     "slug": "post-microbiome-skincare",
     "title": "Microbiome Skincare: What Pre-, Pro- & Postbiotics Do",
     "excerpt": "Microbiome skincare, explained: what prebiotics, probiotics and postbiotics actually do for your skin barrier — and how to care for your skin's microbiome.",
@@ -216,6 +189,15 @@
     "readTime": 10
   },
   {
+    "slug": "post-red-flags",
+    "title": "The Quiet Red Flags People Ignore — 8 Signs Worth Trusting",
+    "excerpt": "Not the loud ones — the quiet red flags we explain away. 8 subtle signs your gut notices first, and when to finally trust the feeling.",
+    "date": "2026-07-19",
+    "category": "love",
+    "image": "images/red-flag-hero.jpg",
+    "readTime": 9
+  },
+  {
     "slug": "post-hormone-disruptors",
     "title": "Endocrine Disruptors: Hormone-Wrecking Foods & Chemicals",
     "excerpt": "Endocrine disruptors like BPA, phthalates & PFAS hide in food, plastics & receipts. How they affect your hormones, plus easy ways to cut exposure.",
@@ -223,6 +205,15 @@
     "category": "nourish",
     "image": "images/hormone-disruptors-hero.jpg",
     "readTime": 13
+  },
+  {
+    "slug": "post-easy-to-love",
+    "title": "Easy to Love, Hard to Leave: When Kindness Keeps You Stuck",
+    "excerpt": "The empathy, ease, and forgiveness that make you easy to love can also make it hard to leave. The tender psychology of the over-giver — and the way out.",
+    "date": "2026-07-17",
+    "category": "love",
+    "image": "images/easy-love-hero.jpg",
+    "readTime": 7
   },
   {
     "slug": "post-egf-skincare",
@@ -241,6 +232,15 @@
     "category": "nourish",
     "image": "images/food-fertility-hero.jpg",
     "readTime": 14
+  },
+  {
+    "slug": "post-anxious-attachment",
+    "title": "Anxious Attachment in Relationships: Signs, Triggers & How to Feel Safe",
+    "excerpt": "The message was read two hours ago, and your whole body has organized itself around the silence. If love sometimes feels less like warmth and more like waiting, you may be loving with anxious attachment — and there is a way to feel safe in it.",
+    "date": "2026-07-14",
+    "category": "love",
+    "image": "images/anxious-attachment-hero.jpg",
+    "readTime": 12
   },
   {
     "slug": "post-dog-loves-you",
