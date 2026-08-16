@@ -338,7 +338,16 @@
         .mobile-nav__links a:hover { color: var(--gold); background: var(--gold-faint); }
         @media (max-width: 900px) { .nav__hamburger { display: flex; } }
 
-        </style>
+        
+        /* ── Pinterest save ── */
+        .pin-save { margin: 48px 0 8px; display: flex; justify-content: center; }
+        .pin-save__btn { display: inline-flex; align-items: center; gap: 10px; padding: 13px 26px;
+          border: 1px solid var(--border); background: var(--white); color: var(--text);
+          font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+          transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease; }
+        .pin-save__btn:hover { border-color: #E60023; color: #E60023; background: #fff; }
+        .pin-save__btn svg { flex-shrink: 0; }
+</style>
     <script type="application/ld+json">
     {
       "@context":"https://schema.org","@type":"BlogPosting",
@@ -593,6 +602,14 @@
 
 
 <!-- SOURCES / E-E-A-T -->
+
+<div class="pin-save">
+  <a class="pin-save__btn" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fdarlingwhatif.com%2Fpost-cortisol&media=https%3A%2F%2Fdarlingwhatif.com%2Fimages%2Fpexels-jahratreza-37112385.jpg&description=Science-backed%20foods%2C%20habits%20and%20the%20viral%20cortisol%20cocktail%20%E2%80%94%20plus%20the%20signs%20of%20high%20cortisol%20and%20what%20actually%20calms%20chronic%20stress." target="_blank" rel="noopener nofollow" data-pin-do="none" aria-label="Save this post to Pinterest">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.690 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.4950-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.6490-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+    Save this to Pinterest
+  </a>
+</div>
+
 <section class="post-tags-section" aria-label="Sources and further reading">
     <span class="post-tags-section__label">Sources &amp; further reading</span>
     <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.85;">
@@ -670,29 +687,9 @@
                     <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener">tk</a>
                 </div>
             </div>
-            <div class="footer__col">
-                <h5>Explore</h5>
-                <ul><li><a href="mind.html">Wellness &amp; Mindful Living</a></li><li><a href="love.html">Love &amp; Relationships</a></li><li><a href="nourish.html">Nourish — Food &amp; Nutrition</a></li><li><a href="living.html">Home, Space &amp; Living</a></li><li><a href="beauty.html">Beauty &amp; Skincare Rituals</a></li><li><a href="companion.html">Dogs &amp; Companions</a></li><li><a href="gut-health.html">Gut Health &amp; Probiotics</a></li><li><a href="travel.html">Travel &amp; Slow Escapes</a></li></ul>
-            </div>
-            <div class="footer__col">
-                <h5>Recent</h5>
-                <ul>
-                    <li><a href="post-acv-honey.html">ACV &amp; Honey Morning Ritual</a></li>
-                    <li><a href="post-water.html">Drinking Water at the Right Time</a></li>
-                    <li><a href="post-companion-dogs.html">Your Dog &amp; Your Wellbeing</a></li>
-                    <li><a href="post-burnout.html">When You're Burned Out</a></li>
-                </ul>
-            </div>
-                                                <div class="footer__col">
-                <h5>Info</h5>
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="collaborate.html">Collaborate</a></li>
-                    <li><a href="privacy.html">Privacy</a></li>
-                    <li><a href="terms.html">Terms</a></li>
-                    <li><a href="disclosure.html">Disclosure &amp; Disclaimer</a></li>
-                </ul>
-            </div>
+            <div class="footer__col"><h5>Explore</h5><ul><li><a href="mind.html">Wellness &amp; Mindful Living</a></li><li><a href="love.html">Love &amp; Relationships</a></li><li><a href="nourish.html">Nourish — Food &amp; Nutrition</a></li><li><a href="living.html">Home, Space &amp; Living</a></li><li><a href="beauty.html">Beauty &amp; Skincare Rituals</a></li><li><a href="companion.html">Dogs &amp; Companions</a></li><li><a href="gut-health.html">Gut Health &amp; Probiotics</a></li><li><a href="travel.html">Travel &amp; Slow Escapes</a></li></ul></div>
+            <div class="footer__col"><h5>Recent</h5><ul><li><a href="post-writing-by-hand.html">Writing by Hand</a></li><li><a href="post-enmeshment-parents.html">When Love Feels Heavy</a></li><li><a href="post-do-dogs-feel-guilt.html">Do Dogs Feel Guilt?</a></li><li><a href="post-self-compassion-vs-self-esteem.html">Self-Compassion</a></li><li><a href="post-evening-sleep-routine.html">Protecting Your Sleep</a></li></ul></div>
+            <div class="footer__col"><h5>Info</h5><ul><li><a href="about.html">About Me</a></li><li><a href="contact.html">Contact</a></li><li><a href="collaborate.html">Collaborate</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="disclosure.html">Disclosure &amp; Disclaimer</a></li></ul></div>
         </div>
         <div class="footer__bottom">
             <span>© 2026 darling, what if. All rights reserved.</span>
