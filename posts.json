@@ -621,6 +621,15 @@
     "readTime": 7
   },
   {
+    "slug": "post-dog-love",
+    "title": "The Kind of Love Only a Dog Gives You",
+    "excerpt": "There's something my Labrador does when I come home from a hard day that no human has ever quite managed. It's unconditional in a way that quietly heals you, over and over again.",
+    "date": "2026-05-20",
+    "category": "companion",
+    "image": "images/dog-love.jpg",
+    "readTime": 5
+  },
+  {
     "slug": "post-period-eat-better",
     "title": "What to Eat During Your Period — And What to Skip — to Finally Feel Human Again",
     "excerpt": "The foods that replenish and soothe your body this week, and the ones quietly making your symptoms worse. Both sides of the guide, in one place.",
@@ -664,15 +673,6 @@
     "category": "mind",
     "image": "images/softness-hero.jpg",
     "readTime": 6
-  },
-  {
-    "slug": "post-dog-love",
-    "title": "The Kind of Love Only a Dog Gives You",
-    "excerpt": "There's something my Labrador does when I come home from a hard day that no human has ever quite managed. It's unconditional in a way that quietly heals you, over and over again.",
-    "date": "2026-05-13",
-    "category": "companion",
-    "image": "images/dog-love.jpg",
-    "readTime": 5
   },
   {
     "slug": "post-dog-routine",
