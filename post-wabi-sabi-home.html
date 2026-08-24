@@ -243,8 +243,14 @@
     .footer__logo em { color: var(--gold); font-style: normal; font-weight: 600; }
     .footer__about { font-size: 0.87rem; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 28px; }
     .footer__social { display: flex; gap: 12px; }
-    .footer__social-link { width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 0.72rem; font-weight: 500; transition: all 0.2s ease; }
+    .footer__social-link { width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 0.72rem; font-weight: 500; transition: all 0.2s ease; overflow: hidden; }
     .footer__social-link:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
+    .footer__social-link img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .footer__social-link--icon { border: none; }
+    .footer__social-link--icon:hover { background: none; border-color: transparent; transform: translateY(-2px); opacity: 0.85; }
+    .footer__social-link img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .footer__social-link--icon { border: none; }
+    .footer__social-link--icon:hover { background: none; border-color: transparent; transform: translateY(-2px); opacity: 0.85; }
     .footer__col h5 { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.35); font-weight: 400; margin-bottom: 22px; }
     .footer__col ul { display: flex; flex-direction: column; gap: 11px; }
     .footer__col a { font-size: 0.87rem; color: rgba(255,255,255,0.5); transition: color 0.2s ease; }
@@ -705,13 +711,14 @@
         <div class="footer__logo">darling, <em>what if</em></div>
         <p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p>
         <div class="footer__social">
-          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
-          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">pt</a>
-          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener">tk</a>
+          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/social-instagram.png" alt="" loading="lazy"></a>
+          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Pinterest" target="_blank" rel="noopener"><img src="images/social-pinterest.png" alt="" loading="lazy"></a>
+          <a href="https://xhslink.cn/m/3ZAgGiOQ5Is" class="footer__social-link footer__social-link--icon" aria-label="RedNote" target="_blank" rel="noopener"><img src="images/social-rednote.png" alt="" loading="lazy"></a>
+          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link footer__social-link--icon" aria-label="TikTok" target="_blank" rel="noopener"><img src="images/social-tiktok.png" alt="" loading="lazy"></a>
         </div>
       </div>
       <div class="footer__col"><h5>Explore</h5><ul><li><a href="mind.html">Wellness &amp; Mindful Living</a></li><li><a href="love.html">Love &amp; Relationships</a></li><li><a href="nourish.html">Nourish — Food &amp; Nutrition</a></li><li><a href="living.html">Home, Space &amp; Living</a></li><li><a href="beauty.html">Beauty &amp; Skincare Rituals</a></li><li><a href="companion.html">Dogs &amp; Companions</a></li><li><a href="gut-health.html">Gut Health &amp; Probiotics</a></li><li><a href="travel.html">Travel &amp; Slow Escapes</a></li></ul></div>
-            <div class="footer__col"><h5>Recent</h5><ul><li><a href="post-mushroom-coffee.html">Mushroom Coffee</a></li><li><a href="post-looking-younger.html">The Science of Looking Younger</a></li><li><a href="post-skincare-layering-order.html">Layering Skincare, In Order</a></li><li><a href="post-survived-yourself.html">You Survived Yourself</a></li><li><a href="post-dog-separation-anxiety.html">Dog Separation Anxiety</a></li></ul></div>
+            <div class="footer__col"><h5>Recent</h5><ul><li><a href="post-mushroom-coffee.html">Mushroom Coffee</a></li><li><a href="post-chronic-stress-inflammation.html">Chronic Stress & Inflammation</a></li><li><a href="post-looking-younger.html">The Science of Looking Younger</a></li><li><a href="post-skincare-layering-order.html">Layering Skincare, In Order</a></li><li><a href="post-survived-yourself.html">You Survived Yourself</a></li></ul></div>
             <div class="footer__col"><h5>Info</h5><ul><li><a href="about.html">About Me</a></li><li><a href="contact.html">Contact</a></li><li><a href="collaborate.html">Collaborate</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="disclosure.html">Disclosure &amp; Disclaimer</a></li></ul></div>
     </div>
     <div class="footer__bottom">
