@@ -1435,6 +1435,10 @@
         var post = all.find(function (p) { return p.category === cat; });
         if (post) picks.push(post);
       });
+      // Mind pulls the most posts on the site — feature a 2nd Mind read so the
+      // grid lands on 6 cards (2 clean rows of 3) instead of 5 (3 + 2 gap).
+      var mindPosts = all.filter(function (p) { return p.category === 'mind'; });
+      if (mindPosts.length > 1) picks.push(mindPosts[1]);
       grid.style.minHeight = '';
       grid.innerHTML = picks.map(function (p) {
         return '<article class="post-card">' +
