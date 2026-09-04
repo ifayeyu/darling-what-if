@@ -45,15 +45,6 @@
     "readTime": 12
   },
   {
-    "slug": "post-dog-separation-anxiety",
-    "title": "What If Your Dog Isn't Being Dramatic — They're Panicking?",
-    "excerpt": "Dog separation anxiety isn't bad behaviour or spite — it's panic. What actually happens in the first 30 minutes alone, and the slow work that genuinely helps.",
-    "date": "2026-08-15",
-    "category": "companion",
-    "image": "images/dog-separation-anxiety-hero.jpg",
-    "readTime": 12
-  },
-  {
     "slug": "post-hair-growth-retention",
     "title": "What If Growing Your Hair Has Nothing to Do With Growing It?",
     "excerpt": "You can't make hair grow faster — it's about half an inch a month for almost everyone. The real lever is keeping the length you already grow. Here's how.",
@@ -126,15 +117,6 @@
     "readTime": 9
   },
   {
-    "slug": "post-do-dogs-feel-guilt",
-    "title": "Do Dogs Feel Guilt? The Study That Changes How You'll See That Face",
-    "excerpt": "Do dogs feel guilt? A landmark study says the guilty look isn't guilt at all — it's a response to your anger. What your dog is really saying, and why it matters.",
-    "date": "2026-08-02",
-    "category": "companion",
-    "image": "images/dog-guilt-hero.jpg",
-    "readTime": 11
-  },
-  {
     "slug": "post-childhood-emotional-neglect",
     "title": "What If Nothing Bad Happened — and It Still Shaped You?",
     "excerpt": "Childhood emotional neglect leaves no memory to point to — which is why it takes decades to name. The signs in adults, why it happened, and how healing begins.",
@@ -180,24 +162,6 @@
     "readTime": 10
   },
   {
-    "slug": "post-dog-more-human",
-    "title": "How Dogs Make You a Better Person",
-    "excerpt": "A dog doesn't just love you — it rewires you. The science behind how dogs build empathy, emotional regulation, and presence in ways nothing else can.",
-    "date": "2026-07-31",
-    "category": "companion",
-    "image": "images/dog-more-human-hero.jpg",
-    "readTime": 11
-  },
-  {
-    "slug": "post-rescue-animal-trust",
-    "title": "What a Rescue Carries: Invisible Wounds and the Long Road Back to Trust",
-    "excerpt": "Rescue animals carry invisible physical and emotional wounds caused by human hands. Here's what happens inside a traumatized dog's mind — and what it actually takes to bring them home.",
-    "date": "2026-07-30",
-    "category": "companion",
-    "image": "images/rescue-animal-hero.jpg",
-    "readTime": 11
-  },
-  {
     "slug": "post-emotional-maturity",
     "title": "What Real Emotional Maturity Actually Looks Like",
     "excerpt": "Real emotional maturity isn't about having no emotions. It's about what you do with them. Here are the quiet signs someone has done — or is doing — the work.",
@@ -222,15 +186,6 @@
     "date": "2026-07-21",
     "category": "love",
     "image": "images/friendship-green-hero.jpg",
-    "readTime": 8
-  },
-  {
-    "slug": "post-pet-present",
-    "title": "What Your Pet Teaches You About Being Present",
-    "excerpt": "Your dog is a mindfulness master. What pets teach us about being present — letting go of past and future, finding joy in small things, and slowing down.",
-    "date": "2026-07-21",
-    "category": "companion",
-    "image": "images/pet-present-hero.jpg",
     "readTime": 8
   },
   {
@@ -324,15 +279,6 @@
     "readTime": 11
   },
   {
-    "slug": "post-dog-loves-you",
-    "title": "How to Tell If Your Dog Loves You: 10 Signs Backed by Science",
-    "excerpt": "Does your dog love you? 10 science-backed signs — from the oxytocin eye-contact loop to leaning, following you, and puppy-dog eyes. Plus how to love them back.",
-    "date": "2026-07-10",
-    "category": "companion",
-    "image": "images/dog-loves-u-hero-2.jpg",
-    "readTime": 10
-  },
-  {
     "slug": "post-situationship-relationship",
     "title": "How to Turn a Situationship Into a Relationship",
     "excerpt": "How to turn a situationship into a relationship with 'clear-coding' — the 2026 trend of stating your intentions early. Exact phrases + a DTR script.",
@@ -403,15 +349,6 @@
     "category": "mind",
     "image": "images/quiet-self-hero.jpg",
     "readTime": 10
-  },
-  {
-    "slug": "post-whole-world",
-    "title": "What It Means to Be Someone's Whole World",
-    "excerpt": "We are their entire sky. Their whole horizon. The one face their brain has mapped above all others. Here's the science and the softness behind the most devoted relationship most of us will ever have.",
-    "date": "2026-06-28",
-    "category": "companion",
-    "image": "images/dog-whole-world-hero.jpg",
-    "readTime": 9
   },
   {
     "slug": "post-hormone-foods",
@@ -486,15 +423,6 @@
     "readTime": 10
   },
   {
-    "slug": "post-dog-human",
-    "title": "What If Your Dog Has Been Training You to Be a Better Human All Along?",
-    "excerpt": "Dogs synchronize our cortisol, mirror our emotional state, and demand patience and empathy in ways no human relationship can replicate. The science of the human-animal bond reveals something quieter and more personal: dog ownership is building a better version of you — one walk at a time.",
-    "date": "2026-06-18",
-    "category": "companion",
-    "image": "images/dog-human-hero.jpg",
-    "readTime": 9
-  },
-  {
     "slug": "post-plants-nervous-system",
     "title": "What If the Plants in Your Home Are Quietly Regulating Your Nervous System?",
     "excerpt": "Indoor plants do more than look beautiful — research shows they lower cortisol, reduce blood pressure, and shift your body out of stress mode. Here's what the science of biophilic design reveals about greenery and your nervous system.",
@@ -520,15 +448,6 @@
     "category": "living",
     "image": "images/home-color-mood-hero.jpg",
     "readTime": 8
-  },
-  {
-    "slug": "post-talk-to-dog",
-    "title": "What If Talking to Your Dog Is One of the Most Intelligent Things You Do?",
-    "excerpt": "People laugh at it. But the psychology of anthropomorphism reveals something unexpected — the way you talk to your dog says more about your empathy and emotional intelligence than almost anything else.",
-    "date": "2026-06-12",
-    "category": "companion",
-    "image": "images/Talk-to-dog-hero.jpg",
-    "readTime": 9
   },
   {
     "slug": "post-money-wealth",
@@ -612,15 +531,6 @@
     "readTime": 8
   },
   {
-    "slug": "post-dog-sad",
-    "title": "Why My Dog Knows When I'm Sad Before I Do",
-    "excerpt": "Before I've said a word, before I've even admitted it to myself — he already knows. The quiet science behind why dogs read our emotions better than we do.",
-    "date": "2026-06-02",
-    "category": "companion",
-    "image": "images/Sad_dog_hero.jpg",
-    "readTime": 7
-  },
-  {
     "slug": "post-emotional-safety",
     "title": "The Love Language Nobody Talks About: Feeling Emotionally Safe",
     "excerpt": "Emotional safety is the foundation every other love language depends on. Without it, even the most beautiful expressions of love simply cannot reach you.",
@@ -693,15 +603,6 @@
     "readTime": 7
   },
   {
-    "slug": "post-dog-love",
-    "title": "The Kind of Love Only a Dog Gives You",
-    "excerpt": "There's something my Labrador does when I come home from a hard day that no human has ever quite managed. It's unconditional in a way that quietly heals you, over and over again.",
-    "date": "2026-05-20",
-    "category": "companion",
-    "image": "images/dog-love.jpg",
-    "readTime": 5
-  },
-  {
     "slug": "post-period-eat-better",
     "title": "What to Eat During Your Period — And What to Skip — to Finally Feel Human Again",
     "excerpt": "The foods that replenish and soothe your body this week, and the ones quietly making your symptoms worse. Both sides of the guide, in one place.",
@@ -745,15 +646,6 @@
     "category": "mind",
     "image": "images/softness-hero.jpg",
     "readTime": 6
-  },
-  {
-    "slug": "post-dog-routine",
-    "title": "How My Labrador Became My Best Health Habit",
-    "excerpt": "I didn't plan to become a morning person, or someone who walks every day without fail. My Labrador Retriever had other ideas — and quietly built me a healthier life.",
-    "date": "2026-05-13",
-    "category": "companion",
-    "image": "images/dog-routine-hero.jpg",
-    "readTime": 5
   },
   {
     "slug": "post-breakfast",
@@ -862,15 +754,6 @@
     "category": "travel",
     "image": "images/The Valley Isle-hero.JPG",
     "readTime": 4
-  },
-  {
-    "slug": "post-companion-dogs",
-    "title": "What If Your Dog Is Your Most Meaningful Relationship?",
-    "excerpt": "Dogs offer something rare and quietly radical — unconditional love, presence, and emotional stability that research shows can exceed what human relationships provide.",
-    "date": "2026-05-08",
-    "category": "companion",
-    "image": "images/pexels-dmitriy-piskarev-8529355.jpg",
-    "readTime": 7
   },
   {
     "slug": "post-burnout",
