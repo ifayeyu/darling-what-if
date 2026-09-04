@@ -148,6 +148,9 @@
         .cat-card__name { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; color: var(--text); margin-bottom: 10px; }
         .cat-card__desc { font-size: 0.87rem; color: var(--text-muted); line-height: 1.75; }
         .cat-card__link { display: inline-block; margin-top: 18px; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+        .cat-quote { background: var(--bg-warm); border: 1px solid var(--border); padding: 36px 30px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+        .cat-quote__text { font-family: var(--serif); font-size: clamp(1.05rem, 1.5vw, 1.2rem); font-style: italic; font-weight: 400; color: var(--text-muted); line-height: 1.65; margin-bottom: 18px; }
+        .cat-quote__rule { width: 36px; height: 1px; background: var(--gold); }
 
         /* BELIEFS */
         .beliefs { background: var(--bg-warm); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 48px; }
@@ -396,7 +399,7 @@
 <!-- WHAT YOU'LL FIND -->
 <section class="categories-section">
     <p class="section-eyebrow">What you'll find here</p>
-    <h2 class="section-title">Six spaces, one <em>philosophy</em></h2>
+    <h2 class="section-title">Five spaces, one <em>philosophy</em></h2>
     <div class="cat-grid">
 
         <div class="cat-card" onclick="location.href='beauty.html'">
@@ -404,7 +407,7 @@
                 <svg width="20" height="20" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36.1367 11.75C41.5215 11.75 45.8866 16.1152 45.8867 21.5C45.8867 22.628 45.3509 24.1794 44.3145 26.0234C43.3045 27.8203 41.9348 29.6956 40.5303 31.4189C39.1311 33.1356 37.7274 34.6648 36.6709 35.7666C36.4812 35.9645 36.3014 36.1471 36.1367 36.3154C35.9721 36.1472 35.7931 35.9644 35.6035 35.7666C34.547 34.6648 33.1424 33.1357 31.7432 31.4189C30.3386 29.6956 28.9689 27.8203 27.959 26.0234C26.9225 24.1794 26.3867 22.628 26.3867 21.5C26.3868 16.1153 30.752 11.7501 36.1367 11.75Z" stroke="currentColor" stroke-width="3.5"/><path d="M36.1377 60.25C30.7529 60.25 26.3878 55.8848 26.3877 50.5C26.3877 49.3777 26.9194 47.8586 27.9512 46.0645C28.9574 44.3148 30.323 42.4991 31.7256 40.835C33.1224 39.1776 34.5239 37.7072 35.5791 36.6494C35.7782 36.4498 35.9663 36.2667 36.1377 36.0986C36.3089 36.2666 36.4963 36.4499 36.6953 36.6494C37.7505 37.7072 39.1529 39.1774 40.5498 40.835C41.9523 42.4991 43.318 44.3148 44.3242 46.0645C45.356 47.8585 45.8877 49.3778 45.8877 50.5C45.8876 55.8847 41.5224 60.2499 36.1377 60.25Z" stroke="currentColor" stroke-width="3.5"/><path d="M11.75 36C11.75 30.6152 16.1152 26.2501 21.5 26.25C22.628 26.25 24.1794 26.7858 26.0234 27.8223C27.8203 28.8322 29.6956 30.2019 31.4189 31.6064C33.1356 33.0056 34.6648 34.4093 35.7666 35.4658C35.9645 35.6556 36.1471 35.8353 36.3154 36C36.1472 36.1646 35.9644 36.3436 35.7666 36.5332C34.6648 37.5897 33.1357 38.9943 31.4189 40.3936C29.6956 41.7981 27.8203 43.1678 26.0234 44.1777C24.1794 45.2142 22.628 45.75 21.5 45.75C16.1153 45.7499 11.7501 41.3847 11.75 36Z" stroke="currentColor" stroke-width="3.5"/><path d="M60.25 35.998C60.25 41.3829 55.8848 45.7479 50.5 45.748C49.3777 45.748 47.8586 45.2164 46.0645 44.1846C44.3148 43.1784 42.4991 41.8127 40.835 40.4102C39.1776 39.0133 37.7072 37.6118 36.6494 36.5566C36.4498 36.3575 36.2667 36.1694 36.0986 35.9981C36.2666 35.8268 36.4499 35.6394 36.6494 35.4404C37.7072 34.3852 39.1774 32.9829 40.835 31.5859C42.4991 30.1834 44.3148 28.8177 46.0645 27.8115C47.8585 26.7798 49.3778 26.248 50.5 26.248C55.8847 26.2482 60.2499 30.6133 60.25 35.998Z" stroke="currentColor" stroke-width="3.5"/></svg>
             </div>
             <div class="cat-card__name">Beauty</div>
-            <p class="cat-card__desc">The rituals, routines, and small daily acts that quietly add up to feeling like yourself. Body-first, pressure-free.</p>
+            <p class="cat-card__desc">Beauty from within. Thoughtful rituals, inner wellness, and everyday practices that support healthy skin, radiance, and grace.</p>
             <a href="beauty.html" class="cat-card__link">Explore Beauty →</a>
         </div>
 
@@ -442,6 +445,11 @@
             <div class="cat-card__name">Love</div>
             <p class="cat-card__desc">On love languages, emotional safety, and the quiet work of loving well. Introspective, honest, and never prescriptive.</p>
             <a href="love.html" class="cat-card__link">Explore Love →</a>
+        </div>
+
+        <div class="cat-quote">
+            <p class="cat-quote__text">"For women quietly questioning everything — and bravely choosing to begin again."</p>
+            <div class="cat-quote__rule"></div>
         </div>
 
     </div>
