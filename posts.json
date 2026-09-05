@@ -18,6 +18,15 @@
     "readTime": 5
   },
   {
+    "slug": "post-looking-younger",
+    "title": "What If Looking Younger Isn't About Your Skin — It's About What You've Let Go Of?",
+    "excerpt": "Why do some women look younger than their age? The real science on stress, cortisol, and resilience — and what it actually takes off a face.",
+    "date": "2026-09-01",
+    "category": "beauty",
+    "image": "images/looking-younger-hero.jpg",
+    "readTime": 10
+  },
+  {
     "slug": "post-writing-by-hand",
     "title": "Why I Started Writing by Hand Again",
     "excerpt": "The benefits of writing by hand — what the research says about handwriting vs typing, and the five things I moved back to paper without giving up my laptop.",
@@ -25,6 +34,15 @@
     "category": "living",
     "image": "images/writing-by-hand-hero.jpg",
     "readTime": 9
+  },
+  {
+    "slug": "post-skincare-layering-order",
+    "title": "The Right Order to Layer Skincare — And When to Let It Rest",
+    "excerpt": "The correct order to layer skincare, morning and night — plus which actives fight each other, and how often to actually let your skin rest.",
+    "date": "2026-08-25",
+    "category": "beauty",
+    "image": "images/layer-skincare-hero.jpg",
+    "readTime": 10
   },
   {
     "slug": "post-attachment-style-daily-choice",
@@ -70,24 +88,6 @@
     "category": "mind",
     "image": "images/chronic-stress-hero.jpg",
     "readTime": 8
-  },
-  {
-    "slug": "post-looking-younger",
-    "title": "What If Looking Younger Isn't About Your Skin — It's About What You've Let Go Of?",
-    "excerpt": "Why do some women look younger than their age? The real science on stress, cortisol, and resilience — and what it actually takes off a face.",
-    "date": "2026-08-20",
-    "category": "beauty",
-    "image": "images/looking-younger-hero.jpg",
-    "readTime": 10
-  },
-  {
-    "slug": "post-skincare-layering-order",
-    "title": "The Right Order to Layer Skincare — And When to Let It Rest",
-    "excerpt": "The correct order to layer skincare, morning and night — plus which actives fight each other, and how often to actually let your skin rest.",
-    "date": "2026-08-16",
-    "category": "beauty",
-    "image": "images/layer-skincare-hero.jpg",
-    "readTime": 10
   },
   {
     "slug": "post-survived-yourself",
