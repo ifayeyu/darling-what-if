@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core pages -->
-  <url><loc>https://darlingwhatif.com/</loc><lastmod>2026-09-03</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://darlingwhatif.com/</loc><lastmod>2026-09-06</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://darlingwhatif.com/about</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/contact</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/collaborate</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -11,7 +11,7 @@
   <url><loc>https://darlingwhatif.com/disclosure</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 
   <!-- Category pages -->
-  <url><loc>https://darlingwhatif.com/beauty</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/beauty</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/mind</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/nourish</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/living</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -19,7 +19,8 @@
   <url><loc>https://darlingwhatif.com/gut-health</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/travel</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
-  <!-- Blog posts — Beauty (18) -->
+  <!-- Blog posts — Beauty (19) -->
+  <url><loc>https://darlingwhatif.com/post-dark-circles-tired-eyes</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-clean-beauty-meaning</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-looking-younger</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-skincare-layering-order</loc><lastmod>2026-08-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
