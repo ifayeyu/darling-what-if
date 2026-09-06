@@ -535,7 +535,7 @@
     "title": "Maui: A Love Letter & Complete Guide to the Valley Isle",
     "excerpt": "Maui is more than a destination — it hands you back to yourself. A love letter and a complete regional guide to the Valley Isle: Wailea, the North Shore, and the Road to Hana.",
     "date": "2026-06-09",
-    "category": "living",
+    "category": "travel",
     "image": "images/Maui_guide_hero.JPG",
     "readTime": 12
   },
@@ -790,15 +790,6 @@
     "category": "living",
     "image": "images/Home mental health-Hero.jpg",
     "readTime": 7
-  },
-  {
-    "slug": "post-maui",
-    "title": "Mahalo, Maui — A Love Letter to the Island That Changed Me",
-    "excerpt": "Maui is more than a vacation. It's a place that hands you back to yourself — rawer, softer, more grateful. A personal love letter to the island that changed the way I see my days.",
-    "date": "2026-05-08",
-    "category": "travel",
-    "image": "images/Maui-love-letter-hero.JPG",
-    "readTime": 6
   },
   {
     "slug": "post-burnout",
