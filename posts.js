@@ -1,11 +1,13 @@
 /* posts.js — dynamic category page renderer with pagination
    Reads posts.json, filters by data-category, sorts newest-first,
    renders featured block + paginated grid using the correct CSS classes per page style.
-   Pagination: PAGE_SIZE cards per page, URL hash #page=N, first/last always visible. */
+   Pagination: page 1 = featured post + 3x3 grid, page 2+ = 3x3 grid only, on every
+   category page. URL hash #page=N, first/last always visible. */
 (function () {
   'use strict';
 
-  var PAGE_SIZE = 10;
+  var FIRST_PAGE_SIZE = 10; /* 1 featured + 9 grid (3x3) */
+  var GRID_PAGE_SIZE  = 9;  /* page 2+: grid only, 3x3 */
 
   /* ── Inject pagination CSS (once) ───────────────────────────────────── */
   if (!document.getElementById('posts-pag-css')) {
@@ -115,13 +117,16 @@
       return;
     }
 
-    /* Paginate the full posts array in slices of PAGE_SIZE.
-       Page 1: pageItems[0] gets the featured hero treatment, [1..] go in the grid.
-       Page 2+: all pageItems go in the grid — no featured block. */
-    var totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
-    var page       = Math.min(getPage(), totalPages);
-    var pageItems  = posts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-    var html       = '';
+    /* Page 1: featured post + 9-item grid (3x3), pulled from the first FIRST_PAGE_SIZE posts.
+       Page 2+: grid only, 3x3, GRID_PAGE_SIZE items per page — no featured block. */
+    var totalPages = posts.length <= FIRST_PAGE_SIZE
+      ? 1
+      : 1 + Math.ceil((posts.length - FIRST_PAGE_SIZE) / GRID_PAGE_SIZE);
+    var page      = Math.min(getPage(), totalPages);
+    var pageItems = page === 1
+      ? posts.slice(0, FIRST_PAGE_SIZE)
+      : posts.slice(FIRST_PAGE_SIZE + (page - 2) * GRID_PAGE_SIZE, FIRST_PAGE_SIZE + (page - 1) * GRID_PAGE_SIZE);
+    var html      = '';
 
     /* ── FEATURED BLOCK (first post, page 1 only) ───────────────────── */
     if (page === 1 && pageItems.length) {
