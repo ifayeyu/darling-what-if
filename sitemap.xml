@@ -13,7 +13,7 @@
   <!-- Category pages -->
   <url><loc>https://darlingwhatif.com/beauty</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/mind</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/nourish</loc><lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/nourish</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/living</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/love</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/gut-health</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -64,7 +64,8 @@
   <url><loc>https://darlingwhatif.com/post-morning-pages</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-burnout</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Blog posts — Nourish (16) -->
+  <!-- Blog posts — Nourish (17) -->
+  <url><loc>https://darlingwhatif.com/post-gut-brain-connection</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-mushroom-coffee</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-vitamin-d-hormone</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-breakfast-for-dinner</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
