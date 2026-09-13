@@ -1,5 +1,23 @@
 [
   {
+    "slug": "post-solo-female-travel",
+    "title": "Solo Female Travel: Why Every Woman Should Go at Least Once",
+    "excerpt": "Women are the majority of the world's solo travelers now — and there's a reason. Why traveling alone changes you, what the safety data really shows, how to plan a first trip, and the best beginner destinations.",
+    "date": "2026-09-12",
+    "category": "travel",
+    "image": "images/solo-female-travel-hero.jpg",
+    "readTime": 9
+  },
+  {
+    "slug": "post-slow-morning",
+    "title": "What Slowing Down Your Morning Does for the Rest of Your Day",
+    "excerpt": "How you begin your morning quietly decides the rest of your day. The calm-carrying science of a slow morning, its real benefits, and 10 simple ways to start with intention.",
+    "date": "2026-09-13",
+    "category": "living",
+    "image": "images/slow-morning-hero.jpg",
+    "readTime": 8
+  },
+  {
     "slug": "post-scent-space",
     "title": "What Scent Does to a Space — and How I Use It Intentionally",
     "excerpt": "Scent is invisible architecture. The science of how fragrance reshapes a room through the limbic system — and exactly which calming, energizing, and fresh notes to use in every space.",
