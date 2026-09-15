@@ -9,6 +9,7 @@
   var N = 5;
 
   var LABELS = {
+    "post-digital-detox": "The Realistic Digital Detox",
     "post-hypervigilance": "Hypervigilance, Explained",
     "post-magnesium": "The Forgotten Mineral",
     "post-fawn-response": "The Fawn Response",

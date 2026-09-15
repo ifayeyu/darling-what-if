@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url><loc>https://darlingwhatif.com/post-rest-guilt</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-solo-female-travel</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-slow-morning</loc><lastmod>2026-09-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-scent-space</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-hypervigilance</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-magnesium</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-fawn-response</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-emotional-unavailability</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-seed-cycling</loc><lastmod>2026-09-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-food-glow-guide</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/post-self-love</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- Core pages -->
-  <url><loc>https://darlingwhatif.com/</loc><lastmod>2026-09-06</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://darlingwhatif.com/about</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/contact</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://darlingwhatif.com/collaborate</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://darlingwhatif.com/privacy</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://darlingwhatif.com/terms</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://darlingwhatif.com/disclosure</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://darlingwhatif.com/</loc><lastmod>2026-09-13</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://darlingwhatif.com/about</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/contact</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/collaborate</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://darlingwhatif.com/privacy</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://darlingwhatif.com/terms</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://darlingwhatif.com/disclosure</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 
   <!-- Category pages -->
   <url><loc>https://darlingwhatif.com/beauty</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/mind</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/nourish</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/living</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/love</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/mind</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/nourish</loc><lastmod>2026-09-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/living</loc><lastmod>2026-09-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/love</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://darlingwhatif.com/gut-health</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://darlingwhatif.com/travel</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://darlingwhatif.com/travel</loc><lastmod>2026-09-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
   <!-- Blog posts — Beauty (19) -->
   <url><loc>https://darlingwhatif.com/post-dark-circles-tired-eyes</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -51,7 +40,11 @@
   <url><loc>https://darlingwhatif.com/post-banana-peel</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-hair-foods</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Blog posts — Mind (22) -->
+  <!-- Blog posts — Mind (26) -->
+  <url><loc>https://darlingwhatif.com/post-self-love</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-rest-guilt</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-hypervigilance</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-fawn-response</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-growing-up-keeps-you-young</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-forever-young-at-heart</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-gratitude-inflammation</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -75,7 +68,10 @@
   <url><loc>https://darlingwhatif.com/post-morning-pages</loc><lastmod>2026-05-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-burnout</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Blog posts — Nourish (17) -->
+  <!-- Blog posts — Nourish (20) -->
+  <url><loc>https://darlingwhatif.com/post-seed-cycling</loc><lastmod>2026-09-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-magnesium</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-food-glow-guide</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-gut-brain-connection</loc><lastmod>2026-08-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-mushroom-coffee</loc><lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-vitamin-d-hormone</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -94,7 +90,10 @@
   <url><loc>https://darlingwhatif.com/post-breakfast</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-water</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Blog posts — Living (11) -->
+  <!-- Blog posts — Living (14) -->
+  <url><loc>https://darlingwhatif.com/post-slow-morning</loc><lastmod>2026-09-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-digital-detox</loc><lastmod>2026-09-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://darlingwhatif.com/post-scent-space</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-slow-living-fast-world</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-writing-by-hand</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-wabi-sabi-home</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -107,7 +106,8 @@
   <url><loc>https://darlingwhatif.com/post-small-sanctuary</loc><lastmod>2026-05-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-home-mental-health</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Blog posts — Love (21) -->
+  <!-- Blog posts — Love (22) -->
+  <url><loc>https://darlingwhatif.com/post-emotional-unavailability</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-choosing-someone-every-day</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-relationship-mirroring</loc><lastmod>2026-09-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-attachment-style-daily-choice</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -135,7 +135,8 @@
   <url><loc>https://darlingwhatif.com/post-gut-health</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-acv-honey</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Blog posts — Travel (1) -->
+  <!-- Blog posts — Travel (2) -->
+  <url><loc>https://darlingwhatif.com/post-solo-female-travel</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://darlingwhatif.com/post-maui-guide</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>
