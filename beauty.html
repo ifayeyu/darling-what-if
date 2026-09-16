@@ -46,8 +46,8 @@
         .cat-hero { background: linear-gradient(150deg, #F6E6D8 0%, #F2DAC3 40%, #D4BFAB 100%); padding: 80px 48px 72px; }
         .cat-hero__inner { max-width: var(--content-w); margin: 0 auto; }
         .cat-hero__eyebrow { font-size: 0.63rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
-        .cat-hero__title { font-family: var(--serif); font-size: clamp(2.6rem, 5.1vw, 4.5rem); font-weight: 400; font-style: italic; color: var(--text); line-height: 1.05; margin-bottom: 20px; }
-        .cat-hero__desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; max-width: 560px; margin-bottom: 28px; }
+        .cat-hero__title { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); font-weight: 400; font-style: italic; color: var(--text); line-height: 1.05; margin-bottom: 20px; }
+        .cat-hero__desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; max-width: 620px; margin-bottom: 28px; }
         .cat-hero__link { display: inline-flex; align-items: center; gap: 9px; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; color: var(--gold-dark); border-bottom: 1px solid var(--gold-mid); padding-bottom: 5px; margin-bottom: 26px; transition: color 0.2s ease, border-color 0.2s ease; }
         .cat-hero__link:hover { color: var(--text); border-color: var(--text); }
         .cat-hero__link svg { transition: transform 0.2s ease; }
@@ -96,7 +96,7 @@
         .newsletter__form { display: flex; border: 1px solid rgba(255,255,255,0.14); }
         .newsletter__input { flex: 1; background: transparent; border: none; padding: 16px 20px; font-family: var(--sans); font-size: 0.87rem; color: #F5F1EB; outline: none; }
         .newsletter__input::placeholder { color: rgba(245,241,235,0.3); }
-        .newsletter__btn { padding: 17px 28px; background: var(--gold); color: var(--white); border: none; font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: nowrap; transition: background 0.25s; }
+        .newsletter__btn { padding: 17px 28px; background: var(--gold); color: var(--white); border: none; font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: nowrap; transition: background 0.25s; border-radius: 100px; }
         .newsletter__btn:hover { background: var(--gold-dark); }
         .newsletter__note { font-size: 0.71rem; color: rgba(255,255,255,0.28); margin-top: 14px; }
         .footer { background: #1d1b19; border-top: 1px solid rgba(255,255,255,0.08); padding: 72px 0 32px; }
@@ -228,8 +228,12 @@
 <section class="cat-hero">
     <div class="cat-hero__inner">
         <p class="cat-hero__eyebrow">Category</p>
-        <h1 class="cat-hero__title">Natural Beauty &amp; Skincare Rituals</h1>
-        <p class="cat-hero__desc">Beauty from within. Thoughtful rituals, inner wellness, and everyday practices that support healthy skin, radiance, and grace.</p>
+        <h1 class="cat-hero__title">Beauty</h1>
+        <p class="cat-hero__desc"><strong>Natural beauty and skincare rituals</strong>, from within. Thoughtful practices and inner wellness that support healthy skin, radiance, and grace. Why does real glow start beneath the surface?</p>
+        <a href="beauty-guide.html" class="cat-hero__cta">
+            Discover why
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </a>
     </div>
 </section>
 
