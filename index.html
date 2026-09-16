@@ -1495,7 +1495,7 @@
               '<span>' + fmtDate(p.date) + '</span>' +
               '<span>' + p.readTime + ' min read</span>' +
             '</div>' +
-            '<a class="post-card__cta" href="' + esc(p.slug) + '.html">Read the post <span aria-hidden="true">&rarr;</span></a>' +
+            '<a class="post-card__cta" href="' + esc(p.slug) + '.html" aria-label="Read: ' + esc(p.title) + '">Read <span aria-hidden="true">&rarr;</span></a>' +
           '</div>' +
         '</article>';
       }).join('');
