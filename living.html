@@ -46,8 +46,12 @@
         .cat-hero { background: linear-gradient(150deg, #E8F0F4 0%, #DCE8EF 40%, #C1CCD2 100%); padding: 80px 48px 72px; }
         .cat-hero__inner { max-width: var(--content-w); margin: 0 auto; }
         .cat-hero__eyebrow { font-size: 0.63rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
-        .cat-hero__title { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); font-weight: 400; font-style: italic; color: var(--text); line-height: 1.05; margin-bottom: 20px; }
+        .cat-hero__title { font-family: var(--serif); font-size: clamp(2.6rem, 5.1vw, 4.5rem); font-weight: 400; font-style: italic; color: var(--text); line-height: 1.05; margin-bottom: 20px; }
         .cat-hero__desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; max-width: 560px; margin-bottom: 28px; }
+        .cat-hero__link { display: inline-flex; align-items: center; gap: 9px; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; color: var(--gold-dark); border-bottom: 1px solid var(--gold-mid); padding-bottom: 5px; margin-bottom: 26px; transition: color 0.2s ease, border-color 0.2s ease; }
+        .cat-hero__link:hover { color: var(--text); border-color: var(--text); }
+        .cat-hero__link svg { transition: transform 0.2s ease; }
+        .cat-hero__link:hover svg { transform: translateX(3px); }
         .cat-hero__count { display: inline-block; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--white); color: var(--text-muted); padding: 8px 18px; border: 1px solid var(--border); }
         .container { max-width: var(--content-w); margin: 0 auto; padding: 0 48px; }
         .featured-wrap { padding: 72px 0 0; }
@@ -183,6 +187,25 @@
         @media (max-width: 900px) { .nav__hamburger { display: flex; } }
 
         </style>
+
+    <!-- ── JSON-LD: Category collection ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Home, Space & Intentional Living",
+      "description": "Calm spaces, cozy homes, small-space living and biophilic design — how the rooms you live in quietly shape how you feel, and how to make them softer.",
+      "url": "https://darlingwhatif.com/living",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://darlingwhatif.com/#website",
+        "name": "Darling, What If",
+        "url": "https://darlingwhatif.com"
+      },
+      "about": { "@type": "Thing", "name": "Home, Space & Intentional Living" },
+      "publisher": { "@id": "https://darlingwhatif.com/#organization" }
+    }
+    </script>
 </head>
 <body>
 
@@ -218,7 +241,7 @@
 <section class="cat-hero">
     <div class="cat-hero__inner">
         <p class="cat-hero__eyebrow">Category</p>
-        <h1 class="cat-hero__title">Living</h1>
+        <h1 class="cat-hero__title">Home, Space &amp; Intentional Living</h1>
         <p class="cat-hero__desc">Home, space, travel, the aesthetics of everyday life — and how the environment you live in quietly shapes the person you're becoming.</p>
     </div>
 </section>

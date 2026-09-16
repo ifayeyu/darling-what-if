@@ -1033,6 +1033,44 @@
         @media (max-width: 900px) { .nav__hamburger { display: flex; } }
 
         </style>
+
+    <!-- ── JSON-LD: Site & brand entity ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://darlingwhatif.com/#website",
+          "url": "https://darlingwhatif.com",
+          "name": "Darling, What If",
+          "description": "A lifestyle publication on slow living, self-worth, mental wellness, natural beauty, and relationships — for women quietly questioning everything and bravely choosing to begin again.",
+          "inLanguage": "en",
+          "publisher": { "@id": "https://darlingwhatif.com/#organization" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://darlingwhatif.com/#organization",
+          "name": "Darling, What If",
+          "url": "https://darlingwhatif.com",
+          "description": "A lifestyle publication on slow living, self-worth, mental wellness, natural beauty, and relationships.",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://darlingwhatif.com/images/Darling_Favicon_192x192.png",
+            "width": 192,
+            "height": 192
+          },
+          "founder": { "@id": "https://darlingwhatif.com/about#faye-livia" },
+          "sameAs": [
+            "https://www.instagram.com/darling_whatif/",
+            "https://www.pinterest.com/darling_whatif/",
+            "https://www.tiktok.com/@darling_whatif",
+            "https://xhslink.cn/m/3ZAgGiOQ5Is"
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -1087,9 +1125,9 @@
     <div class="hero__bg"></div>
     <div class="hero__content">
         <span class="hero__tag">Featured Story &nbsp;·&nbsp; Mind</span>
-        <h1 class="hero__title">
+        <h2 class="hero__title">
             What If Saying Thank You Was <em>Actually Medicine?</em>
-        </h1>
+        </h2>
         <p class="hero__excerpt">
             Gratitude isn't just a mood — research links it to lower inflammatory markers, better
             sleep, and a calmer nervous system. The science, explained simply.
@@ -1186,11 +1224,16 @@
 <section class="editorial">
     <div class="container">
         <div class="editorial__rule"></div>
-        <blockquote class="editorial__quote">
-            "A space for women who are quietly questioning everything —
-            and <em>bravely choosing to begin again.</em>"
-        </blockquote>
-        <div class="editorial__rule"></div>
+        <h1 class="editorial__quote">
+            A space for women who are quietly questioning everything —
+            and <em>bravely choosing to begin again.</em>
+        </h1>
+        <p style="font-size:0.95rem;line-height:1.9;color:var(--text-muted);max-width:600px;margin:22px auto 0;">
+            Essays and gentle guides on <strong>slow living</strong>, <strong>self-worth</strong>,
+            <strong>mental wellness</strong>, <strong>natural beauty</strong>, whole-food nourishment,
+            and the quiet work of relationships — researched carefully, written softly.
+        </p>
+        <div class="editorial__rule" style="margin-top:40px;"></div>
     </div>
 </section>
 

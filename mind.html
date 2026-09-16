@@ -59,9 +59,16 @@
         .cat-hero { background: linear-gradient(150deg, #F3EBD9 0%, #EEE1C5 40%, #D1C6AD 100%); padding: 80px 48px 72px; }
         .cat-hero__inner { max-width: var(--content-w); margin: 0 auto; }
         .cat-hero__eyebrow { font-size: 0.63rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
-        .cat-hero__title { font-family: var(--serif); font-size: clamp(3rem, 6vw, 5rem); font-weight: 400; font-style: italic; color: var(--text); line-height: 1.05; margin-bottom: 20px; }
+        .cat-hero__title { font-family: var(--serif); font-size: clamp(2.6rem, 5.1vw, 4.5rem); font-weight: 400; font-style: italic; color: var(--text); line-height: 1.05; margin-bottom: 20px; }
         .cat-hero__desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; max-width: 560px; margin-bottom: 28px; }
-        .cat-hero__count { display: inline-block; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--white); color: var(--text-muted); padding: 8px 18px; border: 1px solid var(--border); }
+                .cat-hero__count { display: inline-block; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; background: var(--white); color: var(--text-muted); padding: 8px 18px; border: 1px solid var(--border); }
+
+        /* BANNER HOOK + CTA */
+        .cat-hero__hook { font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; max-width: 560px; margin-bottom: 26px; }
+        .cat-hero__cta { display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: var(--white); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; padding: 13px 26px; border-radius: 100px; transition: background 0.2s ease, transform 0.2s ease; }
+        .cat-hero__cta svg { transition: transform 0.2s ease; }
+        .cat-hero__cta:hover { background: var(--gold-dark); }
+        .cat-hero__cta:hover svg { transform: translateX(3px); }
 
         /* CONTAINER */
         .container { max-width: var(--content-w); margin: 0 auto; padding: 0 48px; }
@@ -211,6 +218,25 @@
         @media (max-width: 900px) { .nav__hamburger { display: flex; } }
 
         </style>
+
+    <!-- ── JSON-LD: Category collection ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Mental Health & Emotional Wellness",
+      "description": "Anxiety, burnout, nervous system regulation and journaling — gentle, research-backed writing on the thoughts that won't quiet down, and the practices that actually help.",
+      "url": "https://darlingwhatif.com/mind",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://darlingwhatif.com/#website",
+        "name": "Darling, What If",
+        "url": "https://darlingwhatif.com"
+      },
+      "about": { "@type": "Thing", "name": "Mental Health & Emotional Wellness" },
+      "publisher": { "@id": "https://darlingwhatif.com/#organization" }
+    }
+    </script>
 </head>
 <body>
 
@@ -247,9 +273,14 @@
 
 <section class="cat-hero">
     <div class="cat-hero__inner">
-        <p class="cat-hero__eyebrow">Category</p>
-        <h1 class="cat-hero__title">Mind</h1>
+        <p class="cat-hero__eyebrow">Mind Category</p>
+        <h1 class="cat-hero__title">Mental Health &amp; Emotional Wellness</h1>
         <p class="cat-hero__desc">For the thoughts that won't quiet down — and the practices that help. Anxiety, burnout, journaling, and what it actually looks like to get unstuck.</p>
+        <p class="cat-hero__hook">Why is this harder than it looks from the outside?</p>
+        <a href="mind-guide.html" class="cat-hero__cta">
+            Discover why
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </a>
     </div>
 </section>
 
@@ -263,7 +294,7 @@
     </div>
     <div style="flex-shrink:0;text-align:center;">
       <a href="https://amzn.to/4oKPP2n" target="_blank" rel="sponsored nofollow noopener"
-         style="display:inline-block;background:var(--gold);color:var(--white);padding:14px 28px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;white-space:nowrap;">
+         style="display:inline-block;background:var(--gold);color:var(--white);padding:14px 28px;border-radius:100px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;white-space:nowrap;">
         Shop Calming Music →
       </a>
       <p style="font-size:0.68rem;color:var(--text-muted);margin-top:8px;letter-spacing:0.05em;">Relaxation · Meditation · Sleep · Stress relief</p>
