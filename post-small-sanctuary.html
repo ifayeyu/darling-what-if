@@ -276,7 +276,25 @@
           transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease; border-radius: 100px; }
         .pin-save__btn:hover { border-color: #E60023; color: #E60023; background: #fff; }
         .pin-save__btn svg { flex-shrink: 0; }
+
+        /* FAQ */
+        .post-faq { max-width: var(--content-w, 720px); margin: 0 auto; padding: 0 24px 96px; }
+        .faq-header { margin-bottom: 36px; }
+        .faq-header h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.85rem); font-weight: 400; color: var(--text); }
+        .faq-header h2 em { font-style: italic; color: var(--gold); }
+        .faq-item { border-top: 1px solid var(--border); }
+        .faq-item:last-child { border-bottom: 1px solid var(--border); }
+        .faq-question { width: 100%; background: none; border: none; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; text-align: left; }
+        .faq-question__text { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--text); line-height: 1.4; }
+        .faq-question__icon { flex-shrink: 0; width: 28px; height: 28px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); transition: all 0.25s ease; }
+        .faq-item.open .faq-question__icon { background: var(--gold); border-color: var(--gold); color: var(--white); transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; }
+        .faq-item.open .faq-answer { max-height: 600px; padding-bottom: 28px; }
+        .faq-answer p { font-size: 0.97rem; line-height: 1.85; color: var(--text-muted); }
 </style>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do you make a small apartment feel bigger without renovating?", "acceptedAnswer": {"@type": "Answer", "text": "By changing what’s in it rather than the walls around it. The feeling of spaciousness turns out to have very little to do with square footage and almost everything to do with what you’ve chosen to keep. Remove what doesn’t belong, resist filling every surface, and protect the empty areas you create instead of treating them as unfinished. A small room that breathes reads as far larger than a bigger one that is quietly full."}}, {"@type": "Question", "name": "What is the single most effective change to make first?", "acceptedAnswer": {"@type": "Answer", "text": "Lighting, if you only do one thing — and it’s free. Overhead light flattens a room and makes a small one feel clinical. Switching to lamps at varying heights, sources you can dim, and whatever natural light you can uncover changes how a space feels more than almost any purchase. If you’re willing to do two things, pair that with removing what doesn’t belong."}}, {"@type": "Question", "name": "Do I need to declutter before I decorate?", "acceptedAnswer": {"@type": "Answer", "text": "Almost always, yes — because otherwise you’re adding to the problem rather than solving it. The instinct when a room feels wrong is to buy something: a lamp, a candle, a rug that might pull it together. That only helps if the underlying issue isn’t clutter. The useful question to walk through a room with is simply whether each thing belongs here, or merely ended up here. Most homes are full of the second kind."}}, {"@type": "Question", "name": "Can a rented home still feel like a sanctuary?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, because nothing that creates the feeling is structural. Light, texture, scent, what you remove, the empty space you protect, and a small daily ritual that belongs to you are all entirely portable and almost all reversible. A sanctuary isn’t a room type or a floor plan — it’s what happens when a space has been arranged deliberately for the person living in it. That’s as available in a rental as anywhere else."}}]}
+    </script>
 </head>
 <body>
 
@@ -351,7 +369,7 @@
     <!-- INLINE IMAGE 1 -->
     <div class="post-img">
         <div class="post-img__frame">
-            <img src="images/Small-space-1.jpg" alt="Books lined on a shelf beside a green vase of white wildflowers — a personal corner made intentional" loading="lazy">
+            <img src="images/Small-space-1.jpg" alt="Books lined on a shelf beside a green vase of white wildflowers — a personal corner made intentional" loading="lazy" width="1600" height="1066">
         </div>
         <p class="post-img__caption">The feeling of spaciousness has almost nothing to do with actual space — and everything to do with what you choose to keep.</p>
     </div>
@@ -405,7 +423,7 @@
     <!-- INLINE IMAGE 2 -->
     <div class="post-img post-img--contained">
         <div class="post-img__frame">
-            <img src="images/Small-space-2.jpg" alt="A monstera plant beside a linen sofa with dappled light falling across the wall — stillness in a small space" loading="lazy">
+            <img src="images/Small-space-2.jpg" alt="A monstera plant beside a linen sofa with dappled light falling across the wall — stillness in a small space" loading="lazy" width="1600" height="1189">
         </div>
         <p class="post-img__caption">Texture and warmth do more for a small space than almost any piece of furniture. The goal is the sensation of being held.</p>
     </div>
@@ -484,13 +502,47 @@
 
 </main>
 
+
+<!-- FAQ -->
+<section class="post-faq" aria-label="Frequently asked questions">
+  <div class="faq-header"><h2>Questions About <em>Small Spaces</em></h2></div>
+  <div class="faq-item" id="faq1">
+    <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
+      <span class="faq-question__text">How do you make a small apartment feel bigger without renovating?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>By changing what&rsquo;s in it rather than the walls around it. The feeling of spaciousness turns out to have very little to do with square footage and almost everything to do with what you&rsquo;ve chosen to keep. Remove what doesn&rsquo;t belong, resist filling every surface, and protect the empty areas you create instead of treating them as unfinished. A small room that breathes reads as far larger than a bigger one that is quietly full.</p></div>
+  </div>
+  <div class="faq-item" id="faq2">
+    <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
+      <span class="faq-question__text">What is the single most effective change to make first?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Lighting, if you only do one thing &mdash; and it&rsquo;s free. Overhead light flattens a room and makes a small one feel clinical. Switching to lamps at varying heights, sources you can dim, and whatever natural light you can uncover changes how a space feels more than almost any purchase. If you&rsquo;re willing to do two things, pair that with removing what doesn&rsquo;t belong.</p></div>
+  </div>
+  <div class="faq-item" id="faq3">
+    <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
+      <span class="faq-question__text">Do I need to declutter before I decorate?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Almost always, yes &mdash; because otherwise you&rsquo;re adding to the problem rather than solving it. The instinct when a room feels wrong is to buy something: a lamp, a candle, a rug that might pull it together. That only helps if the underlying issue isn&rsquo;t clutter. The useful question to walk through a room with is simply whether each thing belongs here, or merely ended up here. Most homes are full of the second kind.</p></div>
+  </div>
+  <div class="faq-item" id="faq4">
+    <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
+      <span class="faq-question__text">Can a rented home still feel like a sanctuary?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Yes, because nothing that creates the feeling is structural. Light, texture, scent, what you remove, the empty space you protect, and a small daily ritual that belongs to you are all entirely portable and almost all reversible. A sanctuary isn&rsquo;t a room type or a floor plan &mdash; it&rsquo;s what happens when a space has been arranged deliberately for the person living in it. That&rsquo;s as available in a rental as anywhere else.</p></div>
+  </div>
+</section>
+
 <section class="related">
     <div class="related__inner">
         <span class="related__label">More in Living</span>
         <div class="related__grid">
             <a href="post-home-mental-health.html" class="related-card">
                 <div class="related-card__img">
-                    <img src="images/Home mental health-Hero.jpg" alt="Home and mental health" loading="lazy">
+                    <img src="images/Home mental health-Hero.jpg" alt="Home and mental health" loading="lazy" width="1600" height="1066">
                 </div>
                 <div class="related-card__body">
                     <div class="related-card__cat">Living</div>
@@ -499,7 +551,7 @@
             </a>
             <a href="post-maui-guide.html" class="related-card">
                 <div class="related-card__img">
-                    <img src="images/Maui_guide_hero.JPG" alt="Maui, Hawaii" loading="lazy">
+                    <img src="images/Maui_guide_hero.JPG" alt="Maui, Hawaii" loading="lazy" width="1600" height="900">
                 </div>
                 <div class="related-card__body">
                     <div class="related-card__cat">Travel</div>
@@ -508,7 +560,7 @@
             </a>
             <a href="post-softness.html" class="related-card">
                 <div class="related-card__img">
-                    <img src="images/softness-hero.jpg" alt="On softness as strength" loading="lazy">
+                    <img src="images/softness-hero.jpg" alt="On softness as strength" loading="lazy" width="1600" height="1066">
                 </div>
                 <div class="related-card__body">
                     <div class="related-card__cat">Mind</div>
@@ -525,19 +577,19 @@
         <div class="section-header"><h2 class="section-title">Keep <em>Reading</em></h2></div>
         <div class="related-grid">
             <article class="post-card">
-                <a href="post-emotional-safety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy"></div></a>
+                <a href="post-emotional-safety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy" width="1600" height="818"></div></a>
                 <div class="post-card__body"><a href="love.html" class="category-label">Love</a>
                 <h3 class="post-card__title"><a href="post-emotional-safety.html">The Love Language Nobody Talks About: Feeling Emotionally Safe</a></h3>
                 <p class="post-card__date">May 30, 2026</p></div>
             </article>
             <article class="post-card">
-                <a href="post-quiet-anxiety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Quiet_anxiety_hero.jpg" alt="You Are Not the Worry" loading="lazy"></div></a>
+                <a href="post-quiet-anxiety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Quiet_anxiety_hero.jpg" alt="You Are Not the Worry" loading="lazy" width="1600" height="741"></div></a>
                 <div class="post-card__body"><a href="mind.html" class="category-label">Mind</a>
                 <h3 class="post-card__title"><a href="post-quiet-anxiety.html">You Are Not the Worry</a></h3>
                 <p class="post-card__date">May 22, 2026</p></div>
             </article>
             <article class="post-card">
-                <a href="post-looking-younger.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/looking-younger-hero.jpg" alt="What If Looking Younger Isn't About Your Skin — It's About What You've Let Go Of?" loading="lazy"></div></a>
+                <a href="post-looking-younger.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/looking-younger-hero.jpg" alt="What If Looking Younger Isn't About Your Skin — It's About What You've Let Go Of?" loading="lazy" width="1600" height="1067"></div></a>
                 <div class="post-card__body"><a href="beauty.html" class="category-label">Beauty</a>
                 <h3 class="post-card__title"><a href="post-looking-younger.html">What If Looking Younger Isn't About Your Skin — It's About What You've Let Go Of?</a></h3>
                 <p class="post-card__date">September 1, 2026  ·  10 min read</p></div>
@@ -552,10 +604,10 @@
                 <div class="footer__logo">darling, <em>what if</em></div>
                 <p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p>
                 <div class="footer__social">
-          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/social-instagram.png" alt="" loading="lazy"></a>
-          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Pinterest" target="_blank" rel="noopener"><img src="images/social-pinterest.png" alt="" loading="lazy"></a>
-          <a href="https://xhslink.cn/m/3ZAgGiOQ5Is" class="footer__social-link footer__social-link--icon" aria-label="RedNote" target="_blank" rel="noopener"><img src="images/social-rednote.png" alt="" loading="lazy"></a>
-          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link footer__social-link--icon" aria-label="TikTok" target="_blank" rel="noopener"><img src="images/social-tiktok.png" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/social-instagram.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Pinterest" target="_blank" rel="noopener"><img src="images/social-pinterest.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://xhslink.cn/m/3ZAgGiOQ5Is" class="footer__social-link footer__social-link--icon" aria-label="RedNote" target="_blank" rel="noopener"><img src="images/social-rednote.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link footer__social-link--icon" aria-label="TikTok" target="_blank" rel="noopener"><img src="images/social-tiktok.png" alt="" loading="lazy" width="160" height="160"></a>
         </div>
             </div>
             <div class="footer__col"><h5>Explore</h5><ul><li><a href="mind.html">Wellness &amp; Mindful Living</a></li><li><a href="love.html">Love &amp; Relationships</a></li><li><a href="nourish.html">Nourish — Food &amp; Nutrition</a></li><li><a href="living.html">Home, Space &amp; Living</a></li><li><a href="beauty.html">Beauty &amp; Skincare Rituals</a></li><li><a href="gut-health.html">Gut Health &amp; Probiotics</a></li><li><a href="travel.html">Travel &amp; Slow Escapes</a></li></ul></div>
@@ -588,5 +640,20 @@
 
 <script src="search.js" defer></script>
 <script src="footer-recent.js" defer></script>
+
+<script>
+    function toggleFaq(id) {
+        const item = document.getElementById(id);
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+            el.classList.remove('open');
+            el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
+        }
+    }
+</script>
 </body>
 </html>

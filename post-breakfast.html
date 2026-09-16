@@ -332,6 +332,21 @@
           transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease; border-radius: 100px; }
         .pin-save__btn:hover { border-color: #E60023; color: #E60023; background: #fff; }
         .pin-save__btn svg { flex-shrink: 0; }
+
+        /* FAQ */
+        .post-faq { max-width: var(--content-w, 720px); margin: 0 auto; padding: 0 24px 96px; }
+        .faq-header { margin-bottom: 36px; }
+        .faq-header h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.85rem); font-weight: 400; color: var(--text); }
+        .faq-header h2 em { font-style: italic; color: var(--gold); }
+        .faq-item { border-top: 1px solid var(--border); }
+        .faq-item:last-child { border-bottom: 1px solid var(--border); }
+        .faq-question { width: 100%; background: none; border: none; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; text-align: left; }
+        .faq-question__text { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--text); line-height: 1.4; }
+        .faq-question__icon { flex-shrink: 0; width: 28px; height: 28px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); transition: all 0.25s ease; }
+        .faq-item.open .faq-question__icon { background: var(--gold); border-color: var(--gold); color: var(--white); transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; }
+        .faq-item.open .faq-answer { max-height: 600px; padding-bottom: 28px; }
+        .faq-answer p { font-size: 0.97rem; line-height: 1.85; color: var(--text-muted); }
 </style>
     <script type="application/ld+json">
     {
@@ -358,6 +373,9 @@
         }
       }
     }
+    </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is skipping breakfast actually bad for you?", "acceptedAnswer": {"@type": "Answer", "text": "It depends far less on the meal itself than on what your morning asks of you. By the time you wake, your body may not have been fuelled for ten hours or more, and the research is fairly consistent that what you eat in the morning affects how clearly you think, how long you can hold focus, and how steady your energy stays. If your morning is cognitively demanding, going without gives your brain very little to work with. The goal isn’t obedience to a rule — it’s not asking yourself to perform on empty."}}, {"@type": "Question", "name": "What actually makes a breakfast good for focus?", "acceptedAnswer": {"@type": "Answer", "text": "One simple pairing does most of the work: complex carbohydrates alongside quality protein. The carbohydrate supplies the glucose your brain runs on and gets you moving; the protein slows digestion so that energy arrives gradually instead of spiking and dropping. That combination is what produces steady focus and a stable mood into the afternoon, rather than the borrowed kind of alertness that collapses by eleven. It does not need to be elaborate, and it does not need to be early."}}, {"@type": "Question", "name": "Is coffee on an empty stomach really a problem?", "acceptedAnswer": {"@type": "Answer", "text": "For a lot of people, yes — though this isn’t an argument for giving it up. Caffeine works best with something alongside it. On its own it suppresses appetite just enough that you stop noticing hunger, while raising stress hormones, and combined with low blood sugar it can produce that racing, slightly wired feeling. The fix is not less coffee. It’s a little food with it."}}, {"@type": "Question", "name": "What if I’m genuinely not hungry in the morning?", "acceptedAnswer": {"@type": "Answer", "text": "Then start much smaller than the word “breakfast” suggests. Appetite in the morning varies enormously between people and is strongly shaped by what and when you ate the night before. Something modest that pairs protein with a complex carbohydrate — yoghurt and oats, eggs on rye, nut butter on wholegrain toast — does the job without forcing a full meal. Appetite also tends to return on its own once morning eating becomes routine again."}}, {"@type": "Question", "name": "Are “low-fat” or fortified cereals a reasonable choice?", "acceptedAnswer": {"@type": "Answer", "text": "Usually less reasonable than the packaging implies. “Low-fat” is one of the more misleading labels in a supermarket, because what comes out in fat is very often replaced with sugar — which is precisely the spike-and-crash pattern you were trying to avoid. Breakfasts built largely on refined sugar and processed ingredients are consistently associated with poorer memory and learning. Read the sugar line rather than the claim on the front."}}]}
     </script>
 </head>
 <body>
@@ -472,7 +490,7 @@
     <!-- Full-bleed image — avocado toast with tomatoes -->
     <div class="post-img">
         <div class="post-img__frame">
-            <img src="images/breakfast-toast.jpg" alt="Avocado toast with fresh tomatoes" loading="lazy">
+            <img src="images/breakfast-toast.jpg" alt="Avocado toast with fresh tomatoes" loading="lazy" width="1600" height="1052">
         </div>
         <p class="post-img__caption">What you put on your plate before 9am quietly shapes everything that comes after.</p>
     </div>
@@ -581,7 +599,7 @@
 
     <!-- Portrait image — avocado hands, shown at natural ratio, no crop -->
     <div class="post-img post-img--portrait-natural">
-        <img src="images/breakfast-avocado.jpg" alt="Hands scooping fresh avocado" loading="lazy">
+        <img src="images/breakfast-avocado.jpg" alt="Hands scooping fresh avocado" loading="lazy" width="1600" height="2230">
         <p class="post-img__caption">Simple ingredients. Real fuel. The kind of morning that actually sets you up.</p>
     </div>
 
@@ -634,6 +652,47 @@
 
 </article>
 
+
+<!-- FAQ -->
+<section class="post-faq" aria-label="Frequently asked questions">
+  <div class="faq-header"><h2>Frequently Asked <em>Questions</em></h2></div>
+  <div class="faq-item" id="faq1">
+    <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
+      <span class="faq-question__text">Is skipping breakfast actually bad for you?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>It depends far less on the meal itself than on what your morning asks of you. By the time you wake, your body may not have been fuelled for ten hours or more, and the research is fairly consistent that what you eat in the morning affects how clearly you think, how long you can hold focus, and how steady your energy stays. If your morning is cognitively demanding, going without gives your brain very little to work with. The goal isn&rsquo;t obedience to a rule &mdash; it&rsquo;s not asking yourself to perform on empty.</p></div>
+  </div>
+  <div class="faq-item" id="faq2">
+    <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
+      <span class="faq-question__text">What actually makes a breakfast good for focus?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>One simple pairing does most of the work: complex carbohydrates alongside quality protein. The carbohydrate supplies the glucose your brain runs on and gets you moving; the protein slows digestion so that energy arrives gradually instead of spiking and dropping. That combination is what produces steady focus and a stable mood into the afternoon, rather than the borrowed kind of alertness that collapses by eleven. It does not need to be elaborate, and it does not need to be early.</p></div>
+  </div>
+  <div class="faq-item" id="faq3">
+    <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
+      <span class="faq-question__text">Is coffee on an empty stomach really a problem?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>For a lot of people, yes &mdash; though this isn&rsquo;t an argument for giving it up. Caffeine works best with something alongside it. On its own it suppresses appetite just enough that you stop noticing hunger, while raising stress hormones, and combined with low blood sugar it can produce that racing, slightly wired feeling. The fix is not less coffee. It&rsquo;s a little food with it.</p></div>
+  </div>
+  <div class="faq-item" id="faq4">
+    <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
+      <span class="faq-question__text">What if I&rsquo;m genuinely not hungry in the morning?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Then start much smaller than the word &ldquo;breakfast&rdquo; suggests. Appetite in the morning varies enormously between people and is strongly shaped by what and when you ate the night before. Something modest that pairs protein with a complex carbohydrate &mdash; yoghurt and oats, eggs on rye, nut butter on wholegrain toast &mdash; does the job without forcing a full meal. Appetite also tends to return on its own once morning eating becomes routine again.</p></div>
+  </div>
+  <div class="faq-item" id="faq5">
+    <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">
+      <span class="faq-question__text">Are &ldquo;low-fat&rdquo; or fortified cereals a reasonable choice?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Usually less reasonable than the packaging implies. &ldquo;Low-fat&rdquo; is one of the more misleading labels in a supermarket, because what comes out in fat is very often replaced with sugar &mdash; which is precisely the spike-and-crash pattern you were trying to avoid. Breakfasts built largely on refined sugar and processed ingredients are consistently associated with poorer memory and learning. Read the sugar line rather than the claim on the front.</p></div>
+  </div>
+</section>
+
 <!-- ── BIOTRUST AFFILIATE CALLOUT ────────────────────────────────────── -->
 <div style="max-width:720px;margin:0 auto 56px;padding:0 24px;">
   <div style="border:1px solid var(--border);background:var(--bg-warm);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
@@ -677,7 +736,7 @@
 <!-- AUTHOR BIO -->
 <div class="author-bio">
     <div class="author-bio__inner">
-        <div class="author-bio__avatar"><img src="images/Gia.png" alt="Faye Livia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;"></div>
+        <div class="author-bio__avatar"><img src="images/Gia.png" alt="Faye Livia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;" width="240" height="269"></div>
         <div class="author-bio__info">
             <h4>Written by Faye Livia</h4>
             <p>
@@ -700,7 +759,7 @@
 
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy">
+                    <img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy" width="1600" height="818">
                 </div>
                 <div class="post-card__body">
                     <a href="love.html" class="category-label">Love</a>
@@ -713,7 +772,7 @@
 
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <img class="post-card__img" src="images/Quiet_anxiety_hero.jpg" alt="You Are Not the Worry" loading="lazy">
+                    <img class="post-card__img" src="images/Quiet_anxiety_hero.jpg" alt="You Are Not the Worry" loading="lazy" width="1600" height="741">
                 </div>
                 <div class="post-card__body">
                     <a href="mind.html" class="category-label">Mind</a>
@@ -726,7 +785,7 @@
 
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <img class="post-card__img" src="images/Gut_glow_hero.jpg" alt="What If Your Gut Has Been Holding Your Glow Hostage?" loading="lazy">
+                    <img class="post-card__img" src="images/Gut_glow_hero.jpg" alt="What If Your Gut Has Been Holding Your Glow Hostage?" loading="lazy" width="1600" height="1067">
                 </div>
                 <div class="post-card__body">
                     <a href="beauty.html" class="category-label">Beauty</a>
@@ -753,10 +812,10 @@
                 <div class="footer__logo">darling, <em>what if</em></div>
                 <p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p>
                 <div class="footer__social">
-          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/social-instagram.png" alt="" loading="lazy"></a>
-          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Pinterest" target="_blank" rel="noopener"><img src="images/social-pinterest.png" alt="" loading="lazy"></a>
-          <a href="https://xhslink.cn/m/3ZAgGiOQ5Is" class="footer__social-link footer__social-link--icon" aria-label="RedNote" target="_blank" rel="noopener"><img src="images/social-rednote.png" alt="" loading="lazy"></a>
-          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link footer__social-link--icon" aria-label="TikTok" target="_blank" rel="noopener"><img src="images/social-tiktok.png" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/social-instagram.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Pinterest" target="_blank" rel="noopener"><img src="images/social-pinterest.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://xhslink.cn/m/3ZAgGiOQ5Is" class="footer__social-link footer__social-link--icon" aria-label="RedNote" target="_blank" rel="noopener"><img src="images/social-rednote.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link footer__social-link--icon" aria-label="TikTok" target="_blank" rel="noopener"><img src="images/social-tiktok.png" alt="" loading="lazy" width="160" height="160"></a>
         </div>
             </div>
             <div class="footer__col"><h5>Explore</h5><ul><li><a href="mind.html">Wellness &amp; Mindful Living</a></li><li><a href="love.html">Love &amp; Relationships</a></li><li><a href="nourish.html">Nourish — Food &amp; Nutrition</a></li><li><a href="living.html">Home, Space &amp; Living</a></li><li><a href="beauty.html">Beauty &amp; Skincare Rituals</a></li><li><a href="gut-health.html">Gut Health &amp; Probiotics</a></li><li><a href="travel.html">Travel &amp; Slow Escapes</a></li></ul></div>
@@ -792,5 +851,20 @@
 </script>
 <script src="search.js" defer></script>
 <script src="footer-recent.js" defer></script>
+
+<script>
+    function toggleFaq(id) {
+        const item = document.getElementById(id);
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+            el.classList.remove('open');
+            el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
+        }
+    }
+</script>
 </body>
 </html>

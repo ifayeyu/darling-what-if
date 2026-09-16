@@ -337,6 +337,21 @@
           transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease; border-radius: 100px; }
         .pin-save__btn:hover { border-color: #E60023; color: #E60023; background: #fff; }
         .pin-save__btn svg { flex-shrink: 0; }
+
+        /* FAQ */
+        .post-faq { max-width: var(--content-w, 720px); margin: 0 auto; padding: 0 24px 96px; }
+        .faq-header { margin-bottom: 36px; }
+        .faq-header h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.85rem); font-weight: 400; color: var(--text); }
+        .faq-header h2 em { font-style: italic; color: var(--gold); }
+        .faq-item { border-top: 1px solid var(--border); }
+        .faq-item:last-child { border-bottom: 1px solid var(--border); }
+        .faq-question { width: 100%; background: none; border: none; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; text-align: left; }
+        .faq-question__text { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--text); line-height: 1.4; }
+        .faq-question__icon { flex-shrink: 0; width: 28px; height: 28px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); transition: all 0.25s ease; }
+        .faq-item.open .faq-question__icon { background: var(--gold); border-color: var(--gold); color: var(--white); transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; }
+        .faq-item.open .faq-answer { max-height: 600px; padding-bottom: 28px; }
+        .faq-answer p { font-size: 0.97rem; line-height: 1.85; color: var(--text-muted); }
 </style>
     <script type="application/ld+json">
     {
@@ -363,6 +378,9 @@
         }
       }
     }
+    </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between high-functioning anxiety and ordinary anxiety?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly visibility, not severity. Textbook anxiety tends to interrupt things — the racing heart, the moment you have to step outside. High-functioning anxiety doesn’t interrupt anything, which is exactly why it goes unnamed for years. You still meet the deadline, still show up, still look completely fine from the outside. The difference is what it costs underneath: a constant low-grade scanning for what might go wrong. Functioning well and feeling well are not the same measurement, and one can quietly hide the other."}}, {"@type": "Question", "name": "Can I really have anxiety if my life is going well?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — and this is the belief that keeps most people from taking it seriously. Anxiety isn’t a verdict on whether your circumstances are difficult enough to justify it. It’s a nervous system that hasn’t found its way back to neutral, often after a long stretch of stress, uncertainty, or loss. A good job, a kind relationship, and a full calendar don’t switch the alarm off. Sometimes they make it harder to admit the alarm is running at all."}}, {"@type": "Question", "name": "Why doesn’t reassurance from other people make it stop?", "acceptedAnswer": {"@type": "Answer", "text": "Because reassurance treats the worry rather than the alarm underneath it. When someone tells you it’s fine, the relief is real — and short. The underlying nervous-system state hasn’t changed, so a new worry simply moves into the space the last one left. Over time the alarm also learns to expect the reset, which is why the same question starts needing to be asked in more and more ways. It isn’t neediness. It’s a loop."}}, {"@type": "Question", "name": "Are constant checking and over-planning really anxiety, or just being organised?", "acceptedAnswer": {"@type": "Answer", "text": "They can be either, and the difference is usually in how it feels to stop. Genuine organisation is finite — you plan, you finish, you put it down. Anxious planning has no natural end point, because its real job is to manage a feeling rather than a task, and feelings don’t resolve through preparation. If not checking produces a rising discomfort rather than simple inconvenience, that is worth noticing gently."}}, {"@type": "Question", "name": "When is this worth talking to a professional about?", "acceptedAnswer": {"@type": "Answer", "text": "If the hum has been running for months, if it’s shaping decisions — shrinking what you say yes to, what you attempt, where you’ll go — or if it’s reaching your sleep, your body, or your relationships, that’s reason enough. You do not need to be in crisis to deserve support, and high-functioning anxiety responds well to proper help. A GP or a qualified therapist is the right place to start, and reaching out earlier tends to mean less to untangle later."}}]}
     </script>
 </head>
 <body>
@@ -471,7 +489,7 @@
     <!-- Full-bleed image #1 -->
     <div class="post-img">
         <div class="post-img__frame">
-            <img src="images/Quiet_anxiety_2.jpg" alt="Ambient anxiety doesn't announce itself" loading="lazy">
+            <img src="images/Quiet_anxiety_2.jpg" alt="Ambient anxiety doesn't announce itself" loading="lazy" width="1200" height="779">
         </div>
         <p class="post-img__caption">
             Ambient anxiety doesn't announce itself. It just becomes the atmosphere you live in.
@@ -634,7 +652,7 @@
     <!-- Full-bleed image #2 -->
     <div class="post-img post-img--contained">
         <div class="post-img__frame">
-            <img src="images/Quiet_anxiety_4.jpg" alt="Finding calm and presence amidst uncertainty" loading="lazy">
+            <img src="images/Quiet_anxiety_4.jpg" alt="Finding calm and presence amidst uncertainty" loading="lazy" width="1200" height="800">
         </div>
         <p class="post-img__caption">
             The most insidious thing about ambient anxiety is what it does over time — so slowly that you almost don't notice.
@@ -758,6 +776,46 @@
 </article>
 
 
+<!-- FAQ -->
+<section class="post-faq" aria-label="Frequently asked questions">
+  <div class="faq-header"><h2>Questions About <em>High-Functioning Anxiety</em></h2></div>
+  <div class="faq-item" id="faq1">
+    <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
+      <span class="faq-question__text">What is the difference between high-functioning anxiety and ordinary anxiety?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Mostly visibility, not severity. Textbook anxiety tends to interrupt things &mdash; the racing heart, the moment you have to step outside. High-functioning anxiety doesn&rsquo;t interrupt anything, which is exactly why it goes unnamed for years. You still meet the deadline, still show up, still look completely fine from the outside. The difference is what it costs underneath: a constant low-grade scanning for what might go wrong. Functioning well and feeling well are not the same measurement, and one can quietly hide the other.</p></div>
+  </div>
+  <div class="faq-item" id="faq2">
+    <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
+      <span class="faq-question__text">Can I really have anxiety if my life is going well?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Yes &mdash; and this is the belief that keeps most people from taking it seriously. Anxiety isn&rsquo;t a verdict on whether your circumstances are difficult enough to justify it. It&rsquo;s a nervous system that hasn&rsquo;t found its way back to neutral, often after a long stretch of stress, uncertainty, or loss. A good job, a kind relationship, and a full calendar don&rsquo;t switch the alarm off. Sometimes they make it harder to admit the alarm is running at all.</p></div>
+  </div>
+  <div class="faq-item" id="faq3">
+    <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
+      <span class="faq-question__text">Why doesn&rsquo;t reassurance from other people make it stop?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Because reassurance treats the worry rather than the alarm underneath it. When someone tells you it&rsquo;s fine, the relief is real &mdash; and short. The underlying nervous-system state hasn&rsquo;t changed, so a new worry simply moves into the space the last one left. Over time the alarm also learns to expect the reset, which is why the same question starts needing to be asked in more and more ways. It isn&rsquo;t neediness. It&rsquo;s a loop.</p></div>
+  </div>
+  <div class="faq-item" id="faq4">
+    <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
+      <span class="faq-question__text">Are constant checking and over-planning really anxiety, or just being organised?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>They can be either, and the difference is usually in how it feels to stop. Genuine organisation is finite &mdash; you plan, you finish, you put it down. Anxious planning has no natural end point, because its real job is to manage a feeling rather than a task, and feelings don&rsquo;t resolve through preparation. If not checking produces a rising discomfort rather than simple inconvenience, that is worth noticing gently.</p></div>
+  </div>
+  <div class="faq-item" id="faq5">
+    <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">
+      <span class="faq-question__text">When is this worth talking to a professional about?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>If the hum has been running for months, if it&rsquo;s shaping decisions &mdash; shrinking what you say yes to, what you attempt, where you&rsquo;ll go &mdash; or if it&rsquo;s reaching your sleep, your body, or your relationships, that&rsquo;s reason enough. You do not need to be in crisis to deserve support, and high-functioning anxiety responds well to proper help. A GP or a qualified therapist is the right place to start, and reaching out earlier tends to mean less to untangle later.</p></div>
+  </div>
+</section>
+
 <!-- TAGS -->
 
 <div class="pin-save">
@@ -784,7 +842,7 @@
 <!-- AUTHOR BIO -->
 <div class="author-bio">
     <div class="author-bio__inner">
-        <div class="author-bio__avatar"><img src="images/Gia.png" alt="Faye Livia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;"></div>
+        <div class="author-bio__avatar"><img src="images/Gia.png" alt="Faye Livia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;" width="240" height="269"></div>
         <div class="author-bio__info">
             <h4>Written by Faye Livia</h4>
             <p>
@@ -807,7 +865,7 @@
 
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <img class="post-card__img" src="images/breakfast-hero.jpg" alt="Before the Coffee: The Breakfast That Changes How Your Brain Works All Day" loading="lazy">
+                    <img class="post-card__img" src="images/breakfast-hero.jpg" alt="Before the Coffee: The Breakfast That Changes How Your Brain Works All Day" loading="lazy" width="1600" height="1044">
                 </div>
                 <div class="post-card__body">
                     <a href="nourish.html" class="category-label">Nourish</a>
@@ -820,7 +878,7 @@
 
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy">
+                    <img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy" width="1600" height="818">
                 </div>
                 <div class="post-card__body">
                     <a href="love.html" class="category-label">Love</a>
@@ -833,7 +891,7 @@
 
             <article class="post-card">
                 <div class="post-card__img-wrap">
-                    <img class="post-card__img" src="images/Gut_glow_hero.jpg" alt="What If Your Gut Has Been Holding Your Glow Hostage?" loading="lazy">
+                    <img class="post-card__img" src="images/Gut_glow_hero.jpg" alt="What If Your Gut Has Been Holding Your Glow Hostage?" loading="lazy" width="1600" height="1067">
                 </div>
                 <div class="post-card__body">
                     <a href="beauty.html" class="category-label">Beauty</a>
@@ -860,10 +918,10 @@
                 <div class="footer__logo">darling, <em>what if</em></div>
                 <p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p>
                 <div class="footer__social">
-          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/social-instagram.png" alt="" loading="lazy"></a>
-          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Pinterest" target="_blank" rel="noopener"><img src="images/social-pinterest.png" alt="" loading="lazy"></a>
-          <a href="https://xhslink.cn/m/3ZAgGiOQ5Is" class="footer__social-link footer__social-link--icon" aria-label="RedNote" target="_blank" rel="noopener"><img src="images/social-rednote.png" alt="" loading="lazy"></a>
-          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link footer__social-link--icon" aria-label="TikTok" target="_blank" rel="noopener"><img src="images/social-tiktok.png" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/social-instagram.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Pinterest" target="_blank" rel="noopener"><img src="images/social-pinterest.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://xhslink.cn/m/3ZAgGiOQ5Is" class="footer__social-link footer__social-link--icon" aria-label="RedNote" target="_blank" rel="noopener"><img src="images/social-rednote.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link footer__social-link--icon" aria-label="TikTok" target="_blank" rel="noopener"><img src="images/social-tiktok.png" alt="" loading="lazy" width="160" height="160"></a>
         </div>
             </div>
             <div class="footer__col"><h5>Explore</h5><ul><li><a href="mind.html">Wellness &amp; Mindful Living</a></li><li><a href="love.html">Love &amp; Relationships</a></li><li><a href="nourish.html">Nourish — Food &amp; Nutrition</a></li><li><a href="living.html">Home, Space &amp; Living</a></li><li><a href="beauty.html">Beauty &amp; Skincare Rituals</a></li><li><a href="gut-health.html">Gut Health &amp; Probiotics</a></li><li><a href="travel.html">Travel &amp; Slow Escapes</a></li></ul></div>
@@ -899,5 +957,20 @@
 </script>
 <script src="search.js" defer></script>
 <script src="footer-recent.js" defer></script>
+
+<script>
+    function toggleFaq(id) {
+        const item = document.getElementById(id);
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+            el.classList.remove('open');
+            el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
+        }
+    }
+</script>
 </body>
 </html>

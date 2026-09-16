@@ -310,6 +310,21 @@
           transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease; border-radius: 100px; }
         .pin-save__btn:hover { border-color: #E60023; color: #E60023; background: #fff; }
         .pin-save__btn svg { flex-shrink: 0; }
+
+        /* FAQ */
+        .post-faq { max-width: var(--content-w, 720px); margin: 0 auto; padding: 0 24px 96px; }
+        .faq-header { margin-bottom: 36px; }
+        .faq-header h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.85rem); font-weight: 400; color: var(--text); }
+        .faq-header h2 em { font-style: italic; color: var(--gold); }
+        .faq-item { border-top: 1px solid var(--border); }
+        .faq-item:last-child { border-bottom: 1px solid var(--border); }
+        .faq-question { width: 100%; background: none; border: none; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; text-align: left; }
+        .faq-question__text { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--text); line-height: 1.4; }
+        .faq-question__icon { flex-shrink: 0; width: 28px; height: 28px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); transition: all 0.25s ease; }
+        .faq-item.open .faq-question__icon { background: var(--gold); border-color: var(--gold); color: var(--white); transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; }
+        .faq-item.open .faq-answer { max-height: 600px; padding-bottom: 28px; }
+        .faq-answer p { font-size: 0.97rem; line-height: 1.85; color: var(--text-muted); }
 </style>
 
     <script type="application/ld+json">
@@ -324,6 +339,9 @@
         "datePublished": "2026-05-19",
         "url": "https://darlingwhatif.com/post-period-eat-better"
     }
+    </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What foods actually help with period cramps?", "acceptedAnswer": {"@type": "Answer", "text": "Start with water, which is the most underrated of all of them — good hydration eases cramping, softens the headaches that come with hormonal shifts, and counteracts the water retention that makes bloating worse. From there, build around iron to replace what bleeding depletes (leafy greens, oily fish, pulses), omega-3s and anti-inflammatory foods to calm the inflammatory side of cramping, and magnesium-rich options like dark chocolate. Peppermint tea is worth a particular mention for cramps, bloating and irritability together."}}, {"@type": "Question", "name": "What should I avoid eating during my period?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing needs to be forbidden, but a few things reliably make the week louder: excess salt worsens water retention and bloating, refined sugar amplifies the mood dip by spiking and dropping your blood sugar, and heavily processed food adds to the inflammatory load your body is already managing. Think of it as a week of leaning away from these rather than a rule. Restriction tends to backfire here more than it helps."}}, {"@type": "Question", "name": "Why do I crave sugar and chocolate so intensely before my period?", "acceptedAnswer": {"@type": "Answer", "text": "Because the craving is physiological, not a failure of willpower. In the luteal phase, progesterone peaks and then drops, serotonin falls alongside it, and the body’s demand for magnesium and complex carbohydrates genuinely increases. Chocolate happens to sit at the intersection of several of those needs. Choosing dark chocolate over milk gets you the magnesium with far less of the sugar swing."}}, {"@type": "Question", "name": "Does caffeine make period symptoms worse?", "acceptedAnswer": {"@type": "Answer", "text": "It can, for some people. Caffeine is a vasoconstrictor, which means it narrows blood vessels — not ideal during a week when cramping is already a matter of contraction, and it can sharpen anxiety and disrupt the sleep you need most. You don’t have to give it up. Swapping one cup for peppermint or ginger tea is usually enough to notice a difference."}}, {"@type": "Question", "name": "How much should I be drinking, and when should I see a doctor?", "acceptedAnswer": {"@type": "Answer", "text": "Aim for roughly eleven to twelve cups of fluid a day during your period; herbal teas count toward it. On the medical side, please take persistent pain seriously: period pain that stops you living your normal life, gets progressively worse, doesn’t respond to usual measures, or comes with very heavy bleeding is worth a proper conversation with your GP. Conditions like endometriosis are commonly dismissed for years. Food can support a difficult period; it isn’t a substitute for being properly examined."}}]}
     </script>
 </head>
 <body>
@@ -401,7 +419,7 @@
     <!-- INLINE IMAGE 1: fish/veg — full bleed -->
     <div class="post-img">
         <div class="post-img__frame">
-            <img src="images/Period-eat-better 3.jpg" alt="Pan-seared fish with colourful vegetables — rich in iron and omega-3s for period recovery" loading="lazy">
+            <img src="images/Period-eat-better 3.jpg" alt="Pan-seared fish with colourful vegetables — rich in iron and omega-3s for period recovery" loading="lazy" width="1600" height="1236">
         </div>
         <p class="post-img__caption">Oily fish like salmon and mackerel bring iron, omega-3s, and vitamin D together — exactly what a depleted body needs.</p>
     </div>
@@ -464,7 +482,7 @@
     <!-- INLINE IMAGE 2: ginger/turmeric — contained -->
     <div class="post-img post-img--contained">
         <div class="post-img__frame">
-            <img src="images/Period-eat-better 2.jpg" alt="Fresh ginger and turmeric — anti-inflammatory roots that ease cramps and reduce bloating" loading="lazy">
+            <img src="images/Period-eat-better 2.jpg" alt="Fresh ginger and turmeric — anti-inflammatory roots that ease cramps and reduce bloating" loading="lazy" width="1600" height="1066">
         </div>
         <p class="post-img__caption">A warm cup of ginger tea in the morning — one of the simplest and most comforting choices you can make during your period.</p>
     </div>
@@ -496,7 +514,7 @@
     <!-- INLINE IMAGE 3: sugary/processed foods — full bleed -->
     <div class="post-img" style="margin-top: 52px;">
         <div class="post-img__frame">
-            <img src="images/Period-eat-worse-1.jpg" alt="Sugary foods and refined carbs that worsen period symptoms" loading="lazy">
+            <img src="images/Period-eat-worse-1.jpg" alt="Sugary foods and refined carbs that worsen period symptoms" loading="lazy" width="1600" height="1064">
         </div>
         <p class="post-img__caption">Understanding why certain foods make things worse is the first step to choosing differently.</p>
     </div>
@@ -561,7 +579,7 @@
     <!-- INLINE IMAGE 4: woman in bed — contained -->
     <div class="post-img post-img--contained">
         <div class="post-img__frame">
-            <img src="images/Period-eat-worse-2.jpg" alt="Woman resting during her period — the craving is your body asking for comfort, the question is which kind" loading="lazy">
+            <img src="images/Period-eat-worse-2.jpg" alt="Woman resting during her period — the craving is your body asking for comfort, the question is which kind" loading="lazy" width="1600" height="913">
         </div>
         <p class="post-img__caption">The craving is your body asking for comfort. The question is which version of comfort actually delivers it.</p>
     </div>
@@ -585,6 +603,46 @@
 
 </main>
 
+
+<!-- FAQ -->
+<section class="post-faq" aria-label="Frequently asked questions">
+  <div class="faq-header"><h2>Questions About <em>Eating on Your Period</em></h2></div>
+  <div class="faq-item" id="faq1">
+    <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">
+      <span class="faq-question__text">What foods actually help with period cramps?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Start with water, which is the most underrated of all of them &mdash; good hydration eases cramping, softens the headaches that come with hormonal shifts, and counteracts the water retention that makes bloating worse. From there, build around iron to replace what bleeding depletes (leafy greens, oily fish, pulses), omega-3s and anti-inflammatory foods to calm the inflammatory side of cramping, and magnesium-rich options like dark chocolate. Peppermint tea is worth a particular mention for cramps, bloating and irritability together.</p></div>
+  </div>
+  <div class="faq-item" id="faq2">
+    <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">
+      <span class="faq-question__text">What should I avoid eating during my period?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Nothing needs to be forbidden, but a few things reliably make the week louder: excess salt worsens water retention and bloating, refined sugar amplifies the mood dip by spiking and dropping your blood sugar, and heavily processed food adds to the inflammatory load your body is already managing. Think of it as a week of leaning away from these rather than a rule. Restriction tends to backfire here more than it helps.</p></div>
+  </div>
+  <div class="faq-item" id="faq3">
+    <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">
+      <span class="faq-question__text">Why do I crave sugar and chocolate so intensely before my period?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Because the craving is physiological, not a failure of willpower. In the luteal phase, progesterone peaks and then drops, serotonin falls alongside it, and the body&rsquo;s demand for magnesium and complex carbohydrates genuinely increases. Chocolate happens to sit at the intersection of several of those needs. Choosing dark chocolate over milk gets you the magnesium with far less of the sugar swing.</p></div>
+  </div>
+  <div class="faq-item" id="faq4">
+    <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">
+      <span class="faq-question__text">Does caffeine make period symptoms worse?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>It can, for some people. Caffeine is a vasoconstrictor, which means it narrows blood vessels &mdash; not ideal during a week when cramping is already a matter of contraction, and it can sharpen anxiety and disrupt the sleep you need most. You don&rsquo;t have to give it up. Swapping one cup for peppermint or ginger tea is usually enough to notice a difference.</p></div>
+  </div>
+  <div class="faq-item" id="faq5">
+    <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">
+      <span class="faq-question__text">How much should I be drinking, and when should I see a doctor?</span>
+      <div class="faq-question__icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14m-7-7h14"/></svg></div>
+    </button>
+    <div class="faq-answer"><p>Aim for roughly eleven to twelve cups of fluid a day during your period; herbal teas count toward it. On the medical side, please take persistent pain seriously: period pain that stops you living your normal life, gets progressively worse, doesn&rsquo;t respond to usual measures, or comes with very heavy bleeding is worth a proper conversation with your GP. Conditions like endometriosis are commonly dismissed for years. Food can support a difficult period; it isn&rsquo;t a substitute for being properly examined.</p></div>
+  </div>
+</section>
 
 <!-- TAGS -->
 
@@ -614,7 +672,7 @@
 <!-- AUTHOR BIO -->
 <div class="author-bio">
     <div class="author-bio__inner">
-        <div class="author-bio__avatar"><img src="images/Gia.png" alt="Faye Livia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;"></div>
+        <div class="author-bio__avatar"><img src="images/Gia.png" alt="Faye Livia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;" width="240" height="269"></div>
         <div class="author-bio__info">
             <h4>Written by Faye Livia</h4>
             <p>
@@ -633,7 +691,7 @@
         <div class="related__grid">
             <a href="post-gut-health.html" class="related-card">
                 <div class="related-card__img">
-                    <img src="images/gut-health-hero.jpg" alt="Gut Health" loading="lazy">
+                    <img src="images/gut-health-hero.jpg" alt="Gut Health" loading="lazy" width="1600" height="1068">
                 </div>
                 <div class="related-card__body">
                     <div class="related-card__cat">Nourish</div>
@@ -642,7 +700,7 @@
             </a>
             <a href="post-tea-timing.html" class="related-card">
                 <div class="related-card__img">
-                    <img src="images/Tea_post.jpg" alt="Tea Timing" loading="lazy">
+                    <img src="images/Tea_post.jpg" alt="Tea Timing" loading="lazy" width="1600" height="1030">
                 </div>
                 <div class="related-card__body">
                     <div class="related-card__cat">Nourish</div>
@@ -651,7 +709,7 @@
             </a>
             <a href="post-home-mental-health.html" class="related-card">
                 <div class="related-card__img">
-                    <img src="images/Home mental health-Hero.jpg" alt="Home and Mental Health" loading="lazy">
+                    <img src="images/Home mental health-Hero.jpg" alt="Home and Mental Health" loading="lazy" width="1600" height="1066">
                 </div>
                 <div class="related-card__body">
                     <div class="related-card__cat">Mind</div>
@@ -668,19 +726,19 @@
         <div class="section-header"><h2 class="section-title">Keep <em>Reading</em></h2></div>
         <div class="related-grid">
             <article class="post-card">
-                <a href="post-emotional-safety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy"></div></a>
+                <a href="post-emotional-safety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Emotional_safety_hero.jpg" alt="The Love Language Nobody Talks About: Feeling Emotionally Safe" loading="lazy" width="1600" height="818"></div></a>
                 <div class="post-card__body"><a href="love.html" class="category-label">Love</a>
                 <h3 class="post-card__title"><a href="post-emotional-safety.html">The Love Language Nobody Talks About: Feeling Emotionally Safe</a></h3>
                 <p class="post-card__date">May 30, 2026</p></div>
             </article>
             <article class="post-card">
-                <a href="post-quiet-anxiety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Quiet_anxiety_hero.jpg" alt="You Are Not the Worry" loading="lazy"></div></a>
+                <a href="post-quiet-anxiety.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Quiet_anxiety_hero.jpg" alt="You Are Not the Worry" loading="lazy" width="1600" height="741"></div></a>
                 <div class="post-card__body"><a href="mind.html" class="category-label">Mind</a>
                 <h3 class="post-card__title"><a href="post-quiet-anxiety.html">You Are Not the Worry</a></h3>
                 <p class="post-card__date">May 22, 2026</p></div>
             </article>
             <article class="post-card">
-                <a href="post-gut-glow.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Gut_glow_hero.jpg" alt="What If Your Gut Has Been Holding Your Glow Hostage?" loading="lazy"></div></a>
+                <a href="post-gut-glow.html"><div class="post-card__img-wrap"><img class="post-card__img" src="images/Gut_glow_hero.jpg" alt="What If Your Gut Has Been Holding Your Glow Hostage?" loading="lazy" width="1600" height="1067"></div></a>
                 <div class="post-card__body"><a href="beauty.html" class="category-label">Beauty</a>
                 <h3 class="post-card__title"><a href="post-gut-glow.html">What If Your Gut Has Been Holding Your Glow Hostage?</a></h3>
                 <p class="post-card__date">June 9, 2026</p></div>
@@ -695,10 +753,10 @@
                 <div class="footer__logo">darling, <em>what if</em></div>
                 <p class="footer__about">A space for women quietly reimagining<br>what their lives could look like — one soft,<br>intentional choice at a time.</p>
                 <div class="footer__social">
-          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/social-instagram.png" alt="" loading="lazy"></a>
-          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Pinterest" target="_blank" rel="noopener"><img src="images/social-pinterest.png" alt="" loading="lazy"></a>
-          <a href="https://xhslink.cn/m/3ZAgGiOQ5Is" class="footer__social-link footer__social-link--icon" aria-label="RedNote" target="_blank" rel="noopener"><img src="images/social-rednote.png" alt="" loading="lazy"></a>
-          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link footer__social-link--icon" aria-label="TikTok" target="_blank" rel="noopener"><img src="images/social-tiktok.png" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/social-instagram.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://www.pinterest.com/darling_whatif/" class="footer__social-link footer__social-link--icon" aria-label="Pinterest" target="_blank" rel="noopener"><img src="images/social-pinterest.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://xhslink.cn/m/3ZAgGiOQ5Is" class="footer__social-link footer__social-link--icon" aria-label="RedNote" target="_blank" rel="noopener"><img src="images/social-rednote.png" alt="" loading="lazy" width="160" height="160"></a>
+          <a href="https://www.tiktok.com/@darling_whatif" class="footer__social-link footer__social-link--icon" aria-label="TikTok" target="_blank" rel="noopener"><img src="images/social-tiktok.png" alt="" loading="lazy" width="160" height="160"></a>
         </div>
             </div>
             <div class="footer__col"><h5>Explore</h5><ul><li><a href="mind.html">Wellness &amp; Mindful Living</a></li><li><a href="love.html">Love &amp; Relationships</a></li><li><a href="nourish.html">Nourish — Food &amp; Nutrition</a></li><li><a href="living.html">Home, Space &amp; Living</a></li><li><a href="beauty.html">Beauty &amp; Skincare Rituals</a></li><li><a href="gut-health.html">Gut Health &amp; Probiotics</a></li><li><a href="travel.html">Travel &amp; Slow Escapes</a></li></ul></div>
@@ -730,5 +788,20 @@
     </script>
 <script src="search.js" defer></script>
 <script src="footer-recent.js" defer></script>
+
+<script>
+    function toggleFaq(id) {
+        const item = document.getElementById(id);
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(el => {
+            el.classList.remove('open');
+            el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
+        }
+    }
+</script>
 </body>
 </html>
