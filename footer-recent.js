@@ -9,6 +9,7 @@
   var N = 5;
 
   var LABELS = {
+    "post-husband-material": "What \"Husband Material\" Means",
     "post-green-flags-character": "Green Flags in a Man",
     "post-digital-detox": "The Realistic Digital Detox",
     "post-hypervigilance": "Hypervigilance, Explained",
