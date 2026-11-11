@@ -137,7 +137,7 @@
         /* beauty / companion */
         html += '<div class="solo-wrap">';
         html += '<p class="solo-label">Latest</p>';
-        html += '<a href="' + featured.slug + '.html">';
+        html += '<a href="/' + featured.slug + '">';
         html += '<div class="solo-post">';
         html += '<div class="solo-post__img"><img src="' + esc(featured.image) + '" alt="' + esc(featured.title) + '" loading="lazy"></div>';
         html += '<div class="solo-post__body">';
@@ -151,7 +151,7 @@
         /* mind / nourish / living */
         html += '<div class="featured-wrap">';
         html += '<p class="featured-label">Latest</p>';
-        html += '<a href="' + featured.slug + '.html">';
+        html += '<a href="/' + featured.slug + '">';
         html += '<div class="featured-post">';
         html += '<div class="featured-post__img"><img src="' + esc(featured.image) + '" alt="' + esc(featured.title) + '" loading="lazy"></div>';
         html += '<div class="featured-post__body">';
@@ -174,7 +174,7 @@
         html += '<p class="posts-section__label">More in ' + esc(labelFor(cat)) + '</p>';
         html += '<div class="posts-grid">';
         gridItems.forEach(function (p) {
-          html += '<a href="' + p.slug + '.html" class="post-card">';
+          html += '<a href="/' + p.slug + '" class="post-card">';
           html += '<div class="post-card__img"><img src="' + esc(p.image) + '" alt="' + esc(p.title) + '" loading="lazy"></div>';
           html += '<div class="post-card__body">';
           html += '<div class="post-card__cat">' + esc(labelFor(p.category)) + '</div>';
@@ -190,10 +190,10 @@
         html += '<div class="posts-grid">';
         gridItems.forEach(function (p) {
           html += '<article class="post-card">';
-          html += '<a href="' + p.slug + '.html"><div class="post-card__img"><img src="' + esc(p.image) + '" alt="' + esc(p.title) + '" loading="lazy"></div></a>';
+          html += '<a href="/' + p.slug + '"><div class="post-card__img"><img src="' + esc(p.image) + '" alt="' + esc(p.title) + '" loading="lazy"></div></a>';
           html += '<div class="post-card__body">';
           html += '<div class="post-card__category">' + esc(labelFor(p.category)) + '</div>';
-          html += '<h3 class="post-card__title"><a href="' + p.slug + '.html">' + esc(p.title) + '</a></h3>';
+          html += '<h3 class="post-card__title"><a href="/' + p.slug + '">' + esc(p.title) + '</a></h3>';
           html += '<p class="post-card__excerpt">' + esc(p.excerpt) + '</p>';
           html += '<div class="post-card__meta">' + fmtDate(p.date) + ' &middot; ' + p.readTime + ' min read</div>';
           html += '</div></article>';

@@ -1,0 +1,28 @@
+# Cloudflare Pages redirects (301 = moved permanently). Format: <old path> <new path> <status>
+# Cloudflare follows these even when an old .html file still exists.
+
+# Old URL scheme still in Google's records -> current posts
+/nourish/tea-timing                              /post-tea-timing    301
+/nourish/acv-honey-morning-ritual-gut-health     /post-acv-honey     301
+/beauty/screen-skin-blue-light                   /post-screen-skin   301
+
+# Retired pages (noindex) -> their replacements
+/post-maui                 /post-maui-guide   301
+/post-maui-valley-isle     /post-maui-guide   301
+/wellness                  /beauty            301
+/companion                 /                  301
+
+# Companion (dog) posts deleted on 2026-09-11; pins still point here -> homepage
+/companion/dog-unconditional-love   /   301
+/post-companion-dogs                /   301
+/post-dog-love                      /   301
+/post-dog-sad                       /   301
+/post-dog-loves-you                 /   301
+/post-dog-human                     /   301
+/post-dog-more-human                /   301
+/post-do-dogs-feel-guilt            /   301
+/post-dog-routine                   /   301
+/post-dog-separation-anxiety        /   301
+/post-pet-present                   /   301
+/post-rescue-animal-trust           /   301
+/post-talk-to-dog                   /   301

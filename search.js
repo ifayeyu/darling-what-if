@@ -212,7 +212,7 @@
       countEl.textContent = items.length + (items.length === 1 ? ' result' : ' results');
       var html = '';
       items.forEach(function (p, i) {
-        html += '<a class="ss-result" href="' + p.slug + '.html" data-index="' + i + '">' +
+        html += '<a class="ss-result" href="/' + p.slug + '" data-index="' + i + '">' +
           '<div class="ss-result__img"><img src="' + esc(p.image) + '" alt="" loading="lazy"></div>' +
           '<div class="ss-result__body">' +
             '<div class="ss-result__cat">' + esc(labelFor(p.category)) + '</div>' +

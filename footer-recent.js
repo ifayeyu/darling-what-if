@@ -69,7 +69,7 @@
       posts.slice(0, N).forEach(function (p) {
         var li = document.createElement("li");
         var a = document.createElement("a");
-        a.href = p.slug + ".html";
+        a.href = "/" + p.slug;
         a.textContent = shortLabel(p);
         li.appendChild(a);
         el.appendChild(li);
