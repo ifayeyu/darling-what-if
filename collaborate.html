@@ -243,9 +243,9 @@
         <p class="newsletter__eyebrow">Letters from the blog</p>
         <h2 class="newsletter__title">Stay close, darling.</h2>
         <p class="newsletter__sub">Slow reads, honest thoughts, and the kind of wellness that doesn't ask you to optimize anything. In your inbox, softly.</p>
-        <form class="newsletter__form" onsubmit="return false;">
-            <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" id="collab-newsletter-email">
-            <button type="submit" class="newsletter__btn" onclick="handleSignup(this, 'collab-newsletter-email')">Subscribe</button>
+        <form class="newsletter__form" action="https://app.kit.com/forms/9478154/subscriptions" method="post" data-sv-form="9478154" data-uid="81fa271e42" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{form_location:location.pathname});}">
+            <input type="email" name="email_address" required class="newsletter__input" placeholder="your@email.com" aria-label="Email address" id="collab-newsletter-email">
+            <button type="submit" class="newsletter__btn">Subscribe</button>
         </form>
         <p class="newsletter__note">No noise. Unsubscribe anytime.</p>
     </div>
