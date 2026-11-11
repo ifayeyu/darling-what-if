@@ -9,3 +9,7 @@ index-request-urls.txt
 
 # backup / scratch files
 *.bak
+
+# Claude working files and macOS folder metadata — never publish
+Claude outputs/
+.DS_Store
