@@ -9,8 +9,8 @@ jobs:
   purge:
     runs-on: ubuntu-latest
     steps:
-      - name: Wait for Cloudflare Pages to deploy
-        run: sleep 30
+      - name: Wait for Cloudflare Pages to finish deploying (2 min)
+        run: sleep 120
 
       - name: Purge Cloudflare cache
         run: |
