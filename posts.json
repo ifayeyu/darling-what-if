@@ -1,5 +1,14 @@
 [
   {
+    "slug": "post-vitamin-c-skin",
+    "title": "Vitamin C for Skin: Why Eating It May Beat Your Serum",
+    "excerpt": "A landmark study found dietary vitamin C reaches every layer of skin, thickening collagen. What it means for your serum, the best form, and how much you need.",
+    "date": "2026-11-24",
+    "category": "beauty",
+    "image": "images/v-c-skin-hero.jpg",
+    "readTime": 9
+  },
+  {
     "slug": "post-brain-foods",
     "title": "Best and Worst Foods for Brain Health: What Research Shows",
     "excerpt": "Half a cup of cooked greens a day was linked to brains 11 years younger. The best foods for brain health, the worst, and what the evidence really says.",
@@ -920,11 +929,11 @@
   {
     "slug": "post-screen-skin",
     "title": "What Your Screen Is Quietly Doing to Your Skin",
-    "excerpt": "You've heard about blue light. But the full picture of what prolonged screen time does to your skin — and what actually helps — is a conversation worth having quietly.",
+    "excerpt": "You've probably heard that your laptop is quietly aging your face. The research tells a calmer story — and points to what actually deserves your attention.",
     "date": "2026-05-12",
     "category": "beauty",
     "image": "images/bluelight_image1.jpg",
-    "readTime": 6
+    "readTime": 7
   },
   {
     "slug": "post-anxiety",
